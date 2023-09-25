@@ -72,9 +72,9 @@ export const parseGuess = (guess: string): ComposerWork => {
     );
     if (composer) {
       const work = tokens.slice(tokens.indexOf(token) + 1).join(" ");
-      return { composer, work } as ComposerWork;
+      return new ComposerWork(composer, work);
     }
   }
 
-  return { composer: "invalid", work: "invalid" } as ComposerWork;
+  return new ComposerWork("invalid", "invalid");
 };

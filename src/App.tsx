@@ -2,14 +2,15 @@ import { useState, ReactNode, SyntheticEvent } from "react";
 import { ComposerWork, parseGuess } from "./composerWork";
 import { puzzles } from "./dailyPuzzle";
 
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 function App() {
   const MAX_GUESSES = 5;
 
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
   const [currentGuess, setCurrentGuess] = useState("");
+  const [error, setError] = useState("");
 
   const currentPuzzle = puzzles.slice(-1)[0];
 
@@ -19,25 +20,57 @@ function App() {
     }
 
     const guess = currentGuess.trim();
-    const parsedGuess = parseGuess(guess);
-
-    if (guesses.find((g) => g === parsedGuess)) {
-      alert("You already guessed that!");
+    if (guess.length === 0) {
       return;
     }
+
+    const parsedGuess = parseGuess(guess);
+    if (parsedGuess.composer === "invalid") {
+      setErrorWithTimeout("invalidComposer");
+      return;
+    }
+
+    if (parsedGuess.work === "invalid") {
+      setErrorWithTimeout("invalidWork");
+      return;
+    }
+
+    if (guesses.find((g) => g.equals(parsedGuess))) {
+      setErrorWithTimeout("duplicateGuess");
+      return;
+    }
+
     setGuesses([...guesses, parsedGuess]);
     setCurrentGuess("");
   };
 
-  const composerCorrect = (guess: ComposerWork): boolean => guess.composer === currentPuzzle?.puzzleAnswer.composer;
+  const setErrorWithTimeout = (text: string): void => {
+    setError(text);
+    setTimeout(() => setError(""), 2000);
+  };
+
+  const composerCorrect = (guess: ComposerWork): boolean =>
+    guess.composer === currentPuzzle?.puzzleAnswer.composer;
 
   const renderGuesses = (): ReactNode => {
     const guessItems = guesses.map((guess, i) => {
       return (
         <div key={i} className="flex justify-center items-stretch mb-2">
           {renderGuessNumber(i + 1)}
-          {renderAnswerCard("Composer", guess.composer, "cyan-500", 12, composerCorrect(guess))}
-          {renderAnswerCard("Work", guess.work, "indigo-500", 14, currentPuzzle?.puzzleAnswer.matchWork(guess.work))}
+          {renderAnswerCard(
+            "Composer",
+            guess.composer,
+            "cyan-500",
+            12,
+            composerCorrect(guess)
+          )}
+          {renderAnswerCard(
+            "Work",
+            guess.work,
+            "indigo-500",
+            14,
+            currentPuzzle?.puzzleAnswer.matchWork(guess.work)
+          )}
         </div>
       );
     });
@@ -78,14 +111,48 @@ function App() {
     </div>
   );
 
-  const renderAnswerCard = (title: string, text: string, backgroundClass: string, widthRem: number, correct: boolean): ReactNode => {
+  const renderAnswerCard = (
+    title: string,
+    text: string,
+    backgroundClass: string,
+    widthRem: number,
+    correct: boolean
+  ): ReactNode => {
     return (
-      <div className={`block max-w-[${widthRem}rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-${backgroundClass} mr-2 flex-grow`}>
+      <div
+        className={`block max-w-[${widthRem}rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-${backgroundClass} mr-2 flex-grow`}
+      >
         <div className="p-2">
           <h5 className="mb-1 text-md font-medium leading-tight text-neutral-50">
             {renderCardTitle(title, correct)}
           </h5>
           <p className="text-sm leading-normal text-neutral-100">{text}</p>
+        </div>
+      </div>
+    );
+  };
+
+  const renderError = (): ReactNode => {
+    let errorText;
+    switch (error) {
+      case "duplicateGuess":
+        errorText = "You've already guessed that!";
+        break;
+      case "invalidComposer":
+        errorText =
+          "Could not find a composer with that name, try another spelling?";
+        break;
+      case "invalidWork":
+        errorText = "Could not find a work with that name.";
+        break;
+    }
+    return (
+      <div className="flex justify-center">
+        <div
+          className="w-4/5 md:w-1/2 mb-4 rounded-lg bg-red-200 px-2 py-1 md:px-6 md:py-5 text-base text-red-700"
+          role="alert"
+        >
+          {errorText}
         </div>
       </div>
     );
@@ -104,10 +171,12 @@ function App() {
               src={currentPuzzle?.sheetSource}
             />
           </Zoom>
-
         </div>
         <div className="bg-gray-300 p-2 rounded-sm shadow-md">
-          <form className="mb-2 flex justify-center" onSubmit={(e) => makeGuess(e)}>
+          <form
+            className="mb-4 mt-2 md:mb-2 md:mt-0 flex justify-center"
+            onSubmit={(e) => makeGuess(e)}
+          >
             <input
               className="mr-2 pl-1 shrink w-2/3 md:w-1/4"
               type="text"
@@ -123,6 +192,7 @@ function App() {
             </button>
           </form>
 
+          {error && renderError()}
           {renderGuesses()}
         </div>
       </div>
