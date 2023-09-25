@@ -4,6 +4,9 @@ import { puzzles } from "./dailyPuzzle";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import GuessRow from "./components/GuessRow";
+import PlaceholderRow from "./components/PlaceholderRow";
+import GuessRowContainer from "./components/GuessRowContainer";
 
 function App() {
   const MAX_GUESSES = 5;
@@ -55,81 +58,36 @@ function App() {
   const renderGuesses = (): ReactNode => {
     const guessItems = guesses.map((guess, i) => {
       return (
-        <div key={i} className="flex justify-center items-stretch mb-2">
-          {renderGuessNumber(i + 1)}
-          {renderAnswerCard(
-            "Composer",
-            guess.composer,
-            "cyan-500",
-            12,
-            composerCorrect(guess)
-          )}
-          {renderAnswerCard(
-            "Work",
-            guess.work,
-            "indigo-500",
-            14,
-            currentPuzzle?.puzzleAnswer.matchWork(guess.work)
-          )}
-        </div>
-      );
+        <GuessRowContainer key={i + 1} rowNumber={i + 1}>
+          <GuessRow
+            title="Composer"
+            text={guess.composer}
+            backgroundClass="cyan-500"
+            widthRem={12}
+            correct={composerCorrect(guess)}
+          />
+          <GuessRow
+            title="Work"
+            text={guess.work}
+            backgroundClass="indigo-500"
+            widthRem={14}
+            correct={currentPuzzle?.puzzleAnswer.matchWork(guess.work)}
+          />
+        </GuessRowContainer>
+      )
     });
 
     for (let i = 0; i < MAX_GUESSES - guesses.length; i++) {
       // fill remainder with placeholders
+      const rowNumber = i + guesses.length + 1;
       guessItems.push(
-        <div key={i + guesses.length} className="flex justify-center mb-2">
-          {renderGuessNumber(i + guesses.length + 1)}
-          {renderPlaceholderCard()}
-        </div>
+        <GuessRowContainer key={rowNumber} rowNumber={rowNumber}>
+          <PlaceholderRow />
+        </GuessRowContainer>
       );
     }
 
     return guessItems;
-  };
-
-  const renderGuessNumber = (i: number): ReactNode => (
-    <div className="bg-yellow-400 rounded-lg py-1 px-2 mr-2 text-blue-800 text-md font-semibold flex flex-col justify-center content-center">
-      <span>{i}</span>
-    </div>
-  );
-
-  const renderPlaceholderCard = (): ReactNode => (
-    <>
-      <div className="block max-w-[12rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-slate-400 mr-2 flex-grow"></div>
-      <div className="block max-w-[14rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-slate-400 mr-2 flex-grow"></div>
-    </>
-  );
-
-  const renderCardTitle = (
-    text: string,
-    correct: boolean = true
-  ): ReactNode => (
-    <div className="flex justify-between">
-      <span>{text}</span>
-      <span>{correct ? "✅" : "❌"}</span>
-    </div>
-  );
-
-  const renderAnswerCard = (
-    title: string,
-    text: string,
-    backgroundClass: string,
-    widthRem: number,
-    correct: boolean
-  ): ReactNode => {
-    return (
-      <div
-        className={`block max-w-[${widthRem}rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-${backgroundClass} mr-2 flex-grow`}
-      >
-        <div className="p-2">
-          <h5 className="mb-1 text-md font-medium leading-tight text-neutral-50">
-            {renderCardTitle(title, correct)}
-          </h5>
-          <p className="text-sm leading-normal text-neutral-100">{text}</p>
-        </div>
-      </div>
-    );
   };
 
   const renderError = (): ReactNode => {
