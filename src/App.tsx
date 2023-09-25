@@ -1,9 +1,11 @@
 import { useState, ReactNode, SyntheticEvent } from "react";
 import music1 from "./assets/music-1.png";
-import ParsedGuess from "./parsedGuess";
+import { ComposerWork, parseGuess } from "./composerWork";
 
 function App() {
-  const [guesses, setGuesses] = useState<ParsedGuess[]>([]);
+  const MAX_GUESSES = 5;
+
+  const [guesses, setGuesses] = useState<ComposerWork[]>([]);
   const [currentGuess, setCurrentGuess] = useState("");
 
   const makeGuess = (e: SyntheticEvent | undefined) => {
@@ -12,7 +14,7 @@ function App() {
     }
 
     const guess = currentGuess.trim();
-    const parsedGuess = new ParsedGuess(guess);
+    const parsedGuess = parseGuess(guess);
     console.log();
 
     if (guesses.find((g) => g === parsedGuess)) {
@@ -20,32 +22,60 @@ function App() {
       return;
     }
     setGuesses([...guesses, parsedGuess]);
+    setCurrentGuess("");
   };
 
   const renderGuesses = (): ReactNode => {
-    return guesses.map((guess, i) => {
+    const guessItems = guesses.map((guess, i) => {
       return (
         <div key={i} className="flex justify-center">
-          <div className="bg-yellow-400 hover:bg-yellow-300 rounded-lg p-1 mr-2 my-1 text-blue-800 text-md font-semibold">
-            <span>{i + 100}</span>
-          </div>
+          {renderGuessNumber(i + 1)}
           {renderComposerCard(guess.composer)}
           {renderWorkCard(guess.work)}
         </div>
       );
     });
+
+    for (let i = 0; i < MAX_GUESSES - guesses.length; i++) {
+      // fill remainder with placeholders
+      guessItems.push(
+        <div key={i + guesses.length} className="flex justify-center">
+          {renderGuessNumber(i + guesses.length + 1)}
+          {renderPlaceholderCard()}
+        </div>
+      );
+    }
+
+    return guessItems;
   };
+
+  const renderGuessNumber = (i: number): ReactNode => (
+    <div className="bg-yellow-400 rounded-lg py-1 px-2 mr-2 my-1 text-blue-800 text-md font-semibold flex flex-col justify-center content-center">
+      <span>{i}</span>
+    </div>
+  );
+
+  const renderPlaceholderCard = (): ReactNode => (
+    <>
+      <div className="block max-w-[12rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-cyan-500 mr-2 flex-grow mb-2"></div>
+      <div className="block max-w-[14rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-cyan-500 mr-2 flex-grow mb-2"></div>
+    </>
+  );
+
+  const renderCardTitle = (text: string, correct: boolean = true): ReactNode => (
+    <div className="flex justify-between">
+      <span>{text}</span><span>{correct ? "✅" : "❌"}</span>
+    </div>
+  );
 
   const renderComposerCard = (text: string): ReactNode => {
     return (
-      <div className="block max-w-[18rem] rounded-lg bg-white text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-cyan-500 mr-2">
+      <div className="block max-w-[12rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-cyan-500 mr-2 flex-grow mb-2">
         <div className="p-2">
-          <h5 className="mb-1 text-md font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            Composer
+          <h5 className="mb-1 text-md font-medium leading-tight text-neutral-50">
+            {renderCardTitle("Composer")}
           </h5>
-          <p className="text-sm leading-normal text-neutral-600 dark:text-neutral-50">
-            {text}
-          </p>
+          <p className="text-sm leading-normal text-neutral-50">{text}</p>
         </div>
       </div>
     );
@@ -53,14 +83,12 @@ function App() {
 
   const renderWorkCard = (text: string): ReactNode => {
     return (
-      <div className="block max-w-[18rem] rounded-lg bg-white text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-indigo-500">
+      <div className="block max-w-[14rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-indigo-500 flex-grow mb-2">
         <div className="p-2">
-          <h5 className="mb-1 text-md font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            Work
+          <h5 className="mb-1 text-md font-medium leading-tight text-neutral-50">
+            {renderCardTitle("Work")}
           </h5>
-          <p className="text-sm leading-normal text-neutral-600 dark:text-neutral-50">
-            {text}
-          </p>
+          <p className="text-sm leading-normal text-neutral-50">{text}</p>
         </div>
       </div>
     );
