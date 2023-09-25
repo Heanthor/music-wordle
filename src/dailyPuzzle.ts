@@ -29,7 +29,7 @@ export const puzzles: DailyPuzzle[] = [
     puzzleDate: new Date("2023-09-24"),
     puzzleAnswer: new ComposerWork(
       "Frederic Chopin",
-      "Ballade No. 1 in G Minor"
+      "Ballade No. 1"
     ),
     compositionYear: 1835,
     sheetSource: sheet1,

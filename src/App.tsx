@@ -2,6 +2,9 @@ import { useState, ReactNode, SyntheticEvent } from "react";
 import { ComposerWork, parseGuess } from "./composerWork";
 import { puzzles } from "./dailyPuzzle";
 
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 function App() {
   const MAX_GUESSES = 5;
 
@@ -17,7 +20,6 @@ function App() {
 
     const guess = currentGuess.trim();
     const parsedGuess = parseGuess(guess);
-    console.log();
 
     if (guesses.find((g) => g === parsedGuess)) {
       alert("You already guessed that!");
@@ -28,7 +30,6 @@ function App() {
   };
 
   const composerCorrect = (guess: ComposerWork): boolean => guess.composer === currentPuzzle?.puzzleAnswer.composer;
-  const workCorrect = (guess: ComposerWork): boolean => guess.work === currentPuzzle?.puzzleAnswer.work;
 
   const renderGuesses = (): ReactNode => {
     const guessItems = guesses.map((guess, i) => {
@@ -36,7 +37,7 @@ function App() {
         <div key={i} className="flex justify-center items-stretch mb-2">
           {renderGuessNumber(i + 1)}
           {renderAnswerCard("Composer", guess.composer, "cyan-500", 12, composerCorrect(guess))}
-          {renderAnswerCard("Work", guess.composer, "indigo-500", 14, workCorrect(guess))}
+          {renderAnswerCard("Work", guess.work, "indigo-500", 14, currentPuzzle?.puzzleAnswer.matchWork(guess.work))}
         </div>
       );
     });
@@ -62,8 +63,8 @@ function App() {
 
   const renderPlaceholderCard = (): ReactNode => (
     <>
-      <div className="block max-w-[12rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-cyan-500 mr-2 flex-grow"></div>
-      <div className="block max-w-[14rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-cyan-500 mr-2 flex-grow"></div>
+      <div className="block max-w-[12rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-slate-400 mr-2 flex-grow"></div>
+      <div className="block max-w-[14rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-slate-400 mr-2 flex-grow"></div>
     </>
   );
 
@@ -93,19 +94,22 @@ function App() {
   return (
     <div className="min-h-screen bg-blue-900">
       <div className="container mx-auto text-center w-3/4">
-        <h1 className="text-2xl text-neutral-50">
+        <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
           Guess the composer and title of the following work:
         </h1>
         <div className="pb-4">
-          <img
-            className="mx-auto outline rounded-md"
-            src={currentPuzzle?.sheetSource}
-          />
+          <Zoom>
+            <img
+              className="mx-auto outline rounded-md"
+              src={currentPuzzle?.sheetSource}
+            />
+          </Zoom>
+
         </div>
-        <div className="bg-gray-300 p-2 rounded-sm shadow-sm">
-          <form className="mb-2" onSubmit={(e) => makeGuess(e)}>
+        <div className="bg-gray-300 p-2 rounded-sm shadow-md">
+          <form className="mb-2 flex justify-center" onSubmit={(e) => makeGuess(e)}>
             <input
-              className="mr-2 pl-1"
+              className="mr-2 pl-1 shrink w-2/3 md:w-1/4"
               type="text"
               id="guess-box"
               value={currentGuess}
@@ -115,7 +119,7 @@ function App() {
               className="px-2 py-1 font-semibold text-sm bg-cyan-500 text-neutral-50 rounded-full shadow-sm"
               onClick={(e) => makeGuess(e)}
             >
-              Guess
+              Guess!
             </button>
           </form>
 
