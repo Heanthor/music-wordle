@@ -12,7 +12,7 @@ export class ComposerWork {
   equals(other: ComposerWork): boolean {
     return (
       this.composer.toLowerCase() === other.composer.toLowerCase() &&
-      this.work.toLowerCase() === other.work.toLowerCase()
+      this.matchWork(other.work)
     );
   }
 
