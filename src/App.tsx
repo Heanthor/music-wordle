@@ -1,13 +1,12 @@
-import { useState, ReactNode, SyntheticEvent } from "react";
+import { useState, ReactNode } from "react";
 import { ComposerWork, parseGuess } from "./composerWork";
 import { puzzles } from "./dailyPuzzle";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import GuessRow from "./components/GuessRow";
 import PlaceholderRow from "./components/PlaceholderRow";
-import GuessRowContainer from "./components/GuessRowContainer";
 import GuessInput from "./components/GuessInput";
+import GuessRow from "./components/GuessRow";
 
 function App() {
   const MAX_GUESSES = 5;
@@ -18,7 +17,7 @@ function App() {
   const currentPuzzle = puzzles.slice(-1)[0];
 
   const makeGuess = (rawGuess: string) => {
-    console.log("makeGuess")
+    console.log("makeGuess");
 
     const guess = rawGuess.trim();
     if (guess.length === 0) {
@@ -49,38 +48,16 @@ function App() {
     setTimeout(() => setError(""), 2000);
   };
 
-  const composerCorrect = (guess: ComposerWork): boolean =>
-    guess.composer === currentPuzzle?.puzzleAnswer.composer;
-
   const renderGuesses = (): ReactNode => {
-    const guessItems = guesses.map((guess, i) => {
-      return (
-        <GuessRowContainer key={i + 1} rowNumber={i + 1}>
-          <GuessRow
-            title="Composer"
-            text={guess.composer}
-            backgroundClass="cyan-500"
-            widthRem={12}
-            correct={composerCorrect(guess)}
-          />
-          <GuessRow
-            title="Work"
-            text={guess.work}
-            backgroundClass="indigo-500"
-            widthRem={14}
-            correct={currentPuzzle?.puzzleAnswer.matchWork(guess.work)}
-          />
-        </GuessRowContainer>
-      )
-    });
+    const guessItems = guesses.map((guess, i) => (
+      <GuessRow key={i + 1} rowNumber={i + 1} guess={guess} />
+    ));
 
     for (let i = 0; i < MAX_GUESSES - guesses.length; i++) {
       // fill remainder with placeholders
       const rowNumber = i + guesses.length + 1;
       guessItems.push(
-        <GuessRowContainer key={rowNumber} rowNumber={rowNumber}>
-          <PlaceholderRow />
-        </GuessRowContainer>
+        <PlaceholderRow key={rowNumber} rowNumber={rowNumber} />
       );
     }
 

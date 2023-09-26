@@ -1,30 +1,31 @@
-import { ReactNode } from "react";
+import React from "react";
+import GuessRowContainer from "./GuessRowContainer";
+import GuessRowCard from "./GuessRowCard";
+import { ComposerWork } from "../composerWork";
+import { currentPuzzle } from "../dailyPuzzle";
 
-function GuessRow(props: { title: string, text: string, backgroundClass: string, widthRem: number, correct: boolean }) {
-    const { title, text, backgroundClass, widthRem, correct } = props;
-
-    const renderCardTitle = (
-        text: string,
-        correct: boolean = true
-    ): ReactNode => (
-        <div className="flex justify-between">
-            <span>{text}</span>
-            <span>{correct ? "✅" : "❌"}</span>
-        </div>
-    );
+function GuessRow({ rowNumber, guess }: { rowNumber: number, guess: ComposerWork }) {
+    const composerCorrect = (guess: ComposerWork): boolean =>
+        guess.composer === currentPuzzle?.puzzleAnswer.composer;
 
     return (
-        <div
-            className={`block max-w-[${widthRem}rem] rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-${backgroundClass} mr-2 flex-grow`}
-        >
-            <div className="p-2">
-                <h5 className="mb-1 text-md font-medium leading-tight text-neutral-50">
-                    {renderCardTitle(title, correct)}
-                </h5>
-                <p className="text-sm leading-normal text-neutral-100">{text}</p>
-            </div>
-        </div>
-    );
+        <GuessRowContainer rowNumber={rowNumber}>
+            <GuessRowCard
+                title="Composer"
+                text={guess.composer}
+                backgroundClass="cyan-500"
+                widthRem={12}
+                correct={composerCorrect(guess)}
+            />
+            <GuessRowCard
+                title="Work"
+                text={guess.work}
+                backgroundClass="indigo-500"
+                widthRem={14}
+                correct={currentPuzzle?.puzzleAnswer.matchWork(guess.work)}
+            />
+        </GuessRowContainer>
+    )
 }
 
 export default GuessRow;

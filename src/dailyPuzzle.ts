@@ -35,3 +35,5 @@ export const puzzles: DailyPuzzle[] = [
     sheetSource: sheet1,
   },
 ];
+
+export const currentPuzzle = puzzles.slice(-1)[0];
