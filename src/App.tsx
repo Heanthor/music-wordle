@@ -7,22 +7,20 @@ import "react-medium-image-zoom/dist/styles.css";
 import GuessRow from "./components/GuessRow";
 import PlaceholderRow from "./components/PlaceholderRow";
 import GuessRowContainer from "./components/GuessRowContainer";
+import GuessInput from "./components/GuessInput";
 
 function App() {
   const MAX_GUESSES = 5;
 
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
-  const [currentGuess, setCurrentGuess] = useState("");
   const [error, setError] = useState("");
 
   const currentPuzzle = puzzles.slice(-1)[0];
 
-  const makeGuess = (e: SyntheticEvent | undefined) => {
-    if (e) {
-      e.preventDefault();
-    }
+  const makeGuess = (rawGuess: string) => {
+    console.log("makeGuess")
 
-    const guess = currentGuess.trim();
+    const guess = rawGuess.trim();
     if (guess.length === 0) {
       return;
     }
@@ -44,7 +42,6 @@ function App() {
     }
 
     setGuesses([...guesses, parsedGuess]);
-    setCurrentGuess("");
   };
 
   const setErrorWithTimeout = (text: string): void => {
@@ -131,25 +128,7 @@ function App() {
           </Zoom>
         </div>
         <div className="bg-gray-300 p-2 rounded-sm shadow-md">
-          <form
-            className="mb-4 mt-2 md:mb-2 md:mt-0 flex justify-center"
-            onSubmit={(e) => makeGuess(e)}
-          >
-            <input
-              className="mr-2 pl-1 shrink w-2/3 md:w-1/4"
-              type="text"
-              id="guess-box"
-              value={currentGuess}
-              onChange={(e) => setCurrentGuess(e.target.value)}
-            />
-            <button
-              className="px-2 py-1 font-semibold text-sm bg-cyan-500 text-neutral-50 rounded-full shadow-sm"
-              onClick={(e) => makeGuess(e)}
-            >
-              Guess!
-            </button>
-          </form>
-
+          <GuessInput onSubmit={makeGuess} />
           {error && renderError()}
           {renderGuesses()}
         </div>
