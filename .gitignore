@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 venv
+parsed_composers.json

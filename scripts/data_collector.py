@@ -9,6 +9,21 @@ from bs4 import BeautifulSoup
 COMPOSERS_FILE = "composers.json"
 
 
+class InvalidWork(Exception):
+    pass
+
+
+@dataclass
+class ScrapedWork:
+    composer_firstname: str
+    composer_lastname: str
+    composer_fullname: str
+    work_title: str
+    composition_year: int
+    opus: str
+    opus_number: int
+
+
 def beethoven_opus(opus_number_str: str):
     if "/" in opus_number_str:
         # opus is the first part, number is the second
@@ -32,21 +47,41 @@ def mozart_opus(opus_number_str: str):
     return opus, num
 
 
+def brahms_opus(opus_number_str: str):
+    opus_number_str = opus_number_str.replace("Op.", "")
+    if "/" in opus_number_str:
+        opus, num = opus_number_str.split("/")
+    else:
+        opus = opus_number_str
+        num = -1
+
+    return opus.strip(), num
+
+
+def chopin_override(work_title: str) -> ScrapedWork | None:
+    if work_title == "E♭ major" or work_title == "G major":
+        # rowspan breaks the table for andante spinato
+        raise InvalidWork()
+    if work_title == "Andante spianato et Grande polonaise brillante":
+        return ScrapedWork(
+            composer_firstname="Frédéric",
+            composer_lastname="Chopin",
+            composer_fullname="Frédéric Chopin",
+            work_title="Andante spianato et Grande polonaise brillante",
+            composition_year=1834,
+            opus="22",
+            opus_number=-1,
+        )
+
+    return None
+
+
 config_by_composer = {
     "Ludwig van Beethoven": {"opus_func": beethoven_opus},
     "Wolfgang Amadeus Mozart": {"opus_func": mozart_opus},
+    "Frédéric Chopin": {"work_override": chopin_override},
+    "Johannes Brahms": {"opus_func": brahms_opus},
 }
-
-
-@dataclass
-class ScrapedWork:
-    composer_firstname: str
-    composer_lastname: str
-    composer_fullname: str
-    work_title: str
-    composition_year: int
-    opus: str
-    opus_number: int
 
 
 def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
@@ -55,6 +90,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
     works_table = soup.find("table", {"class": "wikitable sortable"})
     # loop over the tr elements inside the tbody
     first = True
+    opus_num = 0
     name_col = -1
     date_col = -1
     all_works = []
@@ -68,12 +104,14 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                     name_col = i
                 elif header.text.strip() == "Date":
                     date_col = i
+                elif header.text.strip() == "Opus":
+                    opus_num = i
             first = False
             continue
 
         tds = row.find_all("td")
         # delete display: none span from opus number
-        opus_number_td = tds[0]
+        opus_number_td = tds[opus_num]
         if opus_number_td.span:
             opus_number_td.span.decompose()
 
@@ -85,12 +123,31 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
         if len(tds) < name_col:
             print(f"Skipping empty row")
             continue
-        work_title = tds[name_col].text.strip()
+
         if opus_number_str == "—":
             # skip no opus number
-            print(f"Skipping no opus number: {work_title}")
+            print(f"Skipping no opus number")
             continue
 
+        work_title = tds[name_col].text.strip()
+        # process override if there are any
+        try:
+            work_override = config_by_composer[composer]["work_override"]
+            try:
+                work_override_result = work_override(work_title)
+                if work_override_result is not None:
+                    # replace whatever is in the table with handwritten result, then skip it
+                    all_works.append(work_override_result)
+                    continue
+            except InvalidWork:
+                # skip row entirely
+                continue
+        except KeyError:
+            pass
+
+        if work_title == "":
+            print(f"Skipping empty work title")
+            continue
         if "(" in work_title:
             # start grouping of works like Piano Trio (3)
             continue
@@ -127,6 +184,8 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             continue
         elif "," in date_str:
             date = date_str.split(",")[0]
+        elif "/" in date_str:
+            date = date_str.split("/")[0]
         else:
             date = date_str
 
@@ -140,6 +199,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
         date = (
             date.replace("?", "")
             .replace("c.", "")
+            .replace("ca.", "")
             .replace("after", "")
             .replace("before", "")
             .strip()
@@ -163,12 +223,14 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                 opus_number=int(num),
             )
         )
+    return all_works
 
 
-def parse_composer_imslp(composer: str):
+def parse_composer_imslp(composer: str) -> list[ScrapedWork]:
     url = f"https://imslp.org/wiki/List_of_works_by_{composer.replace(' ', '_')}"
+    print("Requesting IMSLP...")
     try_imslp = requests.get(url)
-
+    print("Got response.")
     status = try_imslp.status_code
     if status == 404:
         print(f"Composer not found: {composer}")
@@ -178,15 +240,22 @@ def parse_composer_imslp(composer: str):
         raise Exception(f"Status ({status}) loading page: {url}")
 
     print(f"Scraping IMSLP: {url}")
-    scrape_imslp_page(composer, try_imslp.text)
+    return scrape_imslp_page(composer, try_imslp.text)
 
 
-def parse_composer(composer: str):
-    parse_composer_imslp(composer)
+def parse_composer(composer: str) -> list[ScrapedWork] | None:
+    return parse_composer_imslp(composer)
 
 
 with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
+    output = {}
     for composer in composer_list:
-        parse_composer(composer)
+        works = parse_composer(composer)
+        if works is None:
+            continue
+        output[composer] = [w.__dict__ for w in works]
+    with open("parsed_composers.json", "w") as f:
+        f.write(json.dumps(output, indent=2))
+    print("Wrote output to parsed_composers.json")
