@@ -255,7 +255,21 @@ with open(COMPOSERS_FILE, "r") as f:
         works = parse_composer(composer)
         if works is None:
             continue
-        output[composer] = [w.__dict__ for w in works]
+        # output[composer] = [w.__dict__ for w in works]
+        output[composer] = {
+            "firstname": works[0].composer_firstname,
+            "lastname": works[0].composer_lastname,
+            "fullname": works[0].composer_fullname,
+            "works": [
+                {
+                    "work_title": w.work_title,
+                    "composition_year": w.composition_year,
+                    "opus": w.opus,
+                    "opus_number": w.opus_number,
+                }
+                for w in works
+            ],
+        }
     with open("parsed_composers.json", "w") as f:
         f.write(json.dumps(output, indent=2))
     print("Wrote output to parsed_composers.json")
