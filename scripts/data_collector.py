@@ -156,7 +156,6 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             # use custom function to parse opus number
             opus_func = config_by_composer[composer]["opus_func"]
             opus, num = opus_func(opus_number_str)
-            opus = int(opus)
             num = int(num)
         except KeyError:
             # fallback basic opus number handling
@@ -164,7 +163,6 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                 # opus is the first part, number is the second
                 opus, num = opus_number_str.split("/")
                 try:
-                    int(opus)
                     int(num)
                 except ValueError:
                     print(
@@ -250,26 +248,28 @@ def parse_composer(composer: str) -> list[ScrapedWork] | None:
 with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
-    output = {}
+    output = []
     for composer in composer_list:
         works = parse_composer(composer)
         if works is None:
             continue
-        # output[composer] = [w.__dict__ for w in works]
-        output[composer] = {
-            "firstname": works[0].composer_firstname,
-            "lastname": works[0].composer_lastname,
-            "fullname": works[0].composer_fullname,
-            "works": [
-                {
-                    "work_title": w.work_title,
-                    "composition_year": w.composition_year,
-                    "opus": w.opus,
-                    "opus_number": w.opus_number,
-                }
-                for w in works
-            ],
-        }
-    with open("parsed_composers.json", "w") as f:
+
+        output.append(
+            {
+                "firstname": works[0].composer_firstname,
+                "lastname": works[0].composer_lastname,
+                "fullname": works[0].composer_fullname,
+                "works": [
+                    {
+                        "work_title": w.work_title,
+                        "composition_year": w.composition_year,
+                        "opus": w.opus,
+                        "opus_number": w.opus_number,
+                    }
+                    for w in works
+                ],
+            }
+        )
+    with open("../src/assets/parsed_composers.json", "w") as f:
         f.write(json.dumps(output, indent=2))
     print("Wrote output to parsed_composers.json")
