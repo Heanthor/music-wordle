@@ -1,12 +1,18 @@
-import composers from "./assets/composers.json";
+import worksByComposer from "./assets/parsed_composers.json";
 
 export class ComposerWork {
   composer: string;
   work: string;
+  compositionYear: number;
+  opus: string | number;
+  opusNumber: number | undefined;
 
-  constructor(composer: string, work: string) {
+  constructor(composer: string, work: string, compositionYear: number, opus: string | number, opusNumber?: number) {
     this.composer = composer;
     this.work = work;
+    this.compositionYear = compositionYear;
+    this.opus = opus;
+    this.opusNumber = opusNumber;
   }
 
   equals(other: ComposerWork): boolean {
@@ -61,20 +67,11 @@ export class ComposerWork {
   }
 }
 
-export const parseGuess = (guess: string): ComposerWork => {
-  const tokens = guess.split(" ");
 
-  // for each word in guess, try to find the composer, and the piece
-  // if we find a composer, then the rest of the words are the title
-  for (const token of tokens) {
-    const composer = composers.find(
-      (composer) => composer.toLowerCase().indexOf(token.toLowerCase()) >= 0
-    );
-    if (composer) {
-      const work = tokens.slice(tokens.indexOf(token) + 1).join(" ");
-      return new ComposerWork(composer, work);
-    }
-  }
+export const getComposerWorkByID = (composerID: number, workID: number): ComposerWork => {
+  // TODO: brittle, just so happens the IDs the same order they are present in the document
+  const composer = worksByComposer[composerID];
+  const work = worksByComposer[composerID].works[workID];
 
-  return new ComposerWork("invalid", "invalid");
+  return new ComposerWork(composer.fullname, work.work_title, work.composition_year, work.opus, work.opus_number);
 };

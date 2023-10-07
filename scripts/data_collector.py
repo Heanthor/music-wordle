@@ -249,6 +249,7 @@ with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
     output = []
+    j = 0
     for composer in composer_list:
         works = parse_composer(composer)
         if works is None:
@@ -256,20 +257,23 @@ with open(COMPOSERS_FILE, "r") as f:
 
         output.append(
             {
+                "id": j,
                 "firstname": works[0].composer_firstname,
                 "lastname": works[0].composer_lastname,
                 "fullname": works[0].composer_fullname,
                 "works": [
                     {
+                        "id": i,
                         "work_title": w.work_title,
                         "composition_year": w.composition_year,
                         "opus": w.opus,
                         "opus_number": w.opus_number,
                     }
-                    for w in works
+                    for i, w in enumerate(works)
                 ],
             }
         )
+        j += 1
     with open("../src/assets/parsed_composers.json", "w") as f:
         f.write(json.dumps(output, indent=2))
     print("Wrote output to parsed_composers.json")

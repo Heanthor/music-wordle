@@ -1,5 +1,5 @@
 import { useState, ReactNode } from "react";
-import { ComposerWork, parseGuess } from "./composerWork";
+import { ComposerWork } from "./composerWork";
 import { puzzles } from "./dailyPuzzle";
 
 import Zoom from "react-medium-image-zoom";
@@ -7,13 +7,12 @@ import "react-medium-image-zoom/dist/styles.css";
 import PlaceholderRow from "./components/PlaceholderRow";
 import GuessInput from "./components/GuessInput";
 import GuessRow from "./components/GuessRow";
-import ConfettiExplosion from 'react-confetti-explosion';
-
+import ConfettiExplosion from "react-confetti-explosion";
 
 type GameState = "guessing" | "won" | "lost";
 
 function App() {
-  const MAX_GUESSES = 5;
+  const MAX_GUESSES = 6;
 
   const [gameState, setGameState] = useState<GameState>("guessing");
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
@@ -24,40 +23,26 @@ function App() {
   const checkGameState = (newGuesses: ComposerWork[]) => {
     // lil state machine
     const mostRecentGuess = newGuesses.slice(-1)[0];
-    if (mostRecentGuess.equals(currentPuzzle?.puzzleAnswer)) {
+    const puzzleAnswer = currentPuzzle?.puzzleAnswer;
+
+    if (mostRecentGuess.equals(puzzleAnswer)) {
       setGameState("won");
     } else if (newGuesses.length === MAX_GUESSES) {
       setGameState("lost");
     }
   };
 
-  const makeGuess = (rawGuess: string) => {
-    const guess = rawGuess.trim();
-    if (guess.length === 0) {
-      return;
-    }
-
+  const makeGuess = (composerWork: ComposerWork) => {
     if (gameState !== "guessing") {
       return;
     }
 
-    const parsedGuess = parseGuess(guess);
-    if (parsedGuess.composer === "invalid") {
-      setErrorWithTimeout("invalidComposer");
-      return;
-    }
-
-    if (parsedGuess.work === "invalid") {
-      setErrorWithTimeout("invalidWork");
-      return;
-    }
-
-    if (guesses.find((g) => g.equals(parsedGuess))) {
+    if (guesses.find((g) => g.equals(composerWork))) {
       setErrorWithTimeout("duplicateGuess");
       return;
     }
 
-    const newGuesses = [...guesses, parsedGuess];
+    const newGuesses = [...guesses, composerWork];
     setGuesses(newGuesses);
     checkGameState(newGuesses);
   };
@@ -75,9 +60,7 @@ function App() {
     for (let i = 0; i < MAX_GUESSES - guesses.length; i++) {
       // fill remainder with placeholders
       const rowNumber = i + guesses.length + 1;
-      guessItems.push(
-        <PlaceholderRow key={rowNumber} rowNumber={rowNumber} />
-      );
+      guessItems.push(<PlaceholderRow key={rowNumber} rowNumber={rowNumber} />);
     }
 
     return guessItems;
@@ -88,13 +71,6 @@ function App() {
     switch (error) {
       case "duplicateGuess":
         errorText = "You've already guessed that!";
-        break;
-      case "invalidComposer":
-        errorText =
-          "Could not find a composer with that name, try another spelling?";
-        break;
-      case "invalidWork":
-        errorText = "Could not find a work with that name.";
         break;
     }
     return (
@@ -112,12 +88,9 @@ function App() {
   const renderConfetti = () => {
     return (
       <div className="flex justify-center">
-        <ConfettiExplosion
-          particleCount={500}
-          duration={3000}
-        />
+        <ConfettiExplosion particleCount={500} duration={3000} />
       </div>
-    )
+    );
   };
 
   const renderGameEndMessage = () => {
@@ -126,17 +99,17 @@ function App() {
     }
 
     const messageState = {
-      "won": {
+      won: {
         text: "Congrats, you won!",
         background: "green-200",
         textColor: "green-700",
       },
-      "lost": {
+      lost: {
         text: "Sorry, try again next time!",
         background: "red-200",
         textColor: "red-700",
       },
-    }
+    };
 
     const params = messageState[gameState];
     return (
@@ -148,8 +121,8 @@ function App() {
           {params.text}
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <div className="min-h-screen bg-blue-900">
