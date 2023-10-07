@@ -6,10 +6,13 @@ function GuessRowContainer(props: { children: React.ReactNode, rowNumber: number
 
     return (
         <div key={rowNumber} className="flex justify-center mb-2">
-            <GuessNumberPill
-                rowNumber={rowNumber}
-            />
-            {children}
+            <div className="flex justify-between max-w-[32rem] flex-grow">
+                <GuessNumberPill
+                    rowNumber={rowNumber}
+                />
+                {children}
+            </div>
+
         </div>
     );
 }
