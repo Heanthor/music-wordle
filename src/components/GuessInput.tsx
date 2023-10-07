@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import Select from "react-select";
 import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork, getComposerWorkByID } from "./../composerWork";
+import { currentPuzzle } from "./../dailyPuzzle";
 
-function GuessInput({ onSubmit }: { onSubmit: (guess: ComposerWork) => void }) {
+type Props = {
+    onSubmit: (guess: ComposerWork) => void;
+};
+
+function GuessInput({ onSubmit }: Props) {
     const allComposerOptions = worksByComposer.map((composer) => {
         return {
             value: composer.id,
@@ -33,12 +38,15 @@ function GuessInput({ onSubmit }: { onSubmit: (guess: ComposerWork) => void }) {
         setSelectedOptions([]);
     }
 
+    const isComposerCorrect = (composer: string): boolean => composer === currentPuzzle.puzzleAnswer.composer;
+
     const onSelectChange = (option) => {
         if (option.length === 0) {
             resetToInitial();
             return;
         }
 
+        console.log(option);
         const composer = option[0].value;
         const workOptions = composerMap[composer];
         setCurrentOptions(workOptions);
@@ -55,8 +63,17 @@ function GuessInput({ onSubmit }: { onSubmit: (guess: ComposerWork) => void }) {
 
                 const composerID = selectedOptions[0].value;
                 const workID = selectedOptions[1].value;
-                onSubmit(getComposerWorkByID(composerID, workID));
-                resetToInitial();
+                const guess = getComposerWorkByID(composerID, workID);
+                onSubmit(guess);
+                if (isComposerCorrect(guess.composer)) {
+                    // set options back to works, and preserve the selected composer
+                    setSelectedOptions(selectedOptions[0]);
+
+                    const workOptions = composerMap[composerID];
+                    setCurrentOptions(workOptions);
+                } else {
+                    resetToInitial();
+                }
             }}
         >
             <Select
@@ -67,15 +84,9 @@ function GuessInput({ onSubmit }: { onSubmit: (guess: ComposerWork) => void }) {
                 className="w-3/4 md:w-2/3 mr-2"
                 value={selectedOptions}
             />
-            {/* <input
-                className="mr-2 pl-1 shrink w-2/3 md:w-1/4"
-                type="text"
-                id="guess-box"
-                value={currentGuess}
-                onChange={(e) => setCurrentGuess(e.target.value)}
-            /> */}
+
             <button
-                className="px-2 py-1 font-semibold text-sm bg-cyan-500 text-neutral-50 rounded-full shadow-sm"
+                className="px-2 py-1 font-semibold text-sm bg-cyan-500 text-neutral-50 rounded-lg md:rounded-full shadow-sm"
                 type="submit"
             >
                 Guess!

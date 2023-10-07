@@ -1,6 +1,6 @@
 import { useState, ReactNode } from "react";
 import { ComposerWork } from "./composerWork";
-import { puzzles } from "./dailyPuzzle";
+import { currentPuzzle } from "./dailyPuzzle";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -17,8 +17,6 @@ function App() {
   const [gameState, setGameState] = useState<GameState>("guessing");
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
   const [error, setError] = useState("");
-
-  const currentPuzzle = puzzles.slice(-1)[0];
 
   const checkGameState = (newGuesses: ComposerWork[]) => {
     // lil state machine
