@@ -32,6 +32,7 @@ function GuessInput({ onSubmit }: Props) {
 
     const [currentOptions, setCurrentOptions] = useState(allComposerOptions);
     const [selectedOptions, setSelectedOptions] = useState([]);
+    const [placeholderText, setPlaceholderText] = useState("Enter composer...");
 
     const resetToInitial = () => {
         setCurrentOptions(allComposerOptions);
@@ -65,7 +66,11 @@ function GuessInput({ onSubmit }: Props) {
                 const workID = selectedOptions[1].value;
                 const guess = getComposerWorkByID(composerID, workID);
                 onSubmit(guess);
-                if (isComposerCorrect(guess.composer)) {
+                if (guess.equals(currentPuzzle.puzzleAnswer)) {
+                    // game is over, clear out the box
+                    resetToInitial();
+                    setPlaceholderText("");
+                } else if (isComposerCorrect(guess.composer)) {
                     // set options back to works, and preserve the selected composer
                     setSelectedOptions(selectedOptions[0]);
 
@@ -80,7 +85,7 @@ function GuessInput({ onSubmit }: Props) {
                 options={currentOptions}
                 onChange={onSelectChange}
                 isMulti
-                placeholder="Enter composer..."
+                placeholder={placeholderText}
                 className="w-3/4 md:w-2/3 mr-2"
                 value={selectedOptions}
             />
