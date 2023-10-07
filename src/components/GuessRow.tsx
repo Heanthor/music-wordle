@@ -3,10 +3,16 @@ import GuessRowContainer from "./GuessRowContainer";
 import GuessRowCard from "./GuessRowCard";
 import { ComposerWork } from "../composerWork";
 import { currentPuzzle } from "../dailyPuzzle";
+import GuessDateIndicator from "./GuessDateIndicator";
+import { getYearRangesByComposerId } from "../composerWork";
 
 function GuessRow({ rowNumber, guess }: { rowNumber: number, guess: ComposerWork }) {
+    const { puzzleAnswer } = currentPuzzle;
+
     const composerCorrect = (guess: ComposerWork): boolean =>
-        guess.composer === currentPuzzle?.puzzleAnswer.composer;
+        guess.composer === puzzleAnswer.composer;
+
+    const yearRange = getYearRangesByComposerId()[puzzleAnswer.composer];
 
     return (
         <GuessRowContainer rowNumber={rowNumber}>
@@ -22,8 +28,9 @@ function GuessRow({ rowNumber, guess }: { rowNumber: number, guess: ComposerWork
                 text={guess.work}
                 backgroundClass="indigo-500"
                 widthRem={14}
-                correct={currentPuzzle?.puzzleAnswer.matchWork(guess.work)}
+                correct={puzzleAnswer.matchWork(guess.work)}
             />
+            <GuessDateIndicator guessYear={guess.compositionYear} targetYear={puzzleAnswer.compositionYear} composerCareerLength={yearRange} />
         </GuessRowContainer>
     )
 }

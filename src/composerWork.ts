@@ -7,7 +7,13 @@ export class ComposerWork {
   opus: string | number;
   opusNumber: number | undefined;
 
-  constructor(composer: string, work: string, compositionYear: number, opus: string | number, opusNumber?: number) {
+  constructor(
+    composer: string,
+    work: string,
+    compositionYear: number,
+    opus: string | number,
+    opusNumber?: number
+  ) {
     this.composer = composer;
     this.work = work;
     this.compositionYear = compositionYear;
@@ -35,7 +41,10 @@ export class ComposerWork {
           const t1 = t.toLowerCase();
 
           // drop identifiers appended to a number
-          if ((t1.startsWith("k") || t1.startsWith("h")) && t1.substring(1).match(/^\d+$/)) {
+          if (
+            (t1.startsWith("k") || t1.startsWith("h")) &&
+            t1.substring(1).match(/^\d+$/)
+          ) {
             return t1.substring(1);
           } else if (t1.startsWith("bwv")) {
             return t1.substring(3);
@@ -61,17 +70,46 @@ export class ComposerWork {
     }
 
     const score = numMatches / answerTokens.length;
-    console.log(`Guess: ${guess}, Answer: ${this.work}, Score: ${score} (${numMatches}/${answerTokens.length})`);
+    console.log(
+      `Guess: ${guess}, Answer: ${this.work}, Score: ${score} (${numMatches}/${answerTokens.length})`
+    );
 
     return score >= correctnessThreshold;
   }
 }
 
-
-export const getComposerWorkByID = (composerID: number, workID: number): ComposerWork => {
+export const getComposerWorkByID = (
+  composerID: number,
+  workID: number
+): ComposerWork => {
   // TODO: brittle, just so happens the IDs the same order they are present in the document
   const composer = worksByComposer[composerID];
   const work = worksByComposer[composerID].works[workID];
 
-  return new ComposerWork(composer.fullname, work.work_title, work.composition_year, work.opus, work.opus_number);
+  return new ComposerWork(
+    composer.fullname,
+    work.work_title,
+    work.composition_year,
+    work.opus,
+    work.opus_number
+  );
+};
+
+
+const careerLengthByComposer: {[composerName: string]: number} = {};
+
+export const getYearRangesByComposerId = (): {[composerName: string]: number} => {
+  if (Object.keys(careerLengthByComposer).length === 0) {
+    for (const composer of worksByComposer) {
+      const works = composer.works;
+      const years = works.map((w) => w.composition_year);
+      const minYear = Math.min(...years);
+      const maxYear = Math.max(...years);
+
+      careerLengthByComposer[composer.fullname] = maxYear - minYear;
+    }
+  }
+
+  console.log(careerLengthByComposer);
+  return careerLengthByComposer;
 };
