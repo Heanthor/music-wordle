@@ -13,13 +13,31 @@ function WorkCard(props: Props) {
 
     const correct = puzzleAnswer.equals(guess);
 
+    const renderHint = (): string => {
+        const dateDiff = Math.abs(guess.compositionYear - puzzleAnswer.compositionYear);
+        let bigDiff = false;
+        if (dateDiff / yearRange > 0.3) {
+            bigDiff = true;
+        }
+        if (guess.compositionYear < puzzleAnswer.compositionYear) {
+            return bigDiff ? "Composed much earlier" : "Composed earlier";
+        } else if (guess.compositionYear > puzzleAnswer.compositionYear) {
+            return bigDiff ? "Composed much later" : "Composed later";
+        } else {
+            return "Composed same year!"
+        }
+    };
+
     const renderCardTitle = (
         text: string,
         correct: boolean = true
     ): ReactNode => (
         <div className="flex justify-between">
             <span>{text}</span>
-            <span>{correct ? "✅" : "❌"}</span>
+            <div className="inline">
+                <span className="text-xs md:text-sm font-light mr-1 text-neutral-300">{renderHint()}</span>
+                <span>{correct ? "✅" : "❌"}</span>
+            </div>
         </div>
     );
 
@@ -27,9 +45,9 @@ function WorkCard(props: Props) {
 
     return (
         <div
-            className={`block min-w-[14rem] flex-grow rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-indigo-500 mr-2`}
+            className={`block min-w-[14rem] h-full flex-grow rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-indigo-500`}
         >
-            <div className="p-2">
+            <div className="flex flex-col justify-between p-2 h-full">
                 <h5 className="mb-1 text-sm md:text-base font-medium leading-tight text-neutral-50">
                     {renderCardTitle("Work", correct)}
                 </h5>
