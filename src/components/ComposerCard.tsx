@@ -6,7 +6,7 @@ type Props = {
     guess: ComposerWork;
 };
 
-function GuessRowCard(props: Props) {
+function ComposerCard(props: Props) {
     const { guess } = props;
     const { puzzleAnswer } = currentPuzzle;
 
@@ -39,4 +39,4 @@ function GuessRowCard(props: Props) {
     );
 }
 
-export default GuessRowCard;
+export default ComposerCard;
