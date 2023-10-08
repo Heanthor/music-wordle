@@ -45,7 +45,7 @@ function WorkCard(props: Props) {
 
     return (
         <div
-            className={`block min-w-[14rem] h-full flex-grow rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-indigo-500`}
+            className={`block min-w-[14rem] h-full flex-grow rounded-lg text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-indigo-500 border-solid border-2 border-indigo-400`}
         >
             <div className="flex flex-col justify-between p-2 h-full">
                 <h5 className="mb-1 text-sm md:text-base font-medium leading-tight text-neutral-50">
