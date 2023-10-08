@@ -14,6 +14,7 @@ function Header() {
                     id="dropdownMenuButton2"
                     aria-expanded="false"
                     onClick={() => setDropdownOpen(!dropdownOpen)}
+                    onBlur={() => setDropdownOpen(!dropdownOpen)}
                 >
                     Select music
                     <span className="ml-2 w-2">

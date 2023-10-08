@@ -1,5 +1,6 @@
-import { useState } from "react";
-import Select, { ActionMeta, OnChangeValue, StylesConfig, createFilter } from "react-select";
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import React, { useState } from "react";
+import Select, { ActionMeta, OnChangeValue, StylesConfig, createFilter, components, ValueContainerProps } from "react-select";
 import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork, getComposerWorkByID } from "./../composerWork";
 import { currentPuzzle } from "./../dailyPuzzle";
@@ -18,6 +19,23 @@ type ChoiceOption = {
 function hasKey<O extends object>(obj: O, key: PropertyKey): key is keyof O {
     return key in obj;
 }
+
+// persist Placeholder text in input box
+// this is very hacky and ignores type errors, but it seems to work?
+const ValueContainer = ({
+    children,
+    ...props
+}: ValueContainerProps<ChoiceOption>) => (
+    <components.ValueContainer {...props}>
+        {/* @ts-ignore */}
+        {React.Children.map(children, child => child && child.type !== components.Placeholder ? child : null
+        )}
+        {/* @ts-ignore */}
+        <components.Placeholder {...props} isFocused={props.isFocused}>
+            {props.selectProps.placeholder}
+        </components.Placeholder>
+    </components.ValueContainer>
+);
 
 function GuessInput({ onSubmit }: Props) {
     const renderWorkChoiceLine = (work: ComposerWork, composerID: number): string => {
@@ -53,13 +71,16 @@ function GuessInput({ onSubmit }: Props) {
         });
     }
 
+    const defaultPlaceholderText = "Enter composer...";
+
     const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(allComposerOptions);
     const [selectedOptions, setSelectedOptions] = useState<readonly ChoiceOption[]>([]);
-    const [placeholderText, setPlaceholderText] = useState("Enter composer...");
+    const [placeholderText, setPlaceholderText] = useState(defaultPlaceholderText);
 
     const resetToInitial = () => {
         setCurrentOptions(allComposerOptions);
         setSelectedOptions([]);
+        setPlaceholderText(defaultPlaceholderText);
     }
 
     const orderOptions = (values: readonly ChoiceOption[]) => {
@@ -71,18 +92,6 @@ function GuessInput({ onSubmit }: Props) {
     const isComposerCorrect = (composer: string): boolean => composer === currentPuzzle.puzzleAnswer.composer;
 
     const onSelectChange = (option: OnChangeValue<ChoiceOption, true>, actionMeta: ActionMeta<ChoiceOption>) => {
-        if (option.length === 0) {
-            resetToInitial();
-            return;
-        }
-
-        const newOption = [...option];
-        if (option.length === 3) {
-            // if we've selected more than two values, replace the old work with the current
-            newOption[1] = option[2];
-            newOption.pop();
-        }
-
         switch (actionMeta.action) {
             case 'remove-value':
             case 'pop-value':
@@ -90,6 +99,25 @@ function GuessInput({ onSubmit }: Props) {
                     return;
                 }
                 break;
+        }
+
+        if (option.length === 0) {
+            resetToInitial();
+            return;
+        }
+
+        const newOption = [...option];
+        if (newOption.length === 3) {
+            // if we've selected more than two values, replace the old work with the current
+            newOption[1] = option[2];
+            newOption.pop();
+        }
+
+        if (newOption.length === 1) {
+            // only a composer is selected
+            setPlaceholderText("Select a work...");
+        } else if (newOption.length === 2) {
+            setPlaceholderText("");
         }
 
         const composer = newOption[0].value;
@@ -110,6 +138,9 @@ function GuessInput({ onSubmit }: Props) {
         multiValueRemove: (base, state) => {
             return state.data.isFixed ? { ...base, display: 'none' } : base;
         },
+        input: (base) => {
+            return { ...base, flexGrow: 0 };
+        }
     };
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -157,6 +188,7 @@ function GuessInput({ onSubmit }: Props) {
                 isClearable={false}
                 styles={styles}
                 filterOption={createFilter({ stringify: customStringify })}
+                components={{ ValueContainer }}
             />
             <button
                 className="px-2 py-1 font-semibold text-sm bg-cyan-500 border-solid border-2 border-sky-700 text-neutral-50 rounded-lg md:rounded-lg shadow-sm w-full md:w-auto md:py-2 hover:bg-sky-600"
