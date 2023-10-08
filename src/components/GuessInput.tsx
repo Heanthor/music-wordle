@@ -76,6 +76,13 @@ function GuessInput({ onSubmit }: Props) {
             return;
         }
 
+        const newOption = [...option];
+        if (option.length === 3) {
+            // if we've selected more than two values, replace the old work with the current
+            newOption[1] = option[2];
+            newOption.pop();
+        }
+
         switch (actionMeta.action) {
             case 'remove-value':
             case 'pop-value':
@@ -85,10 +92,10 @@ function GuessInput({ onSubmit }: Props) {
                 break;
         }
 
-        const composer = option[0].value;
+        const composer = newOption[0].value;
         const workOptions = composerMap[composer];
         setCurrentOptions(workOptions);
-        setSelectedOptions(orderOptions(option));
+        setSelectedOptions(orderOptions(newOption));
     };
 
     const styles: StylesConfig<ChoiceOption, true> = {
@@ -107,12 +114,15 @@ function GuessInput({ onSubmit }: Props) {
 
     return (
         <form
-            className="mb-4 mt-2 md:mb-2 md:mt-0 flex justify-center"
+            className="md:mt-0 flex justify-center flex-col md:flex-row items-center"
             onSubmit={(e) => {
                 if (e) {
                     e.preventDefault();
                 }
 
+                if (selectedOptions.length !== 2) {
+                    return;
+                }
                 const composerID = selectedOptions[0].value;
                 const workID = selectedOptions[1].value;
                 const guess = getComposerWorkByID(composerID, workID);
@@ -139,14 +149,13 @@ function GuessInput({ onSubmit }: Props) {
                 onChange={onSelectChange}
                 isMulti
                 placeholder={placeholderText}
-                className="w-3/4 md:w-2/3 mr-2"
+                className="w-full md:w-2/3 mr-0 md:mr-2 mb-2 md:mb-0"
                 value={selectedOptions}
                 isClearable={false}
                 styles={styles}
             />
-
             <button
-                className="px-2 py-1 font-semibold text-sm bg-cyan-500 text-neutral-50 rounded-lg md:rounded-full shadow-sm"
+                className="px-2 py-1 font-semibold text-sm bg-cyan-500 border-solid border-2 border-sky-700 text-neutral-50 rounded-lg md:rounded-lg shadow-sm w-full md:w-auto md:py-2 hover:bg-sky-600"
                 type="submit"
             >
                 Guess!

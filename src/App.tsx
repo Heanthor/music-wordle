@@ -100,13 +100,13 @@ function App() {
     const messageState = {
       won: {
         text: "Congrats, you won!",
-        background: "green-200",
-        textColor: "green-700",
+        background: "bg-green-200",
+        textColor: "bg-green-700",
       },
       lost: {
         text: "Sorry, try again next time!",
-        background: "red-200",
-        textColor: "red-700",
+        background: "bg-red-200",
+        textColor: "bg-red-700",
       },
     };
 
@@ -114,7 +114,7 @@ function App() {
     return (
       <div className="flex justify-center">
         <div
-          className={`w-4/5 md:w-1/2 mb-4 rounded-lg bg-${params.background} px-2 py-1 md:px-6 md:py-5 text-base text-${params.textColor}}`}
+          className={`w-4/5 md:w-1/2 mb-4 rounded-lg ${params.background} px-2 py-1 md:px-6 md:py-5 text-base text-${params.textColor}}`}
           role="alert"
         >
           {params.text}
@@ -139,10 +139,12 @@ function App() {
             />
           </Zoom>
         </div>
-        <div className="bg-gray-300 p-2 rounded-sm shadow-md">
+        <div className="bg-gray-300 p-2 rounded-sm shadow-md mb-4">
           {renderGameEndMessage()}
           <GuessInput onSubmit={makeGuess} />
           {error && renderError()}
+        </div>
+        <div className="bg-gray-300 p-2 rounded-sm shadow-md">
           {renderGuesses()}
         </div>
       </div>

@@ -43,7 +43,7 @@ function GuessDateIndicator({ guessYear, targetYear, composerCareerLength }: Pro
     };
 
     return (
-        <div className={`${guessDiffToColor()} w-[2rem] rounded-lg py-1 px-2 mr-2 text-blue-800 font-semibold flex flex-col justify-center content-center`}>
+        <div className={`${guessDiffToColor()} w-[2rem] rounded-lg py-1 px-2 text-blue-800 font-semibold flex flex-col justify-center content-center`}>
             <span>{getArrow()}</span>
         </div>
     )
