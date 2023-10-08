@@ -3,6 +3,8 @@ import { ComposerWork, getComposerWorkByID } from "./composerWork";
 import sheet1 from "./assets/music-1.png";
 import sheet2 from "./assets/music-2.png";
 
+export type PuzzleCategory = "Piano" | "Violin" | "Cello" | "Orchestral";
+
 export class DailyPuzzle {
   puzzleNumber: number;
   puzzleDate: Date;

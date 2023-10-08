@@ -1,7 +1,28 @@
 import { useState } from "react";
+import { PuzzleCategory } from "../dailyPuzzle";
 
-function Header() {
+type Props = {
+    puzzleCategory: PuzzleCategory,
+    setPuzzleCategory: (category: PuzzleCategory) => void,
+};
+
+function Header(props: Props) {
+    const { puzzleCategory, setPuzzleCategory } = props;
     const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const renderDropdownOptions = () => {
+        return ["Piano", "Violin", "Cello", "Orchestral"].map((category, i) => {
+            const backgroundClass = puzzleCategory.toLowerCase() === category.toLowerCase() ? "bg-neutral-500" : "bg-transparent";
+
+            return (<li key={i}>
+                <a
+                    className={`block w-full whitespace-nowrap ${backgroundClass} px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600`}
+                    onClick={() => setPuzzleCategory(category as PuzzleCategory)}
+                >{category}</a>
+            </li>
+            );
+        });
+    }
 
     const renderDropdown = () => {
         const displayClass = dropdownOpen ? "block" : "hidden";
@@ -16,7 +37,7 @@ function Header() {
                     onClick={() => setDropdownOpen(!dropdownOpen)}
                     onBlur={() => setDropdownOpen(!dropdownOpen)}
                 >
-                    Select music
+                    {puzzleCategory}
                     <span className="ml-2 w-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -34,28 +55,12 @@ function Header() {
                     className={`${displayClass} absolute z-[1000] m-0 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block`}
                     aria-labelledby="dropdownMenuButton2"
                 >
-                    <li>
-                        <a
-                            className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                            href="#"
-                        >Piano</a>
-                    </li>
-                    <li>
-                        <a
-                            className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                            href="#"
-                        >Violin</a>
-                    </li>
-                    <li>
-                        <a
-                            className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                            href="#"
-                        >Orchestral</a>
-                    </li>
+                    {renderDropdownOptions()}
                 </ul>
             </div>
         )
     };
+
     return (
         <nav
             className="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600"
@@ -65,7 +70,6 @@ function Header() {
                     <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
                     >Musicdle</a>
                 </div>
-                {/* <!-- Dropdown --> */}
                 {renderDropdown()}
             </div>
         </nav>

@@ -1,6 +1,6 @@
 import { useState, ReactNode } from "react";
 import { ComposerWork } from "./composerWork";
-import { currentPuzzle } from "./dailyPuzzle";
+import { PuzzleCategory, currentPuzzle } from "./dailyPuzzle";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -15,6 +15,7 @@ type GameState = "guessing" | "won" | "lost";
 function App() {
   const MAX_GUESSES = 6;
 
+  const [puzzleCategory, setPuzzleCategory] = useState<PuzzleCategory>("Piano");
   const [gameState, setGameState] = useState<GameState>("guessing");
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
   const [error, setError] = useState("");
@@ -125,7 +126,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-blue-900">
-      <Header />
+      <Header puzzleCategory={puzzleCategory} setPuzzleCategory={setPuzzleCategory} />
       <div className="container mx-auto text-center w-3/4">
         {gameState === "won" && renderConfetti()}
         <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
