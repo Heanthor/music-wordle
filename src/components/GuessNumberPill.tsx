@@ -1,5 +1,3 @@
-import React from "react";
-
 function GuessNumberPill(props: { rowNumber: number }) {
     const { rowNumber } = props;
     return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Select, { ActionMeta, OnChangeValue, StylesConfig } from "react-select";
 import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork, getComposerWorkByID } from "./../composerWork";

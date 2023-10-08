@@ -1,6 +1,6 @@
 import { ComposerWork, getComposerWorkByID } from "./composerWork";
+// TODO load these images from a CDN instead
 import sheet1 from "./assets/music-1.png";
-
 
 export class DailyPuzzle {
   puzzleNumber: number;

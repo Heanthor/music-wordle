@@ -8,6 +8,7 @@ import PlaceholderRow from "./components/PlaceholderRow";
 import GuessInput from "./components/GuessInput";
 import GuessRow from "./components/GuessRow";
 import ConfettiExplosion from "react-confetti-explosion";
+import Header from "./components/Header";
 
 type GameState = "guessing" | "won" | "lost";
 
@@ -124,6 +125,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-blue-900">
+      <Header />
       <div className="container mx-auto text-center w-3/4">
         {gameState === "won" && renderConfetti()}
         <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
