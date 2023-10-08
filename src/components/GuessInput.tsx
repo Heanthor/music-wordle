@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Select, { ActionMeta, OnChangeValue, StylesConfig } from "react-select";
+import Select, { ActionMeta, OnChangeValue, StylesConfig, createFilter } from "react-select";
 import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork, getComposerWorkByID } from "./../composerWork";
 import { currentPuzzle } from "./../dailyPuzzle";
@@ -112,6 +112,9 @@ function GuessInput({ onSubmit }: Props) {
         },
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const customStringify = (option: any) => `${option.label}`;
+
     return (
         <form
             className="md:mt-0 flex justify-center flex-col md:flex-row items-center"
@@ -149,10 +152,11 @@ function GuessInput({ onSubmit }: Props) {
                 onChange={onSelectChange}
                 isMulti
                 placeholder={placeholderText}
-                className="w-full md:w-2/3 mr-0 md:mr-2 mb-2 md:mb-0"
+                className="w-full md:max-w-[38rem] mr-0 md:mr-2 mb-2 md:mb-0 rounded-lg border-solid border-2 border-sky-700"
                 value={selectedOptions}
                 isClearable={false}
                 styles={styles}
+                filterOption={createFilter({ stringify: customStringify })}
             />
             <button
                 className="px-2 py-1 font-semibold text-sm bg-cyan-500 border-solid border-2 border-sky-700 text-neutral-50 rounded-lg md:rounded-lg shadow-sm w-full md:w-auto md:py-2 hover:bg-sky-600"

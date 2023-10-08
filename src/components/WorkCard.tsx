@@ -11,9 +11,16 @@ function WorkCard(props: Props) {
     const { puzzleAnswer } = currentPuzzle;
     const yearRange = getYearRangesByComposerId()[puzzleAnswer.composer];
 
+    const composerCorrect = (guess: ComposerWork): boolean =>
+        guess.composer === puzzleAnswer.composer;
     const correct = puzzleAnswer.equals(guess);
 
-    const renderHint = (): string => {
+    const renderHint = (): string | null => {
+        if (!composerCorrect(guess) || (composerCorrect(guess) && correct)) {
+            // don't render hint if the composer is wrong, or if you win the game
+            return null;
+        }
+
         const dateDiff = Math.abs(guess.compositionYear - puzzleAnswer.compositionYear);
         let bigDiff = false;
         if (dateDiff / yearRange > 0.3) {

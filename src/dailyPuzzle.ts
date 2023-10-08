@@ -1,6 +1,7 @@
 import { ComposerWork, getComposerWorkByID } from "./composerWork";
 // TODO load these images from a CDN instead
 import sheet1 from "./assets/music-1.png";
+import sheet2 from "./assets/music-2.png";
 
 export class DailyPuzzle {
   puzzleNumber: number;
@@ -28,6 +29,13 @@ export const puzzles: DailyPuzzle[] = [
     // chopin ballade no. 1
     puzzleAnswer: getComposerWorkByID(4, 35),
     sheetSource: sheet1,
+  },
+  {
+    puzzleNumber: 2,
+    puzzleDate: new Date("2023-10-07"),
+    // bach cello suite 1
+    puzzleAnswer: getComposerWorkByID(2, 650),
+    sheetSource: sheet2,
   },
 ];
 
