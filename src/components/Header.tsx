@@ -24,11 +24,10 @@ function Header(props: Props) {
         });
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const renderDropdown = () => {
         const displayClass = dropdownOpen ? "block" : "hidden";
         return (
-            <div className="relative ml-2 mr-0 md:mr-4">
+            <div className="relative ml-2 mr-0 md:mr-4 hidden">
                 <a
                     className="flex items-center px-6 pb-2 pt-2.5 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                     href="#"
@@ -71,7 +70,7 @@ function Header(props: Props) {
                     <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
                     >Musicdle</a>
                 </div>
-                {/* {renderDropdown()} */}
+                {renderDropdown()}
             </div>
         </nav>
     );
