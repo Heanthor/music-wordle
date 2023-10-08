@@ -24,6 +24,7 @@ function Header(props: Props) {
         });
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const renderDropdown = () => {
         const displayClass = dropdownOpen ? "block" : "hidden";
         return (
@@ -70,7 +71,7 @@ function Header(props: Props) {
                     <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
                     >Musicdle</a>
                 </div>
-                {renderDropdown()}
+                {/* {renderDropdown()} */}
             </div>
         </nav>
     );
