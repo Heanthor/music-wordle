@@ -191,10 +191,10 @@ function GuessInput({ onSubmit }: Props) {
                 components={{ ValueContainer }}
             />
             <button
-                className="px-2 py-1 font-semibold text-sm bg-cyan-500 border-solid border-2 border-sky-700 text-neutral-50 rounded-lg md:rounded-lg shadow-sm w-full md:w-auto md:py-2 hover:bg-sky-600"
+                className="px-2 py-1 font-semibold text-sm bg-cyan-500 border-solid border-2 border-sky-700 text-neutral-50 rounded-lg md:rounded-lg shadow-sm w-full md:w-auto md:py-2 hover:bg-sky-600 align-middle"
                 type="submit"
             >
-                Guess!
+                <span>Guess!</span>
             </button>
         </form>
     );

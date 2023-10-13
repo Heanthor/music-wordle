@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PuzzleCategory } from "../dailyPuzzle";
+import eighthNote from "../assets/8thNote.svg";
 
 type Props = {
     puzzleCategory: PuzzleCategory,
@@ -68,7 +69,10 @@ function Header(props: Props) {
             <div className="flex w-full flex-wrap items-center justify-between px-3">
                 <div className="ml-2">
                     <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
-                    >Musicdle</a>
+                    >
+                        <span>Musicdle</span>
+                        <img src={eighthNote} className="inline h-6 pb-[3px] w-6" />
+                    </a>
                 </div>
                 {renderDropdown()}
             </div>
