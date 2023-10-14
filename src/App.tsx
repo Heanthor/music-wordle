@@ -10,12 +10,14 @@ import GuessRow from "./components/GuessRow";
 import ConfettiExplosion from "react-confetti-explosion";
 import Header from "./components/Header";
 
+import { useLoaderData } from "react-router-dom";
+
 type GameState = "guessing" | "won" | "lost";
 
 function App() {
   const MAX_GUESSES = 6;
 
-  const [puzzleCategory, setPuzzleCategory] = useState<PuzzleCategory>("Piano");
+  const puzzleCategoryData = useLoaderData() as PuzzleCategory;
   const [gameState, setGameState] = useState<GameState>("guessing");
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
   const [error, setError] = useState("");
@@ -126,7 +128,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-blue-900">
-      <Header puzzleCategory={puzzleCategory} setPuzzleCategory={setPuzzleCategory} />
+      <Header puzzleCategory={puzzleCategoryData} />
       <div className="container mx-auto text-center w-3/4">
         {gameState === "won" && renderConfetti()}
         <h1 className="text-xl md:text-2xl text-neutral-50 py-4">

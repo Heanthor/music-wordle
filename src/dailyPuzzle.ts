@@ -5,6 +5,13 @@ import sheet2 from "./assets/music-2.png";
 
 export type PuzzleCategory = "Piano" | "Violin" | "Cello" | "Orchestral";
 
+export const puzzleCategories: PuzzleCategory[] = [
+    "Piano",
+    "Violin",
+    "Cello",
+    "Orchestral",
+]
+
 export class DailyPuzzle {
   puzzleNumber: number;
   puzzleDate: Date;
