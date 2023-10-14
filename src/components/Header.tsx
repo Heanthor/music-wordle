@@ -12,14 +12,19 @@ function Header(props: Props) {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const renderDropdownOptions = () => {
-        return ["Piano", "Violin", "Cello", "Orchestral"].map((category, i) => {
+        const categories: PuzzleCategory[] = ["Piano", "Violin", "Cello", "Orchestral"];
+        return categories.map((category, i) => {
             const backgroundClass = puzzleCategory.toLowerCase() === category.toLowerCase() ? "bg-neutral-500" : "bg-transparent";
 
             return (<li key={i}>
-                <a
-                    className={`block w-full whitespace-nowrap ${backgroundClass} px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600`}
-                    onClick={() => setPuzzleCategory(category as PuzzleCategory)}
-                >{category}</a>
+                <span
+                    className={`block w-full whitespace-nowrap ${backgroundClass} px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600 cursor-pointer`}
+                    onClick={() => {
+                        setPuzzleCategory(category as PuzzleCategory)
+                        setDropdownOpen(!dropdownOpen)
+                    }
+                    }
+                >{category}</span>
             </li>
             );
         });
@@ -28,7 +33,7 @@ function Header(props: Props) {
     const renderDropdown = () => {
         const displayClass = dropdownOpen ? "block" : "hidden";
         return (
-            <div className="relative ml-2 mr-0 md:mr-4 hidden">
+            <div className="relative ml-2 mr-0 md:mr-4">
                 <a
                     className="flex items-center px-6 pb-2 pt-2.5 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                     href="#"
@@ -36,7 +41,11 @@ function Header(props: Props) {
                     id="dropdownMenuButton2"
                     aria-expanded="false"
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    onBlur={() => setDropdownOpen(!dropdownOpen)}
+                // onBlur={(e) => {
+                //     console.log(e);
+                //     setDropdownOpen(!dropdownOpen)
+                // }
+                // }
                 >
                     {puzzleCategory}
                     <span className="ml-2 w-2">
