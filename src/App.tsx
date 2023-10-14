@@ -14,6 +14,7 @@ import { useLoaderData } from "react-router-dom";
 
 type GameState = "guessing" | "won" | "lost";
 
+
 function App() {
   const MAX_GUESSES = 6;
 
