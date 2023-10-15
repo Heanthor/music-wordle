@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Select, { ActionMeta, OnChangeValue, StylesConfig, createFilter, components, ValueContainerProps } from "react-select";
 import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork, getComposerWorkByID } from "./../composerWork";
-import { currentPuzzle } from "./../dailyPuzzle";
+import { PuzzleCategory, currentPuzzle } from "./../dailyPuzzle";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
 
 import { useLoaderData } from "react-router-dom";

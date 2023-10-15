@@ -1,8 +1,12 @@
 import { ComposerWork, getComposerWorkByID } from "./composerWork";
 // TODO load these images from a CDN instead
-import sheet1 from "./assets/music-1.png";
-import sheet2 from "./assets/music-2.png";
-
+import piano1 from "./assets/piano-1.png";
+import piano2 from "./assets/piano-2.png";
+import piano3 from "./assets/piano-3.png";
+import piano4 from "./assets/piano-4.png";
+import piano5 from "./assets/piano-5.png";
+import cello1 from "./assets/cello-1.png";
+ 
 export type PuzzleCategory = "Piano" | "Violin" | "Cello" | "Orchestral";
 
 export const puzzleCategories: PuzzleCategory[] = [
@@ -33,7 +37,33 @@ const pianoPuzzles: DailyPuzzle[] = [
     puzzleDate: new Date("2023-09-24"),
     // chopin ballade no. 1
     puzzleAnswer: getComposerWorkByID(4, 35),
-    sheetSource: sheet1,
+    sheetSource: piano1,
+  },
+  {
+    puzzleDate: new Date("2023-10-15"),
+    // beethoven pastoral sonata
+    puzzleAnswer: getComposerWorkByID(0, 310),
+    sheetSource: piano2,
+  },
+  {
+    puzzleDate: new Date("2023-10-16"),
+    // beethoven rage over a lost penny (rondo a capriccio)
+    // BROKEN
+    puzzleAnswer: getComposerWorkByID(0, 310),
+    sheetSource: piano3,
+  },
+  {
+    puzzleDate: new Date("2023-10-17"),
+    // tchaikovsky the seasons (june)
+    // BROKEN
+    puzzleAnswer: getComposerWorkByID(3, 310),
+    sheetSource: piano4,
+  },
+  {
+    puzzleDate: new Date("2023-10-18"),
+    // brahms intermezzo 118 no. 2
+    puzzleAnswer: getComposerWorkByID(5, 334),
+    sheetSource: piano5,
   },
 ];
 
@@ -46,7 +76,7 @@ const celloPuzzles: DailyPuzzle[] = [
     puzzleDate: new Date("2023-10-07"),
     // bach cello suite 1
     puzzleAnswer: getComposerWorkByID(2, 650),
-    sheetSource: sheet2,
+    sheetSource: cello1,
   },
 ];
 
@@ -61,8 +91,9 @@ const puzzles: {[category in PuzzleCategory]: DailyPuzzle[]} = {
     "Orchestral": orchestralPuzzles,
 }
 
-// export const currentPuzzle = puzzles.slice(-1)[0];
 export const currentPuzzle = (puzzleCategory: PuzzleCategory): DailyPuzzle => {
+    const currentDate = new Date();
     const puzzleList = puzzles[puzzleCategory];
-    return puzzleList.slice(-1)[0];
+
+    return puzzleList.find((puzzle) => puzzle.puzzleDate === currentDate) || puzzleList.slice(-1)[0];
 };
