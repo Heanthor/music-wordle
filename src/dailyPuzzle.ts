@@ -13,34 +13,36 @@ export const puzzleCategories: PuzzleCategory[] = [
 ]
 
 export class DailyPuzzle {
-  puzzleNumber: number;
   puzzleDate: Date;
   puzzleAnswer: ComposerWork;
   sheetSource: string;
 
   constructor(
-    puzzleNumber: number,
     puzzleDate: Date,
     puzzleAnswer: ComposerWork,
     sheetSource: string
   ) {
-    this.puzzleNumber = puzzleNumber;
     this.puzzleDate = puzzleDate;
     this.puzzleAnswer = puzzleAnswer;
     this.sheetSource = sheetSource;
   }
 }
 
-export const puzzles: DailyPuzzle[] = [
+const pianoPuzzles: DailyPuzzle[] = [
   {
-    puzzleNumber: 1,
     puzzleDate: new Date("2023-09-24"),
     // chopin ballade no. 1
     puzzleAnswer: getComposerWorkByID(4, 35),
     sheetSource: sheet1,
   },
+];
+
+const violinPuzzles: DailyPuzzle[] = [
+
+];
+
+const celloPuzzles: DailyPuzzle[] = [
   {
-    puzzleNumber: 2,
     puzzleDate: new Date("2023-10-07"),
     // bach cello suite 1
     puzzleAnswer: getComposerWorkByID(2, 650),
@@ -48,4 +50,19 @@ export const puzzles: DailyPuzzle[] = [
   },
 ];
 
-export const currentPuzzle = puzzles.slice(-1)[0];
+const orchestralPuzzles: DailyPuzzle[] = [
+
+];
+
+const puzzles: {[category in PuzzleCategory]: DailyPuzzle[]} = {
+    "Piano": pianoPuzzles,
+    "Violin": violinPuzzles,
+    "Cello": celloPuzzles,
+    "Orchestral": orchestralPuzzles,
+}
+
+// export const currentPuzzle = puzzles.slice(-1)[0];
+export const currentPuzzle = (puzzleCategory: PuzzleCategory): DailyPuzzle => {
+    const puzzleList = puzzles[puzzleCategory];
+    return puzzleList.slice(-1)[0];
+};

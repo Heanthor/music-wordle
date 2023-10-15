@@ -26,7 +26,7 @@ function App() {
   const checkGameState = (newGuesses: ComposerWork[]) => {
     // lil state machine
     const mostRecentGuess = newGuesses.slice(-1)[0];
-    const puzzleAnswer = currentPuzzle?.puzzleAnswer;
+    const puzzleAnswer = currentPuzzle(puzzleCategoryData).puzzleAnswer;
 
     if (mostRecentGuess.equals(puzzleAnswer)) {
       setGameState("won");
@@ -139,7 +139,7 @@ function App() {
           <Zoom>
             <img
               className="mx-auto outline rounded-md"
-              src={currentPuzzle?.sheetSource}
+              src={currentPuzzle(puzzleCategoryData)?.sheetSource}
             />
           </Zoom>
         </div>

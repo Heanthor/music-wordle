@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import { ComposerWork } from "../composerWork";
-import { currentPuzzle } from "../dailyPuzzle";
+import { PuzzleCategory, currentPuzzle } from "../dailyPuzzle";
+
+import { useLoaderData } from "react-router-dom";
 
 type Props = {
     guess: ComposerWork;
@@ -8,7 +10,9 @@ type Props = {
 
 function ComposerCard(props: Props) {
     const { guess } = props;
-    const { puzzleAnswer } = currentPuzzle;
+    const puzzleCategory = useLoaderData() as PuzzleCategory;
+
+    const { puzzleAnswer } = currentPuzzle(puzzleCategory);
 
     const composerCorrect = (guess: ComposerWork): boolean =>
         guess.composer === puzzleAnswer.composer;
