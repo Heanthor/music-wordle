@@ -1,2 +1,6 @@
 Future libraries?
 https://github.com/localForage/localForage
+
+
+# Data sources
+https://www.kaggle.com/datasets/imsparsh/musicnet-dataset

@@ -39,26 +39,27 @@ const pianoPuzzles: DailyPuzzle[] = [
     puzzleAnswer: getComposerWorkByID(4, 35),
     sheetSource: piano1,
   },
-  {
-    puzzleDate: new Date("2023-10-15"),
-    // beethoven pastoral sonata
-    puzzleAnswer: getComposerWorkByID(0, 310),
-    sheetSource: piano2,
-  },
-  {
-    puzzleDate: new Date("2023-10-16"),
-    // beethoven rage over a lost penny (rondo a capriccio)
-    // BROKEN
-    puzzleAnswer: getComposerWorkByID(0, 310),
-    sheetSource: piano3,
-  },
-  {
-    puzzleDate: new Date("2023-10-17"),
-    // tchaikovsky the seasons (june)
-    // BROKEN
-    puzzleAnswer: getComposerWorkByID(3, 310),
-    sheetSource: piano4,
-  },
+//   {
+//     puzzleDate: new Date("2023-10-15"),
+//     // beethoven pastoral sonata
+//     // BROKEN
+//     puzzleAnswer: getComposerWorkByID(0, 310),
+//     sheetSource: piano2,
+//   },
+//   {
+//     puzzleDate: new Date("2023-10-16"),
+//     // beethoven rage over a lost penny (rondo a capriccio)
+//     // BROKEN
+//     puzzleAnswer: getComposerWorkByID(0, 310),
+//     sheetSource: piano3,
+//   },
+//   {
+//     puzzleDate: new Date("2023-10-17"),
+//     // tchaikovsky the seasons (june)
+//     // BROKEN
+//     puzzleAnswer: getComposerWorkByID(3, 310),
+//     sheetSource: piano4,
+//   },
   {
     puzzleDate: new Date("2023-10-18"),
     // brahms intermezzo 118 no. 2

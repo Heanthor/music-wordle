@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
+import re
 
 import requests
 from bs4 import BeautifulSoup
@@ -11,6 +12,12 @@ COMPOSERS_FILE = "composers.json"
 
 class InvalidWork(Exception):
     pass
+
+
+class BaseScraper:
+    def load_page(self, url) -> BeautifulSoup:
+        page = requests.get(self.base_url)
+        return BeautifulSoup(page.text, "html.parser")
 
 
 @dataclass
@@ -90,7 +97,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
     works_table = soup.find("table", {"class": "wikitable sortable"})
     # loop over the tr elements inside the tbody
     first = True
-    opus_num = 0
+    opus_col = 0
     name_col = -1
     date_col = -1
     all_works = []
@@ -105,13 +112,13 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                 elif header.text.strip() == "Date":
                     date_col = i
                 elif header.text.strip() == "Opus":
-                    opus_num = i
+                    opus_col = i
             first = False
             continue
 
         tds = row.find_all("td")
         # delete display: none span from opus number
-        opus_number_td = tds[opus_num]
+        opus_number_td = tds[opus_col]
         if opus_number_td.span:
             opus_number_td.span.decompose()
 
@@ -149,8 +156,9 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             print(f"Skipping empty work title")
             continue
         if "(" in work_title:
-            # start grouping of works like Piano Trio (3)
-            continue
+            # grouping of works like Piano Trio (3), which will be scraped in upcoming rows
+            if re.search("\(\d+\)", work_title):
+                continue
 
         try:
             # use custom function to parse opus number
@@ -248,32 +256,35 @@ def parse_composer(composer: str) -> list[ScrapedWork] | None:
 with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
-    output = []
     j = 0
     for composer in composer_list:
         works = parse_composer(composer)
         if works is None:
             continue
 
-        output.append(
-            {
-                "id": j,
-                "firstname": works[0].composer_firstname,
-                "lastname": works[0].composer_lastname,
-                "fullname": works[0].composer_fullname,
-                "works": [
-                    {
-                        "id": i,
-                        "work_title": w.work_title,
-                        "composition_year": w.composition_year,
-                        "opus": w.opus,
-                        "opus_number": w.opus_number,
-                    }
-                    for i, w in enumerate(works)
-                ],
-            }
-        )
+        output = {
+            "id": j,
+            "firstname": works[0].composer_firstname,
+            "lastname": works[0].composer_lastname,
+            "fullname": works[0].composer_fullname,
+            "works": [
+                {
+                    "id": i,
+                    "work_title": w.work_title,
+                    "composition_year": w.composition_year,
+                    "opus": w.opus,
+                    "opus_number": w.opus_number,
+                }
+                for i, w in enumerate(works)
+            ],
+        }
+
         j += 1
-    with open("../src/assets/parsed_composers.json", "w") as f:
-        f.write(json.dumps(output, indent=2))
-    print("Wrote output to parsed_composers.json")
+
+        composer_filename = (
+            composer.lower().replace(" ", "_").replace(".", "").replace(",", "")
+        )
+        filename = f"../src/assets/composer_data/{composer_filename}.json"
+        with open(filename, "w") as f:
+            f.write(json.dumps(output, indent=2))
+    print("Wrote output")
