@@ -235,7 +235,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
 
         if "No." in work_title:
             # if a work is only denoted by its number, add the key to make distinguishing it a bit easier
-            if re.search(".+ No.\s*\d+", work_title):
+            if re.search(".+\s*No\.\s*\d+", work_title):
                 key_text = tds[key_col].text.strip()
                 work_title += " in " + key_text
         # naive first/last split

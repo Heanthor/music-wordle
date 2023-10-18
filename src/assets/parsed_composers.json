@@ -1688,70 +1688,70 @@
       },
       {
         "id": 7,
-        "work_title": "Violin Sonata (\"No.1\")",
+        "work_title": "Violin Sonata (\"No.1\") in C major",
         "composition_year": 1762,
         "opus": "6",
         "opus_number": -1
       },
       {
         "id": 8,
-        "work_title": "Violin Sonata (\"No.2\")",
+        "work_title": "Violin Sonata (\"No.2\") in D major",
         "composition_year": 1763,
         "opus": "7",
         "opus_number": -1
       },
       {
         "id": 9,
-        "work_title": "Violin Sonata (\"No.3\")",
+        "work_title": "Violin Sonata (\"No.3\") in B\u266d major",
         "composition_year": 1763,
         "opus": "8",
         "opus_number": -1
       },
       {
         "id": 10,
-        "work_title": "Violin Sonata (\"No.4\")",
+        "work_title": "Violin Sonata (\"No.4\") in G major",
         "composition_year": 1764,
         "opus": "9",
         "opus_number": -1
       },
       {
         "id": 11,
-        "work_title": "Violin Sonata (\"No.5\")",
+        "work_title": "Violin Sonata (\"No.5\") in B\u266d major",
         "composition_year": 1764,
         "opus": "10",
         "opus_number": -1
       },
       {
         "id": 12,
-        "work_title": "Violin Sonata (\"No.6\")",
+        "work_title": "Violin Sonata (\"No.6\") in G major",
         "composition_year": 1764,
         "opus": "11",
         "opus_number": -1
       },
       {
         "id": 13,
-        "work_title": "Violin Sonata (\"No.7\")",
+        "work_title": "Violin Sonata (\"No.7\") in A major",
         "composition_year": 1764,
         "opus": "12",
         "opus_number": -1
       },
       {
         "id": 14,
-        "work_title": "Violin Sonata (\"No.8\")",
+        "work_title": "Violin Sonata (\"No.8\") in F major",
         "composition_year": 1764,
         "opus": "13",
         "opus_number": -1
       },
       {
         "id": 15,
-        "work_title": "Violin Sonata (\"No.9\")",
+        "work_title": "Violin Sonata (\"No.9\") in C major",
         "composition_year": 1764,
         "opus": "14",
         "opus_number": -1
       },
       {
         "id": 16,
-        "work_title": "Violin Sonata (\"No.10\")",
+        "work_title": "Violin Sonata (\"No.10\") in B\u266d major",
         "composition_year": 1764,
         "opus": "15",
         "opus_number": -1
@@ -1765,7 +1765,7 @@
       },
       {
         "id": 18,
-        "work_title": "Symphony  (\"No.1\" or \"Odense\")",
+        "work_title": "Symphony  (\"No.1\" or \"Odense\") in A minor",
         "composition_year": 1765,
         "opus": "Anh.220",
         "opus_number": -1
@@ -1821,42 +1821,42 @@
       },
       {
         "id": 26,
-        "work_title": "Violin Sonata (\"No.11\")",
+        "work_title": "Violin Sonata (\"No.11\") in E\u266d major",
         "composition_year": 1766,
         "opus": "26",
         "opus_number": -1
       },
       {
         "id": 27,
-        "work_title": "Violin Sonata (\"No.12\")",
+        "work_title": "Violin Sonata (\"No.12\") in G major",
         "composition_year": 1766,
         "opus": "27",
         "opus_number": -1
       },
       {
         "id": 28,
-        "work_title": "Violin Sonata (\"No.13\")",
+        "work_title": "Violin Sonata (\"No.13\") in C major",
         "composition_year": 1766,
         "opus": "28",
         "opus_number": -1
       },
       {
         "id": 29,
-        "work_title": "Violin Sonata (\"No.14\")",
+        "work_title": "Violin Sonata (\"No.14\") in D major",
         "composition_year": 1766,
         "opus": "29",
         "opus_number": -1
       },
       {
         "id": 30,
-        "work_title": "Violin Sonata (\"No.15\")",
+        "work_title": "Violin Sonata (\"No.15\") in F major",
         "composition_year": 1766,
         "opus": "30",
         "opus_number": -1
       },
       {
         "id": 31,
-        "work_title": "Violin Sonata (\"No.16\" or \"No.10\")",
+        "work_title": "Violin Sonata (\"No.16\" or \"No.10\") in B\u266d major",
         "composition_year": 1766,
         "opus": "31",
         "opus_number": -1
@@ -1940,21 +1940,21 @@
       },
       {
         "id": 43,
-        "work_title": "Church Sonata  (\"No.1\")",
+        "work_title": "Church Sonata  (\"No.1\") in E\u266d major",
         "composition_year": 1767,
         "opus": "67",
         "opus_number": -1
       },
       {
         "id": 44,
-        "work_title": "Church Sonata  (\"No.2\")",
+        "work_title": "Church Sonata  (\"No.2\") in B\u266d major",
         "composition_year": 1767,
         "opus": "68",
         "opus_number": -1
       },
       {
         "id": 45,
-        "work_title": "Church Sonata  (\"No.3\")",
+        "work_title": "Church Sonata  (\"No.3\") in D major",
         "composition_year": 1767,
         "opus": "69",
         "opus_number": -1
@@ -2094,7 +2094,7 @@
       },
       {
         "id": 65,
-        "work_title": "Mass (\"Dominicus\") (\"No.3\")",
+        "work_title": "Mass (\"Dominicus\") (\"No.3\") in C major",
         "composition_year": 1769,
         "opus": "66",
         "opus_number": -1
@@ -2367,7 +2367,7 @@
       },
       {
         "id": 104,
-        "work_title": "Divertimento (\"No.1\")",
+        "work_title": "Divertimento (\"No.1\") in E\u266d major",
         "composition_year": 1771,
         "opus": "113",
         "opus_number": -1
@@ -2395,14 +2395,14 @@
       },
       {
         "id": 108,
-        "work_title": "Church Sonata  (\"No.4\")",
+        "work_title": "Church Sonata  (\"No.4\") in D major",
         "composition_year": 1774,
         "opus": "144",
         "opus_number": -1
       },
       {
         "id": 109,
-        "work_title": "Church Sonata  (\"No.5\")",
+        "work_title": "Church Sonata  (\"No.5\") in F major",
         "composition_year": 1774,
         "opus": "145",
         "opus_number": -1
@@ -2493,7 +2493,7 @@
       },
       {
         "id": 122,
-        "work_title": "Divertimento (\"No.2\")",
+        "work_title": "Divertimento (\"No.2\") in D major",
         "composition_year": 1772,
         "opus": "131",
         "opus_number": -1
@@ -2584,14 +2584,14 @@
       },
       {
         "id": 135,
-        "work_title": "Divertimento (\"No.4\")",
+        "work_title": "Divertimento (\"No.4\") in B\u266d major",
         "composition_year": 1773,
         "opus": "186",
         "opus_number": -1
       },
       {
         "id": 136,
-        "work_title": "Divertimento (\"No.3\")",
+        "work_title": "Divertimento (\"No.3\") in E\u266d major",
         "composition_year": 1773,
         "opus": "166",
         "opus_number": -1
@@ -2626,14 +2626,14 @@
       },
       {
         "id": 141,
-        "work_title": "Missa  (\"No.7\" or \"Trinitatis\")",
+        "work_title": "Missa  (\"No.7\" or \"Trinitatis\") in C major",
         "composition_year": 1773,
         "opus": "167",
         "opus_number": -1
       },
       {
         "id": 142,
-        "work_title": "Divertimento (\"No.7\")",
+        "work_title": "Divertimento (\"No.7\") in D major",
         "composition_year": 1773,
         "opus": "205",
         "opus_number": -1
@@ -2647,7 +2647,7 @@
       },
       {
         "id": 144,
-        "work_title": "Serenade (\"No.3\" or \"Antretter\")",
+        "work_title": "Serenade (\"No.3\" or \"Antretter\") in D major",
         "composition_year": 1773,
         "opus": "185",
         "opus_number": -1
@@ -2801,7 +2801,7 @@
       },
       {
         "id": 166,
-        "work_title": "Serenade (\"No.4\" or \"Colloredo\")",
+        "work_title": "Serenade (\"No.4\" or \"Colloredo\") in D major",
         "composition_year": 1774,
         "opus": "203",
         "opus_number": -1
@@ -2934,21 +2934,21 @@
       },
       {
         "id": 185,
-        "work_title": "Church Sonata  (\"No.6\")",
+        "work_title": "Church Sonata  (\"No.6\") in B\u266d major",
         "composition_year": 1775,
         "opus": "212",
         "opus_number": -1
       },
       {
         "id": 186,
-        "work_title": "Divertimento (\"No.8\")",
+        "work_title": "Divertimento (\"No.8\") in F major",
         "composition_year": 1775,
         "opus": "213",
         "opus_number": -1
       },
       {
         "id": 187,
-        "work_title": "Serenade (\"No.5\")",
+        "work_title": "Serenade (\"No.5\") in D major",
         "composition_year": 1775,
         "opus": "204",
         "opus_number": -1
@@ -3011,49 +3011,49 @@
       },
       {
         "id": 196,
-        "work_title": "Serenade (\"No.6\" or \"Serenata notturna\")",
+        "work_title": "Serenade (\"No.6\" or \"Serenata notturna\") in D major",
         "composition_year": 1776,
         "opus": "239",
         "opus_number": -1
       },
       {
         "id": 197,
-        "work_title": "Divertimento  (\"No.9\")",
+        "work_title": "Divertimento  (\"No.9\") in B\u266d major",
         "composition_year": 1776,
         "opus": "240",
         "opus_number": -1
       },
       {
         "id": 198,
-        "work_title": "Divertimento (\"No.12\")",
+        "work_title": "Divertimento (\"No.12\") in E\u266d major",
         "composition_year": 1776,
         "opus": "252",
         "opus_number": -1
       },
       {
         "id": 199,
-        "work_title": "Divertimento (\"No.6\")",
+        "work_title": "Divertimento (\"No.6\") in C major",
         "composition_year": 1773,
         "opus": "188",
         "opus_number": -1
       },
       {
         "id": 200,
-        "work_title": "Church Sonata  (\"No.7\" or \"No.9\")",
+        "work_title": "Church Sonata  (\"No.7\" or \"No.9\") in G major",
         "composition_year": 1776,
         "opus": "241",
         "opus_number": -1
       },
       {
         "id": 201,
-        "work_title": "Church Sonata  (\"No.15\" or \"No.7\")",
+        "work_title": "Church Sonata  (\"No.15\" or \"No.7\") in F major",
         "composition_year": 1780,
         "opus": "224",
         "opus_number": -1
       },
       {
         "id": 202,
-        "work_title": "Church Sonata  (\"No.16\" or \"No.8\")",
+        "work_title": "Church Sonata  (\"No.16\" or \"No.8\") in A major",
         "composition_year": 1780,
         "opus": "225",
         "opus_number": -1
@@ -3074,14 +3074,14 @@
       },
       {
         "id": 205,
-        "work_title": "Church Sonata (\"No.8\")",
+        "work_title": "Church Sonata (\"No.8\") in F major",
         "composition_year": 1776,
         "opus": "244",
         "opus_number": -1
       },
       {
         "id": 206,
-        "work_title": "Church Sonata (\"No.9\" or \"No.11\")",
+        "work_title": "Church Sonata (\"No.9\" or \"No.11\") in D major",
         "composition_year": 1776,
         "opus": "245",
         "opus_number": -1
@@ -3095,14 +3095,14 @@
       },
       {
         "id": 208,
-        "work_title": "Mass  (\"No.13\" or \"Missa longa\")",
+        "work_title": "Mass  (\"No.13\" or \"Missa longa\") in C major",
         "composition_year": 1776,
         "opus": "262",
         "opus_number": -1
       },
       {
         "id": 209,
-        "work_title": "Divertimento (\"No.10\" or \"Lodronische Nachtmusik\")",
+        "work_title": "Divertimento (\"No.10\" or \"Lodronische Nachtmusik\") in F major",
         "composition_year": 1776,
         "opus": "247",
         "opus_number": -1
@@ -3123,7 +3123,7 @@
       },
       {
         "id": 212,
-        "work_title": "Serenade (\"No.7\" or \"Haffner\")",
+        "work_title": "Serenade (\"No.7\" or \"Haffner\") in D major",
         "composition_year": 1776,
         "opus": "250",
         "opus_number": -1
@@ -3137,14 +3137,14 @@
       },
       {
         "id": 214,
-        "work_title": "Divertimento (\"No.11\")",
+        "work_title": "Divertimento (\"No.11\") in D major",
         "composition_year": 1776,
         "opus": "251",
         "opus_number": -1
       },
       {
         "id": 215,
-        "work_title": "Divertimento (\"No.13\")",
+        "work_title": "Divertimento (\"No.13\") in F major",
         "composition_year": 1776,
         "opus": "253",
         "opus_number": -1
@@ -3172,7 +3172,7 @@
       },
       {
         "id": 219,
-        "work_title": "Mass  (\"No.10\" or \"Credo\")",
+        "work_title": "Mass  (\"No.10\" or \"Credo\") in C major",
         "composition_year": 1776,
         "opus": "257",
         "opus_number": -1
@@ -3207,7 +3207,7 @@
       },
       {
         "id": 224,
-        "work_title": "Church Sonata  (\"No.10\" or \"No.12\")",
+        "work_title": "Church Sonata  (\"No.10\" or \"No.12\") in C major",
         "composition_year": 1776,
         "opus": "263",
         "opus_number": -1
@@ -3221,7 +3221,7 @@
       },
       {
         "id": 226,
-        "work_title": "Divertimento (\"No.14\")",
+        "work_title": "Divertimento (\"No.14\") in B\u266d major",
         "composition_year": 1777,
         "opus": "270",
         "opus_number": -1
@@ -3235,14 +3235,14 @@
       },
       {
         "id": 228,
-        "work_title": "Church Sonata  (\"No.11\" or \"No.13\")",
+        "work_title": "Church Sonata  (\"No.11\" or \"No.13\") in G major",
         "composition_year": 1777,
         "opus": "274",
         "opus_number": -1
       },
       {
         "id": 229,
-        "work_title": "Church Sonata  (\"No.12\" or \"No.14\")",
+        "work_title": "Church Sonata  (\"No.12\" or \"No.14\") in C major",
         "composition_year": 1777,
         "opus": "278",
         "opus_number": -1
@@ -3256,7 +3256,7 @@
       },
       {
         "id": 231,
-        "work_title": "Divertimento (\"No.16\")",
+        "work_title": "Divertimento (\"No.16\") in E\u266d major",
         "composition_year": 1777,
         "opus": "289",
         "opus_number": -1
@@ -3333,28 +3333,28 @@
       },
       {
         "id": 242,
-        "work_title": "Flute Quartet (\"No.1\")",
+        "work_title": "Flute Quartet (\"No.1\") in D major",
         "composition_year": 1777,
         "opus": "285",
         "opus_number": -1
       },
       {
         "id": 243,
-        "work_title": "Flute Quartet  (\"No.3\")",
+        "work_title": "Flute Quartet  (\"No.3\") in C major",
         "composition_year": 1778,
         "opus": "Anh.171",
         "opus_number": -1
       },
       {
         "id": 244,
-        "work_title": "Flute Concerto  (\"No.1\")",
+        "work_title": "Flute Concerto  (\"No.1\") in G major",
         "composition_year": 1778,
         "opus": "313",
         "opus_number": -1
       },
       {
         "id": 245,
-        "work_title": "Flute Concerto  (\"No.2\")",
+        "work_title": "Flute Concerto  (\"No.2\") in D major",
         "composition_year": 1777,
         "opus": "314",
         "opus_number": -1
@@ -3368,28 +3368,28 @@
       },
       {
         "id": 247,
-        "work_title": "Violin Sonata (\"No.18\")",
+        "work_title": "Violin Sonata (\"No.18\") in G major",
         "composition_year": 1778,
         "opus": "301",
         "opus_number": -1
       },
       {
         "id": 248,
-        "work_title": "Violin Sonata (\"No.19\")",
+        "work_title": "Violin Sonata (\"No.19\") in E\u266d major",
         "composition_year": 1778,
         "opus": "302",
         "opus_number": -1
       },
       {
         "id": 249,
-        "work_title": "Violin Sonata (\"No.20\")",
+        "work_title": "Violin Sonata (\"No.20\") in C major",
         "composition_year": 1778,
         "opus": "303",
         "opus_number": -1
       },
       {
         "id": 250,
-        "work_title": "Violin Sonata  (\"No.22\")",
+        "work_title": "Violin Sonata  (\"No.22\") in A major",
         "composition_year": 1778,
         "opus": "305",
         "opus_number": -1
@@ -3417,7 +3417,7 @@
       },
       {
         "id": 254,
-        "work_title": "Violin Sonata (\"No.17\")",
+        "work_title": "Violin Sonata (\"No.17\") in C major",
         "composition_year": 1778,
         "opus": "296",
         "opus_number": -1
@@ -3445,7 +3445,7 @@
       },
       {
         "id": 258,
-        "work_title": "Flute Quartet (\"No.4\")",
+        "work_title": "Flute Quartet (\"No.4\") in A major",
         "composition_year": 1786,
         "opus": "298",
         "opus_number": -1
@@ -3487,7 +3487,7 @@
       },
       {
         "id": 264,
-        "work_title": "Violin Sonata (\"No.21\")",
+        "work_title": "Violin Sonata (\"No.21\") in E minor",
         "composition_year": 1778,
         "opus": "304",
         "opus_number": -1
@@ -3522,7 +3522,7 @@
       },
       {
         "id": 269,
-        "work_title": "Violin Sonata (\"No.23\")",
+        "work_title": "Violin Sonata (\"No.23\") in D major",
         "composition_year": 1778,
         "opus": "306",
         "opus_number": -1
@@ -3550,14 +3550,14 @@
       },
       {
         "id": 273,
-        "work_title": "Mass  (\"No.15\" or \"Coronation\")",
+        "work_title": "Mass  (\"No.15\" or \"Coronation\") in C major",
         "composition_year": 1779,
         "opus": "317",
         "opus_number": -1
       },
       {
         "id": 274,
-        "work_title": "Church Sonata  (\"No.13\" or \"No.16\")",
+        "work_title": "Church Sonata  (\"No.13\" or \"No.16\") in C major",
         "composition_year": 1779,
         "opus": "329",
         "opus_number": -1
@@ -3571,14 +3571,14 @@
       },
       {
         "id": 276,
-        "work_title": "Church Sonata  (\"No.14\" or \"No.15\")",
+        "work_title": "Church Sonata  (\"No.14\" or \"No.15\") in C major",
         "composition_year": 1779,
         "opus": "328",
         "opus_number": -1
       },
       {
         "id": 277,
-        "work_title": "Violin Sonata (\"No.26\")",
+        "work_title": "Violin Sonata (\"No.26\") in B\u266d major",
         "composition_year": 1779,
         "opus": "378",
         "opus_number": -1
@@ -3599,7 +3599,7 @@
       },
       {
         "id": 280,
-        "work_title": "Serenade (\"No.9\" or \"Posthorn\")",
+        "work_title": "Serenade (\"No.9\" or \"Posthorn\") in D major",
         "composition_year": 1779,
         "opus": "320",
         "opus_number": -1
@@ -3669,7 +3669,7 @@
       },
       {
         "id": 290,
-        "work_title": "Church Sonata  (\"No.17\")",
+        "work_title": "Church Sonata  (\"No.17\") in C major",
         "composition_year": 1780,
         "opus": "336",
         "opus_number": -1
@@ -3774,7 +3774,7 @@
       },
       {
         "id": 305,
-        "work_title": "Serenade (\"No.10\" or \"Gran partita\")",
+        "work_title": "Serenade (\"No.10\" or \"Gran partita\") in B\u266d major",
         "composition_year": 1781,
         "opus": "361",
         "opus_number": -1
@@ -3809,7 +3809,7 @@
       },
       {
         "id": 310,
-        "work_title": "Violin Sonata (\"No.27\")",
+        "work_title": "Violin Sonata (\"No.27\") in G major",
         "composition_year": 1781,
         "opus": "379",
         "opus_number": -1
@@ -3823,21 +3823,21 @@
       },
       {
         "id": 312,
-        "work_title": "Violin Sonata (\"No.24\")",
+        "work_title": "Violin Sonata (\"No.24\") in F major",
         "composition_year": 1781,
         "opus": "376",
         "opus_number": -1
       },
       {
         "id": 313,
-        "work_title": "Violin Sonata (\"No.25\")",
+        "work_title": "Violin Sonata (\"No.25\") in F major",
         "composition_year": 1781,
         "opus": "377",
         "opus_number": -1
       },
       {
         "id": 314,
-        "work_title": "Violin Sonata (\"No.28\")",
+        "work_title": "Violin Sonata (\"No.28\") in E\u266d major",
         "composition_year": 1781,
         "opus": "380",
         "opus_number": -1
@@ -3851,7 +3851,7 @@
       },
       {
         "id": 316,
-        "work_title": "Serenade (\"No.11\")",
+        "work_title": "Serenade (\"No.11\") in E\u266d major",
         "composition_year": 1781,
         "opus": "375",
         "opus_number": -1
@@ -4047,7 +4047,7 @@
       },
       {
         "id": 344,
-        "work_title": "Serenade (\"No.12\" or \"Nacht musique\")",
+        "work_title": "Serenade (\"No.12\" or \"Nacht musique\") in C minor",
         "composition_year": 1782,
         "opus": "388",
         "opus_number": -1
@@ -4068,21 +4068,21 @@
       },
       {
         "id": 347,
-        "work_title": "Violin Sonata  (\"No.30\")",
+        "work_title": "Violin Sonata  (\"No.30\") in C major",
         "composition_year": 1784,
         "opus": "403",
         "opus_number": -1
       },
       {
         "id": 348,
-        "work_title": "Violin Sonata  (\"No.31\")",
+        "work_title": "Violin Sonata  (\"No.31\") in C major",
         "composition_year": 1785,
         "opus": "404",
         "opus_number": -1
       },
       {
         "id": 349,
-        "work_title": "Violin Sonata  (\"No.29\")",
+        "work_title": "Violin Sonata  (\"No.29\") in A major",
         "composition_year": 1781,
         "opus": "402",
         "opus_number": -1
@@ -4096,7 +4096,7 @@
       },
       {
         "id": 351,
-        "work_title": "Fantasia (\"No.3\")",
+        "work_title": "Fantasia (\"No.3\") in D minor",
         "composition_year": 1782,
         "opus": "397",
         "opus_number": -1
@@ -4229,7 +4229,7 @@
       },
       {
         "id": 370,
-        "work_title": "Mass  (\"No.17\" or \"Great\")",
+        "work_title": "Mass  (\"No.17\" or \"Great\") in C minor",
         "composition_year": 1783,
         "opus": "427",
         "opus_number": -1
@@ -4446,7 +4446,7 @@
       },
       {
         "id": 401,
-        "work_title": "Violin Sonata (\"No.32\")",
+        "work_title": "Violin Sonata (\"No.32\") in B\u266d major",
         "composition_year": 1784,
         "opus": "454",
         "opus_number": -1
@@ -4586,7 +4586,7 @@
       },
       {
         "id": 421,
-        "work_title": "Piano Quartet (\"No.1\")",
+        "work_title": "Piano Quartet (\"No.1\") in G minor",
         "composition_year": 1785,
         "opus": "478",
         "opus_number": -1
@@ -4621,7 +4621,7 @@
       },
       {
         "id": 426,
-        "work_title": "Violin Sonata (\"No.33\")",
+        "work_title": "Violin Sonata (\"No.33\") in E\u266d major",
         "composition_year": 1785,
         "opus": "481",
         "opus_number": -1
@@ -4677,7 +4677,7 @@
       },
       {
         "id": 434,
-        "work_title": "Rondo  (\"No.1\")",
+        "work_title": "Rondo  (\"No.1\") in D major",
         "composition_year": 1786,
         "opus": "485",
         "opus_number": -1
@@ -4733,14 +4733,14 @@
       },
       {
         "id": 442,
-        "work_title": "Piano Quartet  (\"No.2\")",
+        "work_title": "Piano Quartet  (\"No.2\") in E\u266d major",
         "composition_year": 1786,
         "opus": "493",
         "opus_number": -1
       },
       {
         "id": 443,
-        "work_title": "Rondo  (\"No.2\")",
+        "work_title": "Rondo  (\"No.2\") in F major",
         "composition_year": 1786,
         "opus": "494",
         "opus_number": -1
@@ -4754,7 +4754,7 @@
       },
       {
         "id": 445,
-        "work_title": "Piano Trio (\"No.2\")",
+        "work_title": "Piano Trio (\"No.2\") in G major",
         "composition_year": 1786,
         "opus": "496",
         "opus_number": -1
@@ -4796,7 +4796,7 @@
       },
       {
         "id": 451,
-        "work_title": "Piano Trio  (\"No.3\")",
+        "work_title": "Piano Trio  (\"No.3\") in B\u266d major",
         "composition_year": 1786,
         "opus": "502",
         "opus_number": -1
@@ -4859,7 +4859,7 @@
       },
       {
         "id": 460,
-        "work_title": "Rondo  (\"No.3\")",
+        "work_title": "Rondo  (\"No.3\") in A minor",
         "composition_year": 1787,
         "opus": "511",
         "opus_number": -1
@@ -4992,7 +4992,7 @@
       },
       {
         "id": 479,
-        "work_title": "Violin Sonata (\"No.35\")",
+        "work_title": "Violin Sonata (\"No.35\") in A major",
         "composition_year": 1787,
         "opus": "526",
         "opus_number": -1
@@ -5104,7 +5104,7 @@
       },
       {
         "id": 495,
-        "work_title": "Piano Trio (\"No.4\")",
+        "work_title": "Piano Trio (\"No.4\") in E major",
         "composition_year": 1788,
         "opus": "542",
         "opus_number": -1
@@ -5139,7 +5139,7 @@
       },
       {
         "id": 500,
-        "work_title": "Violin Sonata (\"No.32\" or \"For Beginners \")",
+        "work_title": "Violin Sonata (\"No.32\" or \"For Beginners \") in F major",
         "composition_year": 1788,
         "opus": "547",
         "opus_number": -1
@@ -5153,7 +5153,7 @@
       },
       {
         "id": 502,
-        "work_title": "Piano Trio (\"No.5\")",
+        "work_title": "Piano Trio (\"No.5\") in C major",
         "composition_year": 1788,
         "opus": "548",
         "opus_number": -1
@@ -5279,7 +5279,7 @@
       },
       {
         "id": 520,
-        "work_title": "Piano Trio (\"No.6\")",
+        "work_title": "Piano Trio (\"No.6\") in G major",
         "composition_year": 1788,
         "opus": "564",
         "opus_number": -1
