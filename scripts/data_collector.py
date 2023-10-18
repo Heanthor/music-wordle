@@ -51,7 +51,7 @@ def mozart_opus(opus_number_str: str):
         opus = opus_number_str
         num = -1
 
-    return opus, num
+    return opus.strip(), num
 
 
 def brahms_opus(opus_number_str: str):
@@ -83,11 +83,24 @@ def chopin_override(work_title: str) -> ScrapedWork | None:
     return None
 
 
+def tchaikovsky_opus(opus_number_str: str):
+    opus_number_str = opus_number_str.replace("//", "/")
+    if "/" in opus_number_str:
+        opus, num = opus_number_str.split("/")
+        int(num)
+    else:
+        opus = opus_number_str
+        num = -1
+
+    return opus.strip(), num
+
+
 config_by_composer = {
     "Ludwig van Beethoven": {"opus_func": beethoven_opus},
     "Wolfgang Amadeus Mozart": {"opus_func": mozart_opus},
     "Frédéric Chopin": {"work_override": chopin_override},
     "Johannes Brahms": {"opus_func": brahms_opus},
+    "Pyotr Tchaikovsky": {"opus_func": tchaikovsky_opus},
 }
 
 
@@ -184,6 +197,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             print(f"Skipping invalid opus number: {work_title} ({opus_number_str})")
             continue
 
+        # clean up date
         date_str = tds[date_col].text.strip()
         if date_str == "" or date_str == "—":
             print(f"Skipping no year: {work_title}")
@@ -201,6 +215,13 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
         if "-" in date:
             # some pages use the ascii character rather than unicode
             date = date_str.split("-")[0]
+
+        if "before" in date:
+            # same deal
+            date = date_str.split("before")[0]
+        elif "or" in date:
+            # take the first date
+            date = date_str.split("or")[0]
 
         date = (
             date.replace("?", "")
@@ -257,6 +278,7 @@ with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
     j = 0
+    all_works = []
     for composer in composer_list:
         works = parse_composer(composer)
         if works is None:
@@ -279,6 +301,7 @@ with open(COMPOSERS_FILE, "r") as f:
             ],
         }
 
+        all_works.append(output)
         j += 1
 
         composer_filename = (
@@ -287,4 +310,8 @@ with open(COMPOSERS_FILE, "r") as f:
         filename = f"../src/assets/composer_data/{composer_filename}.json"
         with open(filename, "w") as f:
             f.write(json.dumps(output, indent=2))
+
+    # write version consumed by app, all composers in one file
+    with open("../src/assets/parsed_composers.json", "w") as f:
+        f.write(json.dumps(all_works, indent=2))
     print("Wrote output")
