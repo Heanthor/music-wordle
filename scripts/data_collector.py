@@ -14,12 +14,6 @@ class InvalidWork(Exception):
     pass
 
 
-class BaseScraper:
-    def load_page(self, url) -> BeautifulSoup:
-        page = requests.get(self.base_url)
-        return BeautifulSoup(page.text, "html.parser")
-
-
 @dataclass
 class ScrapedWork:
     composer_firstname: str
@@ -113,6 +107,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
     opus_col = 0
     name_col = -1
     date_col = -1
+    key_col = -1
     all_works = []
     for row in works_table.find_all("tr"):
         if first:
@@ -126,6 +121,8 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                     date_col = i
                 elif header.text.strip() == "Opus":
                     opus_col = i
+                elif header.text.strip() == "Key":
+                    key_col = i
             first = False
             continue
 
@@ -236,6 +233,11 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             print(f"Skipping no year: {work_title}")
             continue
 
+        if "No." in work_title:
+            # if a work is only denoted by its number, add the key to make distinguishing it a bit easier
+            if re.search(".+ No.\s*\d+", work_title):
+                key_text = tds[key_col].text.strip()
+                work_title += " in " + key_text
         # naive first/last split
         firstname = composer.split(" ")[0]
         lastname = composer.split(" ")[-1]

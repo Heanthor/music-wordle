@@ -28,21 +28,21 @@
       },
       {
         "id": 3,
-        "work_title": "Piano Sonata No.1",
+        "work_title": "Piano Sonata No.1 in F minor",
         "composition_year": 1793,
         "opus": "2",
         "opus_number": 1
       },
       {
         "id": 4,
-        "work_title": "Piano Sonata No.2",
+        "work_title": "Piano Sonata No.2 in A major",
         "composition_year": 1794,
         "opus": "2",
         "opus_number": 2
       },
       {
         "id": 5,
-        "work_title": "Piano Sonata No.3",
+        "work_title": "Piano Sonata No.3 in C major",
         "composition_year": 1794,
         "opus": "2",
         "opus_number": 3
@@ -63,14 +63,14 @@
       },
       {
         "id": 8,
-        "work_title": "Cello Sonata No.1",
+        "work_title": "Cello Sonata No.1 in F major",
         "composition_year": 1796,
         "opus": "5",
         "opus_number": 1
       },
       {
         "id": 9,
-        "work_title": "Cello Sonata No.2",
+        "work_title": "Cello Sonata No.2 in G minor",
         "composition_year": 1796,
         "opus": "5",
         "opus_number": 2
@@ -84,7 +84,7 @@
       },
       {
         "id": 11,
-        "work_title": "Piano Sonata No.4 ('Grand Sonata')",
+        "work_title": "Piano Sonata No.4 ('Grand Sonata') in E\u266d major",
         "composition_year": 1796,
         "opus": "7",
         "opus_number": -1
@@ -119,21 +119,21 @@
       },
       {
         "id": 16,
-        "work_title": "Piano Sonata No.5",
+        "work_title": "Piano Sonata No.5 in C minor",
         "composition_year": 1795,
         "opus": "10",
         "opus_number": 1
       },
       {
         "id": 17,
-        "work_title": "Piano Sonata No.6",
+        "work_title": "Piano Sonata No.6 in F major",
         "composition_year": 1796,
         "opus": "10",
         "opus_number": 2
       },
       {
         "id": 18,
-        "work_title": "Piano Sonata No.7",
+        "work_title": "Piano Sonata No.7 in D major",
         "composition_year": 1797,
         "opus": "10",
         "opus_number": 3
@@ -147,49 +147,49 @@
       },
       {
         "id": 20,
-        "work_title": "Violin Sonata No.1",
+        "work_title": "Violin Sonata No.1 in D major",
         "composition_year": 1797,
         "opus": "12",
         "opus_number": 1
       },
       {
         "id": 21,
-        "work_title": "Violin Sonata No.2",
+        "work_title": "Violin Sonata No.2 in A major",
         "composition_year": 1797,
         "opus": "12",
         "opus_number": 2
       },
       {
         "id": 22,
-        "work_title": "Violin Sonata No.3",
+        "work_title": "Violin Sonata No.3 in E\u266d major",
         "composition_year": 1797,
         "opus": "12",
         "opus_number": 3
       },
       {
         "id": 23,
-        "work_title": "Piano Sonata No.8 ('Path\u00e9tique')",
+        "work_title": "Piano Sonata No.8 ('Path\u00e9tique') in C minor",
         "composition_year": 1797,
         "opus": "13",
         "opus_number": -1
       },
       {
         "id": 24,
-        "work_title": "Piano Sonata No.9",
+        "work_title": "Piano Sonata No.9 in E major",
         "composition_year": 1798,
         "opus": "14",
         "opus_number": 1
       },
       {
         "id": 25,
-        "work_title": "Piano Sonata No.10",
+        "work_title": "Piano Sonata No.10 in G major",
         "composition_year": 1799,
         "opus": "14",
         "opus_number": 2
       },
       {
         "id": 26,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in C major",
         "composition_year": 1795,
         "opus": "15",
         "opus_number": -1
@@ -217,49 +217,49 @@
       },
       {
         "id": 30,
-        "work_title": "String Quartet No.1",
+        "work_title": "String Quartet No.1 in F major",
         "composition_year": 1798,
         "opus": "18",
         "opus_number": 1
       },
       {
         "id": 31,
-        "work_title": "String Quartet No.2",
+        "work_title": "String Quartet No.2 in G major",
         "composition_year": 1798,
         "opus": "18",
         "opus_number": 2
       },
       {
         "id": 32,
-        "work_title": "String Quartet No.3",
+        "work_title": "String Quartet No.3 in D major",
         "composition_year": 1798,
         "opus": "18",
         "opus_number": 3
       },
       {
         "id": 33,
-        "work_title": "String Quartet No.4",
+        "work_title": "String Quartet No.4 in C minor",
         "composition_year": 1798,
         "opus": "18",
         "opus_number": 4
       },
       {
         "id": 34,
-        "work_title": "String Quartet No.5",
+        "work_title": "String Quartet No.5 in A major",
         "composition_year": 1798,
         "opus": "18",
         "opus_number": 5
       },
       {
         "id": 35,
-        "work_title": "String Quartet No.6",
+        "work_title": "String Quartet No.6 in B\u266d major",
         "composition_year": 1798,
         "opus": "18",
         "opus_number": 6
       },
       {
         "id": 36,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in B\u266d major",
         "composition_year": 1788,
         "opus": "19",
         "opus_number": -1
@@ -273,28 +273,28 @@
       },
       {
         "id": 38,
-        "work_title": "Symphony No.1",
+        "work_title": "Symphony No.1 in C major",
         "composition_year": 1799,
         "opus": "21",
         "opus_number": -1
       },
       {
         "id": 39,
-        "work_title": "Piano Sonata No.11",
+        "work_title": "Piano Sonata No.11 in B\u266d major",
         "composition_year": 1800,
         "opus": "22",
         "opus_number": -1
       },
       {
         "id": 40,
-        "work_title": "Violin Sonata No.4",
+        "work_title": "Violin Sonata No.4 in A minor",
         "composition_year": 1800,
         "opus": "23",
         "opus_number": -1
       },
       {
         "id": 41,
-        "work_title": "Violin Sonata No.5",
+        "work_title": "Violin Sonata No.5 in F major",
         "composition_year": 1800,
         "opus": "24",
         "opus_number": -1
@@ -308,28 +308,28 @@
       },
       {
         "id": 43,
-        "work_title": "Piano Sonata No.12 ('Funeral March')",
+        "work_title": "Piano Sonata No.12 ('Funeral March') in A\u266d major",
         "composition_year": 1800,
         "opus": "26",
         "opus_number": -1
       },
       {
         "id": 44,
-        "work_title": "Piano Sonata No.13 ('Quasi una fantasia')",
+        "work_title": "Piano Sonata No.13 ('Quasi una fantasia') in E\u266d major",
         "composition_year": 1800,
         "opus": "27",
         "opus_number": 1
       },
       {
         "id": 45,
-        "work_title": "Piano Sonata No.14 ('Moonlight')",
+        "work_title": "Piano Sonata No.14 ('Moonlight') in C\u266f minor",
         "composition_year": 1801,
         "opus": "27",
         "opus_number": 2
       },
       {
         "id": 46,
-        "work_title": "Piano Sonata No.15 ('Pastoral')",
+        "work_title": "Piano Sonata No.15 ('Pastoral') in D major",
         "composition_year": 1801,
         "opus": "28",
         "opus_number": -1
@@ -343,42 +343,42 @@
       },
       {
         "id": 48,
-        "work_title": "Violin Sonata No.6",
+        "work_title": "Violin Sonata No.6 in A major",
         "composition_year": 1801,
         "opus": "30",
         "opus_number": 1
       },
       {
         "id": 49,
-        "work_title": "Violin Sonata No.7 ('Eroica')",
+        "work_title": "Violin Sonata No.7 ('Eroica') in C minor",
         "composition_year": 1801,
         "opus": "30",
         "opus_number": 2
       },
       {
         "id": 50,
-        "work_title": "Violin Sonata No.8",
+        "work_title": "Violin Sonata No.8 in G major",
         "composition_year": 1801,
         "opus": "30",
         "opus_number": 3
       },
       {
         "id": 51,
-        "work_title": "Piano Sonata No.16",
+        "work_title": "Piano Sonata No.16 in G major",
         "composition_year": 1802,
         "opus": "31",
         "opus_number": 1
       },
       {
         "id": 52,
-        "work_title": "Piano Sonata No.17 ('Tempest')",
+        "work_title": "Piano Sonata No.17 ('Tempest') in D minor",
         "composition_year": 1802,
         "opus": "31",
         "opus_number": 2
       },
       {
         "id": 53,
-        "work_title": "Piano Sonata No.18 ('Hunt')",
+        "work_title": "Piano Sonata No.18 ('Hunt') in E\u266d major",
         "composition_year": 1802,
         "opus": "31",
         "opus_number": 3
@@ -399,21 +399,21 @@
       },
       {
         "id": 56,
-        "work_title": "Symphony No.2",
+        "work_title": "Symphony No.2 in D major",
         "composition_year": 1801,
         "opus": "36",
         "opus_number": -1
       },
       {
         "id": 57,
-        "work_title": "Symphony No.2",
+        "work_title": "Symphony No.2 in D major",
         "composition_year": 1805,
         "opus": "36",
         "opus_number": -1
       },
       {
         "id": 58,
-        "work_title": "Piano Concerto No.3",
+        "work_title": "Piano Concerto No.3 in C minor",
         "composition_year": 1800,
         "opus": "37",
         "opus_number": -1
@@ -462,7 +462,7 @@
       },
       {
         "id": 65,
-        "work_title": "Violin Sonata No.9 (\"Kreutzer\")",
+        "work_title": "Violin Sonata No.9 (\"Kreutzer\") in A major",
         "composition_year": 1802,
         "opus": "47",
         "opus_number": -1
@@ -511,14 +511,14 @@
       },
       {
         "id": 72,
-        "work_title": "Piano Sonata No.19",
+        "work_title": "Piano Sonata No.19 in G minor",
         "composition_year": 1797,
         "opus": "49",
         "opus_number": 1
       },
       {
         "id": 73,
-        "work_title": "Piano Sonata No.20",
+        "work_title": "Piano Sonata No.20 in G major",
         "composition_year": 1795,
         "opus": "49",
         "opus_number": 2
@@ -588,21 +588,21 @@
       },
       {
         "id": 83,
-        "work_title": "Piano Sonata No.21 (\"Waldstein\")",
+        "work_title": "Piano Sonata No.21 (\"Waldstein\") in C major",
         "composition_year": 1803,
         "opus": "53",
         "opus_number": -1
       },
       {
         "id": 84,
-        "work_title": "Piano Sonata No.22",
+        "work_title": "Piano Sonata No.22 in F major",
         "composition_year": 1804,
         "opus": "54",
         "opus_number": -1
       },
       {
         "id": 85,
-        "work_title": "Symphony No.3 ('Eroica')",
+        "work_title": "Symphony No.3 ('Eroica') in E\u266d major",
         "composition_year": 1803,
         "opus": "55",
         "opus_number": -1
@@ -616,49 +616,49 @@
       },
       {
         "id": 87,
-        "work_title": "Piano Sonata No.23 ('Apassionata')",
+        "work_title": "Piano Sonata No.23 ('Apassionata') in F minor",
         "composition_year": 1804,
         "opus": "57",
         "opus_number": -1
       },
       {
         "id": 88,
-        "work_title": "Piano Concerto No.4",
+        "work_title": "Piano Concerto No.4 in G major",
         "composition_year": 1804,
         "opus": "58",
         "opus_number": -1
       },
       {
         "id": 89,
-        "work_title": "Piano Concerto No.4",
+        "work_title": "Piano Concerto No.4 in G major",
         "composition_year": 1804,
         "opus": "58a",
         "opus_number": -1
       },
       {
         "id": 90,
-        "work_title": "String Quartet No.7",
+        "work_title": "String Quartet No.7 in F major",
         "composition_year": 1806,
         "opus": "59",
         "opus_number": 1
       },
       {
         "id": 91,
-        "work_title": "String Quartet No.8",
+        "work_title": "String Quartet No.8 in E minor",
         "composition_year": 1806,
         "opus": "59",
         "opus_number": 2
       },
       {
         "id": 92,
-        "work_title": "String Quartet No.9",
+        "work_title": "String Quartet No.9 in C major",
         "composition_year": 1806,
         "opus": "59",
         "opus_number": 3
       },
       {
         "id": 93,
-        "work_title": "Symphony No.4",
+        "work_title": "Symphony No.4 in B\u266d major",
         "composition_year": 1806,
         "opus": "60",
         "opus_number": -1
@@ -700,21 +700,21 @@
       },
       {
         "id": 99,
-        "work_title": "Symphony No.5",
+        "work_title": "Symphony No.5 in C minor",
         "composition_year": 1804,
         "opus": "67",
         "opus_number": -1
       },
       {
         "id": 100,
-        "work_title": "Symphony No.6",
+        "work_title": "Symphony No.6 in F major",
         "composition_year": 1807,
         "opus": "68",
         "opus_number": -1
       },
       {
         "id": 101,
-        "work_title": "Cello Sonata No.3",
+        "work_title": "Cello Sonata No.3 in A major",
         "composition_year": 1807,
         "opus": "69",
         "opus_number": -1
@@ -763,28 +763,28 @@
       },
       {
         "id": 108,
-        "work_title": "Leonora Overture No.2",
+        "work_title": "Leonora Overture No.2 in C major",
         "composition_year": 1804,
         "opus": "72a",
         "opus_number": -1
       },
       {
         "id": 109,
-        "work_title": "Leonora Overture No.3",
+        "work_title": "Leonora Overture No.3 in C major",
         "composition_year": 1806,
         "opus": "72b",
         "opus_number": -1
       },
       {
         "id": 110,
-        "work_title": "Piano Concerto No.5 ('Emperor')",
+        "work_title": "Piano Concerto No.5 ('Emperor') in E\u266d major",
         "composition_year": 1808,
         "opus": "73",
         "opus_number": -1
       },
       {
         "id": 111,
-        "work_title": "String Quartet No.10 ('Harp')",
+        "work_title": "String Quartet No.10 ('Harp') in E\u266d major",
         "composition_year": 1809,
         "opus": "74",
         "opus_number": -1
@@ -840,14 +840,14 @@
       },
       {
         "id": 119,
-        "work_title": "Piano Sonata No.24 ('A Th\u00e9r\u00e8se')",
+        "work_title": "Piano Sonata No.24 ('A Th\u00e9r\u00e8se') in F\u266f major",
         "composition_year": 1809,
         "opus": "78",
         "opus_number": -1
       },
       {
         "id": 120,
-        "work_title": "Piano Sonata No.25 ('Cuckoo')",
+        "work_title": "Piano Sonata No.25 ('Cuckoo') in G major",
         "composition_year": 1809,
         "opus": "79",
         "opus_number": -1
@@ -861,7 +861,7 @@
       },
       {
         "id": 122,
-        "work_title": "Piano Sonata No.26 ('Les adieux')",
+        "work_title": "Piano Sonata No.26 ('Les adieux') in E\u266d major",
         "composition_year": 1809,
         "opus": "81a",
         "opus_number": -1
@@ -973,7 +973,7 @@
       },
       {
         "id": 138,
-        "work_title": "Piano Sonata No.27",
+        "work_title": "Piano Sonata No.27 in E minor",
         "composition_year": 1814,
         "opus": "90",
         "opus_number": -1
@@ -987,14 +987,14 @@
       },
       {
         "id": 140,
-        "work_title": "Symphony No.7",
+        "work_title": "Symphony No.7 in A major",
         "composition_year": 1811,
         "opus": "92",
         "opus_number": -1
       },
       {
         "id": 141,
-        "work_title": "Symphony No.8",
+        "work_title": "Symphony No.8 in F major",
         "composition_year": 1812,
         "opus": "93",
         "opus_number": -1
@@ -1008,14 +1008,14 @@
       },
       {
         "id": 143,
-        "work_title": "String Quartet No.11 (\"Serioso\")",
+        "work_title": "String Quartet No.11 (\"Serioso\") in F minor",
         "composition_year": 1810,
         "opus": "95",
         "opus_number": -1
       },
       {
         "id": 144,
-        "work_title": "Violin Sonata No.10 (\"Cock-crow\")",
+        "work_title": "Violin Sonata No.10 (\"Cock-crow\") in G major",
         "composition_year": 1812,
         "opus": "96",
         "opus_number": -1
@@ -1092,21 +1092,21 @@
       },
       {
         "id": 155,
-        "work_title": "Piano Sonata No.28",
+        "work_title": "Piano Sonata No.28 in A major",
         "composition_year": 1816,
         "opus": "101",
         "opus_number": -1
       },
       {
         "id": 156,
-        "work_title": "Cello Sonata No.4",
+        "work_title": "Cello Sonata No.4 in C major",
         "composition_year": 1815,
         "opus": "102",
         "opus_number": 1
       },
       {
         "id": 157,
-        "work_title": "Cello Sonata No.5",
+        "work_title": "Cello Sonata No.5 in D major",
         "composition_year": 1815,
         "opus": "102",
         "opus_number": 2
@@ -1169,7 +1169,7 @@
       },
       {
         "id": 166,
-        "work_title": "Piano Sonata No.29 (\"Hammerklavier\")",
+        "work_title": "Piano Sonata No.29 (\"Hammerklavier\") in B\u266d major",
         "composition_year": 1816,
         "opus": "106",
         "opus_number": -1
@@ -1421,21 +1421,21 @@
       },
       {
         "id": 202,
-        "work_title": "Piano Sonata No.30",
+        "work_title": "Piano Sonata No.30 in E major",
         "composition_year": 1820,
         "opus": "109",
         "opus_number": -1
       },
       {
         "id": 203,
-        "work_title": "Piano Sonata No.31",
+        "work_title": "Piano Sonata No.31 in A\u266d major",
         "composition_year": 1821,
         "opus": "110",
         "opus_number": -1
       },
       {
         "id": 204,
-        "work_title": "Piano Sonata No.32",
+        "work_title": "Piano Sonata No.32 in C minor",
         "composition_year": 1821,
         "opus": "111",
         "opus_number": -1
@@ -1533,14 +1533,14 @@
       },
       {
         "id": 218,
-        "work_title": "Symphony No.9",
+        "work_title": "Symphony No.9 in D minor",
         "composition_year": 1817,
         "opus": "125",
         "opus_number": -1
       },
       {
         "id": 219,
-        "work_title": "String Quartet No.12",
+        "work_title": "String Quartet No.12 in E\u266d major",
         "composition_year": 1822,
         "opus": "127",
         "opus_number": -1
@@ -1561,28 +1561,28 @@
       },
       {
         "id": 222,
-        "work_title": "String Quartet No.13",
+        "work_title": "String Quartet No.13 in B\u266d major",
         "composition_year": 1825,
         "opus": "130",
         "opus_number": -1
       },
       {
         "id": 223,
-        "work_title": "String Quartet No.13",
+        "work_title": "String Quartet No.13 in B\u266d major",
         "composition_year": 1826,
         "opus": "130",
         "opus_number": -1
       },
       {
         "id": 224,
-        "work_title": "String Quartet No.14",
+        "work_title": "String Quartet No.14 in C\u266f minor",
         "composition_year": 1825,
         "opus": "131",
         "opus_number": -1
       },
       {
         "id": 225,
-        "work_title": "String Quartet No.15 ('Heiliger Dankgesang')",
+        "work_title": "String Quartet No.15 ('Heiliger Dankgesang') in A minor",
         "composition_year": 1823,
         "opus": "132",
         "opus_number": -1
@@ -1603,7 +1603,7 @@
       },
       {
         "id": 228,
-        "work_title": "String Quartet No.16",
+        "work_title": "String Quartet No.16 in F major",
         "composition_year": 1826,
         "opus": "135",
         "opus_number": -1
@@ -1624,7 +1624,7 @@
       },
       {
         "id": 231,
-        "work_title": "Leonora Overture No.1",
+        "work_title": "Leonora Overture No.1 in C major",
         "composition_year": 1807,
         "opus": "138",
         "opus_number": -1
@@ -1758,7 +1758,7 @@
       },
       {
         "id": 17,
-        "work_title": "Symphony No.1",
+        "work_title": "Symphony No.1 in E\u266d major",
         "composition_year": 1764,
         "opus": "16",
         "opus_number": -1
@@ -1772,7 +1772,7 @@
       },
       {
         "id": 19,
-        "work_title": "Symphony No.4",
+        "work_title": "Symphony No.4 in D major",
         "composition_year": 1765,
         "opus": "19",
         "opus_number": -1
@@ -1807,7 +1807,7 @@
       },
       {
         "id": 24,
-        "work_title": "Symphony No.5",
+        "work_title": "Symphony No.5 in B\u266d major",
         "composition_year": 1765,
         "opus": "22",
         "opus_number": -1
@@ -1905,7 +1905,7 @@
       },
       {
         "id": 38,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in F major",
         "composition_year": 1767,
         "opus": "37",
         "opus_number": -1
@@ -1919,21 +1919,21 @@
       },
       {
         "id": 40,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in B\u266d major",
         "composition_year": 1767,
         "opus": "39",
         "opus_number": -1
       },
       {
         "id": 41,
-        "work_title": "Piano Concerto No.3",
+        "work_title": "Piano Concerto No.3 in D major",
         "composition_year": 1767,
         "opus": "40",
         "opus_number": -1
       },
       {
         "id": 42,
-        "work_title": "Piano Concerto No.4",
+        "work_title": "Piano Concerto No.4 in G major",
         "composition_year": 1767,
         "opus": "41",
         "opus_number": -1
@@ -1961,21 +1961,21 @@
       },
       {
         "id": 46,
-        "work_title": "Symphony No.43",
+        "work_title": "Symphony No.43 in F major",
         "composition_year": 1767,
         "opus": "76",
         "opus_number": -1
       },
       {
         "id": 47,
-        "work_title": "Symphony No.6",
+        "work_title": "Symphony No.6 in F major",
         "composition_year": 1767,
         "opus": "43",
         "opus_number": -1
       },
       {
         "id": 48,
-        "work_title": "Symphony No.7",
+        "work_title": "Symphony No.7 in D major",
         "composition_year": 1768,
         "opus": "45",
         "opus_number": -1
@@ -1989,7 +1989,7 @@
       },
       {
         "id": 50,
-        "work_title": "Symphony No.55",
+        "work_title": "Symphony No.55 in B\u266d major",
         "composition_year": 1768,
         "opus": "Anh.214",
         "opus_number": -1
@@ -2024,14 +2024,14 @@
       },
       {
         "id": 55,
-        "work_title": "Missa solemnis  (\"Mass No.4\" or \"Waisenhaus\")",
+        "work_title": "Missa solemnis  (\"Mass No.4\" or \"Waisenhaus\") in C minor",
         "composition_year": 1768,
         "opus": "139",
         "opus_number": -1
       },
       {
         "id": 56,
-        "work_title": "Missa brevis (\"Mass No.1\")",
+        "work_title": "Missa brevis (\"Mass No.1\") in G major",
         "composition_year": 1768,
         "opus": "49",
         "opus_number": -1
@@ -2045,14 +2045,14 @@
       },
       {
         "id": 58,
-        "work_title": "Symphony No.8",
+        "work_title": "Symphony No.8 in D major",
         "composition_year": 1768,
         "opus": "48",
         "opus_number": -1
       },
       {
         "id": 59,
-        "work_title": "Missa brevis  (\"Mass No.2\")",
+        "work_title": "Missa brevis  (\"Mass No.2\") in D minor",
         "composition_year": 1769,
         "opus": "65",
         "opus_number": -1
@@ -2073,7 +2073,7 @@
       },
       {
         "id": 62,
-        "work_title": "Cassation (\"Serenade No.1\")",
+        "work_title": "Cassation (\"Serenade No.1\") in D major",
         "composition_year": 1769,
         "opus": "100",
         "opus_number": -1
@@ -2178,7 +2178,7 @@
       },
       {
         "id": 77,
-        "work_title": "String Quartet No.1",
+        "work_title": "String Quartet No.1 in G major",
         "composition_year": 1770,
         "opus": "80",
         "opus_number": -1
@@ -2206,21 +2206,21 @@
       },
       {
         "id": 81,
-        "work_title": "Symphony No.44",
+        "work_title": "Symphony No.44 in D major",
         "composition_year": 1770,
         "opus": "81",
         "opus_number": -1
       },
       {
         "id": 82,
-        "work_title": "Symphony No.47",
+        "work_title": "Symphony No.47 in D major",
         "composition_year": 1770,
         "opus": "97",
         "opus_number": -1
       },
       {
         "id": 83,
-        "work_title": "Symphony No.45",
+        "work_title": "Symphony No.45 in D major",
         "composition_year": 1770,
         "opus": "95",
         "opus_number": -1
@@ -2241,7 +2241,7 @@
       },
       {
         "id": 86,
-        "work_title": "Symphony No.11",
+        "work_title": "Symphony No.11 in D major",
         "composition_year": 1770,
         "opus": "84",
         "opus_number": -1
@@ -2276,7 +2276,7 @@
       },
       {
         "id": 91,
-        "work_title": "Symphony No.10",
+        "work_title": "Symphony No.10 in G major",
         "composition_year": 1770,
         "opus": "74",
         "opus_number": -1
@@ -2318,21 +2318,21 @@
       },
       {
         "id": 97,
-        "work_title": "Symphony No.42",
+        "work_title": "Symphony No.42 in F major",
         "composition_year": 1771,
         "opus": "75",
         "opus_number": -1
       },
       {
         "id": 98,
-        "work_title": "Symphony No.9",
+        "work_title": "Symphony No.9 in C major",
         "composition_year": 1769,
         "opus": "73",
         "opus_number": -1
       },
       {
         "id": 99,
-        "work_title": "Symphony No.12",
+        "work_title": "Symphony No.12 in G major",
         "composition_year": 1771,
         "opus": "110",
         "opus_number": -1
@@ -2346,21 +2346,21 @@
       },
       {
         "id": 101,
-        "work_title": "Symphony No.48",
+        "work_title": "Symphony No.48 in D major",
         "composition_year": 1771,
         "opus": "120",
         "opus_number": -1
       },
       {
         "id": 102,
-        "work_title": "Symphony No.46",
+        "work_title": "Symphony No.46 in C major",
         "composition_year": 1771,
         "opus": "96",
         "opus_number": -1
       },
       {
         "id": 103,
-        "work_title": "Symphony No.13",
+        "work_title": "Symphony No.13 in F major",
         "composition_year": 1771,
         "opus": "112",
         "opus_number": -1
@@ -2374,7 +2374,7 @@
       },
       {
         "id": 105,
-        "work_title": "Symphony No.14",
+        "work_title": "Symphony No.14 in A major",
         "composition_year": 1771,
         "opus": "114",
         "opus_number": -1
@@ -2388,7 +2388,7 @@
       },
       {
         "id": 107,
-        "work_title": "Symphony No.15",
+        "work_title": "Symphony No.15 in G major",
         "composition_year": 1772,
         "opus": "124",
         "opus_number": -1
@@ -2416,21 +2416,21 @@
       },
       {
         "id": 111,
-        "work_title": "Divertimento (\"Salzburg Symphony No.1\")",
+        "work_title": "Divertimento (\"Salzburg Symphony No.1\") in D major",
         "composition_year": 1772,
         "opus": "136",
         "opus_number": -1
       },
       {
         "id": 112,
-        "work_title": "Divertimento (\"Salzburg Symphony No.2\")",
+        "work_title": "Divertimento (\"Salzburg Symphony No.2\") in B\u266d major",
         "composition_year": 1772,
         "opus": "137",
         "opus_number": -1
       },
       {
         "id": 113,
-        "work_title": "Divertimento (\"Salzburg Symphony No.3\")",
+        "work_title": "Divertimento (\"Salzburg Symphony No.3\") in F major",
         "composition_year": 1772,
         "opus": "138",
         "opus_number": -1
@@ -2472,21 +2472,21 @@
       },
       {
         "id": 119,
-        "work_title": "Symphony No.16",
+        "work_title": "Symphony No.16 in C major",
         "composition_year": 1772,
         "opus": "128",
         "opus_number": -1
       },
       {
         "id": 120,
-        "work_title": "Symphony No.17",
+        "work_title": "Symphony No.17 in G major",
         "composition_year": 1772,
         "opus": "129",
         "opus_number": -1
       },
       {
         "id": 121,
-        "work_title": "Symphony No.18",
+        "work_title": "Symphony No.18 in F major",
         "composition_year": 1772,
         "opus": "130",
         "opus_number": -1
@@ -2500,35 +2500,35 @@
       },
       {
         "id": 123,
-        "work_title": "Symphony No.19",
+        "work_title": "Symphony No.19 in E\u266d major",
         "composition_year": 1772,
         "opus": "132",
         "opus_number": -1
       },
       {
         "id": 124,
-        "work_title": "Symphony No.20",
+        "work_title": "Symphony No.20 in D major",
         "composition_year": 1772,
         "opus": "133",
         "opus_number": -1
       },
       {
         "id": 125,
-        "work_title": "Symphony No.21",
+        "work_title": "Symphony No.21 in A major",
         "composition_year": 1772,
         "opus": "134",
         "opus_number": -1
       },
       {
         "id": 126,
-        "work_title": "String Quartet No.2 (\"Divertimento\")",
+        "work_title": "String Quartet No.2 (\"Divertimento\") in D major",
         "composition_year": 1772,
         "opus": "155",
         "opus_number": -1
       },
       {
         "id": 127,
-        "work_title": "String Quartet No.3",
+        "work_title": "String Quartet No.3 in G major",
         "composition_year": 1772,
         "opus": "156",
         "opus_number": -1
@@ -2542,21 +2542,21 @@
       },
       {
         "id": 129,
-        "work_title": "Symphony No.50",
+        "work_title": "Symphony No.50 in D major",
         "composition_year": 1774,
         "opus": "161",
         "opus_number": -1
       },
       {
         "id": 130,
-        "work_title": "String Quartet No.4",
+        "work_title": "String Quartet No.4 in C major",
         "composition_year": 1772,
         "opus": "157",
         "opus_number": -1
       },
       {
         "id": 131,
-        "work_title": "String Quartet No.5  (\"Divertimento\")",
+        "work_title": "String Quartet No.5  (\"Divertimento\") in F major",
         "composition_year": 1773,
         "opus": "158",
         "opus_number": -1
@@ -2570,14 +2570,14 @@
       },
       {
         "id": 133,
-        "work_title": "String Quartet No.6 (\"Divertimento\")",
+        "work_title": "String Quartet No.6 (\"Divertimento\") in B\u266d major",
         "composition_year": 1773,
         "opus": "159",
         "opus_number": -1
       },
       {
         "id": 134,
-        "work_title": "String Quartet No.7",
+        "work_title": "String Quartet No.7 in E\u266d major",
         "composition_year": 1773,
         "opus": "160",
         "opus_number": -1
@@ -2598,28 +2598,28 @@
       },
       {
         "id": 137,
-        "work_title": "Symphony No.26",
+        "work_title": "Symphony No.26 in E\u266d major",
         "composition_year": 1773,
         "opus": "184",
         "opus_number": -1
       },
       {
         "id": 138,
-        "work_title": "Symphony No.27",
+        "work_title": "Symphony No.27 in G major",
         "composition_year": 1773,
         "opus": "199",
         "opus_number": -1
       },
       {
         "id": 139,
-        "work_title": "Symphony No.22",
+        "work_title": "Symphony No.22 in C major",
         "composition_year": 1773,
         "opus": "162",
         "opus_number": -1
       },
       {
         "id": 140,
-        "work_title": "Symphony No.23",
+        "work_title": "Symphony No.23 in D major",
         "composition_year": 1773,
         "opus": "181",
         "opus_number": -1
@@ -2661,84 +2661,84 @@
       },
       {
         "id": 146,
-        "work_title": "String Quartet No.8",
+        "work_title": "String Quartet No.8 in F major",
         "composition_year": 1773,
         "opus": "168",
         "opus_number": -1
       },
       {
         "id": 147,
-        "work_title": "String Quartet No.9",
+        "work_title": "String Quartet No.9 in A major",
         "composition_year": 1773,
         "opus": "169",
         "opus_number": -1
       },
       {
         "id": 148,
-        "work_title": "String Quartet No.10",
+        "work_title": "String Quartet No.10 in C major",
         "composition_year": 1773,
         "opus": "170",
         "opus_number": -1
       },
       {
         "id": 149,
-        "work_title": "String Quartet No.11",
+        "work_title": "String Quartet No.11 in E\u266d major",
         "composition_year": 1773,
         "opus": "171",
         "opus_number": -1
       },
       {
         "id": 150,
-        "work_title": "String Quartet No.12",
+        "work_title": "String Quartet No.12 in B\u266d major",
         "composition_year": 1773,
         "opus": "172",
         "opus_number": -1
       },
       {
         "id": 151,
-        "work_title": "String Quartet No.13",
+        "work_title": "String Quartet No.13 in D minor",
         "composition_year": 1773,
         "opus": "173",
         "opus_number": -1
       },
       {
         "id": 152,
-        "work_title": "Symphony No.24",
+        "work_title": "Symphony No.24 in B\u266d major",
         "composition_year": 1773,
         "opus": "182",
         "opus_number": -1
       },
       {
         "id": 153,
-        "work_title": "Symphony No.25",
+        "work_title": "Symphony No.25 in G minor",
         "composition_year": 1773,
         "opus": "183",
         "opus_number": -1
       },
       {
         "id": 154,
-        "work_title": "String Quintet No.1",
+        "work_title": "String Quintet No.1 in B\u266d major",
         "composition_year": 1773,
         "opus": "174",
         "opus_number": -1
       },
       {
         "id": 155,
-        "work_title": "Piano Concerto No.5",
+        "work_title": "Piano Concerto No.5 in D major",
         "composition_year": 1773,
         "opus": "175",
         "opus_number": -1
       },
       {
         "id": 156,
-        "work_title": "Symphony No.29",
+        "work_title": "Symphony No.29 in A major",
         "composition_year": 1774,
         "opus": "201",
         "opus_number": -1
       },
       {
         "id": 157,
-        "work_title": "Symphony No.30",
+        "work_title": "Symphony No.30 in D major",
         "composition_year": 1774,
         "opus": "202",
         "opus_number": -1
@@ -2773,7 +2773,7 @@
       },
       {
         "id": 162,
-        "work_title": "Missa brevis  (\"Mass No.6\")",
+        "work_title": "Missa brevis  (\"Mass No.6\") in F major",
         "composition_year": 1774,
         "opus": "192",
         "opus_number": -1
@@ -2787,7 +2787,7 @@
       },
       {
         "id": 164,
-        "work_title": "Missa brevis  (\"Mass No.8\")",
+        "work_title": "Missa brevis  (\"Mass No.8\") in D major",
         "composition_year": 1774,
         "opus": "194",
         "opus_number": -1
@@ -2815,42 +2815,42 @@
       },
       {
         "id": 168,
-        "work_title": "Piano Sonata No.1",
+        "work_title": "Piano Sonata No.1 in C major",
         "composition_year": 1775,
         "opus": "279",
         "opus_number": -1
       },
       {
         "id": 169,
-        "work_title": "Piano Sonata No.2",
+        "work_title": "Piano Sonata No.2 in F major",
         "composition_year": 1775,
         "opus": "280",
         "opus_number": -1
       },
       {
         "id": 170,
-        "work_title": "Piano Sonata No.3",
+        "work_title": "Piano Sonata No.3 in B\u266d major",
         "composition_year": 1775,
         "opus": "281",
         "opus_number": -1
       },
       {
         "id": 171,
-        "work_title": "Piano Sonata No.4",
+        "work_title": "Piano Sonata No.4 in E\u266d major",
         "composition_year": 1775,
         "opus": "282",
         "opus_number": -1
       },
       {
         "id": 172,
-        "work_title": "Piano Sonata No.5",
+        "work_title": "Piano Sonata No.5 in G major",
         "composition_year": 1775,
         "opus": "283",
         "opus_number": -1
       },
       {
         "id": 173,
-        "work_title": "Symphony No.28",
+        "work_title": "Symphony No.28 in C major",
         "composition_year": 1774,
         "opus": "200",
         "opus_number": -1
@@ -2864,7 +2864,7 @@
       },
       {
         "id": 175,
-        "work_title": "Missa brevis  (\"Mass No.9\" or \"Spatzen\")",
+        "work_title": "Missa brevis  (\"Mass No.9\" or \"Spatzen\") in C major",
         "composition_year": 1775,
         "opus": "220",
         "opus_number": -1
@@ -2885,21 +2885,21 @@
       },
       {
         "id": 178,
-        "work_title": "Piano Sonata No.6  (\"Durnitz\")",
+        "work_title": "Piano Sonata No.6  (\"Durnitz\") in D major",
         "composition_year": 1775,
         "opus": "284",
         "opus_number": -1
       },
       {
         "id": 179,
-        "work_title": "Violin Concerto No.1",
+        "work_title": "Violin Concerto No.1 in B\u266d major",
         "composition_year": 1773,
         "opus": "207",
         "opus_number": -1
       },
       {
         "id": 180,
-        "work_title": "Allegro (\"Symphony No.51\")",
+        "work_title": "Allegro (\"Symphony No.51\") in D major",
         "composition_year": 1775,
         "opus": "121",
         "opus_number": -1
@@ -2927,7 +2927,7 @@
       },
       {
         "id": 184,
-        "work_title": "Violin Concerto No.2",
+        "work_title": "Violin Concerto No.2 in D major",
         "composition_year": 1775,
         "opus": "211",
         "opus_number": -1
@@ -2962,7 +2962,7 @@
       },
       {
         "id": 189,
-        "work_title": "Symphony No.52",
+        "work_title": "Symphony No.52 in C major",
         "composition_year": 1775,
         "opus": "102",
         "opus_number": -1
@@ -2976,7 +2976,7 @@
       },
       {
         "id": 191,
-        "work_title": "Violin Concerto No.3  (\"Strassburg\")",
+        "work_title": "Violin Concerto No.3  (\"Strassburg\") in G major",
         "composition_year": 1775,
         "opus": "216",
         "opus_number": -1
@@ -2990,21 +2990,21 @@
       },
       {
         "id": 193,
-        "work_title": "Violin Concerto No.4",
+        "work_title": "Violin Concerto No.4 in D major",
         "composition_year": 1775,
         "opus": "218",
         "opus_number": -1
       },
       {
         "id": 194,
-        "work_title": "Violin Concerto No.5  (\"Turkish\")",
+        "work_title": "Violin Concerto No.5  (\"Turkish\") in A major",
         "composition_year": 1775,
         "opus": "219",
         "opus_number": -1
       },
       {
         "id": 195,
-        "work_title": "Piano Concerto No.6",
+        "work_title": "Piano Concerto No.6 in B\u266d major",
         "composition_year": 1776,
         "opus": "238",
         "opus_number": -1
@@ -3060,7 +3060,7 @@
       },
       {
         "id": 203,
-        "work_title": "Piano Concerto No.7  (\"Lodron\")",
+        "work_title": "Piano Concerto No.7  (\"Lodron\") in F major",
         "composition_year": 1779,
         "opus": "242",
         "opus_number": -1
@@ -3088,7 +3088,7 @@
       },
       {
         "id": 207,
-        "work_title": "Piano Concerto No.8  (\"Lutzow\")",
+        "work_title": "Piano Concerto No.8  (\"Lutzow\") in C major",
         "composition_year": 1776,
         "opus": "246",
         "opus_number": -1
@@ -3151,7 +3151,7 @@
       },
       {
         "id": 216,
-        "work_title": "Divertimento (\"Piano Trio No.1\")",
+        "work_title": "Divertimento (\"Piano Trio No.1\") in B\u266d major",
         "composition_year": 1776,
         "opus": "254",
         "opus_number": -1
@@ -3179,14 +3179,14 @@
       },
       {
         "id": 220,
-        "work_title": "Missa brevis (\"Mass No.11\" or \"Spaur\")",
+        "work_title": "Missa brevis (\"Mass No.11\" or \"Spaur\") in C major",
         "composition_year": 1775,
         "opus": "258",
         "opus_number": -1
       },
       {
         "id": 221,
-        "work_title": "Missa brevis (\"Mass No.12\" or  (\"Organ Solo\")",
+        "work_title": "Missa brevis (\"Mass No.12\" or  (\"Organ Solo\") in C major",
         "composition_year": 1775,
         "opus": "259",
         "opus_number": -1
@@ -3228,7 +3228,7 @@
       },
       {
         "id": 227,
-        "work_title": "Piano Concerto No.9  (\"Jeunehomme\" or \"Jenamy\")",
+        "work_title": "Piano Concerto No.9  (\"Jeunehomme\" or \"Jenamy\") in E\u266d major",
         "composition_year": 1777,
         "opus": "271",
         "opus_number": -1
@@ -3291,7 +3291,7 @@
       },
       {
         "id": 236,
-        "work_title": "Missa brevis  (\"Mass No.14\")",
+        "work_title": "Missa brevis  (\"Mass No.14\") in B\u266d major",
         "composition_year": 1772,
         "opus": "275",
         "opus_number": -1
@@ -3312,14 +3312,14 @@
       },
       {
         "id": 239,
-        "work_title": "Piano Sonata No.7",
+        "work_title": "Piano Sonata No.7 in C major",
         "composition_year": 1777,
         "opus": "309",
         "opus_number": -1
       },
       {
         "id": 240,
-        "work_title": "Piano Sonata No.9",
+        "work_title": "Piano Sonata No.9 in D major",
         "composition_year": 1777,
         "opus": "311",
         "opus_number": -1
@@ -3473,7 +3473,7 @@
       },
       {
         "id": 262,
-        "work_title": "Symphony No.31  (\"Paris\")",
+        "work_title": "Symphony No.31  (\"Paris\") in D major",
         "composition_year": 1778,
         "opus": "297",
         "opus_number": -1
@@ -3494,28 +3494,28 @@
       },
       {
         "id": 265,
-        "work_title": "Piano Sonata No.8",
+        "work_title": "Piano Sonata No.8 in A minor",
         "composition_year": 1778,
         "opus": "310",
         "opus_number": -1
       },
       {
         "id": 266,
-        "work_title": "Piano Sonata No.10",
+        "work_title": "Piano Sonata No.10 in C major",
         "composition_year": 1783,
         "opus": "330",
         "opus_number": -1
       },
       {
         "id": 267,
-        "work_title": "Piano Sonata No.11  (\"Alla Turca\")",
+        "work_title": "Piano Sonata No.11  (\"Alla Turca\") in A major",
         "composition_year": 1783,
         "opus": "331",
         "opus_number": -1
       },
       {
         "id": 268,
-        "work_title": "Piano Sonata No.12",
+        "work_title": "Piano Sonata No.12 in F major",
         "composition_year": 1783,
         "opus": "332",
         "opus_number": -1
@@ -3529,7 +3529,7 @@
       },
       {
         "id": 270,
-        "work_title": "Piano Sonata No.13  (\"Linz\")",
+        "work_title": "Piano Sonata No.13  (\"Linz\") in B\u266d major",
         "composition_year": 1783,
         "opus": "333",
         "opus_number": -1
@@ -3543,7 +3543,7 @@
       },
       {
         "id": 272,
-        "work_title": "Piano Concerto No.10",
+        "work_title": "Piano Concerto No.10 in E\u266d major",
         "composition_year": 1779,
         "opus": "365",
         "opus_number": -1
@@ -3585,14 +3585,14 @@
       },
       {
         "id": 278,
-        "work_title": "Symphony No.32",
+        "work_title": "Symphony No.32 in G major",
         "composition_year": 1779,
         "opus": "318",
         "opus_number": -1
       },
       {
         "id": 279,
-        "work_title": "Symphony No.33",
+        "work_title": "Symphony No.33 in B\u266d major",
         "composition_year": 1779,
         "opus": "319",
         "opus_number": -1
@@ -3676,14 +3676,14 @@
       },
       {
         "id": 291,
-        "work_title": "Missa solemnis (\"Mass No.16\")",
+        "work_title": "Missa solemnis (\"Mass No.16\") in C major",
         "composition_year": 1780,
         "opus": "337",
         "opus_number": -1
       },
       {
         "id": 292,
-        "work_title": "Symphony No.34",
+        "work_title": "Symphony No.34 in C major",
         "composition_year": 1780,
         "opus": "338",
         "opus_number": -1
@@ -4054,7 +4054,7 @@
       },
       {
         "id": 345,
-        "work_title": "Symphony No.35  (\"Haffner\")",
+        "work_title": "Symphony No.35  (\"Haffner\") in D major",
         "composition_year": 1782,
         "opus": "385",
         "opus_number": -1
@@ -4124,7 +4124,7 @@
       },
       {
         "id": 355,
-        "work_title": "Piano Concerto No.12",
+        "work_title": "Piano Concerto No.12 in A major",
         "composition_year": 1782,
         "opus": "414",
         "opus_number": -1
@@ -4159,21 +4159,21 @@
       },
       {
         "id": 360,
-        "work_title": "String Quartet No.14",
+        "work_title": "String Quartet No.14 in G major",
         "composition_year": 1782,
         "opus": "387",
         "opus_number": -1
       },
       {
         "id": 361,
-        "work_title": "Piano Concerto No.11",
+        "work_title": "Piano Concerto No.11 in F major",
         "composition_year": 1783,
         "opus": "413",
         "opus_number": -1
       },
       {
         "id": 362,
-        "work_title": "Piano Concerto No.13",
+        "work_title": "Piano Concerto No.13 in C major",
         "composition_year": 1783,
         "opus": "415",
         "opus_number": -1
@@ -4236,7 +4236,7 @@
       },
       {
         "id": 371,
-        "work_title": "String Quartet No.15",
+        "work_title": "String Quartet No.15 in D minor",
         "composition_year": 1783,
         "opus": "421",
         "opus_number": -1
@@ -4278,7 +4278,7 @@
       },
       {
         "id": 377,
-        "work_title": "String Quartet No.16",
+        "work_title": "String Quartet No.16 in E\u266d major",
         "composition_year": 1783,
         "opus": "428",
         "opus_number": -1
@@ -4313,14 +4313,14 @@
       },
       {
         "id": 382,
-        "work_title": "Symphony No.36  (\"Linz\")",
+        "work_title": "Symphony No.36  (\"Linz\") in C major",
         "composition_year": 1783,
         "opus": "425",
         "opus_number": -1
       },
       {
         "id": 383,
-        "work_title": "Symphony No.37",
+        "work_title": "Symphony No.37 in G major",
         "composition_year": 1784,
         "opus": "444",
         "opus_number": -1
@@ -4404,21 +4404,21 @@
       },
       {
         "id": 395,
-        "work_title": "Piano Concerto No.14",
+        "work_title": "Piano Concerto No.14 in E\u266d major",
         "composition_year": 1782,
         "opus": "449",
         "opus_number": -1
       },
       {
         "id": 396,
-        "work_title": "Piano Concerto No.15",
+        "work_title": "Piano Concerto No.15 in B\u266d major",
         "composition_year": 1784,
         "opus": "450",
         "opus_number": -1
       },
       {
         "id": 397,
-        "work_title": "Piano Concerto No.16",
+        "work_title": "Piano Concerto No.16 in D major",
         "composition_year": 1784,
         "opus": "451",
         "opus_number": -1
@@ -4439,7 +4439,7 @@
       },
       {
         "id": 400,
-        "work_title": "Piano Concerto No.17",
+        "work_title": "Piano Concerto No.17 in G major",
         "composition_year": 1784,
         "opus": "453",
         "opus_number": -1
@@ -4453,35 +4453,35 @@
       },
       {
         "id": 402,
-        "work_title": "Piano Concerto No.18",
+        "work_title": "Piano Concerto No.18 in B\u266d major",
         "composition_year": 1784,
         "opus": "456",
         "opus_number": -1
       },
       {
         "id": 403,
-        "work_title": "Piano Sonata No.14",
+        "work_title": "Piano Sonata No.14 in C minor",
         "composition_year": 1784,
         "opus": "457",
         "opus_number": -1
       },
       {
         "id": 404,
-        "work_title": "String Quartet No.17  (\"Hunt\")",
+        "work_title": "String Quartet No.17  (\"Hunt\") in B\u266d major",
         "composition_year": 1784,
         "opus": "458",
         "opus_number": -1
       },
       {
         "id": 405,
-        "work_title": "Piano Concerto No.19",
+        "work_title": "Piano Concerto No.19 in F major",
         "composition_year": 1784,
         "opus": "459",
         "opus_number": -1
       },
       {
         "id": 406,
-        "work_title": "String Quartet No.18",
+        "work_title": "String Quartet No.18 in A major",
         "composition_year": 1785,
         "opus": "464",
         "opus_number": -1
@@ -4502,14 +4502,14 @@
       },
       {
         "id": 409,
-        "work_title": "Piano Concerto No.20",
+        "work_title": "Piano Concerto No.20 in D minor",
         "composition_year": 1785,
         "opus": "466",
         "opus_number": -1
       },
       {
         "id": 410,
-        "work_title": "Piano Concerto No.21",
+        "work_title": "Piano Concerto No.21 in C major",
         "composition_year": 1785,
         "opus": "467",
         "opus_number": -1
@@ -4628,7 +4628,7 @@
       },
       {
         "id": 427,
-        "work_title": "Piano Concerto No.22",
+        "work_title": "Piano Concerto No.22 in E\u266d major",
         "composition_year": 1785,
         "opus": "482",
         "opus_number": -1
@@ -4698,7 +4698,7 @@
       },
       {
         "id": 437,
-        "work_title": "Piano Concerto No.23",
+        "work_title": "Piano Concerto No.23 in A major",
         "composition_year": 1784,
         "opus": "488",
         "opus_number": -1
@@ -4719,7 +4719,7 @@
       },
       {
         "id": 440,
-        "work_title": "Piano Concerto No.24",
+        "work_title": "Piano Concerto No.24 in C minor",
         "composition_year": 1786,
         "opus": "491",
         "opus_number": -1
@@ -4810,14 +4810,14 @@
       },
       {
         "id": 453,
-        "work_title": "Piano Concerto No.25",
+        "work_title": "Piano Concerto No.25 in C major",
         "composition_year": 1784,
         "opus": "503",
         "opus_number": -1
       },
       {
         "id": 454,
-        "work_title": "Symphony No.38  (\"Prague\")",
+        "work_title": "Symphony No.38  (\"Prague\") in D major",
         "composition_year": 1786,
         "opus": "504",
         "opus_number": -1
@@ -4887,7 +4887,7 @@
       },
       {
         "id": 464,
-        "work_title": "String Quintet No.3",
+        "work_title": "String Quintet No.3 in C major",
         "composition_year": 1787,
         "opus": "515",
         "opus_number": -1
@@ -4908,14 +4908,14 @@
       },
       {
         "id": 467,
-        "work_title": "String Quintet No.4",
+        "work_title": "String Quintet No.4 in G minor",
         "composition_year": 1787,
         "opus": "516",
         "opus_number": -1
       },
       {
         "id": 468,
-        "work_title": "String Quintet No.2",
+        "work_title": "String Quintet No.2 in C minor",
         "composition_year": 1787,
         "opus": "406",
         "opus_number": -1
@@ -4985,7 +4985,7 @@
       },
       {
         "id": 478,
-        "work_title": "Eine kleine Nachtmusik  (\"Serenade No.13\")",
+        "work_title": "Eine kleine Nachtmusik  (\"Serenade No.13\") in G major",
         "composition_year": 1787,
         "opus": "525",
         "opus_number": -1
@@ -5041,7 +5041,7 @@
       },
       {
         "id": 486,
-        "work_title": "Piano Sonata No.15",
+        "work_title": "Piano Sonata No.15 in F major",
         "composition_year": 1788,
         "opus": "533",
         "opus_number": -1
@@ -5069,7 +5069,7 @@
       },
       {
         "id": 490,
-        "work_title": "Piano Concerto No.26  (\"Coronation\")",
+        "work_title": "Piano Concerto No.26  (\"Coronation\") in D major",
         "composition_year": 1787,
         "opus": "537",
         "opus_number": -1
@@ -5111,14 +5111,14 @@
       },
       {
         "id": 496,
-        "work_title": "Symphony No.39",
+        "work_title": "Symphony No.39 in E\u266d major",
         "composition_year": 1788,
         "opus": "543",
         "opus_number": -1
       },
       {
         "id": 497,
-        "work_title": "Piano Sonata No.16  (\"Semplice\")",
+        "work_title": "Piano Sonata No.16  (\"Semplice\") in C major",
         "composition_year": 1788,
         "opus": "545",
         "opus_number": -1
@@ -5167,14 +5167,14 @@
       },
       {
         "id": 504,
-        "work_title": "Symphony No.40",
+        "work_title": "Symphony No.40 in G minor",
         "composition_year": 1788,
         "opus": "550",
         "opus_number": -1
       },
       {
         "id": 505,
-        "work_title": "Symphony No.41  (\"Jupiter\")",
+        "work_title": "Symphony No.41  (\"Jupiter\") in C major",
         "composition_year": 1788,
         "opus": "551",
         "opus_number": -1
@@ -5328,14 +5328,14 @@
       },
       {
         "id": 527,
-        "work_title": "String Quartet No.21  (\"First Prussian Quartet\")",
+        "work_title": "String Quartet No.21  (\"First Prussian Quartet\") in D major",
         "composition_year": 1789,
         "opus": "575",
         "opus_number": -1
       },
       {
         "id": 528,
-        "work_title": "Piano Sonata No.18",
+        "work_title": "Piano Sonata No.18 in D major",
         "composition_year": 1789,
         "opus": "576",
         "opus_number": -1
@@ -5468,7 +5468,7 @@
       },
       {
         "id": 547,
-        "work_title": "String Quartet No.22  (\"Second Prussian Quartet\")",
+        "work_title": "String Quartet No.22  (\"Second Prussian Quartet\") in B\u266d major",
         "composition_year": 1790,
         "opus": "589",
         "opus_number": -1
@@ -5482,7 +5482,7 @@
       },
       {
         "id": 549,
-        "work_title": "String Quartet No.23  (\"Third Prussian Quartet\")",
+        "work_title": "String Quartet No.23  (\"Third Prussian Quartet\") in F major",
         "composition_year": 1790,
         "opus": "590",
         "opus_number": -1
@@ -5538,7 +5538,7 @@
       },
       {
         "id": 557,
-        "work_title": "String Quintet No.5",
+        "work_title": "String Quintet No.5 in D major",
         "composition_year": 1790,
         "opus": "593",
         "opus_number": -1
@@ -5559,7 +5559,7 @@
       },
       {
         "id": 560,
-        "work_title": "Piano Concerto No.27",
+        "work_title": "Piano Concerto No.27 in B\u266d major",
         "composition_year": 1791,
         "opus": "595",
         "opus_number": -1
@@ -5636,7 +5636,7 @@
       },
       {
         "id": 571,
-        "work_title": "String Quintet No.6",
+        "work_title": "String Quintet No.6 in E\u266d major",
         "composition_year": 1791,
         "opus": "614",
         "opus_number": -1
@@ -8339,42 +8339,42 @@
       },
       {
         "id": 365,
-        "work_title": "Organ Sonata No.1",
+        "work_title": "Organ Sonata No.1 in E\u266d major",
         "composition_year": 1730,
         "opus": "525",
         "opus_number": -1
       },
       {
         "id": 366,
-        "work_title": "Organ Sonata No.2",
+        "work_title": "Organ Sonata No.2 in C minor",
         "composition_year": 1730,
         "opus": "526",
         "opus_number": -1
       },
       {
         "id": 367,
-        "work_title": "Organ Sonata No.3",
+        "work_title": "Organ Sonata No.3 in D minor",
         "composition_year": 1730,
         "opus": "527",
         "opus_number": -1
       },
       {
         "id": 368,
-        "work_title": "Organ Sonata No.4",
+        "work_title": "Organ Sonata No.4 in E minor",
         "composition_year": 1730,
         "opus": "528",
         "opus_number": -1
       },
       {
         "id": 369,
-        "work_title": "Organ Sonata No.5",
+        "work_title": "Organ Sonata No.5 in C major",
         "composition_year": 1730,
         "opus": "529",
         "opus_number": -1
       },
       {
         "id": 370,
-        "work_title": "Organ Sonata No.6",
+        "work_title": "Organ Sonata No.6 in G major",
         "composition_year": 1730,
         "opus": "530",
         "opus_number": -1
@@ -9977,350 +9977,350 @@
       },
       {
         "id": 599,
-        "work_title": "Invention No.1",
+        "work_title": "Invention No.1 in C major",
         "composition_year": 1720,
         "opus": "772",
         "opus_number": -1
       },
       {
         "id": 600,
-        "work_title": "Invention No.1",
+        "work_title": "Invention No.1 in C major",
         "composition_year": 1720,
         "opus": "772a",
         "opus_number": -1
       },
       {
         "id": 601,
-        "work_title": "Invention No.2",
+        "work_title": "Invention No.2 in C minor",
         "composition_year": 1720,
         "opus": "773",
         "opus_number": -1
       },
       {
         "id": 602,
-        "work_title": "Invention No.3",
+        "work_title": "Invention No.3 in D major",
         "composition_year": 1720,
         "opus": "774",
         "opus_number": -1
       },
       {
         "id": 603,
-        "work_title": "Invention No.4",
+        "work_title": "Invention No.4 in D minor",
         "composition_year": 1720,
         "opus": "775",
         "opus_number": -1
       },
       {
         "id": 604,
-        "work_title": "Invention No.5",
+        "work_title": "Invention No.5 in E\u266d major",
         "composition_year": 1720,
         "opus": "776",
         "opus_number": -1
       },
       {
         "id": 605,
-        "work_title": "Invention No.6",
+        "work_title": "Invention No.6 in E major",
         "composition_year": 1720,
         "opus": "777",
         "opus_number": -1
       },
       {
         "id": 606,
-        "work_title": "Invention No.7",
+        "work_title": "Invention No.7 in E minor",
         "composition_year": 1720,
         "opus": "778",
         "opus_number": -1
       },
       {
         "id": 607,
-        "work_title": "Invention No.8",
+        "work_title": "Invention No.8 in F major",
         "composition_year": 1720,
         "opus": "779",
         "opus_number": -1
       },
       {
         "id": 608,
-        "work_title": "Invention No.9",
+        "work_title": "Invention No.9 in F minor",
         "composition_year": 1720,
         "opus": "780",
         "opus_number": -1
       },
       {
         "id": 609,
-        "work_title": "Invention No.10",
+        "work_title": "Invention No.10 in G major",
         "composition_year": 1720,
         "opus": "781",
         "opus_number": -1
       },
       {
         "id": 610,
-        "work_title": "Invention No.11",
+        "work_title": "Invention No.11 in G minor",
         "composition_year": 1720,
         "opus": "782",
         "opus_number": -1
       },
       {
         "id": 611,
-        "work_title": "Invention No.12",
+        "work_title": "Invention No.12 in A major",
         "composition_year": 1720,
         "opus": "783",
         "opus_number": -1
       },
       {
         "id": 612,
-        "work_title": "Invention No.13",
+        "work_title": "Invention No.13 in A minor",
         "composition_year": 1720,
         "opus": "784",
         "opus_number": -1
       },
       {
         "id": 613,
-        "work_title": "Invention No.14",
+        "work_title": "Invention No.14 in B\u266d major",
         "composition_year": 1720,
         "opus": "785",
         "opus_number": -1
       },
       {
         "id": 614,
-        "work_title": "Invention No.15",
+        "work_title": "Invention No.15 in B minor",
         "composition_year": 1720,
         "opus": "786",
         "opus_number": -1
       },
       {
         "id": 615,
-        "work_title": "Sinfonia No.1",
+        "work_title": "Sinfonia No.1 in C major",
         "composition_year": 1720,
         "opus": "787",
         "opus_number": -1
       },
       {
         "id": 616,
-        "work_title": "Sinfonia No.2",
+        "work_title": "Sinfonia No.2 in C minor",
         "composition_year": 1720,
         "opus": "788",
         "opus_number": -1
       },
       {
         "id": 617,
-        "work_title": "Sinfonia No.3",
+        "work_title": "Sinfonia No.3 in D major",
         "composition_year": 1720,
         "opus": "789",
         "opus_number": -1
       },
       {
         "id": 618,
-        "work_title": "Sinfonia No.4",
+        "work_title": "Sinfonia No.4 in D minor",
         "composition_year": 1720,
         "opus": "790",
         "opus_number": -1
       },
       {
         "id": 619,
-        "work_title": "Sinfonia No.5",
+        "work_title": "Sinfonia No.5 in E\u266d major",
         "composition_year": 1720,
         "opus": "791",
         "opus_number": -1
       },
       {
         "id": 620,
-        "work_title": "Sinfonia No.6",
+        "work_title": "Sinfonia No.6 in E major",
         "composition_year": 1720,
         "opus": "792",
         "opus_number": -1
       },
       {
         "id": 621,
-        "work_title": "Sinfonia No.7",
+        "work_title": "Sinfonia No.7 in E minor",
         "composition_year": 1720,
         "opus": "793",
         "opus_number": -1
       },
       {
         "id": 622,
-        "work_title": "Sinfonia No.8",
+        "work_title": "Sinfonia No.8 in F major",
         "composition_year": 1720,
         "opus": "794",
         "opus_number": -1
       },
       {
         "id": 623,
-        "work_title": "Sinfonia No.9",
+        "work_title": "Sinfonia No.9 in F minor",
         "composition_year": 1720,
         "opus": "795",
         "opus_number": -1
       },
       {
         "id": 624,
-        "work_title": "Sinfonia No.10",
+        "work_title": "Sinfonia No.10 in G major",
         "composition_year": 1720,
         "opus": "796",
         "opus_number": -1
       },
       {
         "id": 625,
-        "work_title": "Sinfonia No.11",
+        "work_title": "Sinfonia No.11 in G minor",
         "composition_year": 1720,
         "opus": "797",
         "opus_number": -1
       },
       {
         "id": 626,
-        "work_title": "Sinfonia No.12",
+        "work_title": "Sinfonia No.12 in A major",
         "composition_year": 1720,
         "opus": "798",
         "opus_number": -1
       },
       {
         "id": 627,
-        "work_title": "Sinfonia No.13",
+        "work_title": "Sinfonia No.13 in A minor",
         "composition_year": 1720,
         "opus": "799",
         "opus_number": -1
       },
       {
         "id": 628,
-        "work_title": "Sinfonia No.14",
+        "work_title": "Sinfonia No.14 in B\u266d major",
         "composition_year": 1720,
         "opus": "800",
         "opus_number": -1
       },
       {
         "id": 629,
-        "work_title": "Sinfonia No.15",
+        "work_title": "Sinfonia No.15 in B minor",
         "composition_year": 1720,
         "opus": "801",
         "opus_number": -1
       },
       {
         "id": 630,
-        "work_title": "Duetto No.1",
+        "work_title": "Duetto No.1 in E minor",
         "composition_year": 1739,
         "opus": "802",
         "opus_number": -1
       },
       {
         "id": 631,
-        "work_title": "Duetto No.2",
+        "work_title": "Duetto No.2 in F major",
         "composition_year": 1739,
         "opus": "803",
         "opus_number": -1
       },
       {
         "id": 632,
-        "work_title": "Duetto No.3",
+        "work_title": "Duetto No.3 in G major",
         "composition_year": 1739,
         "opus": "804",
         "opus_number": -1
       },
       {
         "id": 633,
-        "work_title": "Duetto No.4",
+        "work_title": "Duetto No.4 in A minor",
         "composition_year": 1739,
         "opus": "805",
         "opus_number": -1
       },
       {
         "id": 634,
-        "work_title": "English Suite No.1",
+        "work_title": "English Suite No.1 in A major",
         "composition_year": 1720,
         "opus": "806",
         "opus_number": -1
       },
       {
         "id": 635,
-        "work_title": "English Suite No.2",
+        "work_title": "English Suite No.2 in A minor",
         "composition_year": 1720,
         "opus": "807",
         "opus_number": -1
       },
       {
         "id": 636,
-        "work_title": "English Suite No.3",
+        "work_title": "English Suite No.3 in G minor",
         "composition_year": 1720,
         "opus": "808",
         "opus_number": -1
       },
       {
         "id": 637,
-        "work_title": "English Suite No.4",
+        "work_title": "English Suite No.4 in F major",
         "composition_year": 1720,
         "opus": "809",
         "opus_number": -1
       },
       {
         "id": 638,
-        "work_title": "English Suite No.5",
+        "work_title": "English Suite No.5 in E minor",
         "composition_year": 1720,
         "opus": "810",
         "opus_number": -1
       },
       {
         "id": 639,
-        "work_title": "English Suite No.6",
+        "work_title": "English Suite No.6 in D minor",
         "composition_year": 1720,
         "opus": "811",
         "opus_number": -1
       },
       {
         "id": 640,
-        "work_title": "French Suite No.1",
+        "work_title": "French Suite No.1 in D minor",
         "composition_year": 1722,
         "opus": "812",
         "opus_number": -1
       },
       {
         "id": 641,
-        "work_title": "French Suite No.2",
+        "work_title": "French Suite No.2 in C minor",
         "composition_year": 1722,
         "opus": "813",
         "opus_number": -1
       },
       {
         "id": 642,
-        "work_title": "French Suite No.2",
+        "work_title": "French Suite No.2 in C minor",
         "composition_year": 1722,
         "opus": "813a",
         "opus_number": -1
       },
       {
         "id": 643,
-        "work_title": "French Suite No.3",
+        "work_title": "French Suite No.3 in B minor",
         "composition_year": 1722,
         "opus": "814",
         "opus_number": -1
       },
       {
         "id": 644,
-        "work_title": "French Suite No.3",
+        "work_title": "French Suite No.3 in B minor",
         "composition_year": 1722,
         "opus": "814a",
         "opus_number": -1
       },
       {
         "id": 645,
-        "work_title": "French Suite No.4",
+        "work_title": "French Suite No.4 in E\u266d major",
         "composition_year": 1722,
         "opus": "815",
         "opus_number": -1
       },
       {
         "id": 646,
-        "work_title": "French Suite No.4",
+        "work_title": "French Suite No.4 in E\u266d major",
         "composition_year": 1722,
         "opus": "815a",
         "opus_number": -1
       },
       {
         "id": 647,
-        "work_title": "French Suite No.5",
+        "work_title": "French Suite No.5 in G major",
         "composition_year": 1722,
         "opus": "816",
         "opus_number": -1
       },
       {
         "id": 648,
-        "work_title": "French Suite No.6",
+        "work_title": "French Suite No.6 in E major",
         "composition_year": 1722,
         "opus": "817",
         "opus_number": -1
@@ -10376,42 +10376,42 @@
       },
       {
         "id": 656,
-        "work_title": "Partita No.1",
+        "work_title": "Partita No.1 in B\u266d major",
         "composition_year": 1726,
         "opus": "825",
         "opus_number": -1
       },
       {
         "id": 657,
-        "work_title": "Partita No.2",
+        "work_title": "Partita No.2 in C minor",
         "composition_year": 1727,
         "opus": "826",
         "opus_number": -1
       },
       {
         "id": 658,
-        "work_title": "Partita No.3",
+        "work_title": "Partita No.3 in A minor",
         "composition_year": 1725,
         "opus": "827",
         "opus_number": -1
       },
       {
         "id": 659,
-        "work_title": "Partita No.4",
+        "work_title": "Partita No.4 in D major",
         "composition_year": 1728,
         "opus": "828",
         "opus_number": -1
       },
       {
         "id": 660,
-        "work_title": "Partita No.5",
+        "work_title": "Partita No.5 in G major",
         "composition_year": 1730,
         "opus": "829",
         "opus_number": -1
       },
       {
         "id": 661,
-        "work_title": "Partita No.6",
+        "work_title": "Partita No.6 in E minor",
         "composition_year": 1725,
         "opus": "830",
         "opus_number": -1
@@ -11321,112 +11321,112 @@
       },
       {
         "id": 791,
-        "work_title": "Concerto No.1",
+        "work_title": "Concerto No.1 in D major",
         "composition_year": 1713,
         "opus": "972",
         "opus_number": -1
       },
       {
         "id": 792,
-        "work_title": "Concerto No.2",
+        "work_title": "Concerto No.2 in G major",
         "composition_year": 1713,
         "opus": "973",
         "opus_number": -1
       },
       {
         "id": 793,
-        "work_title": "Concerto No.3",
+        "work_title": "Concerto No.3 in D minor",
         "composition_year": 1713,
         "opus": "974",
         "opus_number": -1
       },
       {
         "id": 794,
-        "work_title": "Concerto No.4",
+        "work_title": "Concerto No.4 in G minor",
         "composition_year": 1713,
         "opus": "975",
         "opus_number": -1
       },
       {
         "id": 795,
-        "work_title": "Concerto No.5",
+        "work_title": "Concerto No.5 in C major",
         "composition_year": 1713,
         "opus": "976",
         "opus_number": -1
       },
       {
         "id": 796,
-        "work_title": "Concerto No.6",
+        "work_title": "Concerto No.6 in C major",
         "composition_year": 1713,
         "opus": "977",
         "opus_number": -1
       },
       {
         "id": 797,
-        "work_title": "Concerto No.7",
+        "work_title": "Concerto No.7 in F major",
         "composition_year": 1713,
         "opus": "978",
         "opus_number": -1
       },
       {
         "id": 798,
-        "work_title": "Concerto No.8",
+        "work_title": "Concerto No.8 in B minor",
         "composition_year": 1713,
         "opus": "979",
         "opus_number": -1
       },
       {
         "id": 799,
-        "work_title": "Concerto No.9",
+        "work_title": "Concerto No.9 in G major",
         "composition_year": 1713,
         "opus": "980",
         "opus_number": -1
       },
       {
         "id": 800,
-        "work_title": "Concerto No.10",
+        "work_title": "Concerto No.10 in C minor",
         "composition_year": 1713,
         "opus": "981",
         "opus_number": -1
       },
       {
         "id": 801,
-        "work_title": "Concerto No.11",
+        "work_title": "Concerto No.11 in B\u266d major",
         "composition_year": 1713,
         "opus": "982",
         "opus_number": -1
       },
       {
         "id": 802,
-        "work_title": "Concerto No.12",
+        "work_title": "Concerto No.12 in G minor",
         "composition_year": 1713,
         "opus": "983",
         "opus_number": -1
       },
       {
         "id": 803,
-        "work_title": "Concerto No.13",
+        "work_title": "Concerto No.13 in C major",
         "composition_year": 1713,
         "opus": "984",
         "opus_number": -1
       },
       {
         "id": 804,
-        "work_title": "Concerto No.14",
+        "work_title": "Concerto No.14 in G minor",
         "composition_year": 1713,
         "opus": "985",
         "opus_number": -1
       },
       {
         "id": 805,
-        "work_title": "Concerto No.15",
+        "work_title": "Concerto No.15 in G major",
         "composition_year": 1713,
         "opus": "986",
         "opus_number": -1
       },
       {
         "id": 806,
-        "work_title": "Concerto No.16",
+        "work_title": "Concerto No.16 in D minor",
         "composition_year": 1713,
         "opus": "987",
         "opus_number": -1
@@ -11517,42 +11517,42 @@
       },
       {
         "id": 819,
-        "work_title": "Violin Sonata No.1",
+        "work_title": "Violin Sonata No.1 in G minor",
         "composition_year": 1720,
         "opus": "1001",
         "opus_number": -1
       },
       {
         "id": 820,
-        "work_title": "Violin Partita No.1",
+        "work_title": "Violin Partita No.1 in B minor",
         "composition_year": 1720,
         "opus": "1002",
         "opus_number": -1
       },
       {
         "id": 821,
-        "work_title": "Violin Sonata No.2",
+        "work_title": "Violin Sonata No.2 in A minor",
         "composition_year": 1720,
         "opus": "1003",
         "opus_number": -1
       },
       {
         "id": 822,
-        "work_title": "Violin Partita No.2",
+        "work_title": "Violin Partita No.2 in D minor",
         "composition_year": 1720,
         "opus": "1004",
         "opus_number": -1
       },
       {
         "id": 823,
-        "work_title": "Violin Sonata No.3",
+        "work_title": "Violin Sonata No.3 in C major",
         "composition_year": 1720,
         "opus": "1005",
         "opus_number": -1
       },
       {
         "id": 824,
-        "work_title": "Violin Partita No.3",
+        "work_title": "Violin Partita No.3 in E major",
         "composition_year": 1720,
         "opus": "1006",
         "opus_number": -1
@@ -11566,42 +11566,42 @@
       },
       {
         "id": 826,
-        "work_title": "Cello Suite No.1",
+        "work_title": "Cello Suite No.1 in G major",
         "composition_year": 1720,
         "opus": "1007",
         "opus_number": -1
       },
       {
         "id": 827,
-        "work_title": "Cello Suite No.2",
+        "work_title": "Cello Suite No.2 in D minor",
         "composition_year": 1720,
         "opus": "1008",
         "opus_number": -1
       },
       {
         "id": 828,
-        "work_title": "Cello Suite No.3",
+        "work_title": "Cello Suite No.3 in C major",
         "composition_year": 1720,
         "opus": "1009",
         "opus_number": -1
       },
       {
         "id": 829,
-        "work_title": "Cello Suite No.4",
+        "work_title": "Cello Suite No.4 in E\u266d major",
         "composition_year": 1720,
         "opus": "1010",
         "opus_number": -1
       },
       {
         "id": 830,
-        "work_title": "Cello Suite No.5",
+        "work_title": "Cello Suite No.5 in C minor",
         "composition_year": 1720,
         "opus": "1011",
         "opus_number": -1
       },
       {
         "id": 831,
-        "work_title": "Cello Suite No.6",
+        "work_title": "Cello Suite No.6 in D major",
         "composition_year": 1720,
         "opus": "1012",
         "opus_number": -1
@@ -11615,56 +11615,56 @@
       },
       {
         "id": 833,
-        "work_title": "Sonata No.1",
+        "work_title": "Sonata No.1 in B minor",
         "composition_year": 1720,
         "opus": "1014",
         "opus_number": -1
       },
       {
         "id": 834,
-        "work_title": "Sonata No.2",
+        "work_title": "Sonata No.2 in A major",
         "composition_year": 1720,
         "opus": "1015",
         "opus_number": -1
       },
       {
         "id": 835,
-        "work_title": "Sonata No.3",
+        "work_title": "Sonata No.3 in E major",
         "composition_year": 1720,
         "opus": "1016",
         "opus_number": -1
       },
       {
         "id": 836,
-        "work_title": "Sonata No.4",
+        "work_title": "Sonata No.4 in C minor",
         "composition_year": 1720,
         "opus": "1017",
         "opus_number": -1
       },
       {
         "id": 837,
-        "work_title": "Sonata No.5",
+        "work_title": "Sonata No.5 in F minor",
         "composition_year": 1720,
         "opus": "1018",
         "opus_number": -1
       },
       {
         "id": 838,
-        "work_title": "Sonata No.5",
+        "work_title": "Sonata No.5 in F minor",
         "composition_year": 1720,
         "opus": "1018a",
         "opus_number": -1
       },
       {
         "id": 839,
-        "work_title": "Sonata No.6",
+        "work_title": "Sonata No.6 in G major",
         "composition_year": 1720,
         "opus": "1019",
         "opus_number": -1
       },
       {
         "id": 840,
-        "work_title": "Sonata No.6",
+        "work_title": "Sonata No.6 in G major",
         "composition_year": 1720,
         "opus": "1019a",
         "opus_number": -1
@@ -11776,7 +11776,7 @@
       },
       {
         "id": 856,
-        "work_title": "Brandenburg Concerto No.1",
+        "work_title": "Brandenburg Concerto No.1 in F major",
         "composition_year": 1721,
         "opus": "1046",
         "opus_number": -1
@@ -11790,56 +11790,56 @@
       },
       {
         "id": 858,
-        "work_title": "Brandenburg Concerto No.2",
+        "work_title": "Brandenburg Concerto No.2 in F major",
         "composition_year": 1718,
         "opus": "1047",
         "opus_number": -1
       },
       {
         "id": 859,
-        "work_title": "Brandenburg Concerto No.3",
+        "work_title": "Brandenburg Concerto No.3 in G major",
         "composition_year": 1718,
         "opus": "1048",
         "opus_number": -1
       },
       {
         "id": 860,
-        "work_title": "Brandenburg Concerto No.4",
+        "work_title": "Brandenburg Concerto No.4 in G major",
         "composition_year": 1719,
         "opus": "1049",
         "opus_number": -1
       },
       {
         "id": 861,
-        "work_title": "Brandenburg Concerto No.5",
+        "work_title": "Brandenburg Concerto No.5 in D major",
         "composition_year": 1720,
         "opus": "1050",
         "opus_number": -1
       },
       {
         "id": 862,
-        "work_title": "Brandenburg Concerto No.5",
+        "work_title": "Brandenburg Concerto No.5 in D major",
         "composition_year": 1719,
         "opus": "1050a",
         "opus_number": -1
       },
       {
         "id": 863,
-        "work_title": "Brandenburg Concerto No.6",
+        "work_title": "Brandenburg Concerto No.6 in B\u266d major",
         "composition_year": 1718,
         "opus": "1051",
         "opus_number": -1
       },
       {
         "id": 864,
-        "work_title": "Harpsichord Concerto No.1",
+        "work_title": "Harpsichord Concerto No.1 in D minor",
         "composition_year": 1738,
         "opus": "1052",
         "opus_number": -1
       },
       {
         "id": 865,
-        "work_title": "Harpsichord Concerto No.1",
+        "work_title": "Harpsichord Concerto No.1 in D minor",
         "composition_year": 1734,
         "opus": "1052a",
         "opus_number": -1
@@ -11853,7 +11853,7 @@
       },
       {
         "id": 867,
-        "work_title": "Harpsichord Concerto No.2",
+        "work_title": "Harpsichord Concerto No.2 in E major",
         "composition_year": 1738,
         "opus": "1053",
         "opus_number": -1
@@ -11867,14 +11867,14 @@
       },
       {
         "id": 869,
-        "work_title": "Harpsichord Concerto No.3",
+        "work_title": "Harpsichord Concerto No.3 in D major",
         "composition_year": 1738,
         "opus": "1054",
         "opus_number": -1
       },
       {
         "id": 870,
-        "work_title": "Harpsichord Concerto No.4",
+        "work_title": "Harpsichord Concerto No.4 in A major",
         "composition_year": 1738,
         "opus": "1055",
         "opus_number": -1
@@ -11888,7 +11888,7 @@
       },
       {
         "id": 872,
-        "work_title": "Harpsichord Concerto No.5",
+        "work_title": "Harpsichord Concerto No.5 in F minor",
         "composition_year": 1738,
         "opus": "1056",
         "opus_number": -1
@@ -11902,14 +11902,14 @@
       },
       {
         "id": 874,
-        "work_title": "Harpsichord Concerto No.6",
+        "work_title": "Harpsichord Concerto No.6 in F major",
         "composition_year": 1738,
         "opus": "1057",
         "opus_number": -1
       },
       {
         "id": 875,
-        "work_title": "Harpsichord Concerto No.7",
+        "work_title": "Harpsichord Concerto No.7 in G minor",
         "composition_year": 1738,
         "opus": "1058",
         "opus_number": -1
@@ -11972,28 +11972,28 @@
       },
       {
         "id": 884,
-        "work_title": "Orchestral Suite No.1 (Overture)",
+        "work_title": "Orchestral Suite No.1 (Overture) in C major",
         "composition_year": 1718,
         "opus": "1066",
         "opus_number": -1
       },
       {
         "id": 885,
-        "work_title": "Orchestral Suite No.2 (Overture)",
+        "work_title": "Orchestral Suite No.2 (Overture) in B minor",
         "composition_year": 1738,
         "opus": "1067",
         "opus_number": -1
       },
       {
         "id": 886,
-        "work_title": "Orchestral Suite No.3 (Overture)",
+        "work_title": "Orchestral Suite No.3 (Overture) in D major",
         "composition_year": 1731,
         "opus": "1068",
         "opus_number": -1
       },
       {
         "id": 887,
-        "work_title": "Orchestral Suite No.4 (Overture)",
+        "work_title": "Orchestral Suite No.4 (Overture) in D major",
         "composition_year": 1725,
         "opus": "1069",
         "opus_number": -1
@@ -12792,35 +12792,35 @@
       },
       {
         "id": 11,
-        "work_title": "Symphony No.1 (\u00ab\u0417\u0438\u043c\u043d\u0438\u0435 \u0433\u0440\u0435\u0437\u044b\u00bb) (\"Winter Daydreams\")",
+        "work_title": "Symphony No.1 (\u00ab\u0417\u0438\u043c\u043d\u0438\u0435 \u0433\u0440\u0435\u0437\u044b\u00bb) (\"Winter Daydreams\") in G minor",
         "composition_year": 1866,
         "opus": "13",
         "opus_number": -1
       },
       {
         "id": 12,
-        "work_title": "Symphony No.2 (\u00ab\u041c\u0430\u043b\u043e\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f\u00bb) (\"Little Russian\")",
+        "work_title": "Symphony No.2 (\u00ab\u041c\u0430\u043b\u043e\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f\u00bb) (\"Little Russian\") in C minor",
         "composition_year": 1872,
         "opus": "17",
         "opus_number": -1
       },
       {
         "id": 13,
-        "work_title": "Symphony No.2 (\u00ab\u041c\u0430\u043b\u043e\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f\u00bb) (\"Little Russian\")",
+        "work_title": "Symphony No.2 (\u00ab\u041c\u0430\u043b\u043e\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f\u00bb) (\"Little Russian\") in C minor",
         "composition_year": 1873,
         "opus": "17",
         "opus_number": -1
       },
       {
         "id": 14,
-        "work_title": "Symphony No.3 (\u00ab\u041f\u043e\u043b\u044c\u0441\u043a\u0438\u0439\u00bb) (\"Polish\")",
+        "work_title": "Symphony No.3 (\u00ab\u041f\u043e\u043b\u044c\u0441\u043a\u0438\u0439\u00bb) (\"Polish\") in D major",
         "composition_year": 1875,
         "opus": "29",
         "opus_number": -1
       },
       {
         "id": 15,
-        "work_title": "Symphony No.4",
+        "work_title": "Symphony No.4 in F minor",
         "composition_year": 1877,
         "opus": "36",
         "opus_number": -1
@@ -12841,70 +12841,70 @@
       },
       {
         "id": 18,
-        "work_title": "Symphony No.5",
+        "work_title": "Symphony No.5 in E minor",
         "composition_year": 1888,
         "opus": "64",
         "opus_number": -1
       },
       {
         "id": 19,
-        "work_title": "Symphony No.6 (\u00ab\u041f\u0430\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f\u00bb) (\"Path\u00e9tique\")",
+        "work_title": "Symphony No.6 (\u00ab\u041f\u0430\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f\u00bb) (\"Path\u00e9tique\") in B minor",
         "composition_year": 1893,
         "opus": "74",
         "opus_number": -1
       },
       {
         "id": 20,
-        "work_title": "Symphony No.6 (\u00ab\u041f\u0430\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f\u00bb) (\"Path\u00e9tique\")",
+        "work_title": "Symphony No.6 (\u00ab\u041f\u0430\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f\u00bb) (\"Path\u00e9tique\") in B minor",
         "composition_year": 1893,
         "opus": "74",
         "opus_number": -1
       },
       {
         "id": 21,
-        "work_title": "Suite No.1",
+        "work_title": "Suite No.1 in D minor",
         "composition_year": 1878,
         "opus": "43",
         "opus_number": -1
       },
       {
         "id": 22,
-        "work_title": "Suite No.1",
+        "work_title": "Suite No.1 in D minor",
         "composition_year": 1878,
         "opus": "43",
         "opus_number": -1
       },
       {
         "id": 23,
-        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\")",
+        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\") in C major",
         "composition_year": 1883,
         "opus": "53",
         "opus_number": -1
       },
       {
         "id": 24,
-        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\")",
+        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\") in C major",
         "composition_year": 1883,
         "opus": "53",
         "opus_number": -1
       },
       {
         "id": 25,
-        "work_title": "Suite No.3",
+        "work_title": "Suite No.3 in G major",
         "composition_year": 1884,
         "opus": "55",
         "opus_number": -1
       },
       {
         "id": 26,
-        "work_title": "Suite No.3",
+        "work_title": "Suite No.3 in G major",
         "composition_year": 1884,
         "opus": "55",
         "opus_number": -1
       },
       {
         "id": 27,
-        "work_title": "Suite No.4 (\"Mozartiana\")",
+        "work_title": "Suite No.4 (\"Mozartiana\") in G major",
         "composition_year": 1887,
         "opus": "61",
         "opus_number": -1
@@ -13023,14 +13023,14 @@
       },
       {
         "id": 44,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in B\u266d minor",
         "composition_year": 1874,
         "opus": "23",
         "opus_number": -1
       },
       {
         "id": 45,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in B\u266d minor",
         "composition_year": 1874,
         "opus": "23",
         "opus_number": -1
@@ -13093,14 +13093,14 @@
       },
       {
         "id": 54,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in G major",
         "composition_year": 1879,
         "opus": "44",
         "opus_number": -1
       },
       {
         "id": 55,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in G major",
         "composition_year": 1880,
         "opus": "44",
         "opus_number": -1
@@ -13149,14 +13149,14 @@
       },
       {
         "id": 62,
-        "work_title": "Piano Concerto No.3",
+        "work_title": "Piano Concerto No.3 in E\u266d major",
         "composition_year": 1893,
         "opus": "75",
         "opus_number": -1
       },
       {
         "id": 63,
-        "work_title": "Piano Concerto No.3",
+        "work_title": "Piano Concerto No.3 in E\u266d major",
         "composition_year": 1893,
         "opus": "75",
         "opus_number": -1
@@ -13947,21 +13947,21 @@
       },
       {
         "id": 176,
-        "work_title": "String Quartet No.1",
+        "work_title": "String Quartet No.1 in D major",
         "composition_year": 1871,
         "opus": "11",
         "opus_number": -1
       },
       {
         "id": 177,
-        "work_title": "String Quartet No.2",
+        "work_title": "String Quartet No.2 in F major",
         "composition_year": 1873,
         "opus": "22",
         "opus_number": -1
       },
       {
         "id": 178,
-        "work_title": "String Quartet No.3",
+        "work_title": "String Quartet No.3 in E\u266d minor",
         "composition_year": 1876,
         "opus": "30",
         "opus_number": -1
@@ -14802,7 +14802,7 @@
       },
       {
         "id": 3,
-        "work_title": "Piano Sonata No.1",
+        "work_title": "Piano Sonata No.1 in C minor",
         "composition_year": 1828,
         "opus": "4",
         "opus_number": -1
@@ -14928,7 +14928,7 @@
       },
       {
         "id": 21,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in E minor",
         "composition_year": 1830,
         "opus": "11",
         "opus_number": -1
@@ -15005,14 +15005,14 @@
       },
       {
         "id": 32,
-        "work_title": "Scherzo No.1",
+        "work_title": "Scherzo No.1 in B minor",
         "composition_year": 1833,
         "opus": "20",
         "opus_number": -1
       },
       {
         "id": 33,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in F minor",
         "composition_year": 1829,
         "opus": "21",
         "opus_number": -1
@@ -15026,7 +15026,7 @@
       },
       {
         "id": 35,
-        "work_title": "Ballade No.1",
+        "work_title": "Ballade No.1 in G minor",
         "composition_year": 1831,
         "opus": "23",
         "opus_number": -1
@@ -15313,7 +15313,7 @@
       },
       {
         "id": 76,
-        "work_title": "Impromptu No.1",
+        "work_title": "Impromptu No.1 in A\u266d major",
         "composition_year": 1837,
         "opus": "29",
         "opus_number": -1
@@ -15327,7 +15327,7 @@
       },
       {
         "id": 78,
-        "work_title": "Scherzo No.2",
+        "work_title": "Scherzo No.2 in B\u266d minor",
         "composition_year": 1837,
         "opus": "31",
         "opus_number": -1
@@ -15369,14 +15369,14 @@
       },
       {
         "id": 84,
-        "work_title": "Piano Sonata No.2",
+        "work_title": "Piano Sonata No.2 in B\u266d minor",
         "composition_year": 1837,
         "opus": "35",
         "opus_number": -1
       },
       {
         "id": 85,
-        "work_title": "Impromptu No.2",
+        "work_title": "Impromptu No.2 in F\u266f major",
         "composition_year": 1838,
         "opus": "36",
         "opus_number": -1
@@ -15390,14 +15390,14 @@
       },
       {
         "id": 87,
-        "work_title": "Ballade No.2",
+        "work_title": "Ballade No.2 in F major",
         "composition_year": 1836,
         "opus": "38",
         "opus_number": -1
       },
       {
         "id": 88,
-        "work_title": "Scherzo No.3",
+        "work_title": "Scherzo No.3 in C\u266f minor",
         "composition_year": 1839,
         "opus": "39",
         "opus_number": -1
@@ -15453,7 +15453,7 @@
       },
       {
         "id": 96,
-        "work_title": "Ballade No.3",
+        "work_title": "Ballade No.3 in A\u266d major",
         "composition_year": 1841,
         "opus": "47",
         "opus_number": -1
@@ -15481,14 +15481,14 @@
       },
       {
         "id": 100,
-        "work_title": "Impromptu No.3",
+        "work_title": "Impromptu No.3 in G\u266d major",
         "composition_year": 1842,
         "opus": "51",
         "opus_number": -1
       },
       {
         "id": 101,
-        "work_title": "Ballade No.4",
+        "work_title": "Ballade No.4 in F minor",
         "composition_year": 1842,
         "opus": "52",
         "opus_number": -1
@@ -15502,7 +15502,7 @@
       },
       {
         "id": 103,
-        "work_title": "Scherzo No.4",
+        "work_title": "Scherzo No.4 in E major",
         "composition_year": 1842,
         "opus": "54",
         "opus_number": -1
@@ -15530,7 +15530,7 @@
       },
       {
         "id": 107,
-        "work_title": "Piano Sonata No.3",
+        "work_title": "Piano Sonata No.3 in B minor",
         "composition_year": 1844,
         "opus": "58",
         "opus_number": -1
@@ -15762,14 +15762,14 @@
     "works": [
       {
         "id": 0,
-        "work_title": "Piano Sonata No.1",
+        "work_title": "Piano Sonata No.1 in C major",
         "composition_year": 1852,
         "opus": "1",
         "opus_number": -1
       },
       {
         "id": 1,
-        "work_title": "Piano Sonata No.2",
+        "work_title": "Piano Sonata No.2 in F\u266f minor",
         "composition_year": 1852,
         "opus": "2",
         "opus_number": -1
@@ -15825,7 +15825,7 @@
       },
       {
         "id": 9,
-        "work_title": "Piano Sonata No.3",
+        "work_title": "Piano Sonata No.3 in F minor",
         "composition_year": 1853,
         "opus": "5",
         "opus_number": -1
@@ -15916,7 +15916,7 @@
       },
       {
         "id": 22,
-        "work_title": "Piano Trio No.1",
+        "work_title": "Piano Trio No.1 in B major",
         "composition_year": 1853,
         "opus": "8",
         "opus_number": -1
@@ -15930,42 +15930,42 @@
       },
       {
         "id": 24,
-        "work_title": "Ballade No.1 (\"Edward\")",
+        "work_title": "Ballade No.1 (\"Edward\") in D minor",
         "composition_year": 1854,
         "opus": "10",
         "opus_number": 1
       },
       {
         "id": 25,
-        "work_title": "Ballade No.2",
+        "work_title": "Ballade No.2 in D major",
         "composition_year": 1854,
         "opus": "10",
         "opus_number": 2
       },
       {
         "id": 26,
-        "work_title": "Ballade No.3",
+        "work_title": "Ballade No.3 in B minor",
         "composition_year": 1854,
         "opus": "10",
         "opus_number": 3
       },
       {
         "id": 27,
-        "work_title": "Ballade No.4",
+        "work_title": "Ballade No.4 in B major",
         "composition_year": 1854,
         "opus": "10",
         "opus_number": 4
       },
       {
         "id": 28,
-        "work_title": "Serenade No.1",
+        "work_title": "Serenade No.1 in D major",
         "composition_year": 1857,
         "opus": "11",
         "opus_number": -1
       },
       {
         "id": 29,
-        "work_title": "Serenade No.1",
+        "work_title": "Serenade No.1 in D major",
         "composition_year": 1861,
         "opus": "11",
         "opus_number": -1
@@ -16056,35 +16056,35 @@
       },
       {
         "id": 42,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in D minor",
         "composition_year": 1854,
         "opus": "15",
         "opus_number": -1
       },
       {
         "id": 43,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in D minor",
         "composition_year": 1859,
         "opus": "15",
         "opus_number": -1
       },
       {
         "id": 44,
-        "work_title": "Piano Concerto No.1",
+        "work_title": "Piano Concerto No.1 in D minor",
         "composition_year": 1859,
         "opus": "15",
         "opus_number": -1
       },
       {
         "id": 45,
-        "work_title": "Serenade No.2",
+        "work_title": "Serenade No.2 in A major",
         "composition_year": 1858,
         "opus": "16",
         "opus_number": -1
       },
       {
         "id": 46,
-        "work_title": "Serenade No.2",
+        "work_title": "Serenade No.2 in A major",
         "composition_year": 1875,
         "opus": "16",
         "opus_number": -1
@@ -16119,14 +16119,14 @@
       },
       {
         "id": 51,
-        "work_title": "String Sextet No.1",
+        "work_title": "String Sextet No.1 in B\u266d major",
         "composition_year": 1859,
         "opus": "18",
         "opus_number": -1
       },
       {
         "id": 52,
-        "work_title": "String Sextet No.1",
+        "work_title": "String Sextet No.1 in B\u266d major",
         "composition_year": 1861,
         "opus": "18",
         "opus_number": -1
@@ -16273,28 +16273,28 @@
       },
       {
         "id": 73,
-        "work_title": "Piano Quartet No.1",
+        "work_title": "Piano Quartet No.1 in G minor",
         "composition_year": 1861,
         "opus": "25",
         "opus_number": -1
       },
       {
         "id": 74,
-        "work_title": "Piano Quartet No.1",
+        "work_title": "Piano Quartet No.1 in G minor",
         "composition_year": 1870,
         "opus": "25",
         "opus_number": -1
       },
       {
         "id": 75,
-        "work_title": "Piano Quartet No.2",
+        "work_title": "Piano Quartet No.2 in A major",
         "composition_year": 1861,
         "opus": "26",
         "opus_number": -1
       },
       {
         "id": 76,
-        "work_title": "Piano Quartet No.2",
+        "work_title": "Piano Quartet No.2 in A major",
         "composition_year": 1872,
         "opus": "26",
         "opus_number": -1
@@ -16574,14 +16574,14 @@
       },
       {
         "id": 116,
-        "work_title": "String Sextet No.2",
+        "work_title": "String Sextet No.2 in G major",
         "composition_year": 1864,
         "opus": "36",
         "opus_number": -1
       },
       {
         "id": 117,
-        "work_title": "String Sextet No.2",
+        "work_title": "String Sextet No.2 in G major",
         "composition_year": 1865,
         "opus": "36",
         "opus_number": -1
@@ -16609,273 +16609,273 @@
       },
       {
         "id": 121,
-        "work_title": "Cello Sonata No.1",
+        "work_title": "Cello Sonata No.1 in E minor",
         "composition_year": 1862,
         "opus": "38",
         "opus_number": -1
       },
       {
         "id": 122,
-        "work_title": "Waltz No.01",
+        "work_title": "Waltz No.01 in B major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 1
       },
       {
         "id": 123,
-        "work_title": "Waltz No.01",
+        "work_title": "Waltz No.01 in B major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 1
       },
       {
         "id": 124,
-        "work_title": "Waltz No.01",
+        "work_title": "Waltz No.01 in B major",
         "composition_year": 1867,
         "opus": "39",
         "opus_number": 1
       },
       {
         "id": 125,
-        "work_title": "Waltz No.02",
+        "work_title": "Waltz No.02 in E major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 2
       },
       {
         "id": 126,
-        "work_title": "Waltz No.02",
+        "work_title": "Waltz No.02 in E major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 2
       },
       {
         "id": 127,
-        "work_title": "Waltz No.02",
+        "work_title": "Waltz No.02 in E major",
         "composition_year": 1867,
         "opus": "39",
         "opus_number": 2
       },
       {
         "id": 128,
-        "work_title": "Waltz No.03",
+        "work_title": "Waltz No.03 in G\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 3
       },
       {
         "id": 129,
-        "work_title": "Waltz No.03",
+        "work_title": "Waltz No.03 in G\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 3
       },
       {
         "id": 130,
-        "work_title": "Waltz No.04",
+        "work_title": "Waltz No.04 in E minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 4
       },
       {
         "id": 131,
-        "work_title": "Waltz No.04",
+        "work_title": "Waltz No.04 in E minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 4
       },
       {
         "id": 132,
-        "work_title": "Waltz No.05",
+        "work_title": "Waltz No.05 in E major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 5
       },
       {
         "id": 133,
-        "work_title": "Waltz No.05",
+        "work_title": "Waltz No.05 in E major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 5
       },
       {
         "id": 134,
-        "work_title": "Waltz No.06",
+        "work_title": "Waltz No.06 in C\u266f major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 6
       },
       {
         "id": 135,
-        "work_title": "Waltz No.06",
+        "work_title": "Waltz No.06 in C\u266f major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 6
       },
       {
         "id": 136,
-        "work_title": "Waltz No.07",
+        "work_title": "Waltz No.07 in C\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 7
       },
       {
         "id": 137,
-        "work_title": "Waltz No.07",
+        "work_title": "Waltz No.07 in C\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 7
       },
       {
         "id": 138,
-        "work_title": "Waltz No.08",
+        "work_title": "Waltz No.08 in B\u266d major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 8
       },
       {
         "id": 139,
-        "work_title": "Waltz No.08",
+        "work_title": "Waltz No.08 in B\u266d major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 8
       },
       {
         "id": 140,
-        "work_title": "Waltz No.08",
+        "work_title": "Waltz No.08 in B\u266d major",
         "composition_year": 1867,
         "opus": "39",
         "opus_number": 8
       },
       {
         "id": 141,
-        "work_title": "Waltz No.09",
+        "work_title": "Waltz No.09 in D minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 9
       },
       {
         "id": 142,
-        "work_title": "Waltz No.09",
+        "work_title": "Waltz No.09 in D minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 9
       },
       {
         "id": 143,
-        "work_title": "Waltz No.10",
+        "work_title": "Waltz No.10 in G major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 10
       },
       {
         "id": 144,
-        "work_title": "Waltz No.10",
+        "work_title": "Waltz No.10 in G major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 10
       },
       {
         "id": 145,
-        "work_title": "Waltz No.11",
+        "work_title": "Waltz No.11 in B minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 11
       },
       {
         "id": 146,
-        "work_title": "Waltz No.11",
+        "work_title": "Waltz No.11 in B minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 11
       },
       {
         "id": 147,
-        "work_title": "Waltz No.11",
+        "work_title": "Waltz No.11 in B minor",
         "composition_year": 1867,
         "opus": "39",
         "opus_number": 11
       },
       {
         "id": 148,
-        "work_title": "Waltz No.12",
+        "work_title": "Waltz No.12 in E major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 12
       },
       {
         "id": 149,
-        "work_title": "Waltz No.12",
+        "work_title": "Waltz No.12 in E major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 12
       },
       {
         "id": 150,
-        "work_title": "Waltz No.13",
+        "work_title": "Waltz No.13 in B major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 13
       },
       {
         "id": 151,
-        "work_title": "Waltz No.13",
+        "work_title": "Waltz No.13 in B major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 13
       },
       {
         "id": 152,
-        "work_title": "Waltz No.14",
+        "work_title": "Waltz No.14 in G\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 14
       },
       {
         "id": 153,
-        "work_title": "Waltz No.14",
+        "work_title": "Waltz No.14 in G\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 14
       },
       {
         "id": 154,
-        "work_title": "Waltz No.14",
+        "work_title": "Waltz No.14 in G\u266f minor",
         "composition_year": 1867,
         "opus": "39",
         "opus_number": 14
       },
       {
         "id": 155,
-        "work_title": "Waltz No.15",
+        "work_title": "Waltz No.15 in A\u266d major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 15
       },
       {
         "id": 156,
-        "work_title": "Waltz No.15",
+        "work_title": "Waltz No.15 in A\u266d major",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 15
       },
       {
         "id": 157,
-        "work_title": "Waltz No.15",
+        "work_title": "Waltz No.15 in A\u266d major",
         "composition_year": 1867,
         "opus": "39",
         "opus_number": 15
       },
       {
         "id": 158,
-        "work_title": "Waltz No.16",
+        "work_title": "Waltz No.16 in C\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 16
       },
       {
         "id": 159,
-        "work_title": "Waltz No.16",
+        "work_title": "Waltz No.16 in C\u266f minor",
         "composition_year": 1865,
         "opus": "39",
         "opus_number": 16
@@ -17232,28 +17232,28 @@
       },
       {
         "id": 210,
-        "work_title": "String Quartet No.1",
+        "work_title": "String Quartet No.1 in C minor",
         "composition_year": 1866,
         "opus": "51",
         "opus_number": 1
       },
       {
         "id": 211,
-        "work_title": "String Quartet No.1",
+        "work_title": "String Quartet No.1 in C minor",
         "composition_year": 1873,
         "opus": "51",
         "opus_number": 1
       },
       {
         "id": 212,
-        "work_title": "String Quartet No.2",
+        "work_title": "String Quartet No.2 in A minor",
         "composition_year": 1865,
         "opus": "51",
         "opus_number": 2
       },
       {
         "id": 213,
-        "work_title": "String Quartet No.2",
+        "work_title": "String Quartet No.2 in A minor",
         "composition_year": 1873,
         "opus": "51",
         "opus_number": 2
@@ -17561,126 +17561,126 @@
       },
       {
         "id": 257,
-        "work_title": "Liebeslieder Waltz No.01",
+        "work_title": "Liebeslieder Waltz No.01 in E major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 1
       },
       {
         "id": 258,
-        "work_title": "Liebeslieder Waltz No.02",
+        "work_title": "Liebeslieder Waltz No.02 in A minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 2
       },
       {
         "id": 259,
-        "work_title": "Liebeslieder Waltz No.03",
+        "work_title": "Liebeslieder Waltz No.03 in B\u266d major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 3
       },
       {
         "id": 260,
-        "work_title": "Liebeslieder Waltz No.04",
+        "work_title": "Liebeslieder Waltz No.04 in F major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 4
       },
       {
         "id": 261,
-        "work_title": "Liebeslieder Waltz No.05",
+        "work_title": "Liebeslieder Waltz No.05 in A minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 5
       },
       {
         "id": 262,
-        "work_title": "Liebeslieder Waltz No.06",
+        "work_title": "Liebeslieder Waltz No.06 in A major\u2013F minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 6
       },
       {
         "id": 263,
-        "work_title": "Liebeslieder Waltz No.07",
+        "work_title": "Liebeslieder Waltz No.07 in C minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 7
       },
       {
         "id": 264,
-        "work_title": "Liebeslieder Waltz No.08",
+        "work_title": "Liebeslieder Waltz No.08 in A\u266d major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 8
       },
       {
         "id": 265,
-        "work_title": "Liebeslieder Waltz No.09",
+        "work_title": "Liebeslieder Waltz No.09 in E major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 9
       },
       {
         "id": 266,
-        "work_title": "Liebeslieder Waltz No.10",
+        "work_title": "Liebeslieder Waltz No.10 in G major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 10
       },
       {
         "id": 267,
-        "work_title": "Liebeslieder Waltz No.11",
+        "work_title": "Liebeslieder Waltz No.11 in C minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 11
       },
       {
         "id": 268,
-        "work_title": "Liebeslieder Waltz No.12",
+        "work_title": "Liebeslieder Waltz No.12 in C minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 12
       },
       {
         "id": 269,
-        "work_title": "Liebeslieder Waltz No.13",
+        "work_title": "Liebeslieder Waltz No.13 in A\u266d major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 13
       },
       {
         "id": 270,
-        "work_title": "Liebeslieder Waltz No.14",
+        "work_title": "Liebeslieder Waltz No.14 in E\u266d major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 14
       },
       {
         "id": 271,
-        "work_title": "Liebeslieder Waltz No.15",
+        "work_title": "Liebeslieder Waltz No.15 in A\u266d major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 15
       },
       {
         "id": 272,
-        "work_title": "Liebeslieder Waltz No.16",
+        "work_title": "Liebeslieder Waltz No.16 in F minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 16
       },
       {
         "id": 273,
-        "work_title": "Liebeslieder Waltz No.17",
+        "work_title": "Liebeslieder Waltz No.17 in D\u266d major",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 17
       },
       {
         "id": 274,
-        "work_title": "Liebeslieder Waltz No.18",
+        "work_title": "Liebeslieder Waltz No.18 in B\u266d minor",
         "composition_year": 1874,
         "opus": "52a",
         "opus_number": 18
@@ -17897,7 +17897,7 @@
       },
       {
         "id": 305,
-        "work_title": "Piano Quartet No.3 (\"Werther\")",
+        "work_title": "Piano Quartet No.3 (\"Werther\") in C minor",
         "composition_year": 1855,
         "opus": "60",
         "opus_number": -1
@@ -18177,105 +18177,105 @@
       },
       {
         "id": 345,
-        "work_title": "Neue Liebeslieder Waltz No.01",
+        "work_title": "Neue Liebeslieder Waltz No.01 in A minor",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 1
       },
       {
         "id": 346,
-        "work_title": "Neue Liebeslieder Waltz No.02",
+        "work_title": "Neue Liebeslieder Waltz No.02 in A minor\u2013A major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 2
       },
       {
         "id": 347,
-        "work_title": "Neue Liebeslieder Waltz No.03",
+        "work_title": "Neue Liebeslieder Waltz No.03 in A major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 3
       },
       {
         "id": 348,
-        "work_title": "Neue Liebeslieder Waltz No.04",
+        "work_title": "Neue Liebeslieder Waltz No.04 in D minor",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 4
       },
       {
         "id": 349,
-        "work_title": "Neue Liebeslieder Waltz No.05",
+        "work_title": "Neue Liebeslieder Waltz No.05 in D minor",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 5
       },
       {
         "id": 350,
-        "work_title": "Neue Liebeslieder Waltz No.06",
+        "work_title": "Neue Liebeslieder Waltz No.06 in F major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 6
       },
       {
         "id": 351,
-        "work_title": "Neue Liebeslieder Waltz No.07",
+        "work_title": "Neue Liebeslieder Waltz No.07 in C major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 7
       },
       {
         "id": 352,
-        "work_title": "Neue Liebeslieder Waltz No.08",
+        "work_title": "Neue Liebeslieder Waltz No.08 in E\u266d major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 8
       },
       {
         "id": 353,
-        "work_title": "Neue Liebeslieder Waltz No.09",
+        "work_title": "Neue Liebeslieder Waltz No.09 in G minor",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 9
       },
       {
         "id": 354,
-        "work_title": "Neue Liebeslieder Waltz No.10",
+        "work_title": "Neue Liebeslieder Waltz No.10 in G major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 10
       },
       {
         "id": 355,
-        "work_title": "Neue Liebeslieder Waltz No.11",
+        "work_title": "Neue Liebeslieder Waltz No.11 in G major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 11
       },
       {
         "id": 356,
-        "work_title": "Neue Liebeslieder Waltz No.12",
+        "work_title": "Neue Liebeslieder Waltz No.12 in G minor\u2013G major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 12
       },
       {
         "id": 357,
-        "work_title": "Neue Liebeslieder Waltz No.13",
+        "work_title": "Neue Liebeslieder Waltz No.13 in E major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 13
       },
       {
         "id": 358,
-        "work_title": "Neue Liebeslieder Waltz No.14",
+        "work_title": "Neue Liebeslieder Waltz No.14 in A minor\u2013A major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 14
       },
       {
         "id": 359,
-        "work_title": "Neue Liebeslieder Waltz No.15",
+        "work_title": "Neue Liebeslieder Waltz No.15 in F major",
         "composition_year": 1875,
         "opus": "65a",
         "opus_number": 15
@@ -18317,28 +18317,28 @@
       },
       {
         "id": 365,
-        "work_title": "String Quartet No.3",
+        "work_title": "String Quartet No.3 in B\u266d major",
         "composition_year": 1875,
         "opus": "67",
         "opus_number": -1
       },
       {
         "id": 366,
-        "work_title": "String Quartet No.3",
+        "work_title": "String Quartet No.3 in B\u266d major",
         "composition_year": 1875,
         "opus": "67",
         "opus_number": -1
       },
       {
         "id": 367,
-        "work_title": "Symphony No.1",
+        "work_title": "Symphony No.1 in C minor",
         "composition_year": 1862,
         "opus": "68",
         "opus_number": -1
       },
       {
         "id": 368,
-        "work_title": "Symphony No.1",
+        "work_title": "Symphony No.1 in C minor",
         "composition_year": 1876,
         "opus": "68",
         "opus_number": -1
@@ -18506,14 +18506,14 @@
       },
       {
         "id": 392,
-        "work_title": "Symphony No.2",
+        "work_title": "Symphony No.2 in D major",
         "composition_year": 1877,
         "opus": "73",
         "opus_number": -1
       },
       {
         "id": 393,
-        "work_title": "Symphony No.2",
+        "work_title": "Symphony No.2 in D major",
         "composition_year": 1877,
         "opus": "73",
         "opus_number": -1
@@ -18632,21 +18632,21 @@
       },
       {
         "id": 410,
-        "work_title": "Violin Sonata No.1 (\"Regen\")",
+        "work_title": "Violin Sonata No.1 (\"Regen\") in G major",
         "composition_year": 1878,
         "opus": "78",
         "opus_number": -1
       },
       {
         "id": 411,
-        "work_title": "Rhapsody No.1",
+        "work_title": "Rhapsody No.1 in B minor",
         "composition_year": 1879,
         "opus": "79",
         "opus_number": 1
       },
       {
         "id": 412,
-        "work_title": "Rhapsody No.2",
+        "work_title": "Rhapsody No.2 in G minor",
         "composition_year": 1879,
         "opus": "79",
         "opus_number": 2
@@ -18688,14 +18688,14 @@
       },
       {
         "id": 418,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in B\u266d major",
         "composition_year": 1881,
         "opus": "83",
         "opus_number": -1
       },
       {
         "id": 419,
-        "work_title": "Piano Concerto No.2",
+        "work_title": "Piano Concerto No.2 in B\u266d major",
         "composition_year": 1881,
         "opus": "83",
         "opus_number": -1
@@ -18821,21 +18821,21 @@
       },
       {
         "id": 437,
-        "work_title": "Piano Trio No.2",
+        "work_title": "Piano Trio No.2 in C major",
         "composition_year": 1880,
         "opus": "87",
         "opus_number": -1
       },
       {
         "id": 438,
-        "work_title": "String Quintet No.1 (\"Spring\")",
+        "work_title": "String Quintet No.1 (\"Spring\") in F major",
         "composition_year": 1882,
         "opus": "88",
         "opus_number": -1
       },
       {
         "id": 439,
-        "work_title": "String Quintet No.1 (\"Spring\")",
+        "work_title": "String Quintet No.1 (\"Spring\") in F major",
         "composition_year": 1882,
         "opus": "88",
         "opus_number": -1
@@ -18849,14 +18849,14 @@
       },
       {
         "id": 441,
-        "work_title": "Symphony No.3",
+        "work_title": "Symphony No.3 in F major",
         "composition_year": 1883,
         "opus": "90",
         "opus_number": -1
       },
       {
         "id": 442,
-        "work_title": "Symphony No.3",
+        "work_title": "Symphony No.3 in F major",
         "composition_year": 1883,
         "opus": "90",
         "opus_number": -1
@@ -19108,42 +19108,42 @@
       },
       {
         "id": 478,
-        "work_title": "Symphony No.4",
+        "work_title": "Symphony No.4 in E minor",
         "composition_year": 1884,
         "opus": "98",
         "opus_number": -1
       },
       {
         "id": 479,
-        "work_title": "Symphony No.4",
+        "work_title": "Symphony No.4 in E minor",
         "composition_year": 1885,
         "opus": "98",
         "opus_number": -1
       },
       {
         "id": 480,
-        "work_title": "Symphony No.4",
+        "work_title": "Symphony No.4 in E minor",
         "composition_year": 1885,
         "opus": "98",
         "opus_number": -1
       },
       {
         "id": 481,
-        "work_title": "Cello Sonata No.2",
+        "work_title": "Cello Sonata No.2 in F major",
         "composition_year": 1886,
         "opus": "99",
         "opus_number": -1
       },
       {
         "id": 482,
-        "work_title": "Violin Sonata No.2 (\"Thun\")",
+        "work_title": "Violin Sonata No.2 (\"Thun\") in A major",
         "composition_year": 1886,
         "opus": "100",
         "opus_number": -1
       },
       {
         "id": 483,
-        "work_title": "Piano Trio No.3",
+        "work_title": "Piano Trio No.3 in C minor",
         "composition_year": 1886,
         "opus": "101",
         "opus_number": -1
@@ -19430,7 +19430,7 @@
       },
       {
         "id": 524,
-        "work_title": "Violin Sonata No.3",
+        "work_title": "Violin Sonata No.3 in D ninor",
         "composition_year": 1886,
         "opus": "108",
         "opus_number": -1
@@ -19479,14 +19479,14 @@
       },
       {
         "id": 531,
-        "work_title": "String Quintet No.2",
+        "work_title": "String Quintet No.2 in G major",
         "composition_year": 1890,
         "opus": "111",
         "opus_number": -1
       },
       {
         "id": 532,
-        "work_title": "String Quintet No.2",
+        "work_title": "String Quintet No.2 in G major",
         "composition_year": 1890,
         "opus": "111",
         "opus_number": -1
@@ -19780,14 +19780,14 @@
       },
       {
         "id": 574,
-        "work_title": "Clarinet Sonata No.1",
+        "work_title": "Clarinet Sonata No.1 in F minor",
         "composition_year": 1894,
         "opus": "120",
         "opus_number": 1
       },
       {
         "id": 575,
-        "work_title": "Sonata No.2",
+        "work_title": "Sonata No.2 in E\u266d major",
         "composition_year": 1894,
         "opus": "120",
         "opus_number": 2
