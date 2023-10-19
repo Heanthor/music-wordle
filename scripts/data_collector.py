@@ -24,6 +24,34 @@ class ScrapedWork:
     opus: str
     opus_number: int
 
+    def __hash__(self) -> int:
+        # purposefully omit composition year
+        # because sometimes otherwise identical arrangements
+        # were composed in different years
+        return hash(
+            (
+                self.composer_firstname,
+                self.composer_lastname,
+                self.composer_fullname,
+                self.work_title,
+                self.opus,
+                self.opus_number,
+            )
+        )
+
+    def __eq__(self, __value: object) -> bool:
+        # same as above
+        if not isinstance(__value, ScrapedWork):
+            return NotImplemented
+        return (
+            self.composer_firstname == __value.composer_firstname
+            and self.composer_lastname == __value.composer_lastname
+            and self.composer_fullname == __value.composer_fullname
+            and self.work_title == __value.work_title
+            and self.opus == __value.opus
+            and self.opus_number == __value.opus_number
+        )
+
 
 def beethoven_opus(opus_number_str: str):
     if "/" in opus_number_str:
@@ -89,12 +117,27 @@ def tchaikovsky_opus(opus_number_str: str):
     return opus.strip(), num
 
 
+def tchaikovsky_postprocess(all_works: list[ScrapedWork]) -> list[ScrapedWork]:
+    # there are tons of duplicate opus/titles due to arrangements for orchestra/piano
+    seen = set()
+    uniq = []
+    for work in all_works:
+        if work not in seen:
+            seen.add(work)
+            uniq.append(work)
+
+    return uniq
+
+
 config_by_composer = {
     "Ludwig van Beethoven": {"opus_func": beethoven_opus},
     "Wolfgang Amadeus Mozart": {"opus_func": mozart_opus},
     "Frédéric Chopin": {"work_override": chopin_override},
     "Johannes Brahms": {"opus_func": brahms_opus},
-    "Pyotr Tchaikovsky": {"opus_func": tchaikovsky_opus},
+    "Pyotr Tchaikovsky": {
+        "opus_func": tchaikovsky_opus,
+        "postprocess": tchaikovsky_postprocess,
+    },
 }
 
 
@@ -252,6 +295,13 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                 opus_number=int(num),
             )
         )
+
+    try:
+        postprocess = config_by_composer[composer]["postprocess"]
+        all_works = postprocess(all_works)
+    except KeyError:
+        pass
+
     return all_works
 
 

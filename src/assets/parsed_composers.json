@@ -12771,2001 +12771,1784 @@
       },
       {
         "id": 8,
-        "work_title": "The Nutcracker (\u0429\u0435\u043b\u043a\u0443\u043d\u0447\u0438\u043a)",
-        "composition_year": 1892,
-        "opus": "71",
-        "opus_number": -1
-      },
-      {
-        "id": 9,
         "work_title": "The Snow Maiden (\u0421\u043d\u0435\u0433\u0443\u0440\u043e\u0447\u043a\u0430)",
         "composition_year": 1873,
         "opus": "12",
         "opus_number": -1
       },
       {
-        "id": 10,
+        "id": 9,
         "work_title": "Hamlet (\u0413\u0430\u043c\u043b\u0435\u0442)",
         "composition_year": 1891,
         "opus": "67a",
         "opus_number": -1
       },
       {
-        "id": 11,
+        "id": 10,
         "work_title": "Symphony No.1 (\u00ab\u0417\u0438\u043c\u043d\u0438\u0435 \u0433\u0440\u0435\u0437\u044b\u00bb) (\"Winter Daydreams\") in G minor",
         "composition_year": 1866,
         "opus": "13",
         "opus_number": -1
       },
       {
-        "id": 12,
+        "id": 11,
         "work_title": "Symphony No.2 (\u00ab\u041c\u0430\u043b\u043e\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f\u00bb) (\"Little Russian\") in C minor",
         "composition_year": 1872,
         "opus": "17",
         "opus_number": -1
       },
       {
-        "id": 13,
-        "work_title": "Symphony No.2 (\u00ab\u041c\u0430\u043b\u043e\u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f\u00bb) (\"Little Russian\") in C minor",
-        "composition_year": 1873,
-        "opus": "17",
-        "opus_number": -1
-      },
-      {
-        "id": 14,
+        "id": 12,
         "work_title": "Symphony No.3 (\u00ab\u041f\u043e\u043b\u044c\u0441\u043a\u0438\u0439\u00bb) (\"Polish\") in D major",
         "composition_year": 1875,
         "opus": "29",
         "opus_number": -1
       },
       {
-        "id": 15,
+        "id": 13,
         "work_title": "Symphony No.4 in F minor",
         "composition_year": 1877,
         "opus": "36",
         "opus_number": -1
       },
       {
-        "id": 16,
+        "id": 14,
         "work_title": "Manfred (\u041c\u0430\u043d\u0444\u0440\u0435\u0434)",
         "composition_year": 1885,
         "opus": "58",
         "opus_number": -1
       },
       {
-        "id": 17,
-        "work_title": "Manfred (\u041c\u0430\u043d\u0444\u0440\u0435\u0434)",
-        "composition_year": 1885,
-        "opus": "58",
-        "opus_number": -1
-      },
-      {
-        "id": 18,
+        "id": 15,
         "work_title": "Symphony No.5 in E minor",
         "composition_year": 1888,
         "opus": "64",
         "opus_number": -1
       },
       {
-        "id": 19,
+        "id": 16,
         "work_title": "Symphony No.6 (\u00ab\u041f\u0430\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f\u00bb) (\"Path\u00e9tique\") in B minor",
         "composition_year": 1893,
         "opus": "74",
+        "opus_number": -1
+      },
+      {
+        "id": 17,
+        "work_title": "Suite No.1 in D minor",
+        "composition_year": 1878,
+        "opus": "43",
+        "opus_number": -1
+      },
+      {
+        "id": 18,
+        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\") in C major",
+        "composition_year": 1883,
+        "opus": "53",
+        "opus_number": -1
+      },
+      {
+        "id": 19,
+        "work_title": "Suite No.3 in G major",
+        "composition_year": 1884,
+        "opus": "55",
         "opus_number": -1
       },
       {
         "id": 20,
-        "work_title": "Symphony No.6 (\u00ab\u041f\u0430\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f\u00bb) (\"Path\u00e9tique\") in B minor",
-        "composition_year": 1893,
-        "opus": "74",
-        "opus_number": -1
-      },
-      {
-        "id": 21,
-        "work_title": "Suite No.1 in D minor",
-        "composition_year": 1878,
-        "opus": "43",
-        "opus_number": -1
-      },
-      {
-        "id": 22,
-        "work_title": "Suite No.1 in D minor",
-        "composition_year": 1878,
-        "opus": "43",
-        "opus_number": -1
-      },
-      {
-        "id": 23,
-        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\") in C major",
-        "composition_year": 1883,
-        "opus": "53",
-        "opus_number": -1
-      },
-      {
-        "id": 24,
-        "work_title": "Suite No.2 (\"Suite caract\u00e9ristique\") in C major",
-        "composition_year": 1883,
-        "opus": "53",
-        "opus_number": -1
-      },
-      {
-        "id": 25,
-        "work_title": "Suite No.3 in G major",
-        "composition_year": 1884,
-        "opus": "55",
-        "opus_number": -1
-      },
-      {
-        "id": 26,
-        "work_title": "Suite No.3 in G major",
-        "composition_year": 1884,
-        "opus": "55",
-        "opus_number": -1
-      },
-      {
-        "id": 27,
         "work_title": "Suite No.4 (\"Mozartiana\") in G major",
         "composition_year": 1887,
         "opus": "61",
         "opus_number": -1
       },
       {
-        "id": 28,
+        "id": 21,
         "work_title": "The Nutcracker (\u0429\u0435\u043b\u043a\u0443\u043d\u0447\u0438\u043a)",
         "composition_year": 1892,
         "opus": "71a",
         "opus_number": -1
       },
       {
-        "id": 29,
+        "id": 22,
         "work_title": "The Storm (\u0413\u0440\u043e\u0437\u0430)",
         "composition_year": 1864,
         "opus": "76",
         "opus_number": -1
       },
       {
-        "id": 30,
+        "id": 23,
         "work_title": "Festival Overture on the Danish National Anthem (\u0422\u043e\u0440\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u0443\u0432\u0435\u0440\u0442\u044e\u0440\u0430 \u043d\u0430 \u0414\u0430\u0442\u0441\u043a\u0438\u0439 \u0433\u0438\u043c\u043d)",
         "composition_year": 1866,
         "opus": "15",
         "opus_number": -1
       },
       {
-        "id": 31,
-        "work_title": "Festival Overture on the Danish National Anthem (\u0422\u043e\u0440\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u0443\u0432\u0435\u0440\u0442\u044e\u0440\u0430 \u043d\u0430 \u0414\u0430\u0442\u0441\u043a\u0438\u0439 \u0433\u0438\u043c\u043d)",
-        "composition_year": 1867,
-        "opus": "15",
-        "opus_number": -1
-      },
-      {
-        "id": 32,
+        "id": 24,
         "work_title": "Fatum (\u0424\u0430\u0442\u0443\u043c)",
         "composition_year": 1868,
         "opus": "77",
         "opus_number": -1
       },
       {
-        "id": 33,
+        "id": 25,
         "work_title": "The Tempest (\u0411\u0443\u0440\u044f)",
         "composition_year": 1873,
         "opus": "18",
         "opus_number": -1
       },
       {
-        "id": 34,
+        "id": 26,
         "work_title": "Slavonic March (\u0421\u043b\u0430\u0432\u044f\u043d\u0441\u043a\u0438\u0439 \u043c\u0430\u0440\u0448)",
         "composition_year": 1876,
         "opus": "31",
         "opus_number": -1
       },
       {
-        "id": 35,
-        "work_title": "Slavonic March (\u0421\u043b\u0430\u0432\u044f\u043d\u0441\u043a\u0438\u0439 \u043c\u0430\u0440\u0448)",
-        "composition_year": 1876,
-        "opus": "31",
-        "opus_number": -1
-      },
-      {
-        "id": 36,
+        "id": 27,
         "work_title": "Francesca da Rimini (\u0424\u0440\u0430\u043d\u0447\u0435\u0441\u043a\u0430 \u0434\u0430 \u0420\u0438\u043c\u0438\u043d\u0438)",
         "composition_year": 1876,
         "opus": "32",
         "opus_number": -1
       },
       {
-        "id": 37,
+        "id": 28,
         "work_title": "Italian Capriccio (\u0418\u0442\u0430\u043b\u044c\u044f\u0430\u043d\u0441\u043a\u043e\u0435 \u043a\u0430\u043f\u0440\u0438\u0447\u0447\u0438\u043e)",
         "composition_year": 1880,
         "opus": "45",
         "opus_number": -1
       },
       {
-        "id": 38,
-        "work_title": "Italian Capriccio (\u0418\u0442\u0430\u043b\u044c\u044f\u0430\u043d\u0441\u043a\u043e\u0435 \u043a\u0430\u043f\u0440\u0438\u0447\u0447\u0438\u043e)",
-        "composition_year": 1880,
-        "opus": "45",
-        "opus_number": -1
-      },
-      {
-        "id": 39,
+        "id": 29,
         "work_title": "Serenade for String Orchestra",
         "composition_year": 1880,
         "opus": "48",
         "opus_number": -1
       },
       {
-        "id": 40,
-        "work_title": "Serenade for String Orchestra",
-        "composition_year": 1880,
-        "opus": "48",
-        "opus_number": -1
-      },
-      {
-        "id": 41,
+        "id": 30,
         "work_title": "1812 Overture  (The Year 1812) (1812 \u0433\u043e\u0434)",
         "composition_year": 1880,
         "opus": "49",
         "opus_number": -1
       },
       {
-        "id": 42,
+        "id": 31,
         "work_title": "Hamlet (\u0413\u0430\u043c\u043b\u0435\u0442)",
         "composition_year": 1888,
         "opus": "67",
         "opus_number": -1
       },
       {
-        "id": 43,
+        "id": 32,
         "work_title": "The Voyevoda (\u0412\u043e\u0435\u0432\u043e\u0434\u0430)",
         "composition_year": 1890,
         "opus": "78",
         "opus_number": -1
       },
       {
-        "id": 44,
+        "id": 33,
         "work_title": "Piano Concerto No.1 in B\u266d minor",
         "composition_year": 1874,
         "opus": "23",
         "opus_number": -1
       },
       {
-        "id": 45,
-        "work_title": "Piano Concerto No.1 in B\u266d minor",
-        "composition_year": 1874,
-        "opus": "23",
-        "opus_number": -1
-      },
-      {
-        "id": 46,
+        "id": 34,
         "work_title": "S\u00e9r\u00e9nade m\u00e9lancolique",
         "composition_year": 1875,
         "opus": "26",
         "opus_number": -1
       },
       {
-        "id": 47,
-        "work_title": "S\u00e9r\u00e9nade m\u00e9lancolique",
-        "composition_year": 1875,
-        "opus": "26",
-        "opus_number": -1
-      },
-      {
-        "id": 48,
+        "id": 35,
         "work_title": "Variations on a Rococo Theme (\u0412\u0430\u0440\u0438\u0430\u0446\u0438\u0438 \u043d\u0430 \u0442\u0435\u043c\u0443 \u0440\u043e\u043a\u043e\u043a\u043e)",
         "composition_year": 1876,
         "opus": "33",
         "opus_number": -1
       },
       {
-        "id": 49,
-        "work_title": "Variations on a Rococo Theme (\u0412\u0430\u0440\u0438\u0430\u0446\u0438\u0438 \u043d\u0430 \u0442\u0435\u043c\u0443 \u0440\u043e\u043a\u043e\u043a\u043e)",
-        "composition_year": 1877,
-        "opus": "33",
-        "opus_number": -1
-      },
-      {
-        "id": 50,
+        "id": 36,
         "work_title": "Valse-Scherzo (\u0412\u0430\u043b\u044c\u0441-\u0441\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1877,
         "opus": "34",
         "opus_number": -1
       },
       {
-        "id": 51,
-        "work_title": "Valse-Scherzo (\u0412\u0430\u043b\u044c\u0441-\u0441\u043a\u0435\u0440\u0446\u043e)",
-        "composition_year": 1877,
-        "opus": "34",
-        "opus_number": -1
-      },
-      {
-        "id": 52,
+        "id": 37,
         "work_title": "Violin Concerto",
         "composition_year": 1878,
         "opus": "35",
         "opus_number": -1
       },
       {
-        "id": 53,
-        "work_title": "Violin Concerto",
-        "composition_year": 1878,
-        "opus": "35",
-        "opus_number": -1
-      },
-      {
-        "id": 54,
+        "id": 38,
         "work_title": "Piano Concerto No.2 in G major",
         "composition_year": 1879,
         "opus": "44",
         "opus_number": -1
       },
       {
-        "id": 55,
-        "work_title": "Piano Concerto No.2 in G major",
-        "composition_year": 1880,
-        "opus": "44",
-        "opus_number": -1
-      },
-      {
-        "id": 56,
+        "id": 39,
         "work_title": "Concert Fantasia",
         "composition_year": 1884,
         "opus": "56",
         "opus_number": -1
       },
       {
-        "id": 57,
-        "work_title": "Concert Fantasia",
-        "composition_year": 1884,
-        "opus": "56",
-        "opus_number": -1
-      },
-      {
-        "id": 58,
+        "id": 40,
         "work_title": "Pezzo capriccioso",
         "composition_year": 1887,
         "opus": "62",
         "opus_number": -1
       },
       {
-        "id": 59,
-        "work_title": "Pezzo capriccioso",
-        "composition_year": 1887,
-        "opus": "62",
-        "opus_number": -1
-      },
-      {
-        "id": 60,
+        "id": 41,
         "work_title": "Andante cantabile",
         "composition_year": 1888,
         "opus": "11",
         "opus_number": -1
       },
       {
-        "id": 61,
+        "id": 42,
         "work_title": "Nocturne (\u041d\u043e\u043a\u0442\u044e\u0440\u043d)",
         "composition_year": 1888,
         "opus": "19",
         "opus_number": 4
       },
       {
-        "id": 62,
+        "id": 43,
         "work_title": "Piano Concerto No.3 in E\u266d major",
         "composition_year": 1893,
         "opus": "75",
         "opus_number": -1
       },
       {
-        "id": 63,
-        "work_title": "Piano Concerto No.3 in E\u266d major",
-        "composition_year": 1893,
-        "opus": "75",
-        "opus_number": -1
-      },
-      {
-        "id": 64,
+        "id": 44,
         "work_title": "Liturgy of St. John Chrysostom (\u041b\u0438\u0442\u0443\u0440\u0433\u0438\u044f \u0441\u0432\u044f\u0442\u043e\u0433\u043e \u0418\u043e\u0430\u043d\u043d\u0430 \u0417\u043b\u0430\u0442\u043e\u0443\u0441\u0442\u0430)",
         "composition_year": 1878,
         "opus": "41",
         "opus_number": -1
       },
       {
-        "id": 65,
+        "id": 45,
         "work_title": "All-Night Vigil (\u0412\u0441\u0435\u043d\u043e\u0449\u043d\u043e\u0435 \u0431\u0434\u0435\u043d\u0438\u0435)",
         "composition_year": 1881,
         "opus": "52",
         "opus_number": -1
       },
       {
-        "id": 66,
+        "id": 46,
         "work_title": "Legend (\u041b\u0435\u0433\u0435\u043d\u0434\u0430)",
         "composition_year": 1889,
         "opus": "54",
         "opus_number": 5
       },
       {
-        "id": 67,
+        "id": 47,
         "work_title": "Do Not Believe, My Friend (\u041d\u0435 \u0432\u0435\u0440\u044c, \u043c\u043e\u0439 \u0434\u0440\u0443\u0433)",
         "composition_year": 1869,
         "opus": "6",
         "opus_number": 1
       },
       {
-        "id": 68,
+        "id": 48,
         "work_title": "Not A Word, O My Friend (\u041d\u0438 \u0441\u043b\u043e\u0432\u0430, \u043e \u0434\u0440\u0443\u0433 \u043c\u043e\u0439)",
         "composition_year": 1869,
         "opus": "6",
         "opus_number": 2
       },
       {
-        "id": 69,
+        "id": 49,
         "work_title": "Bitterly And Sweetly (\u0418 \u0431\u043e\u043b\u044c\u043d\u043e, \u0438 \u0441\u043b\u0430\u0434\u043a\u043e)",
         "composition_year": 1869,
         "opus": "6",
         "opus_number": 3
       },
       {
-        "id": 70,
+        "id": 50,
         "work_title": "A Tear Trembles (\u0421\u043b\u0435\u0437\u0430 \u0434\u0440\u043e\u0436\u0438\u0442)",
         "composition_year": 1869,
         "opus": "6",
         "opus_number": 4
       },
       {
-        "id": 71,
+        "id": 51,
         "work_title": "Why? (\u041e\u0442\u0447\u0435\u0433\u043e?)",
         "composition_year": 1869,
         "opus": "6",
         "opus_number": 5
       },
       {
-        "id": 72,
+        "id": 52,
         "work_title": "None But The Lonely Heart (\u041d\u0435\u0442, \u0442\u043e\u043b\u044c\u043a\u043e \u0442\u043e\u0442, \u043a\u0442\u043e \u0437\u043d\u0430\u043b)",
         "composition_year": 1869,
         "opus": "6",
         "opus_number": 6
       },
       {
-        "id": 73,
+        "id": 53,
         "work_title": "Cradle Song (\u041a\u043e\u043b\u044b\u0431\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1872,
         "opus": "16",
         "opus_number": 1
       },
       {
-        "id": 74,
-        "work_title": "Cradle Song (\u041a\u043e\u043b\u044b\u0431\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
-        "composition_year": 1873,
-        "opus": "16",
-        "opus_number": 1
-      },
-      {
-        "id": 75,
-        "work_title": "Cradle Song (\u041a\u043e\u043b\u044b\u0431\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
-        "composition_year": 1873,
-        "opus": "16",
-        "opus_number": 1
-      },
-      {
-        "id": 76,
+        "id": 54,
         "work_title": "Wait! (\u041f\u043e\u0433\u043e\u0434\u0438!)",
         "composition_year": 1872,
         "opus": "16",
         "opus_number": 2
       },
       {
-        "id": 77,
+        "id": 55,
         "work_title": "Accept Just Once (\u041f\u043e\u0439\u043c\u0438 \u0445\u043e\u0442\u044c \u0440\u0430\u0437)",
         "composition_year": 1872,
         "opus": "16",
         "opus_number": 3
       },
       {
-        "id": 78,
+        "id": 56,
         "work_title": "O, Sing that Song (\u041e, \u0441\u043f\u043e\u0439 \u0436\u0435 \u0442\u0443 \u043f\u0435\u0441\u043d\u044e)",
         "composition_year": 1872,
         "opus": "16",
         "opus_number": 4
       },
       {
-        "id": 79,
-        "work_title": "O, Sing that Song (\u041e, \u0441\u043f\u043e\u0439 \u0436\u0435 \u0442\u0443 \u043f\u0435\u0441\u043d\u044e)",
-        "composition_year": 1873,
-        "opus": "16",
-        "opus_number": 4
-      },
-      {
-        "id": 80,
+        "id": 57,
         "work_title": "So What? (\u0422\u0430\u043a \u0447\u0442\u043e \u0436\u0435?)",
         "composition_year": 1872,
         "opus": "16",
         "opus_number": 5
       },
       {
-        "id": 81,
-        "work_title": "So What? (\u0422\u0430\u043a \u0447\u0442\u043e \u0436\u0435?)",
-        "composition_year": 1873,
-        "opus": "16",
-        "opus_number": 5
-      },
-      {
-        "id": 82,
+        "id": 58,
         "work_title": "Modern Greek Song (on the theme \"Dies irae\") (\u041d\u043e\u0432\u043e\u0433\u0440\u0435\u0447\u0435\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u043d\u044f \u043d\u0430 \u0442\u0435\u043c\u0443 \"Dies irae\")",
         "composition_year": 1872,
         "opus": "16",
         "opus_number": 6
       },
       {
-        "id": 83,
+        "id": 59,
         "work_title": "Reconciliation (\u041f\u0440\u0438\u043c\u0438\u0440\u0435\u043d\u044c\u0435)",
         "composition_year": 1875,
         "opus": "25",
         "opus_number": 1
       },
       {
-        "id": 84,
+        "id": 60,
         "work_title": "As Over the Burning Ashes (\u041a\u0430\u043a \u043d\u0430\u0434 \u0433\u043e\u0440\u044f\u0447\u0435\u044e \u0437\u043e\u043b\u043e\u0439)",
         "composition_year": 1875,
         "opus": "25",
         "opus_number": 2
       },
       {
-        "id": 85,
+        "id": 61,
         "work_title": "Mignon's Song (\u041f\u0435\u0441\u043d\u044c \u041c\u0438\u043d\u044c\u043e\u043d\u044b)",
         "composition_year": 1875,
         "opus": "25",
         "opus_number": 3
       },
       {
-        "id": 86,
+        "id": 62,
         "work_title": "The Canary (\u041a\u0430\u043d\u0430\u0440\u0435\u0439\u043a\u0430)",
         "composition_year": 1875,
         "opus": "25",
         "opus_number": 4
       },
       {
-        "id": 87,
+        "id": 63,
         "work_title": "I Never Spoke To Her (\u042f \u0441 \u043d\u0435\u044e \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u0433\u043e\u0432\u043e\u0440\u0438\u043b)",
         "composition_year": 1875,
         "opus": "25",
         "opus_number": 5
       },
       {
-        "id": 88,
+        "id": 64,
         "work_title": "As They Repeated: \"Fool\" (\u041a\u0430\u043a \u043d\u0430\u043b\u0430\u0434\u0438\u043b\u0438: \u00ab\u0414\u0443\u0440\u0430\u043a\u00bb)",
         "composition_year": 1875,
         "opus": "25",
         "opus_number": 6
       },
       {
-        "id": 89,
+        "id": 65,
         "work_title": "At Bedtime (\u041d\u0430 \u0441\u043e\u043d \u0433\u0440\u044f\u0434\u0443\u0449\u0438\u0439)",
         "composition_year": 1875,
         "opus": "27",
         "opus_number": 1
       },
       {
-        "id": 90,
+        "id": 66,
         "work_title": "Look, Yonder Cloud (\u0421\u043c\u043e\u0442\u0440\u0438, \u0432\u043e\u043d \u043e\u0431\u043b\u0430\u043a\u043e)",
         "composition_year": 1875,
         "opus": "27",
         "opus_number": 2
       },
       {
-        "id": 91,
+        "id": 67,
         "work_title": "Do Not Leave Me (\u041d\u0435 \u043e\u0442\u0445\u043e\u0434\u0438 \u043e\u0442 \u043c\u0435\u043d\u044f)",
         "composition_year": 1875,
         "opus": "27",
         "opus_number": 3
       },
       {
-        "id": 92,
+        "id": 68,
         "work_title": "Evening (\u0412\u0435\u0447\u0435\u0440)",
         "composition_year": 1875,
         "opus": "27",
         "opus_number": 4
       },
       {
-        "id": 93,
+        "id": 69,
         "work_title": "Was it the Mother who Bore Me? (\u0410\u043b\u0438 \u043c\u0430\u0442\u044c \u043c\u0435\u043d\u044f \u0440\u043e\u044d\u0436\u0430\u043b\u0430)",
         "composition_year": 1875,
         "opus": "27",
         "opus_number": 5
       },
       {
-        "id": 94,
+        "id": 70,
         "work_title": "My Spoiled Darling (\u041c\u043e\u0439 \u0431\u0430\u043b\u043e\u0432\u043d\u0438\u0446\u0430)",
         "composition_year": 1875,
         "opus": "27",
         "opus_number": 6
       },
       {
-        "id": 95,
+        "id": 71,
         "work_title": "No, I Shall Never Tell (\u041d\u0435\u0442, \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u043d\u0430\u0437\u043e\u0432\u0443)",
         "composition_year": 1875,
         "opus": "28",
         "opus_number": 1
       },
       {
-        "id": 96,
+        "id": 72,
         "work_title": "The Corals (\u041a\u043e\u0440\u043e\u043b\u044c\u043a\u0438)",
         "composition_year": 1875,
         "opus": "28",
         "opus_number": 2
       },
       {
-        "id": 97,
+        "id": 73,
         "work_title": "Why? (\u0417\u0430\u0447\u0435\u043c?)",
         "composition_year": 1875,
         "opus": "28",
         "opus_number": 3
       },
       {
-        "id": 98,
+        "id": 74,
         "work_title": "He Loved Me So Much (\u041e\u043d \u0442\u0430\u043a \u043c\u0435\u043d\u044f \u043b\u044e\u0431\u0438\u043b)",
         "composition_year": 1875,
         "opus": "28",
         "opus_number": 4
       },
       {
-        "id": 99,
+        "id": 75,
         "work_title": "No Response or Word or Greeting (\u041d\u0438 \u043e\u0442\u0437\u044b\u0432\u0430, \u043d\u0438 \u0441\u043b\u043e\u0432\u0430, \u043d\u0438 \u043f\u0440\u0438\u0432\u0435\u0442\u0430)",
         "composition_year": 1875,
         "opus": "28",
         "opus_number": 5
       },
       {
-        "id": 100,
+        "id": 76,
         "work_title": "The Terrible Moment (\u0421\u0442\u0440\u0430\u0448\u043d\u0430\u044f \u043c\u0438\u043d\u0443\u0442\u0430)",
         "composition_year": 1875,
         "opus": "28",
         "opus_number": 6
       },
       {
-        "id": 101,
+        "id": 77,
         "work_title": "Don Juan's Serenade (\u0421\u0435\u0440\u0435\u043d\u0430\u0434\u0430 \u0414\u043e\u043d-\u0416\u0443\u0430\u043d\u0430)",
         "composition_year": 1878,
         "opus": "38",
         "opus_number": 1
       },
       {
-        "id": 102,
+        "id": 78,
         "work_title": "It was in the Early Spring (\u0422\u043e \u0431\u044b\u043b\u043e \u0440\u0430\u043d\u043d\u0435\u044e \u0432\u0435\u0441\u043d\u043e\u0439)",
         "composition_year": 1878,
         "opus": "38",
         "opus_number": 2
       },
       {
-        "id": 103,
+        "id": 79,
         "work_title": "Amid the Din of the Ball (\u0421\u0440\u0435\u0434\u044c \u0448\u0443\u043c\u043d\u043e\u0433\u043e \u0431\u0430\u043b\u0430)",
         "composition_year": 1878,
         "opus": "38",
         "opus_number": 3
       },
       {
-        "id": 104,
+        "id": 80,
         "work_title": "O, if Only You Could (\u041e, \u0435\u0441\u043b\u0438 \u0431 \u0442\u044b \u043c\u043e\u0433\u043b\u0430)",
         "composition_year": 1878,
         "opus": "38",
         "opus_number": 4
       },
       {
-        "id": 105,
+        "id": 81,
         "work_title": "The Love of a Dead Man (\u041b\u044e\u0431\u043e\u0432\u044c \u043c\u0435\u0440\u0442\u0432\u0435\u0446\u0430)",
         "composition_year": 1878,
         "opus": "38",
         "opus_number": 5
       },
       {
-        "id": 106,
+        "id": 82,
         "work_title": "Pimpinella: Florentine Song (\u041f\u0438\u043c\u043f\u0438\u043d\u0435\u043b\u043b\u0430: \u0424\u043b\u043e\u0440\u0435\u043d\u0442\u0438\u043d\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1878,
         "opus": "38",
         "opus_number": 6
       },
       {
-        "id": 107,
+        "id": 83,
         "work_title": "Evening (\u0412\u0435\u0447\u0435\u0440)",
         "composition_year": 1880,
         "opus": "46",
         "opus_number": 1
       },
       {
-        "id": 108,
+        "id": 84,
         "work_title": "Scottish Ballad: Edward (\u0428\u043e\u0442\u043b\u0430\u043d\u0434\u0441\u043a\u0430\u044f \u0431\u0430\u043b\u043b\u0430\u0434\u0430: \u042d\u0434\u0432\u0430\u0440\u0434)",
         "composition_year": 1880,
         "opus": "46",
         "opus_number": 2
       },
       {
-        "id": 109,
+        "id": 85,
         "work_title": "Tears (\u0421\u043b\u0435\u0437\u044b)",
         "composition_year": 1880,
         "opus": "46",
         "opus_number": 3
       },
       {
-        "id": 110,
+        "id": 86,
         "work_title": "In the Garden, by the Ford (\u0412 \u043e\u0433\u043e\u0440\u043e\u0434\u0435, \u0432\u043e\u0437\u043b\u0435 \u0431\u0440\u043e\u0434\u0443)",
         "composition_year": 1880,
         "opus": "46",
         "opus_number": 4
       },
       {
-        "id": 111,
+        "id": 87,
         "work_title": "Passion Spent (\u041c\u0438\u043d\u0443\u043b\u0430 \u0441\u0442\u0440\u0430\u0441\u0442\u044c)",
         "composition_year": 1880,
         "opus": "46",
         "opus_number": 5
       },
       {
-        "id": 112,
+        "id": 88,
         "work_title": "Dawn (\u0420\u0430\u0441\u0441\u0432\u0435\u0442)",
         "composition_year": 1880,
         "opus": "46",
         "opus_number": 6
       },
       {
-        "id": 113,
-        "work_title": "Dawn (\u0420\u0430\u0441\u0441\u0432\u0435\u0442)",
-        "composition_year": 1880,
-        "opus": "46",
-        "opus_number": 6
-      },
-      {
-        "id": 114,
+        "id": 89,
         "work_title": "If Only I Had Known (\u041a\u0430\u0431\u044b \u0437\u043d\u0430\u043b\u0430 \u044f)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 1
       },
       {
-        "id": 115,
+        "id": 90,
         "work_title": "Softly the Spirit Flew up to Heaven (\u0413\u043e\u0440\u043d\u0438\u043c\u0438 \u0442\u0438\u0445\u043e \u043b\u0435\u0442\u0435\u043b\u0430 \u043b\u0443\u0448\u0430 \u043d\u0435\u0431\u0435\u0441\u0430\u043c\u0438)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 2
       },
       {
-        "id": 116,
+        "id": 91,
         "work_title": "Dusk Fell on the Earth (\u041d\u0430 \u0437\u0435\u043c\u043b\u044e \u0441\u0443\u043c\u0440\u0430\u043a \u043f\u0430\u043b)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 3
       },
       {
-        "id": 117,
+        "id": 92,
         "work_title": "Sleep, Poor Friend (\u0423\u0441\u043d\u0438, \u043f\u0435\u0447\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0440\u0443\u0433)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 4
       },
       {
-        "id": 118,
+        "id": 93,
         "work_title": "I Bless You, Forests (\u0411\u043b\u0430\u0433\u043e\u0441\u043b\u043e\u0432\u043b\u044f\u044e \u0432\u0430\u0441, \u043b\u0435\u0441\u0430)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 5
       },
       {
-        "id": 119,
+        "id": 94,
         "work_title": "Does the Day Reign? (\u0414\u0435\u043d\u044c \u043b\u0438 \u0446\u0430\u0440\u0438\u0442?)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 6
       },
       {
-        "id": 120,
-        "work_title": "Does the Day Reign? (\u0414\u0435\u043d\u044c \u043b\u0438 \u0446\u0430\u0440\u0438\u0442?)",
-        "composition_year": 1888,
-        "opus": "47",
-        "opus_number": 6
-      },
-      {
-        "id": 121,
+        "id": 95,
         "work_title": "Was I Not a Little Blade of Grass in the Meadow? (\u042f \u043b\u0438 \u0432 \u043f\u043e\u043b\u0435 \u0434\u0430 \u043d\u0435 \u0442\u0440\u0430\u0432\u0443\u0448\u043a\u0430 \u0431\u044b\u043b\u0430?)",
         "composition_year": 1880,
         "opus": "47",
         "opus_number": 7
       },
       {
-        "id": 122,
-        "work_title": "Was I Not a Little Blade of Grass in the Meadow? (\u042f \u043b\u0438 \u0432 \u043f\u043e\u043b\u0435 \u0434\u0430 \u043d\u0435 \u0442\u0440\u0430\u0432\u0443\u0448\u043a\u0430 \u0431\u044b\u043b\u0430?)",
-        "composition_year": 1884,
-        "opus": "47",
-        "opus_number": 7
-      },
-      {
-        "id": 123,
+        "id": 96,
         "work_title": "Granny and Grandson (\u0411\u0430\u0431\u0443\u0448\u043a\u0430 \u0438 \u0432\u043d\u0443\u0447\u0435\u043a)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 1
       },
       {
-        "id": 124,
+        "id": 97,
         "work_title": "Little Bird (\u041f\u0442\u0438\u0447\u043a\u0430)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 2
       },
       {
-        "id": 125,
+        "id": 98,
         "work_title": "Spring (The Grass Grows Green) (\u0412\u0435\u0441\u043d\u0430 (\u0422\u0440\u0430\u0432\u043a\u0430 \u0437\u0435\u043b\u0435\u043d\u0435\u0435\u0442))",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 3
       },
       {
-        "id": 126,
+        "id": 99,
         "work_title": "My Little Garden (\u041c\u043e\u0439 \u0441\u0430\u0434\u0438\u043a)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 4
       },
       {
-        "id": 127,
-        "work_title": "Legend (\u041b\u0435\u0433\u0435\u043d\u0434\u0430)",
-        "composition_year": 1883,
-        "opus": "54",
-        "opus_number": 5
-      },
-      {
-        "id": 128,
-        "work_title": "Legend (\u041b\u0435\u0433\u0435\u043d\u0434\u0430)",
-        "composition_year": 1883,
-        "opus": "54",
-        "opus_number": 5
-      },
-      {
-        "id": 129,
+        "id": 100,
         "work_title": "On the Bank (\u041d\u0430 \u0431\u0435\u0440\u0435\u0433\u0443)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 6
       },
       {
-        "id": 130,
+        "id": 101,
         "work_title": "Winter Evening (\u0417\u0438\u043c\u043d\u0438\u0439 \u0432\u0435\u0447\u0435\u0440)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 7
       },
       {
-        "id": 131,
+        "id": 102,
         "work_title": "The Cuckoo (\u041a\u0443\u043a\u0443\u0448\u043a\u0430)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 8
       },
       {
-        "id": 132,
+        "id": 103,
         "work_title": "Spring (\"The Snow is Already Melting\") (\u0412\u0435\u0441\u043d\u0430 (\u0423\u0436 \u0442\u0430\u0435\u0442 \u0441\u043d\u0435\u0433))",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 8
       },
       {
-        "id": 133,
+        "id": 104,
         "work_title": "Lullaby in a Storm (\u041a\u043e\u043b\u044b\u0431\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u0435\u0441\u043d\u044c \u0432 \u0431\u0443\u0440\u044e)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 10
       },
       {
-        "id": 134,
+        "id": 105,
         "work_title": "The Little Flower (\u0426\u0432\u0435\u0442\u043e\u043a)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 11
       },
       {
-        "id": 135,
+        "id": 106,
         "work_title": "Winter (\u0417\u0438\u043c\u0430)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 12
       },
       {
-        "id": 136,
+        "id": 107,
         "work_title": "Spring Song (\u0412\u0435\u0441\u0435\u043d\u043d\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 13
       },
       {
-        "id": 137,
+        "id": 108,
         "work_title": "Autumn (\u041e\u0441\u0435\u043d\u044c)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 14
       },
       {
-        "id": 138,
+        "id": 109,
         "work_title": "The Swallow (\u041b\u0430\u0441\u0442\u043e\u0447\u043a\u0430)",
         "composition_year": 1883,
         "opus": "54",
         "opus_number": 15
       },
       {
-        "id": 139,
+        "id": 110,
         "work_title": "Child's Song (\"My Lizochek\") (\u0414\u0435\u0442\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u0435\u043d\u043a\u0430 (\u00ab\u041c\u043e\u0439 \u041b\u0438\u0437\u043e\u0447\u0435\u043a\u00bb))",
         "composition_year": 1881,
         "opus": "54",
         "opus_number": 16
       },
       {
-        "id": 140,
+        "id": 111,
         "work_title": "Tell Me, What in the Shade of the Branches? (\u0421\u043a\u0430\u0436\u0438, \u043e \u0447\u0435\u043c \u0432 \u0442\u0435\u043d\u0438 \u0432\u0435\u0442\u0432\u0435\u0439)",
         "composition_year": 1884,
         "opus": "57",
         "opus_number": 1
       },
       {
-        "id": 141,
+        "id": 112,
         "work_title": "On the Golden Cornfields (\u041d\u0430 \u043d\u0438\u0432\u044b \u0436\u0435\u043b\u0442\u044b\u0435)",
         "composition_year": 1884,
         "opus": "57",
         "opus_number": 2
       },
       {
-        "id": 142,
+        "id": 113,
         "work_title": "Do Not Ask (\u041d\u0435 \u0441\u043f\u0440\u0430\u0448\u0438\u0432\u0430\u0439)",
         "composition_year": 1884,
         "opus": "57",
         "opus_number": 3
       },
       {
-        "id": 143,
+        "id": 114,
         "work_title": "Sleep! (\u0423\u0441\u043d\u0438!)",
         "composition_year": 1884,
         "opus": "57",
         "opus_number": 4
       },
       {
-        "id": 144,
+        "id": 115,
         "work_title": "Death (\u0421\u043c\u0435\u0440\u0442\u044c)",
         "composition_year": 1884,
         "opus": "57",
         "opus_number": 5
       },
       {
-        "id": 145,
+        "id": 116,
         "work_title": "Only You Alone (\u041b\u0438\u0448\u044c \u0442\u044b \u043e\u0434\u0438\u043d)",
         "composition_year": 1884,
         "opus": "57",
         "opus_number": 6
       },
       {
-        "id": 146,
+        "id": 117,
         "work_title": "Last Night (\u0412\u0447\u0435\u0440\u0430\u0448\u043d\u044f\u044f \u043d\u043e\u0447\u044c)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 1
       },
       {
-        "id": 147,
+        "id": 118,
         "work_title": "I'll Tell You Nothing (\u042f \u0442\u0435\u0431\u0435 \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u0441\u043a\u0430\u0436\u0443)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 2
       },
       {
-        "id": 148,
+        "id": 119,
         "work_title": "O, if Only You Knew (\u041e, \u0435\u0441\u043b\u0438 \u0431 \u0437\u043d\u0430\u043b\u0438 \u0432\u044b)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 3
       },
       {
-        "id": 149,
+        "id": 120,
         "work_title": "The Nightingale (\u0421\u043e\u043b\u043e\u0432\u0435\u0439)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 4
       },
       {
-        "id": 150,
+        "id": 121,
         "work_title": "Simple Words (\u041f\u0440\u043e\u0441\u0442\u044b\u0435 \u0441\u043b\u043e\u0432\u0430)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 5
       },
       {
-        "id": 151,
+        "id": 122,
         "work_title": "Sleepless Nights (\u041d\u043e\u0447\u0438 \u0431\u0435\u0437\u0443\u043c\u043d\u044b\u0435)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 6
       },
       {
-        "id": 152,
+        "id": 123,
         "work_title": "Song of a Gypsy Girl (\u041f\u0435\u0441\u043d\u044c \u0446\u044b\u0433\u0430\u043d\u043a\u0438)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 7
       },
       {
-        "id": 153,
+        "id": 124,
         "work_title": "Forgive! (\u041f\u0440\u043e\u0441\u0442\u0438!)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 8
       },
       {
-        "id": 154,
+        "id": 125,
         "work_title": "Night (\u041d\u043e\u0447\u044c)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 9
       },
       {
-        "id": 155,
+        "id": 126,
         "work_title": "Beyond the Window, in the Shadows (\u0417\u0430 \u043e\u043a\u043d\u043e\u043c \u0432 \u0442\u0435\u043d\u0438 \u043c\u0435\u043b\u044c\u043a\u0430\u0435\u0442)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 10
       },
       {
-        "id": 156,
+        "id": 127,
         "work_title": "Exploit (\u041f\u043e\u0434\u0432\u0438\u0433)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 11
       },
       {
-        "id": 157,
+        "id": 128,
         "work_title": "The Gentle Stars Shone For Us (\u041d\u0430\u043c \u0437\u0432\u0435\u0437\u0434\u044b \u043a\u0440\u043e\u0442\u043a\u0438\u0435 \u0441\u0438\u044f\u043b\u0438)",
         "composition_year": 1886,
         "opus": "60",
         "opus_number": 12
       },
       {
-        "id": 158,
+        "id": 129,
         "work_title": "I Did Not Love You at First (\u042f \u0441\u043d\u0430\u0447\u0430\u043b\u0430 \u0442\u0435\u0431\u044f \u043d\u0435 \u043b\u044e\u0431\u0438\u043b)",
         "composition_year": 1887,
         "opus": "63",
         "opus_number": 1
       },
       {
-        "id": 159,
+        "id": 130,
         "work_title": "I Opened the Window (\u0420\u0430\u0441\u0442\u0432\u043e\u0440\u0438\u043b \u044f \u043e\u043a\u043d\u043e)",
         "composition_year": 1887,
         "opus": "63",
         "opus_number": 2
       },
       {
-        "id": 160,
+        "id": 131,
         "work_title": "I Do Not Please You (\u042f \u0432\u0430\u043c \u043d\u0435 \u043d\u0440\u0430\u0432\u043b\u044e\u0441\u044c)",
         "composition_year": 1887,
         "opus": "63",
         "opus_number": 3
       },
       {
-        "id": 161,
+        "id": 132,
         "work_title": "The First Meeting (\u041f\u0435\u0440\u0432\u043e\u0435 \u0441\u0432\u0438\u0434\u0430\u043d\u0438\u0435)",
         "composition_year": 1887,
         "opus": "63",
         "opus_number": 4
       },
       {
-        "id": 162,
+        "id": 133,
         "work_title": "The Fires in the Rooms were Already Out (\u0423\u0436 \u0433\u0430\u0441\u043b\u0438 \u0432 \u043a\u043e\u043c\u043d\u0430\u0442\u0430\u0445 \u043e\u0433\u043d\u0438)",
         "composition_year": 1887,
         "opus": "63",
         "opus_number": 5
       },
       {
-        "id": 163,
+        "id": 134,
         "work_title": "Serenade: \"O Child! Beneath Your Window\" (\u0421\u0435\u0440\u0435\u043d\u0430\u0434\u0430: \u00ab\u041e, \u0434\u0438\u0442\u044f! \u043f\u043e\u0434 \u043e\u043a\u043e\u0448\u043a\u043e\u043c \u0442\u0432\u043e\u0438\u043c\u00bb)",
         "composition_year": 1887,
         "opus": "63",
         "opus_number": 6
       },
       {
-        "id": 164,
+        "id": 135,
         "work_title": "S\u00e9r\u00e9nade (\"O\u00f9 vas-tu, souffle d'aurore\") (\u0421\u0435\u0440\u0435\u043d\u0430\u0434\u0430 (\u00ab\u0422\u044b \u043a\u0443\u0434\u0430 \u043b\u0435\u0442\u0438\u0448\u044c\u00bb))",
         "composition_year": 1888,
         "opus": "65",
         "opus_number": 1
       },
       {
-        "id": 165,
+        "id": 136,
         "work_title": "D\u00e9ception (\u0420\u0430\u0437\u043e\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435)",
         "composition_year": 1888,
         "opus": "65",
         "opus_number": 2
       },
       {
-        "id": 166,
+        "id": 137,
         "work_title": "S\u00e9r\u00e9nade (\"J'aime dans le rayon\") (\u0421\u0435\u0440\u0435\u043d\u0430\u0434\u0430 (\u00ab\u0412 \u044f\u0440\u043a\u043e\u043c \u0441\u0432\u0435\u0442\u0435 \u0437\u0430\u0440\u0438\u00bb))",
         "composition_year": 1888,
         "opus": "65",
         "opus_number": 3
       },
       {
-        "id": 167,
+        "id": 138,
         "work_title": "Qu'importe que l'hiver (\u041f\u0443\u0441\u043a\u0430\u044f \u0437\u0438\u043c\u0430)",
         "composition_year": 1888,
         "opus": "65",
         "opus_number": 4
       },
       {
-        "id": 168,
+        "id": 139,
         "work_title": "Les larmes (\u0421\u043b\u0435\u0437\u044b)",
         "composition_year": 1888,
         "opus": "65",
         "opus_number": 5
       },
       {
-        "id": 169,
+        "id": 140,
         "work_title": "Rondel (\u0420\u043e\u043d\u0434\u0435\u043b)",
         "composition_year": 1888,
         "opus": "65",
         "opus_number": 6
       },
       {
-        "id": 170,
+        "id": 141,
         "work_title": "We Sat Together (\u041c\u044b \u0441\u0438\u0434\u0435\u043b\u0438 \u0441 \u0442\u043e\u0431\u043e\u0439)",
         "composition_year": 1893,
         "opus": "73",
         "opus_number": 1
       },
       {
-        "id": 171,
+        "id": 142,
         "work_title": "Night (\u041d\u043e\u0447\u044c)",
         "composition_year": 1893,
         "opus": "73",
         "opus_number": 2
       },
       {
-        "id": 172,
+        "id": 143,
         "work_title": "In this Moonlit Night (\u0412 \u044d\u0442\u0443 \u043b\u0443\u043d\u043d\u0443\u044e \u043d\u043e\u0447\u044c)",
         "composition_year": 1893,
         "opus": "73",
         "opus_number": 3
       },
       {
-        "id": 173,
+        "id": 144,
         "work_title": "The Sun has Set (\u0417\u0430\u043a\u0430\u0442\u0438\u043b\u043e\u0441\u044c \u0441\u043e\u043b\u043d\u0446\u0435)",
         "composition_year": 1893,
         "opus": "73",
         "opus_number": 4
       },
       {
-        "id": 174,
+        "id": 145,
         "work_title": "Amid Sombre Days (\u0421\u0440\u0435\u0434\u044c \u043c\u0440\u0430\u0447\u043d\u044b\u0445 \u0434\u043d\u0435\u0439)",
         "composition_year": 1893,
         "opus": "73",
         "opus_number": 5
       },
       {
-        "id": 175,
+        "id": 146,
         "work_title": "Again, as Before, Alone (\u0421\u043d\u043e\u0432\u0430, \u043a\u0430\u043a \u043f\u0440\u0435\u0436\u0434\u0435)",
         "composition_year": 1893,
         "opus": "73",
         "opus_number": 6
       },
       {
-        "id": 176,
+        "id": 147,
         "work_title": "String Quartet No.1 in D major",
         "composition_year": 1871,
         "opus": "11",
         "opus_number": -1
       },
       {
-        "id": 177,
+        "id": 148,
         "work_title": "String Quartet No.2 in F major",
         "composition_year": 1873,
         "opus": "22",
         "opus_number": -1
       },
       {
-        "id": 178,
+        "id": 149,
         "work_title": "String Quartet No.3 in E\u266d minor",
         "composition_year": 1876,
         "opus": "30",
         "opus_number": -1
       },
       {
-        "id": 179,
+        "id": 150,
         "work_title": "Andante funebre (Andante funebre)",
         "composition_year": 1876,
         "opus": "30",
         "opus_number": -1
       },
       {
-        "id": 180,
+        "id": 151,
         "work_title": "Humoresque (\u042e\u043c\u043e\u0440\u0435\u0441\u043a\u0430)",
         "composition_year": 1876,
         "opus": "10",
         "opus_number": 2
       },
       {
-        "id": 181,
+        "id": 152,
         "work_title": "Souvenir d'un lieu cher (\u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 \u043e \u0434\u043e\u0440\u043e\u0433\u043e\u043c \u043c\u0435\u0441\u0442\u0435)",
         "composition_year": 1878,
         "opus": "42",
         "opus_number": -1
       },
       {
-        "id": 182,
+        "id": 153,
         "work_title": "M\u00e9ditation (\u0420\u0430\u0437\u043c\u044b\u0448\u043b\u0435\u043d\u0438\u0435)",
         "composition_year": 1878,
         "opus": "42",
         "opus_number": 1
       },
       {
-        "id": 183,
+        "id": 154,
         "work_title": "Scherzo (\u0421\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1878,
         "opus": "42",
         "opus_number": 2
       },
       {
-        "id": 184,
+        "id": 155,
         "work_title": "M\u00e9lodie (\u041c\u0435\u043b\u043e\u0434\u0438\u044f)",
         "composition_year": 1878,
         "opus": "42",
         "opus_number": 3
       },
       {
-        "id": 185,
+        "id": 156,
         "work_title": "Piano Trio (\"In memory of a great artist\") (\u00ab\u041f\u0430\u043c\u044f\u0442\u0438 \u0432\u0435\u043b\u0438\u043a\u043e\u0433\u043e \u0445\u0443\u0434\u043e\u0436\u043d\u0438\u043a\u0430\u00bb)",
         "composition_year": 1881,
         "opus": "50",
         "opus_number": -1
       },
       {
-        "id": 186,
+        "id": 157,
         "work_title": "Souvenir de Florence (\u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 \u043e \u0424\u043b\u043e\u0440\u0435\u043d\u0446\u0438\u0438)",
         "composition_year": 1890,
         "opus": "70",
         "opus_number": -1
       },
       {
-        "id": 187,
+        "id": 158,
         "work_title": "Impromptu (\u042d\u043a\u0441\u043f\u0440\u043e\u043c\u0442)",
         "composition_year": 1863,
         "opus": "1",
         "opus_number": 2
       },
       {
-        "id": 188,
+        "id": 159,
         "work_title": "Piano Sonata",
         "composition_year": 1865,
         "opus": "80",
         "opus_number": -1
       },
       {
-        "id": 189,
+        "id": 160,
         "work_title": "Scherzo \u00e1 la russe (\u0420\u0443\u0441\u0441\u043a\u043e\u0435 \u0441\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1867,
         "opus": "1",
         "opus_number": 1
       },
       {
-        "id": 190,
+        "id": 161,
         "work_title": "Souvenir de Hapsal (\u0412\u043e\u0441\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 \u043e \u0413\u0430\u043f\u0441\u0430\u043b\u0435)",
         "composition_year": 1867,
         "opus": "2",
         "opus_number": -1
       },
       {
-        "id": 191,
+        "id": 162,
         "work_title": "Ruines d'un ch\u00e2teau (\u0420\u0430\u0437\u0432\u0430\u043b\u0438\u043d\u044b \u0437\u0430\u043c\u043a\u0430)",
         "composition_year": 1865,
         "opus": "2",
         "opus_number": 1
       },
       {
-        "id": 192,
+        "id": 163,
         "work_title": "Scherzo (\u0421\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1867,
         "opus": "2",
         "opus_number": 2
       },
       {
-        "id": 193,
+        "id": 164,
         "work_title": "Chant sans paroles (\u041f\u0435\u0441\u043d\u044f \u0431\u0435\u0437 \u0441\u043b\u043e\u0432)",
         "composition_year": 1867,
         "opus": "2",
         "opus_number": 3
       },
       {
-        "id": 194,
+        "id": 165,
         "work_title": "Valse-Caprice (\u0412\u0430\u043b\u044c\u0441-\u043a\u0430\u043f\u0440\u0438\u0441)",
         "composition_year": 1868,
         "opus": "4",
         "opus_number": -1
       },
       {
-        "id": 195,
+        "id": 166,
         "work_title": "Romance (\u0420\u043e\u043c\u0430\u043d\u0441)",
         "composition_year": 1868,
         "opus": "5",
         "opus_number": -1
       },
       {
-        "id": 196,
+        "id": 167,
         "work_title": "Valse-Scherzo (\u0412\u0430\u043b\u044c\u0441-\u0441\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1870,
         "opus": "7",
         "opus_number": -1
       },
       {
-        "id": 197,
+        "id": 168,
         "work_title": "Capriccio (\u041a\u0430\u043f\u0440\u0438\u0447\u0447\u0438\u043e)",
         "composition_year": 1870,
         "opus": "8",
         "opus_number": -1
       },
       {
-        "id": 198,
+        "id": 169,
         "work_title": "R\u00eaverie (\u0413\u0440\u0435\u044d\u044b)",
         "composition_year": 1870,
         "opus": "9",
         "opus_number": 1
       },
       {
-        "id": 199,
+        "id": 170,
         "work_title": "Polka de salon (\u0421\u0430\u043b\u043e\u043d\u043d\u0430\u044f \u043f\u043e\u043b\u044c\u043a\u0430)",
         "composition_year": 1870,
         "opus": "9",
         "opus_number": 2
       },
       {
-        "id": 200,
+        "id": 171,
         "work_title": "Mazurka de salon (\u0421\u0430\u043b\u043e\u043d\u043d\u0430\u044f \u043c\u0430\u0437\u0443\u0440\u043a\u0430)",
         "composition_year": 1870,
         "opus": "9",
         "opus_number": 3
       },
       {
-        "id": 201,
+        "id": 172,
         "work_title": "Nocturne (\u041d\u043e\u043a\u0442\u044e\u0440\u043d)",
         "composition_year": 1871,
         "opus": "10",
         "opus_number": 1
       },
       {
-        "id": 202,
-        "work_title": "Humoresque (\u042e\u043c\u043e\u0440\u0435\u0441\u043a\u0430)",
-        "composition_year": 1871,
-        "opus": "10",
-        "opus_number": 2
-      },
-      {
-        "id": 203,
+        "id": 173,
         "work_title": "R\u00eaverie du soir (\u0412\u0447\u0435\u0440\u043d\u0438\u0435 \u0433\u0440\u0435\u044d\u044b)",
         "composition_year": 1873,
         "opus": "19",
         "opus_number": 1
       },
       {
-        "id": 204,
+        "id": 174,
         "work_title": "Scherzo humoristique (\u042e\u043c\u043e\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0441\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1873,
         "opus": "19",
         "opus_number": 2
       },
       {
-        "id": 205,
+        "id": 175,
         "work_title": "Feuillet d'album (\u041b\u0438\u0441\u0442\u043e\u043a \u0438\u0437 \u0430\u043b\u044c\u0431\u043e\u043c)",
         "composition_year": 1873,
         "opus": "19",
         "opus_number": 3
       },
       {
-        "id": 206,
-        "work_title": "Nocturne (\u041d\u043e\u043a\u0442\u044e\u0440\u043d)",
-        "composition_year": 1873,
-        "opus": "19",
-        "opus_number": 4
-      },
-      {
-        "id": 207,
+        "id": 176,
         "work_title": "Capriccioso (\u041a\u0430\u043f\u0440\u0438\u0447\u0447\u0438\u043e\u0437\u043e)",
         "composition_year": 1873,
         "opus": "19",
         "opus_number": 5
       },
       {
-        "id": 208,
+        "id": 177,
         "work_title": "Th\u00e8me original et variations (\u0422\u0435\u043c\u0430 \u0438 \u0432\u0430\u0440\u0438\u0430\u0446\u0438\u0438)",
         "composition_year": 1873,
         "opus": "19",
         "opus_number": 6
       },
       {
-        "id": 209,
+        "id": 178,
         "work_title": "Prelude (\u041f\u0440\u0435\u043b\u044e\u0434\u0438\u044f)",
         "composition_year": 1873,
         "opus": "21",
         "opus_number": 1
       },
       {
-        "id": 210,
+        "id": 179,
         "work_title": "Fugue \u00e1 4 voix (\u0424\u0443\u0433\u0430 \u043d\u0430 \u0447\u0435\u0442\u044b\u0440\u0435 \u0433\u043e\u043b\u043e\u0441\u0430)",
         "composition_year": 1873,
         "opus": "21",
         "opus_number": 2
       },
       {
-        "id": 211,
+        "id": 180,
         "work_title": "Impromptu (\u042d\u043a\u0441\u043f\u0440\u043e\u043c\u0442)",
         "composition_year": 1873,
         "opus": "21",
         "opus_number": 3
       },
       {
-        "id": 212,
+        "id": 181,
         "work_title": "Marche fun\u00e8bre (\u041f\u043e\u0445\u043e\u0440\u043e\u043d\u043d\u044b\u0439 \u043c\u0430\u0440\u0448)",
         "composition_year": 1873,
         "opus": "21",
         "opus_number": 4
       },
       {
-        "id": 213,
+        "id": 182,
         "work_title": "Mazurque (\u041c\u0430\u0437\u0443\u0440\u043a\u0430)",
         "composition_year": 1873,
         "opus": "21",
         "opus_number": 5
       },
       {
-        "id": 214,
+        "id": 183,
         "work_title": "Scherzo (\u0421\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1873,
         "opus": "21",
         "opus_number": 6
       },
       {
-        "id": 215,
+        "id": 184,
         "work_title": "The Seasons (\u0412\u0440\u0435\u043c\u0435\u043d\u0430 \u0433\u043e\u0434\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": -1
       },
       {
-        "id": 216,
+        "id": 185,
         "work_title": "January: By the Hearth (\u042f\u043d\u0432\u0430\u0440\u044c: \u0423 \u043a\u0430\u043c\u0435\u043b\u044c\u043a\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 1
       },
       {
-        "id": 217,
+        "id": 186,
         "work_title": "February: The Carnival (\u0424\u0435\u0432\u0440\u0430\u043b\u044c: \u041c\u0430\u0441\u043b\u0435\u043d\u0438\u0446\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 2
       },
       {
-        "id": 218,
+        "id": 187,
         "work_title": "March: Song of the Lark (\u041c\u0430\u0440\u0442: \u041f\u0435\u0441\u043d\u044c \u0436\u0430\u0432\u043e\u0440\u043e\u043d\u043a\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 3
       },
       {
-        "id": 219,
+        "id": 188,
         "work_title": "April: Snowdrop (\u0410\u043f\u0440\u0435\u043b\u044c: \u041f\u043e\u0434\u0441\u043d\u0435\u0436\u043d\u0438\u043a)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 4
       },
       {
-        "id": 220,
+        "id": 189,
         "work_title": "May: White Nights (\u041c\u0430\u0439: \u0411\u0435\u043b\u044b\u0435 \u043d\u043e\u0447\u044b)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 5
       },
       {
-        "id": 221,
+        "id": 190,
         "work_title": "June: Barcarolle (\u0418\u044e\u043d\u044c: \u0411\u0430\u0440\u043a\u0430\u0440\u043e\u043b\u043b\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 6
       },
       {
-        "id": 222,
+        "id": 191,
         "work_title": "July: Reaper's Song (\u0418\u044e\u043b\u044c: \u041f\u0435\u0441\u043d\u044c \u043a\u043e\u0441\u0430\u0440\u044f)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 7
       },
       {
-        "id": 223,
+        "id": 192,
         "work_title": "August: Harvest (\u0410\u0432\u0433\u0443\u0441\u0442: \u0416\u0430\u0442\u0432\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 8
       },
       {
-        "id": 224,
+        "id": 193,
         "work_title": "September: The Hunt (\u0421\u0435\u043d\u0442\u044f\u0431\u0440\u044c: \u041e\u0445\u043e\u0442\u0430)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 9
       },
       {
-        "id": 225,
+        "id": 194,
         "work_title": "October: Autumn Song (\u041e\u043a\u0442\u044f\u0431\u0440\u044c: \u041e\u0441\u0435\u043d\u043d\u044f\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 10
       },
       {
-        "id": 226,
+        "id": 195,
         "work_title": "November: On the Troika (\u041d\u043e\u044f\u0431\u0440\u044c: \u041d\u0430 \u0442\u0440\u043e\u0439\u043a\u0435)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 11
       },
       {
-        "id": 227,
+        "id": 196,
         "work_title": "December: Christmas-Tide (\u0414\u0435\u043a\u0430\u0431\u0440\u044c: \u0421\u0432\u044f\u0442\u043a\u0438)",
         "composition_year": 1875,
         "opus": "37a",
         "opus_number": 12
       },
       {
-        "id": 228,
+        "id": 197,
         "work_title": "Etude (\u042d\u0442\u044e\u0434)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 1
       },
       {
-        "id": 229,
+        "id": 198,
         "work_title": "Chanson triste (\u0413\u0440\u0443\u0441\u0442\u043d\u0430\u044f \u043f\u0435\u0441\u0435\u043d\u043a\u0430)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 2
       },
       {
-        "id": 230,
+        "id": 199,
         "work_title": "Marche fun\u00e8bre (\u041f\u043e\u0445\u043e\u0440\u043e\u043d\u043d\u044b\u0439 \u043c\u0430\u0440\u0448)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 3
       },
       {
-        "id": 231,
+        "id": 200,
         "work_title": "Mazurka (\u041c\u0430\u0437\u0443\u0440\u043a\u0430)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 4
       },
       {
-        "id": 232,
+        "id": 201,
         "work_title": "Mazurka (\u041c\u0430\u0437\u0443\u0440\u043a\u0430)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 5
       },
       {
-        "id": 233,
+        "id": 202,
         "work_title": "Chant sans paroles (\u041f\u0435\u0441\u0435\u043d\u043a\u0430 \u0431\u0435\u0437 \u0441\u043b\u043e\u0432)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 6
       },
       {
-        "id": 234,
+        "id": 203,
         "work_title": "Au village (\u0412 \u0434\u0435\u0440\u0435\u0432\u043d\u0435)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 7
       },
       {
-        "id": 235,
+        "id": 204,
         "work_title": "Valse (\u0412\u0430\u043b\u044c\u0441)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 8
       },
       {
-        "id": 236,
+        "id": 205,
         "work_title": "Valse (\u0412\u0430\u043b\u044c\u0441)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 9
       },
       {
-        "id": 237,
+        "id": 206,
         "work_title": "Danse russe (\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u043f\u043b\u044f\u0441\u043a\u0430)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 10
       },
       {
-        "id": 238,
+        "id": 207,
         "work_title": "Scherzo (\u0421\u043a\u0435\u0440\u0446\u043e)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 11
       },
       {
-        "id": 239,
+        "id": 208,
         "work_title": "R\u00eaverie interrompue (\u041f\u0440\u0435\u0440\u0432\u0430\u043d\u043d\u044b\u0435 \u0433\u0440\u0435\u0437\u044b)",
         "composition_year": 1878,
         "opus": "40",
         "opus_number": 12
       },
       {
-        "id": 240,
+        "id": 209,
         "work_title": "Grand Sonata (\u0411\u043e\u043b\u044c\u0448\u0430\u044f \u0441\u043e\u043d\u0430\u0442\u0430)",
         "composition_year": 1878,
         "opus": "37",
         "opus_number": -1
       },
       {
-        "id": 241,
+        "id": 210,
         "work_title": "Children's Album (\u0414\u0435\u0442\u0441\u043a\u0438\u0439 \u0430\u043b\u044c\u0431\u043e\u043c)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": -1
       },
       {
-        "id": 242,
+        "id": 211,
         "work_title": "Morning Prayer (\u0423\u0442\u0440\u0435\u043d\u043d\u0430\u044f \u043c\u043e\u043b\u0438\u0442\u0432\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 1
       },
       {
-        "id": 243,
+        "id": 212,
         "work_title": "Winter Morning (\u0417\u0438\u043c\u043d\u0435\u0435 \u0443\u0442\u0440\u043e)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 2
       },
       {
-        "id": 244,
+        "id": 213,
         "work_title": "Playing Hobby-Horses (\u0418\u0433\u0440\u0430 \u0432 \u043b\u043e\u0448\u0430\u0434\u043a\u0438)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 3
       },
       {
-        "id": 245,
+        "id": 214,
         "work_title": "Mama (\u041c\u0430\u043c\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 4
       },
       {
-        "id": 246,
+        "id": 215,
         "work_title": "March of the Wooden Soldiers (\u041c\u0430\u0440\u0448 \u0434\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u044b\u0445 \u0441\u043e\u043b\u0434\u0430\u0442\u0438\u043a\u043e\u0432)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 5
       },
       {
-        "id": 247,
+        "id": 216,
         "work_title": "The Sick Doll (\u0411\u043e\u043b\u0435\u0437\u043d\u044c \u043a\u0443\u043a\u043b\u044b)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 6
       },
       {
-        "id": 248,
+        "id": 217,
         "work_title": "The Doll's Funeral (\u041f\u043e\u0445\u043e\u0440\u043e\u043d\u044b \u043a\u0443\u043a\u043b\u044b)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 7
       },
       {
-        "id": 249,
+        "id": 218,
         "work_title": "Waltz (\u0412\u0430\u043b\u044c\u0441)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 8
       },
       {
-        "id": 250,
+        "id": 219,
         "work_title": "The New Doll (\u041d\u043e\u0432\u0430\u044f \u043a\u0443\u043a\u043b\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 9
       },
       {
-        "id": 251,
+        "id": 220,
         "work_title": "Mazurka (\u041c\u0430\u0437\u0443\u0440\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 10
       },
       {
-        "id": 252,
+        "id": 221,
         "work_title": "Russian Song (\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 11
       },
       {
-        "id": 253,
+        "id": 222,
         "work_title": "The Accordion Player (\u041c\u0443\u0436\u0438\u043a \u043d\u0430 \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u043a\u0435 \u0438\u0433\u0440\u0430\u0435\u0442)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 12
       },
       {
-        "id": 254,
+        "id": 223,
         "work_title": "Kamarinskaya (\u041a\u0430\u043c\u0430\u0440\u0438\u043d\u0441\u043a\u0430\u044f)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 13
       },
       {
-        "id": 255,
+        "id": 224,
         "work_title": "Polka (\u041f\u043e\u043b\u044c\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 14
       },
       {
-        "id": 256,
+        "id": 225,
         "work_title": "Italian Song (\u0418\u0442\u0430\u043b\u044c\u044f\u043d\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u0435\u043d\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 15
       },
       {
-        "id": 257,
+        "id": 226,
         "work_title": "Old French Song (\u0421\u0442\u0430\u0440\u0438\u043d\u043d\u0430\u044f \u0444\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u0435\u043d\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 16
       },
       {
-        "id": 258,
+        "id": 227,
         "work_title": "German Song (\u041d\u0435\u043c\u0435\u0446\u043a\u0430\u044f \u043f\u0435\u0441\u0435\u043d\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 17
       },
       {
-        "id": 259,
+        "id": 228,
         "work_title": "Neapolitan Song (\u041d\u0435\u0430\u043f\u043e\u043b\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u0435\u043d\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 18
       },
       {
-        "id": 260,
+        "id": 229,
         "work_title": "Nanny's Story (\u041d\u044f\u043d\u0438\u043d\u0430 \u0441\u043a\u0430\u0437\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 19
       },
       {
-        "id": 261,
+        "id": 230,
         "work_title": "The Sorcerer (\u0411\u0430\u0431\u0430-\u042f\u0433\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 20
       },
       {
-        "id": 262,
+        "id": 231,
         "work_title": "Sweet Dreams (\u0421\u043b\u0430\u0434\u043a\u0430\u044f \u0433\u0440\u0435\u0437\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 21
       },
       {
-        "id": 263,
+        "id": 232,
         "work_title": "Lark Song (\u041f\u0435\u0441\u043d\u044f \u0436\u0430\u0432\u043e\u0440\u043e\u043d\u043a\u0430)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 22
       },
       {
-        "id": 264,
+        "id": 233,
         "work_title": "The Organ-Grinder Sings (\u0428\u0430\u0440\u043c\u0430\u043d\u0449\u0438\u043a \u043f\u043e\u0435\u0442)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 23
       },
       {
-        "id": 265,
+        "id": 234,
         "work_title": "In Church (\u0412 \u0446\u0435\u0440\u043a\u0432\u0438)",
         "composition_year": 1878,
         "opus": "39",
         "opus_number": 24
       },
       {
-        "id": 266,
+        "id": 235,
         "work_title": "Valse de salon (\u0421\u0430\u043b\u043e\u043d\u043d\u044b\u0439 \u0432\u0430\u043b\u044c\u0441)",
         "composition_year": 1881,
         "opus": "51",
         "opus_number": 1
       },
       {
-        "id": 267,
+        "id": 236,
         "work_title": "Polka peu dansante (\u041f\u043e\u043b\u044c\u043a\u0430)",
         "composition_year": 1881,
         "opus": "51",
         "opus_number": 2
       },
       {
-        "id": 268,
+        "id": 237,
         "work_title": "Menuetto scherzoso (\u0428\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u043c\u0435\u043d\u0443\u0435\u0442)",
         "composition_year": 1881,
         "opus": "51",
         "opus_number": 3
       },
       {
-        "id": 269,
+        "id": 238,
         "work_title": "Natha-valse (\u041d\u0430\u0442\u0430-\u0432\u0430\u043b\u044c\u0441)",
         "composition_year": 1881,
         "opus": "51",
         "opus_number": 4
       },
       {
-        "id": 270,
+        "id": 239,
         "work_title": "Romance (\u0420\u043e\u043c\u0430\u043d\u0441)",
         "composition_year": 1881,
         "opus": "51",
         "opus_number": 5
       },
       {
-        "id": 271,
+        "id": 240,
         "work_title": "Valse sentimentale (\u0421\u0435\u043d\u0442\u0438\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u0432\u0430\u043b\u044c\u0441)",
         "composition_year": 1881,
         "opus": "51",
         "opus_number": 6
       },
       {
-        "id": 272,
+        "id": 241,
         "work_title": "Dumka (\u0414\u0443\u043c\u043a\u0430)",
         "composition_year": 1886,
         "opus": "59",
         "opus_number": -1
       },
       {
-        "id": 273,
+        "id": 242,
         "work_title": "Impromptu (\u042d\u043a\u0441\u043f\u0440\u043e\u043c\u0442)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 1
       },
       {
-        "id": 274,
+        "id": 243,
         "work_title": "Berceuse (\u041a\u043e\u043b\u044b\u0431\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 2
       },
       {
-        "id": 275,
+        "id": 244,
         "work_title": "Tendres reproches (\u041d\u0435\u0436\u043d\u044b\u0435 \u0443\u043f\u0440\u0435\u043a\u0438)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 3
       },
       {
-        "id": 276,
+        "id": 245,
         "work_title": "Danse caract\u00e9ristique (\u0425\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0442\u0430\u043d\u0435\u0446)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 4
       },
       {
-        "id": 277,
+        "id": 246,
         "work_title": "M\u00e9ditation (\u0420\u0430\u0437\u043c\u044b\u0448\u043b\u0435\u043d\u0438\u0435)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 5
       },
       {
-        "id": 278,
+        "id": 247,
         "work_title": "Mazurque pour danser (\u041c\u0430\u0437\u0443\u0440\u043a\u0430 \u0434\u043b\u044f \u0442\u0430\u043d\u0435\u0446)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 6
       },
       {
-        "id": 279,
+        "id": 248,
         "work_title": "Polacca de concert (\u041a\u043e\u043d\u0446\u0435\u0440\u0442\u043d\u044b\u0439 \u043f\u043e\u043b\u043e\u043d\u0435\u0437)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 7
       },
       {
-        "id": 280,
+        "id": 249,
         "work_title": "Dialogue (\u0414\u0438\u0430\u043b\u043e\u0433)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 8
       },
       {
-        "id": 281,
+        "id": 250,
         "work_title": "Un poco di Schumann (\u041d\u0435\u043c\u043d\u043e\u0433\u043e \u0428\u0443\u043c\u0430\u043d\u0430)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 9
       },
       {
-        "id": 282,
+        "id": 251,
         "work_title": "Scherzo-fantaisie (\u0421\u043a\u0435\u0440\u0446\u043e-\u0444\u0430\u043d\u0442\u0430\u0437\u0438\u044f)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 10
       },
       {
-        "id": 283,
+        "id": 252,
         "work_title": "Valse-bluette (\u0412\u0430\u043b\u044c\u0441-\u0431\u0435\u0437\u0434\u0435\u043b\u0443\u0448\u043a\u0430)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 11
       },
       {
-        "id": 284,
+        "id": 253,
         "work_title": "L'espi\u00e8gle (\u0420\u0435\u0437\u0432\u0443\u0448\u043a\u0430)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 12
       },
       {
-        "id": 285,
+        "id": 254,
         "work_title": "Echo rustique (\u0421\u0435\u043b\u044c\u0441\u043a\u0438\u0439 \u043e\u0442\u0437\u0432\u0443\u043a)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 13
       },
       {
-        "id": 286,
+        "id": 255,
         "work_title": "Chant \u00e9l\u00e9giaque (\u042d\u043b\u0435\u0433\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043f\u0435\u0441\u043d\u044f)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 14
       },
       {
-        "id": 287,
+        "id": 256,
         "work_title": "Un poco di Chopin (\u041d\u0435\u043c\u043d\u043e\u0433\u043e \u0428\u043e\u043f\u0435\u043d\u0430)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 15
       },
       {
-        "id": 288,
+        "id": 257,
         "work_title": "Valse \u00e0 cinq temps (\u0412\u0430\u043b\u044c\u0441 \u0432 5/8)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 16
       },
       {
-        "id": 289,
+        "id": 258,
         "work_title": "Pass\u00e9 lontain (\u0414\u0430\u043b\u0435\u043a\u043e\u0435 \u043f\u0440\u043e\u0448\u043b\u043e\u0435)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 17
       },
       {
-        "id": 290,
+        "id": 259,
         "work_title": "Scene dansante: Invitation au tr\u00e9pak (\u041f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u0435 \u043a \u0442\u0440\u0435\u043f\u0430\u043a\u0443)",
         "composition_year": 1893,
         "opus": "72",
         "opus_number": 18
       },
       {
-        "id": 291,
+        "id": 260,
         "work_title": "Swan Lake (\u041b\u0435\u0431\u0435\u0434\u0438\u043d\u043e\u0435 \u043e\u0437\u0435\u0440\u043e)",
         "composition_year": 1882,
         "opus": "20a",
         "opus_number": -1
       },
       {
-        "id": 292,
+        "id": 261,
         "work_title": "The Sleeping Beauty (\u0421\u043f\u044f\u0449\u0430\u044f \u043a\u0440\u0430\u0441\u0430\u0432\u0438\u0446\u0430)",
         "composition_year": 1890,
         "opus": "66a",
         "opus_number": -1
       },
       {
-        "id": 293,
+        "id": 262,
         "work_title": "Andante and Finale",
         "composition_year": 1893,
         "opus": "79",
