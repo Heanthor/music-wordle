@@ -1,14 +1,17 @@
 import { ReactNode } from "react";
 import { ComposerWork, getYearRangesByComposerId } from "../composerWork";
-import { currentPuzzle } from "../dailyPuzzle";
+import { PuzzleCategory, currentPuzzle } from "../dailyPuzzle";
+import { useLoaderData } from "react-router-dom";
 
 type Props = {
     guess: ComposerWork;
 };
 
 function WorkCard(props: Props) {
+    const puzzleCategory = useLoaderData() as PuzzleCategory;
+
     const { guess } = props;
-    const { puzzleAnswer } = currentPuzzle;
+    const { puzzleAnswer } = currentPuzzle(puzzleCategory);
     const yearRange = getYearRangesByComposerId()[puzzleAnswer.composer];
 
     const composerCorrect = (guess: ComposerWork): boolean =>

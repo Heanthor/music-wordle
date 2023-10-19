@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
+import re
 
 import requests
 from bs4 import BeautifulSoup
@@ -22,6 +23,34 @@ class ScrapedWork:
     composition_year: int
     opus: str
     opus_number: int
+
+    def __hash__(self) -> int:
+        # purposefully omit composition year
+        # because sometimes otherwise identical arrangements
+        # were composed in different years
+        return hash(
+            (
+                self.composer_firstname,
+                self.composer_lastname,
+                self.composer_fullname,
+                self.work_title,
+                self.opus,
+                self.opus_number,
+            )
+        )
+
+    def __eq__(self, __value: object) -> bool:
+        # same as above
+        if not isinstance(__value, ScrapedWork):
+            return NotImplemented
+        return (
+            self.composer_firstname == __value.composer_firstname
+            and self.composer_lastname == __value.composer_lastname
+            and self.composer_fullname == __value.composer_fullname
+            and self.work_title == __value.work_title
+            and self.opus == __value.opus
+            and self.opus_number == __value.opus_number
+        )
 
 
 def beethoven_opus(opus_number_str: str):
@@ -44,7 +73,7 @@ def mozart_opus(opus_number_str: str):
         opus = opus_number_str
         num = -1
 
-    return opus, num
+    return opus.strip(), num
 
 
 def brahms_opus(opus_number_str: str):
@@ -76,11 +105,39 @@ def chopin_override(work_title: str) -> ScrapedWork | None:
     return None
 
 
+def tchaikovsky_opus(opus_number_str: str):
+    opus_number_str = opus_number_str.replace("//", "/")
+    if "/" in opus_number_str:
+        opus, num = opus_number_str.split("/")
+        int(num)
+    else:
+        opus = opus_number_str
+        num = -1
+
+    return opus.strip(), num
+
+
+def tchaikovsky_postprocess(all_works: list[ScrapedWork]) -> list[ScrapedWork]:
+    # there are tons of duplicate opus/titles due to arrangements for orchestra/piano
+    seen = set()
+    uniq = []
+    for work in all_works:
+        if work not in seen:
+            seen.add(work)
+            uniq.append(work)
+
+    return uniq
+
+
 config_by_composer = {
     "Ludwig van Beethoven": {"opus_func": beethoven_opus},
     "Wolfgang Amadeus Mozart": {"opus_func": mozart_opus},
     "Frédéric Chopin": {"work_override": chopin_override},
     "Johannes Brahms": {"opus_func": brahms_opus},
+    "Pyotr Tchaikovsky": {
+        "opus_func": tchaikovsky_opus,
+        "postprocess": tchaikovsky_postprocess,
+    },
 }
 
 
@@ -90,9 +147,10 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
     works_table = soup.find("table", {"class": "wikitable sortable"})
     # loop over the tr elements inside the tbody
     first = True
-    opus_num = 0
+    opus_col = 0
     name_col = -1
     date_col = -1
+    key_col = -1
     all_works = []
     for row in works_table.find_all("tr"):
         if first:
@@ -105,13 +163,15 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                 elif header.text.strip() == "Date":
                     date_col = i
                 elif header.text.strip() == "Opus":
-                    opus_num = i
+                    opus_col = i
+                elif header.text.strip() == "Key":
+                    key_col = i
             first = False
             continue
 
         tds = row.find_all("td")
         # delete display: none span from opus number
-        opus_number_td = tds[opus_num]
+        opus_number_td = tds[opus_col]
         if opus_number_td.span:
             opus_number_td.span.decompose()
 
@@ -149,8 +209,9 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             print(f"Skipping empty work title")
             continue
         if "(" in work_title:
-            # start grouping of works like Piano Trio (3)
-            continue
+            # grouping of works like Piano Trio (3), which will be scraped in upcoming rows
+            if re.search("\(\d+\)", work_title):
+                continue
 
         try:
             # use custom function to parse opus number
@@ -176,6 +237,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             print(f"Skipping invalid opus number: {work_title} ({opus_number_str})")
             continue
 
+        # clean up date
         date_str = tds[date_col].text.strip()
         if date_str == "" or date_str == "—":
             print(f"Skipping no year: {work_title}")
@@ -194,6 +256,13 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             # some pages use the ascii character rather than unicode
             date = date_str.split("-")[0]
 
+        if "before" in date:
+            # same deal
+            date = date_str.split("before")[0]
+        elif "or" in date:
+            # take the first date
+            date = date_str.split("or")[0]
+
         date = (
             date.replace("?", "")
             .replace("c.", "")
@@ -207,6 +276,11 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             print(f"Skipping no year: {work_title}")
             continue
 
+        if "No." in work_title:
+            # if a work is only denoted by its number, add the key to make distinguishing it a bit easier
+            if re.search(".+\s*No\.\s*\d+", work_title):
+                key_text = tds[key_col].text.strip()
+                work_title += " in " + key_text
         # naive first/last split
         firstname = composer.split(" ")[0]
         lastname = composer.split(" ")[-1]
@@ -221,6 +295,13 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                 opus_number=int(num),
             )
         )
+
+    try:
+        postprocess = config_by_composer[composer]["postprocess"]
+        all_works = postprocess(all_works)
+    except KeyError:
+        pass
+
     return all_works
 
 
@@ -248,32 +329,41 @@ def parse_composer(composer: str) -> list[ScrapedWork] | None:
 with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
-    output = []
     j = 0
+    all_works = []
     for composer in composer_list:
         works = parse_composer(composer)
         if works is None:
             continue
 
-        output.append(
-            {
-                "id": j,
-                "firstname": works[0].composer_firstname,
-                "lastname": works[0].composer_lastname,
-                "fullname": works[0].composer_fullname,
-                "works": [
-                    {
-                        "id": i,
-                        "work_title": w.work_title,
-                        "composition_year": w.composition_year,
-                        "opus": w.opus,
-                        "opus_number": w.opus_number,
-                    }
-                    for i, w in enumerate(works)
-                ],
-            }
-        )
+        output = {
+            "id": j,
+            "firstname": works[0].composer_firstname,
+            "lastname": works[0].composer_lastname,
+            "fullname": works[0].composer_fullname,
+            "works": [
+                {
+                    "id": i,
+                    "work_title": w.work_title,
+                    "composition_year": w.composition_year,
+                    "opus": w.opus,
+                    "opus_number": w.opus_number,
+                }
+                for i, w in enumerate(works)
+            ],
+        }
+
+        all_works.append(output)
         j += 1
+
+        composer_filename = (
+            composer.lower().replace(" ", "_").replace(".", "").replace(",", "")
+        )
+        filename = f"../src/assets/composer_data/{composer_filename}.json"
+        with open(filename, "w") as f:
+            f.write(json.dumps(output, indent=2))
+
+    # write version consumed by app, all composers in one file
     with open("../src/assets/parsed_composers.json", "w") as f:
-        f.write(json.dumps(output, indent=2))
-    print("Wrote output to parsed_composers.json")
+        f.write(json.dumps(all_works, indent=2))
+    print("Wrote output")

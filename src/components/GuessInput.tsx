@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import Select, { ActionMeta, OnChangeValue, StylesConfig, createFilter, components, ValueContainerProps } from "react-select";
 import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork, getComposerWorkByID } from "./../composerWork";
-import { currentPuzzle } from "./../dailyPuzzle";
+import { PuzzleCategory, currentPuzzle } from "./../dailyPuzzle";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
+
+import { useLoaderData } from "react-router-dom";
 
 type Props = {
     onSubmit: (guess: ComposerWork) => void;
@@ -73,6 +75,8 @@ function GuessInput({ onSubmit }: Props) {
 
     const defaultPlaceholderText = "Enter composer...";
 
+    const puzzleCategory = useLoaderData() as PuzzleCategory;
+
     const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(allComposerOptions);
     const [selectedOptions, setSelectedOptions] = useState<readonly ChoiceOption[]>([]);
     const [placeholderText, setPlaceholderText] = useState(defaultPlaceholderText);
@@ -89,7 +93,7 @@ function GuessInput({ onSubmit }: Props) {
             .concat(values.filter((v) => !v.isFixed));
     };
 
-    const isComposerCorrect = (composer: string): boolean => composer === currentPuzzle.puzzleAnswer.composer;
+    const isComposerCorrect = (composer: string): boolean => composer === currentPuzzle(puzzleCategory).puzzleAnswer.composer;
 
     const onSelectChange = (option: OnChangeValue<ChoiceOption, true>, actionMeta: ActionMeta<ChoiceOption>) => {
         switch (actionMeta.action) {
@@ -161,7 +165,7 @@ function GuessInput({ onSubmit }: Props) {
                 const workID = selectedOptions[1].value;
                 const guess = getComposerWorkByID(composerID, workID);
                 onSubmit(guess);
-                if (guess.equals(currentPuzzle.puzzleAnswer)) {
+                if (guess.equals(currentPuzzle(puzzleCategory).puzzleAnswer)) {
                     // game is over, clear out the box
                     resetToInitial();
                     setPlaceholderText("");
