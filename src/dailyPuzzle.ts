@@ -6,11 +6,13 @@ import piano3 from "./assets/puzzle_images/piano-3.png";
 import piano4 from "./assets/puzzle_images/piano-4.png";
 import piano5 from "./assets/puzzle_images/piano-5.png";
 import cello1 from "./assets/puzzle_images/cello-1.png";
+import cello2 from "./assets/puzzle_images/cello-2.png";
 import violin1 from "./assets/puzzle_images/violin-1.png";
 import violin2 from "./assets/puzzle_images/violin-2.png";
 import violin3 from "./assets/puzzle_images/violin-3.png";
 import violin4 from "./assets/puzzle_images/violin-4.png";
 import violin5 from "./assets/puzzle_images/violin-5.png";
+import orch2 from "./assets/puzzle_images/orch-2.png";
 
 export type PuzzleCategory = "Piano" | "Violin" | "Cello" | "Orchestral";
 
@@ -110,9 +112,22 @@ const celloPuzzles: DailyPuzzle[] = [
     puzzleAnswer: getComposerWorkByID(2, 650),
     sheetSource: cello1,
   },
+  {
+    puzzleDate: new Date("2023-10-19"),
+    // tchaikovsky rococo variations
+    puzzleAnswer: getComposerWorkByID(3, 35),
+    sheetSource: cello2,
+  },
 ];
 
-const orchestralPuzzles: DailyPuzzle[] = [];
+const orchestralPuzzles: DailyPuzzle[] = [
+    {
+        puzzleDate: new Date("2023-10-23"),
+        // tchaikovsky symphony 4
+        puzzleAnswer: getComposerWorkByID(3, 13),
+        sheetSource: orch2,
+    },
+];
 
 const puzzles: { [category in PuzzleCategory]: DailyPuzzle[] } = {
   Piano: pianoPuzzles,
