@@ -1,11 +1,11 @@
 import { ComposerWork, getComposerWorkByID } from "./composerWork";
-// TODO load these images from a CDN instead
-import piano1 from "./assets/piano-1.png";
-import piano2 from "./assets/piano-2.png";
-import piano3 from "./assets/piano-3.png";
-import piano4 from "./assets/piano-4.png";
-import piano5 from "./assets/piano-5.png";
-import cello1 from "./assets/cello-1.png";
+// TODO load these images from a CDN instead?
+import piano1 from "./assets/puzzle_images/piano-1.png";
+import piano2 from "./assets/puzzle_images/piano-2.png";
+import piano3 from "./assets/puzzle_images/piano-3.png";
+import piano4 from "./assets/puzzle_images/piano-4.png";
+import piano5 from "./assets/puzzle_images/piano-5.png";
+import cello1 from "./assets/puzzle_images/cello-1.png";
  
 export type PuzzleCategory = "Piano" | "Violin" | "Cello" | "Orchestral";
 
