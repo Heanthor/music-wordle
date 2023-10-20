@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PuzzleCategory, puzzleCategories } from "../dailyPuzzle";
 import eighthNote from "../assets/8thNote.svg";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
     puzzleCategory: PuzzleCategory,
@@ -10,17 +10,21 @@ type Props = {
 function Header(props: Props) {
     const { puzzleCategory } = props;
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const navigate = useNavigate();
 
     const renderDropdownOptions = () => {
         return puzzleCategories.map((category, i) => {
             const backgroundClass = puzzleCategory.toLowerCase() === category.toLowerCase() ? "bg-neutral-500" : "bg-transparent";
 
             return (<li key={i}>
-                <Link
-                    className={`block w-full whitespace-nowrap ${backgroundClass} px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600 cursor-pointer`}
-                    to={`/music-wordle/${category.toLowerCase()}`}
-                    onClick={() => setDropdownOpen(!dropdownOpen)}
-                >{category}</Link>
+                <button
+                    className={`block w-full text-left whitespace-nowrap ${backgroundClass} px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600 cursor-pointer`}
+                    onMouseDown={(e) => e.preventDefault()}
+                    onClick={() => {
+                        setDropdownOpen(false);
+                        navigate(`/music-wordle/${category.toLowerCase()}`);
+                    }}
+                >{category}</button>
             </li>
             );
         });
@@ -30,16 +34,12 @@ function Header(props: Props) {
         const displayClass = dropdownOpen ? "block" : "hidden";
         return (
             <div className="relative ml-2 mr-0 md:mr-4">
-                <span
+                <button
                     className="flex items-center px-6 pb-2 pt-2.5 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 cursor-pointer"
                     id="dropdownMenuButton2"
                     aria-expanded="false"
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                // onBlur={(e) => {
-                //     console.log(e);
-                //     setDropdownOpen(!dropdownOpen)
-                // }
-                // }
+                    onBlur={() => setDropdownOpen(false)}
                 >
                     {puzzleCategory}
                     <span className="ml-2 w-2">
@@ -54,7 +54,7 @@ function Header(props: Props) {
                                 clipRule="evenodd" />
                         </svg>
                     </span>
-                </span>
+                </button>
                 <ul
                     className={`${displayClass} absolute z-[1000] m-0 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block`}
                     aria-labelledby="dropdownMenuButton2"
