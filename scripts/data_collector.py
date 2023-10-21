@@ -130,7 +130,11 @@ def tchaikovsky_opus(opus_number_str: str):
     return opus.strip(), num
 
 
-def tchaikovsky_postprocess(all_works: list[ScrapedWork]) -> list[ScrapedWork]:
+def tchaikovsky_name() -> str:
+    return "Pyotr Ilyich Tchaikovsky"
+
+
+def dedupe_postprocess(all_works: list[ScrapedWork]) -> list[ScrapedWork]:
     # there are tons of duplicate opus/titles due to arrangements for orchestra/piano
     seen = set()
     uniq = []
@@ -169,6 +173,21 @@ def dvorak_opus_col(header_col: str) -> bool:
     return header_col == "Op."
 
 
+def ravel_opus_col(header_col: str) -> bool:
+    return header_col == "M"
+
+
+def ravel_opus(opus_number_str: str):
+    opus_number_str = opus_number_str.replace("M.", "")
+    if "/" in opus_number_str:
+        opus, num = opus_number_str.split("/")
+    else:
+        opus = opus_number_str
+        num = -1
+
+    return opus.strip(), num
+
+
 def is_opus_col(composer: str, header_col: str) -> bool:
     # some composers have different catalogs which replace opus numbers, even in the header
     try:
@@ -194,16 +213,24 @@ config_by_composer = {
     "Johannes Brahms": {"opus_func": brahms_opus},
     "Pyotr Tchaikovsky": {
         "opus_func": tchaikovsky_opus,
-        "postprocess": tchaikovsky_postprocess,
+        "postprocess": dedupe_postprocess,
+        "name": tchaikovsky_name,
     },
-    "Franz Schubert": {"opus_func": schubert_opus},
+    "Franz Schubert": {"opus_func": schubert_opus, "postprocess": dedupe_postprocess},
     "Claude Debussy": {
         "opus_col_func": debussy_opus_col,
         "date_col_func": debussy_date_col,
         "opus_func": debussy_opus,
     },
-    "Sergei Rachmaninoff": {"opus_col_func": rach_opus_col},
-    "Antonín Dvořák": {"opus_col_func": rach_opus_col},
+    "Sergei Rachmaninoff": {
+        "opus_col_func": rach_opus_col,
+        "postprocess": dedupe_postprocess,
+    },
+    "Antonín Dvořák": {
+        "opus_col_func": rach_opus_col,
+        "postprocess": dedupe_postprocess,
+    },
+    "Maurice Ravel": {"opus_col_func": rach_opus_col, "opus_func": ravel_opus},
 }
 
 
@@ -350,18 +377,24 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             if re.search(".+\s*No\.\s*\d+", work_title):
                 key_text = tds[key_col].text.strip()
                 work_title += " in " + key_text
-        elif work_title == "Impromptu":
+        elif work_title == "Impromptu" or work_title == "Etude-tableau":
             key_text = tds[key_col].text.strip()
             work_title += " in " + key_text
 
+        try:
+            # name override, in case imslp's name differs from what we want to display
+            name_func = config_by_composer[composer]["name"]
+            display_name = name_func()
+        except KeyError:
+            display_name = composer
         # naive first/last split
-        firstname = composer.split(" ")[0]
-        lastname = composer.split(" ")[-1]
+        firstname = display_name.split(" ")[0]
+        lastname = display_name.split(" ")[-1]
         all_works.append(
             ScrapedWork(
                 composer_firstname=firstname,
                 composer_lastname=lastname,
-                composer_fullname=composer,
+                composer_fullname=display_name,
                 work_title=work_title,
                 composition_year=int(date),
                 opus=opus,
