@@ -161,6 +161,14 @@ def debussy_opus(opus_number_str: str):
     return opus.strip(), num
 
 
+def rach_opus_col(header_col: str) -> bool:
+    return header_col == "Op."
+
+
+def dvorak_opus_col(header_col: str) -> bool:
+    return header_col == "Op."
+
+
 def is_opus_col(composer: str, header_col: str) -> bool:
     # some composers have different catalogs which replace opus numbers, even in the header
     try:
@@ -194,6 +202,8 @@ config_by_composer = {
         "date_col_func": debussy_date_col,
         "opus_func": debussy_opus,
     },
+    "Sergei Rachmaninoff": {"opus_col_func": rach_opus_col},
+    "Antonín Dvořák": {"opus_col_func": rach_opus_col},
 }
 
 
