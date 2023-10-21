@@ -7,6 +7,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
+import argparse
+
 COMPOSERS_FILE = "composers.json"
 
 
@@ -87,6 +89,17 @@ def brahms_opus(opus_number_str: str):
     return opus.strip(), num
 
 
+def schubert_opus(opus_number_str: str):
+    opus_number_str = opus_number_str.replace("Op.", "").replace("*", "")
+    if "/" in opus_number_str:
+        opus, num = opus_number_str.split("/")
+    else:
+        opus = opus_number_str
+        num = -1
+
+    return opus.strip(), num
+
+
 def chopin_override(work_title: str) -> ScrapedWork | None:
     if work_title == "E♭ major" or work_title == "G major":
         # rowspan breaks the table for andante spinato
@@ -129,6 +142,19 @@ def tchaikovsky_postprocess(all_works: list[ScrapedWork]) -> list[ScrapedWork]:
     return uniq
 
 
+def debussy_opus_col(header_col: str) -> bool:
+    return header_col == "Lesure# (new)"
+
+
+def is_opus_col(composer: str, header_col: str) -> bool:
+    # some composers have different catalogs which replace opus numbers, even in the header
+    try:
+        opus_col_func = config_by_composer[composer]["opus_col_func"]
+        return opus_col_func(header_col)
+    except KeyError:
+        return header_col == "Opus"
+
+
 config_by_composer = {
     "Ludwig van Beethoven": {"opus_func": beethoven_opus},
     "Wolfgang Amadeus Mozart": {"opus_func": mozart_opus},
@@ -138,6 +164,8 @@ config_by_composer = {
         "opus_func": tchaikovsky_opus,
         "postprocess": tchaikovsky_postprocess,
     },
+    "Franz Schubert": {"opus_func": schubert_opus},
+    "Claude Debussy": {"opus_col_func": debussy_opus_col},
 }
 
 
@@ -162,10 +190,10 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
                     name_col = i
                 elif header.text.strip() == "Date":
                     date_col = i
-                elif header.text.strip() == "Opus":
-                    opus_col = i
                 elif header.text.strip() == "Key":
                     key_col = i
+                elif is_opus_col(composer, header.text.strip()):
+                    opus_col = i
             first = False
             continue
 
@@ -262,6 +290,8 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
         elif "or" in date:
             # take the first date
             date = date_str.split("or")[0]
+        elif "and" in date:
+            date = date_str.split("and")[0]
 
         date = (
             date.replace("?", "")
@@ -269,6 +299,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             .replace("ca.", "")
             .replace("after", "")
             .replace("before", "")
+            .replace("post", "")
             .strip()
         )
 
@@ -277,10 +308,14 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             continue
 
         if "No." in work_title:
-            # if a work is only denoted by its number, add the key to make distinguishing it a bit easier
+            # if a work is only denoted by its number or is otherwise super generic, add the key to make distinguishing it a bit easier
             if re.search(".+\s*No\.\s*\d+", work_title):
                 key_text = tds[key_col].text.strip()
                 work_title += " in " + key_text
+        elif work_title == "Impromptu":
+            key_text = tds[key_col].text.strip()
+            work_title += " in " + key_text
+
         # naive first/last split
         firstname = composer.split(" ")[0]
         lastname = composer.split(" ")[-1]
@@ -329,6 +364,31 @@ def parse_composer(composer: str) -> list[ScrapedWork] | None:
 with open(COMPOSERS_FILE, "r") as f:
     composer_list = json.loads(f.read())
 
+    argparser = argparse.ArgumentParser()
+    argparser.add_argument(
+        "--composer",
+        help="Only parse one composer",
+        default=None,
+    )
+
+    argparser.add_argument(
+        "--start-at",
+        help="Start at this composer in the list",
+        default=None,
+    )
+
+    args = argparser.parse_args()
+    skip_prod_output = False
+
+    # if we use any arg, skip production output, as it should contain all composers
+    if args.composer is not None:
+        composer_list = [args.composer]
+        skip_prod_output = True
+
+    if args.start_at is not None:
+        composer_list = composer_list[composer_list.index(args.start_at) :]
+        skip_prod_output = True
+
     j = 0
     all_works = []
     for composer in composer_list:
@@ -362,6 +422,10 @@ with open(COMPOSERS_FILE, "r") as f:
         filename = f"../src/assets/composer_data/{composer_filename}.json"
         with open(filename, "w") as f:
             f.write(json.dumps(output, indent=2))
+
+    if skip_prod_output:
+        print("Skipping production output")
+        exit(0)
 
     # write version consumed by app, all composers in one file
     with open("../src/assets/parsed_composers.json", "w") as f:

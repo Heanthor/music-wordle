@@ -19681,5 +19681,2183 @@
         "opus_number": 11
       }
     ]
+  },
+  {
+    "id": 6,
+    "firstname": "Franz",
+    "lastname": "Schubert",
+    "fullname": "Franz Schubert",
+    "works": [
+      {
+        "id": 0,
+        "work_title": "Klaglied (\u201cMeine Ruh\u2019 ist dahin\u201d)",
+        "composition_year": 1812,
+        "opus": "131",
+        "opus_number": 3
+      },
+      {
+        "id": 1,
+        "work_title": "Die Advokaten (\u201cMein Herr, ich komm mich anzufragen\u201d)",
+        "composition_year": 1812,
+        "opus": "74",
+        "opus_number": -1
+      },
+      {
+        "id": 2,
+        "work_title": "String Quartet (No.10) in E\u266d major",
+        "composition_year": 1813,
+        "opus": "125",
+        "opus_number": 1
+      },
+      {
+        "id": 3,
+        "work_title": "String Quartet (No.8) in B\u266d major",
+        "composition_year": 1814,
+        "opus": "168",
+        "opus_number": -1
+      },
+      {
+        "id": 4,
+        "work_title": "Gretchen am Spinnrade (\u201cMeine Ruh\u2019 ist hin, mein Herz ist schwer\u201d)",
+        "composition_year": 1814,
+        "opus": "2",
+        "opus_number": -1
+      },
+      {
+        "id": 5,
+        "work_title": "Sch\u00e4fers Klagelied (\u201cDa droben auf jenem Berge\u201d)",
+        "composition_year": 1814,
+        "opus": "3",
+        "opus_number": 1
+      },
+      {
+        "id": 6,
+        "work_title": "Ballade (\u201cEin Fr\u00e4ulein schaut vom hohen Turm\u201d)",
+        "composition_year": 1815,
+        "opus": "126",
+        "opus_number": -1
+      },
+      {
+        "id": 7,
+        "work_title": "Offertory (Totus in corde) (\u201cTotus in corde langueo\u201d), Erstes Offertorium",
+        "composition_year": 1815,
+        "opus": "46",
+        "opus_number": -1
+      },
+      {
+        "id": 8,
+        "work_title": "Rastlose Liebe (\u201cDem Schnee, dem Regen, dem Wind entgegen\u201d)",
+        "composition_year": 1815,
+        "opus": "5",
+        "opus_number": 1
+      },
+      {
+        "id": 9,
+        "work_title": "Der Mondabend (\u201cRein und freundlich lacht der Himmel\u201d)",
+        "composition_year": 1815,
+        "opus": "131",
+        "opus_number": 1
+      },
+      {
+        "id": 10,
+        "work_title": "Geistes-Gruss (\u201cHoch auf dem alten Turme\u201d)",
+        "composition_year": 1815,
+        "opus": "92",
+        "opus_number": 3
+      },
+      {
+        "id": 11,
+        "work_title": "Gen\u00fcgsamkeit (\u201cDort raget ein Berg aus den Wolken her\u201d)",
+        "composition_year": 1815,
+        "opus": "109",
+        "opus_number": 2
+      },
+      {
+        "id": 12,
+        "work_title": "Waltzes, L\u00e4ndler and Ecossaises (12, 17, 9)",
+        "composition_year": 1815,
+        "opus": "18",
+        "opus_number": -1
+      },
+      {
+        "id": 13,
+        "work_title": "Trinklied (\u201cBr\u00fcder! unser Erdenwallen\u201d)",
+        "composition_year": 1815,
+        "opus": "131",
+        "opus_number": 2
+      },
+      {
+        "id": 14,
+        "work_title": "Das Bild (\u201cEin M\u00e4dchen ist\u2019s\u201d)",
+        "composition_year": 1815,
+        "opus": "165",
+        "opus_number": 3
+      },
+      {
+        "id": 15,
+        "work_title": "N\u00e4he des Geliebten (\u201cIch denke dein, wenn mir der Sonne Schimmer\u201d)",
+        "composition_year": 1815,
+        "opus": "5",
+        "opus_number": 2
+      },
+      {
+        "id": 16,
+        "work_title": "Vergebliche Liebe (\u201cJa, ich weiss es, diese treue Liebe\u201d)",
+        "composition_year": 1815,
+        "opus": "173",
+        "opus_number": 3
+      },
+      {
+        "id": 17,
+        "work_title": "Gradual (Benedictus es, Domine) (\u201cBenedictus es, Domine\u201d)",
+        "composition_year": 1815,
+        "opus": "150",
+        "opus_number": -1
+      },
+      {
+        "id": 18,
+        "work_title": "An die Freude (\u201cFreude, sch\u00f6ner G\u00f6tterfunken\u201d)",
+        "composition_year": 1815,
+        "opus": "111",
+        "opus_number": 1
+      },
+      {
+        "id": 19,
+        "work_title": "An den Mond (\u201cGeuss, lieber Mond, geuss deine Silberflimmer\u201d)",
+        "composition_year": 1815,
+        "opus": "57",
+        "opus_number": 3
+      },
+      {
+        "id": 20,
+        "work_title": "Amalia (\u201cSch\u00f6n wie Engel voll Walhallas Wonne\u201d)",
+        "composition_year": 1815,
+        "opus": "173",
+        "opus_number": 1
+      },
+      {
+        "id": 21,
+        "work_title": "An die Nachtigall (\u201cGeuss nicht so laut der liebentflammten Lieder\u201d)",
+        "composition_year": 1815,
+        "opus": "172",
+        "opus_number": 3
+      },
+      {
+        "id": 22,
+        "work_title": "Der Liedler (\u201cGib, Schwester, mir die Harf herab\u201d)",
+        "composition_year": 1815,
+        "opus": "38",
+        "opus_number": -1
+      },
+      {
+        "id": 23,
+        "work_title": "Der Traum (\u201cMir tr\u00e4umt\u2019 ich war ein V\u00f6gelein\u201d)",
+        "composition_year": 1815,
+        "opus": "172",
+        "opus_number": 1
+      },
+      {
+        "id": 24,
+        "work_title": "Die Laube (\u201cNimmer werd\u2019 ich, nimmer dein vergessen\u201d)",
+        "composition_year": 1815,
+        "opus": "172",
+        "opus_number": 2
+      },
+      {
+        "id": 25,
+        "work_title": "Meeres Stille (\u201cTiefe Stille herrscht im Wasser\u201d)",
+        "composition_year": 1815,
+        "opus": "3",
+        "opus_number": 2
+      },
+      {
+        "id": 26,
+        "work_title": "Der Abend (\u201cDer Abend bl\u00fcht, Temora gl\u00fcht\u201d)",
+        "composition_year": 1815,
+        "opus": "118",
+        "opus_number": 2
+      },
+      {
+        "id": 27,
+        "work_title": "Salve Regina, Zweites Offertorium",
+        "composition_year": 1823,
+        "opus": "47",
+        "opus_number": -1
+      },
+      {
+        "id": 28,
+        "work_title": "Wandrers Nachtlied (\u201cDer du von dem Himmel bist\u201d)",
+        "composition_year": 1815,
+        "opus": "4",
+        "opus_number": 3
+      },
+      {
+        "id": 29,
+        "work_title": "Der Fischer (\u201cDas Wasser rauscht\u2019, das Wasser schwoll\u201d)",
+        "composition_year": 1816,
+        "opus": "5",
+        "opus_number": 3
+      },
+      {
+        "id": 30,
+        "work_title": "Erster Verlust (\u201cAch, wer bringt die sch\u00f6nen Tage\u201d)",
+        "composition_year": 1815,
+        "opus": "5",
+        "opus_number": 4
+      },
+      {
+        "id": 31,
+        "work_title": "Die Erscheinung (\u201cIch lag auf gr\u00fcnen Matten\u201d)",
+        "composition_year": 1815,
+        "opus": "108",
+        "opus_number": 3
+      },
+      {
+        "id": 32,
+        "work_title": "Die T\u00e4uschung (\u201cIm Erlenbusch, im Tannerhain\u201d)",
+        "composition_year": 1815,
+        "opus": "165",
+        "opus_number": 4
+      },
+      {
+        "id": 33,
+        "work_title": "Das Sehnen (\u201cWehmut, die mich h\u00fcllt\u201d)",
+        "composition_year": 1815,
+        "opus": "172",
+        "opus_number": 4
+      },
+      {
+        "id": 34,
+        "work_title": "Hymne an den Unendlichen (\u201cZwischen Himmel und Erd\u2019 \u201d)",
+        "composition_year": 1815,
+        "opus": "112",
+        "opus_number": 3
+      },
+      {
+        "id": 35,
+        "work_title": "Geist der Liebe (\u201cWer bist du, Geist der Liebe\u201d)",
+        "composition_year": 1815,
+        "opus": "118",
+        "opus_number": 1
+      },
+      {
+        "id": 36,
+        "work_title": "Tischlied (\u201cMich ergreift, ich weiss nicht wie, himmlisches Behagen\u201d)",
+        "composition_year": 1815,
+        "opus": "118",
+        "opus_number": 3
+      },
+      {
+        "id": 37,
+        "work_title": "Die Spinnerin (\u201cAls ich still und ruhig spann\u201d)",
+        "composition_year": 1815,
+        "opus": "118",
+        "opus_number": 6
+      },
+      {
+        "id": 38,
+        "work_title": "Lob des Tokayers (\u201cO k\u00f6stlicher Tokayer, o k\u00f6niglicher Wein\u201d)",
+        "composition_year": 1815,
+        "opus": "118",
+        "opus_number": 4
+      },
+      {
+        "id": 39,
+        "work_title": "Heidenr\u00f6slein (\u201cSah ein Knab\u2019 ein R\u00f6slein stehn\u201d)",
+        "composition_year": 1815,
+        "opus": "3",
+        "opus_number": 3
+      },
+      {
+        "id": 40,
+        "work_title": "Wonne der Wehmut (\u201cTrocknet nicht, trocknet nicht, Tr\u00e4nen der ewigen Liebe\u201d)",
+        "composition_year": 1815,
+        "opus": "115",
+        "opus_number": 2
+      },
+      {
+        "id": 41,
+        "work_title": "An die Sonne (\u201cSinke, liebe Sonne\u201d)",
+        "composition_year": 1815,
+        "opus": "118",
+        "opus_number": 5
+      },
+      {
+        "id": 42,
+        "work_title": "An den Fr\u00fchling (\u201cWillkommen, sch\u00f6ner J\u00fcngling!\u201d)",
+        "composition_year": 1815,
+        "opus": "172",
+        "opus_number": 5
+      },
+      {
+        "id": 43,
+        "work_title": "Mass (No.3) in B\u266d major",
+        "composition_year": 1815,
+        "opus": "141",
+        "opus_number": -1
+      },
+      {
+        "id": 44,
+        "work_title": "String Quartet (No.11) in E major",
+        "composition_year": 1816,
+        "opus": "125",
+        "opus_number": 2
+      },
+      {
+        "id": 45,
+        "work_title": "Lied eines Schiffers an die Dioskuren (\u201cDioskuren, Zwillingssterne\u201d)",
+        "composition_year": 1816,
+        "opus": "65",
+        "opus_number": 1
+      },
+      {
+        "id": 46,
+        "work_title": "Am Bach im Fr\u00fchlinge (\u201cDu brachst sie nun, die kalte Rinde\u201d)",
+        "composition_year": 1816,
+        "opus": "109",
+        "opus_number": 1
+      },
+      {
+        "id": 47,
+        "work_title": "Der K\u00f6nig in Thule (\u201cEs war ein K\u00f6nig in Thule\u201d)",
+        "composition_year": 1816,
+        "opus": "5",
+        "opus_number": 5
+      },
+      {
+        "id": 48,
+        "work_title": "J\u00e4gers Abendlied (\u201cIm Felde schleich\u2019 ich still und wild\u201d)",
+        "composition_year": 1816,
+        "opus": "3",
+        "opus_number": 4
+      },
+      {
+        "id": 49,
+        "work_title": "An Schwager Kronos (\u201cSpute dich, Kronos!\u201d)",
+        "composition_year": 1816,
+        "opus": "19",
+        "opus_number": 1
+      },
+      {
+        "id": 50,
+        "work_title": "Violin Sonata",
+        "composition_year": 1816,
+        "opus": "137",
+        "opus_number": 1
+      },
+      {
+        "id": 51,
+        "work_title": "Violin Sonata",
+        "composition_year": 1816,
+        "opus": "137",
+        "opus_number": 2
+      },
+      {
+        "id": 52,
+        "work_title": "Die vier Weltalter (\u201cWohl perlet im Glase\u201d)",
+        "composition_year": 1816,
+        "opus": "111",
+        "opus_number": 3
+      },
+      {
+        "id": 53,
+        "work_title": "Lebens-Melodien (\u201cAuf den Wassern wohnt mein stilles Leben\u201d)",
+        "composition_year": 1816,
+        "opus": "111",
+        "opus_number": 2
+      },
+      {
+        "id": 54,
+        "work_title": "Violin Sonata",
+        "composition_year": 1816,
+        "opus": "137",
+        "opus_number": 3
+      },
+      {
+        "id": 55,
+        "work_title": "Sprache der Liebe (\u201cLass dich mit gelinden Schl\u00e4gen r\u00fchren\u201d)",
+        "composition_year": 1816,
+        "opus": "115",
+        "opus_number": 3
+      },
+      {
+        "id": 56,
+        "work_title": "Naturgenuss (\u201cIm Abendschimmer wallt der Quell\u201d)",
+        "composition_year": 1822,
+        "opus": "16",
+        "opus_number": 2
+      },
+      {
+        "id": 57,
+        "work_title": "Mass (No.4) in C major",
+        "composition_year": 1816,
+        "opus": "48",
+        "opus_number": -1
+      },
+      {
+        "id": 58,
+        "work_title": "An die untergehende Sonne (\u201cSonne, du sinkst\u201d)",
+        "composition_year": 1817,
+        "opus": "44",
+        "opus_number": -1
+      },
+      {
+        "id": 59,
+        "work_title": "Kantate zu Ehren von Josef Spendou (\u201cDa liegt er, starr\u201d)",
+        "composition_year": 1816,
+        "opus": "128",
+        "opus_number": -1
+      },
+      {
+        "id": 60,
+        "work_title": "Ges\u00e4nge des Harfners aus \"Wilhelm Meister\"",
+        "composition_year": 1816,
+        "opus": "12",
+        "opus_number": -1
+      },
+      {
+        "id": 61,
+        "work_title": "Harfenspieler I (\u201cWer sich der Einsamkeit ergibt\u201d)",
+        "composition_year": 1822,
+        "opus": "12",
+        "opus_number": 1
+      },
+      {
+        "id": 62,
+        "work_title": "Harfenspieler III (\u201cWer nie sein Brot mit Tr\u00e4nen ass\u201d)",
+        "composition_year": 1822,
+        "opus": "12",
+        "opus_number": 2
+      },
+      {
+        "id": 63,
+        "work_title": "Harfenspieler II (\u201cAn die T\u00fcren will ich schleichen\u201d)",
+        "composition_year": 1822,
+        "opus": "12",
+        "opus_number": 3
+      },
+      {
+        "id": 64,
+        "work_title": "An die Nachtigall (\u201cEr liegt und schl\u00e4ft\u201d)",
+        "composition_year": 1816,
+        "opus": "98",
+        "opus_number": 1
+      },
+      {
+        "id": 65,
+        "work_title": "Wiegenlied (\u201cSchlafe, schlafe, holder s\u00fcsser Knabe\u201d)",
+        "composition_year": 1816,
+        "opus": "98",
+        "opus_number": 2
+      },
+      {
+        "id": 66,
+        "work_title": "Am Grabe Anselmos (\u201cDass ich dich verloren habe\u201d)",
+        "composition_year": 1816,
+        "opus": "6",
+        "opus_number": 3
+      },
+      {
+        "id": 67,
+        "work_title": "Rondo",
+        "composition_year": 1817,
+        "opus": "145",
+        "opus_number": 2
+      },
+      {
+        "id": 68,
+        "work_title": "Die abgebl\u00fchte Linde (\u201cWirst du halten, was du schwurst\u201d)",
+        "composition_year": 1817,
+        "opus": "7",
+        "opus_number": 1
+      },
+      {
+        "id": 69,
+        "work_title": "Der Flug der Zeit (\u201cEs floh die Zeit im Wirbelfluge\u201d)",
+        "composition_year": 1817,
+        "opus": "7",
+        "opus_number": 2
+      },
+      {
+        "id": 70,
+        "work_title": "Sehnsucht (\u201cDer Lerche wolkennahe Lieder\u201d)",
+        "composition_year": 1816,
+        "opus": "8",
+        "opus_number": 2
+      },
+      {
+        "id": 71,
+        "work_title": "Der Sch\u00e4fer und der Reiter (\u201cEin Sch\u00e4fer sass im Gr\u00fcnen\u201d)",
+        "composition_year": 1817,
+        "opus": "13",
+        "opus_number": 1
+      },
+      {
+        "id": 72,
+        "work_title": "Die Blumensprache (\u201cEs deuten die Blumen des Herzens Gef\u00fchle\u201d)",
+        "composition_year": 1817,
+        "opus": "173",
+        "opus_number": 5
+      },
+      {
+        "id": 73,
+        "work_title": "Wie Ulfru fischt (\u201cDer Angel zuckt, die Rute bebt\u201d)",
+        "composition_year": 1817,
+        "opus": "21",
+        "opus_number": 3
+      },
+      {
+        "id": 74,
+        "work_title": "Schlaflied (\u201cEs mahnt der Wald\u201d), Abendlied or Schlummerlied",
+        "composition_year": 1817,
+        "opus": "24",
+        "opus_number": 2
+      },
+      {
+        "id": 75,
+        "work_title": "An eine Quelle (\u201cDu kleine gr\u00fcnumwachs\u2019ne Quelle\u201d)",
+        "composition_year": 1817,
+        "opus": "109",
+        "opus_number": 3
+      },
+      {
+        "id": 76,
+        "work_title": "Der Tod und das M\u00e4dchen (\u201cVor\u00fcber, ach vor\u00fcber\u201d)",
+        "composition_year": 1817,
+        "opus": "7",
+        "opus_number": 3
+      },
+      {
+        "id": 77,
+        "work_title": "Piano Sonata",
+        "composition_year": 1817,
+        "opus": "164",
+        "opus_number": -1
+      },
+      {
+        "id": 78,
+        "work_title": "Am Strome (\u201cIst mir\u2019s doch, als sei mein Leben\u201d)",
+        "composition_year": 1817,
+        "opus": "8",
+        "opus_number": 4
+      },
+      {
+        "id": 79,
+        "work_title": "Memnon (\u201cDen Tag hindurch nur einmal mag ich sprechen\u201d)",
+        "composition_year": 1817,
+        "opus": "6",
+        "opus_number": 1
+      },
+      {
+        "id": 80,
+        "work_title": "Antigone und Oedip (\u201cIhr hohen Himmlischen\u201d)",
+        "composition_year": 1817,
+        "opus": "6",
+        "opus_number": 2
+      },
+      {
+        "id": 81,
+        "work_title": "Auf dem See (\u201cUnd frische Nahrung\u201d)",
+        "composition_year": 1817,
+        "opus": "92",
+        "opus_number": 2
+      },
+      {
+        "id": 82,
+        "work_title": "Ganymed (\u201cWie im Morgenglanze\u201d)",
+        "composition_year": 1817,
+        "opus": "19",
+        "opus_number": 3
+      },
+      {
+        "id": 83,
+        "work_title": "Trost im Liede (\u201cBraust des Ungl\u00fccks Sturm empor\u201d)",
+        "composition_year": 1817,
+        "opus": "101",
+        "opus_number": 3
+      },
+      {
+        "id": 84,
+        "work_title": "An die Musik (\u201cDu holde Kunst\u201d)",
+        "composition_year": 1817,
+        "opus": "88",
+        "opus_number": 4
+      },
+      {
+        "id": 85,
+        "work_title": "Die Forelle (\u201cIn einem B\u00e4chlein helle\u201d)",
+        "composition_year": 1820,
+        "opus": "32",
+        "opus_number": -1
+      },
+      {
+        "id": 86,
+        "work_title": "Auf der Donau (\u201cAuf der Wellen Spiegel\u201d)",
+        "composition_year": 1817,
+        "opus": "21",
+        "opus_number": 1
+      },
+      {
+        "id": 87,
+        "work_title": "Piano Sonata",
+        "composition_year": 1825,
+        "opus": "122",
+        "opus_number": -1
+      },
+      {
+        "id": 88,
+        "work_title": "Violin Sonata, Duo",
+        "composition_year": 1817,
+        "opus": "162",
+        "opus_number": -1
+      },
+      {
+        "id": 89,
+        "work_title": "Piano Sonata",
+        "composition_year": 1817,
+        "opus": "147",
+        "opus_number": -1
+      },
+      {
+        "id": 90,
+        "work_title": "Gruppe aus dem Tartarus (\u201cHorch wie Murmeln des emp\u00f6rten Meeres\u201d)",
+        "composition_year": 1817,
+        "opus": "24",
+        "opus_number": 1
+      },
+      {
+        "id": 91,
+        "work_title": "Erlafsee (\u201cMir ist so wohl\u201d)",
+        "composition_year": 1817,
+        "opus": "8",
+        "opus_number": 3
+      },
+      {
+        "id": 92,
+        "work_title": "Overture \"in the Italian Style\"",
+        "composition_year": 1817,
+        "opus": "170",
+        "opus_number": -1
+      },
+      {
+        "id": 93,
+        "work_title": "Der Kampf (\u201cNein, l\u00e4nger werd\u2019 ich diesen Kampf nicht k\u00e4mpfen\u201d)",
+        "composition_year": 1817,
+        "opus": "110",
+        "opus_number": -1
+      },
+      {
+        "id": 94,
+        "work_title": "Sonata",
+        "composition_year": 1818,
+        "opus": "30",
+        "opus_number": -1
+      },
+      {
+        "id": 95,
+        "work_title": "Das Abendrot (\u201cDu heilig, gl\u00fchend Abendrot!\u201d)",
+        "composition_year": 1818,
+        "opus": "173",
+        "opus_number": 6
+      },
+      {
+        "id": 96,
+        "work_title": "Der Schmetterling (\u201cWie soll ich nicht tanzen\u201d)",
+        "composition_year": 1819,
+        "opus": "57",
+        "opus_number": 1
+      },
+      {
+        "id": 97,
+        "work_title": "Die Berge (\u201cSieht uns der Blick gehoben\u201d)",
+        "composition_year": 1819,
+        "opus": "57",
+        "opus_number": 2
+      },
+      {
+        "id": 98,
+        "work_title": "Der Wanderer (\u201cWie deutlich des Mondes Licht zu mir spricht\u201d)",
+        "composition_year": 1819,
+        "opus": "65",
+        "opus_number": 2
+      },
+      {
+        "id": 99,
+        "work_title": "Piano Sonata",
+        "composition_year": 1819,
+        "opus": "120",
+        "opus_number": -1
+      },
+      {
+        "id": 100,
+        "work_title": "Kantate zum Geburtstag des S\u00e4ngers Johann Michael Vogl (\u201cS\u00e4nger, der von Herzen singet\u201d), Der Fr\u00fchlingsmorgen",
+        "composition_year": 1819,
+        "opus": "158",
+        "opus_number": -1
+      },
+      {
+        "id": 101,
+        "work_title": "Piano Quintet, Forellenquintett (Trout Quintet)",
+        "composition_year": 1819,
+        "opus": "114",
+        "opus_number": -1
+      },
+      {
+        "id": 102,
+        "work_title": "Overture",
+        "composition_year": 1819,
+        "opus": "34",
+        "opus_number": -1
+      },
+      {
+        "id": 103,
+        "work_title": "Salve Regina (\u201cSalve Regina\u201d), Drittes Offertorium",
+        "composition_year": 1819,
+        "opus": "153",
+        "opus_number": -1
+      },
+      {
+        "id": 104,
+        "work_title": "Morgenlied (\u201cEh\u2019 die Sonne fr\u00fch aufersteht\u201d)",
+        "composition_year": 1820,
+        "opus": "4",
+        "opus_number": 2
+      },
+      {
+        "id": 105,
+        "work_title": "Fr\u00fchlingsglaube (\u201cDie linden L\u00fcfte sind erwacht\u201d)",
+        "composition_year": 1822,
+        "opus": "20",
+        "opus_number": 2
+      },
+      {
+        "id": 106,
+        "work_title": "Die V\u00f6gel (\u201cWie lieblich und fr\u00f6hlich\u201d)",
+        "composition_year": 1820,
+        "opus": "172",
+        "opus_number": 6
+      },
+      {
+        "id": 107,
+        "work_title": "Hosanna filio David (\u201cHosanna filio David\u201d)",
+        "composition_year": 1820,
+        "opus": "113",
+        "opus_number": 1
+      },
+      {
+        "id": 108,
+        "work_title": "In monte Oliveti (\u201cIn monte Oliveti\u201d)",
+        "composition_year": 1820,
+        "opus": "113",
+        "opus_number": 2
+      },
+      {
+        "id": 109,
+        "work_title": "Sanctus (\u201cSanctus, sanctus, sanctus\u201d)",
+        "composition_year": 1820,
+        "opus": "113",
+        "opus_number": 3
+      },
+      {
+        "id": 110,
+        "work_title": "Pueri Hebraeorum (\u201cPueri Hebraeorum\u201d)",
+        "composition_year": 1820,
+        "opus": "113",
+        "opus_number": 4
+      },
+      {
+        "id": 111,
+        "work_title": "Cum angelis et pueris (\u201cCum angelis et pueris\u201d)",
+        "composition_year": 1820,
+        "opus": "113",
+        "opus_number": 5
+      },
+      {
+        "id": 112,
+        "work_title": "Ingrediente Domino (\u201cIngrediente Domino\u201d)",
+        "composition_year": 1820,
+        "opus": "113",
+        "opus_number": 6
+      },
+      {
+        "id": 113,
+        "work_title": "Der J\u00fcngling auf dem H\u00fcgel (\u201cEin J\u00fcngling auf dem H\u00fcgel\u201d)",
+        "composition_year": 1820,
+        "opus": "8",
+        "opus_number": 1
+      },
+      {
+        "id": 114,
+        "work_title": "Der 23. Psalm (\u201cGott ist mein Hirt, mir wird nichts mangeln\u201d)",
+        "composition_year": 1820,
+        "opus": "132",
+        "opus_number": -1
+      },
+      {
+        "id": 115,
+        "work_title": "Der z\u00fcrnenden Diana (\u201cJa, spanne nur den Bogen\u201d)",
+        "composition_year": 1820,
+        "opus": "36",
+        "opus_number": 1
+      },
+      {
+        "id": 116,
+        "work_title": "Der Ungl\u00fcckliche (\u201cDie Nacht bricht an\u201d)",
+        "composition_year": 1821,
+        "opus": "87",
+        "opus_number": 1
+      },
+      {
+        "id": 117,
+        "work_title": "Gesang der Geister \u00fcber den Wassern (\u201cDes Menschen Seele gleicht dem Wasser\u201d)",
+        "composition_year": 1821,
+        "opus": "167",
+        "opus_number": -1
+      },
+      {
+        "id": 118,
+        "work_title": "Suleika II (\u201cAch um deine feuchten Schwingen\u201d)",
+        "composition_year": 1821,
+        "opus": "31",
+        "opus_number": -1
+      },
+      {
+        "id": 119,
+        "work_title": "Geheimes (\u201c\u00dcber meines Liebchens \u00c4ugeln\u201d)",
+        "composition_year": 1821,
+        "opus": "14",
+        "opus_number": 2
+      },
+      {
+        "id": 120,
+        "work_title": "Suleika I (\u201cWas bedeutet die Bewegung?\u201d)",
+        "composition_year": 1821,
+        "opus": "14",
+        "opus_number": 1
+      },
+      {
+        "id": 121,
+        "work_title": "Die Nachtigall (\u201cBescheiden verborgen im buschigten Gang\u201d)",
+        "composition_year": 1821,
+        "opus": "11",
+        "opus_number": 2
+      },
+      {
+        "id": 122,
+        "work_title": "Der Blumen Schmerz (\u201cWie t\u00f6nt es mir so schaurig\u201d)",
+        "composition_year": 1821,
+        "opus": "173",
+        "opus_number": 4
+      },
+      {
+        "id": 123,
+        "work_title": "An die Leier (\u201cIch will von Atreus S\u00f6hnen\u201d)",
+        "composition_year": 1822,
+        "opus": "56",
+        "opus_number": 2
+      },
+      {
+        "id": 124,
+        "work_title": "Im Haine (\u201cSonnenstrahlen durch die Tannen\u201d)",
+        "composition_year": 1822,
+        "opus": "56",
+        "opus_number": 3
+      },
+      {
+        "id": 125,
+        "work_title": "Tantum ergo (\u201cTantum ergo\u201d)",
+        "composition_year": 1814,
+        "opus": "45",
+        "opus_number": -1
+      },
+      {
+        "id": 126,
+        "work_title": "Fr\u00fchlingsgesang (\u201cSchm\u00fccket die Locken mit duftigen Kr\u00e4nzen\u201d)",
+        "composition_year": 1822,
+        "opus": "16",
+        "opus_number": 1
+      },
+      {
+        "id": 127,
+        "work_title": "Sei mir gegr\u00fcsst (\u201cO du Entriss\u2019ne mir\u201d)",
+        "composition_year": 1821,
+        "opus": "20",
+        "opus_number": 1
+      },
+      {
+        "id": 128,
+        "work_title": "Selige Welt (\u201cIch treibe auf des Lebens Meer\u201d)",
+        "composition_year": 1822,
+        "opus": "23",
+        "opus_number": 2
+      },
+      {
+        "id": 129,
+        "work_title": "Schwanengesang (\u201cWie klag\u2019 ich\u2019s aus das Sterbegef\u00fchl\u201d)",
+        "composition_year": 1822,
+        "opus": "23",
+        "opus_number": 3
+      },
+      {
+        "id": 130,
+        "work_title": "Die Rose (\u201cEs lockte sch\u00f6ne W\u00e4rme\u201d)",
+        "composition_year": 1822,
+        "opus": "73",
+        "opus_number": -1
+      },
+      {
+        "id": 131,
+        "work_title": "Geist der Liebe (\u201cDer Abend schleiert Flur und Hain\u201d)",
+        "composition_year": 1822,
+        "opus": "11",
+        "opus_number": 3
+      },
+      {
+        "id": 132,
+        "work_title": "Am Geburtstage des Kaisers (\u201cSteig empor, umbl\u00fcht von Segen\u201d)",
+        "composition_year": 1822,
+        "opus": "157",
+        "opus_number": -1
+      },
+      {
+        "id": 133,
+        "work_title": "Die Liebe hat gelogen (\u201cDie Liebe hat gelogen, die Sorge lastet schwer\u201d)",
+        "composition_year": 1822,
+        "opus": "23",
+        "opus_number": 1
+      },
+      {
+        "id": 134,
+        "work_title": "Heliopolis I (\u201cIm kalten, rauhen Norden ist Kunde mir geworden\u201d), Aus Heliopolis I or Im Hochgebirge",
+        "composition_year": 1822,
+        "opus": "65",
+        "opus_number": 3
+      },
+      {
+        "id": 135,
+        "work_title": "Du liebst mich nicht (\u201cMein Herz ist zerrissen, du liebst mich nicht!\u201d)",
+        "composition_year": 1822,
+        "opus": "59",
+        "opus_number": 1
+      },
+      {
+        "id": 136,
+        "work_title": "Gott in der Natur (\u201cGross ist der Herr!\u201d)",
+        "composition_year": 1822,
+        "opus": "133",
+        "opus_number": -1
+      },
+      {
+        "id": 137,
+        "work_title": "Todesmusik (\u201cIn des Todes Feierstunde\u201d)",
+        "composition_year": 1828,
+        "opus": "108",
+        "opus_number": 2
+      },
+      {
+        "id": 138,
+        "work_title": "Overture to the Opera \"Alfonso und Estrella\"",
+        "composition_year": 1822,
+        "opus": "69",
+        "opus_number": -1
+      },
+      {
+        "id": 139,
+        "work_title": "Fantasy, Wandererfantasie (Wanderer Fantasy)",
+        "composition_year": 1822,
+        "opus": "15",
+        "opus_number": -1
+      },
+      {
+        "id": 140,
+        "work_title": "Schatzgr\u00e4bers Begehr (\u201cIn tiefster Erde ruht ein alt Gesetz\u201d)",
+        "composition_year": 1822,
+        "opus": "23",
+        "opus_number": 4
+      },
+      {
+        "id": 141,
+        "work_title": "Schicksalslenker, blicke nieder (\u201cSchicksalslenker, blicke nieder\u201d)",
+        "composition_year": 1822,
+        "opus": "146",
+        "opus_number": -1
+      },
+      {
+        "id": 142,
+        "work_title": "Wandrers Nachtlied (\u201c\u00dcber allen Gipfeln ist Ruh\u201d)",
+        "composition_year": 1824,
+        "opus": "96",
+        "opus_number": 3
+      },
+      {
+        "id": 143,
+        "work_title": "Drang in die Ferne (\u201cVater, du glaubst es nicht\u201d)",
+        "composition_year": 1823,
+        "opus": "71",
+        "opus_number": -1
+      },
+      {
+        "id": 144,
+        "work_title": "Der Zwerg (\u201cIm tr\u00fcben Licht verschwinden schon die Berge\u201d)",
+        "composition_year": 1822,
+        "opus": "22",
+        "opus_number": 1
+      },
+      {
+        "id": 145,
+        "work_title": "Wehmut (\u201cWenn ich durch Wald und Fluren geh\u2019 \u201d)",
+        "composition_year": 1822,
+        "opus": "22",
+        "opus_number": 2
+      },
+      {
+        "id": 146,
+        "work_title": "Overture to the Opera \"Alfonso und Estrella\"",
+        "composition_year": 1823,
+        "opus": "69",
+        "opus_number": -1
+      },
+      {
+        "id": 147,
+        "work_title": "Auf dem Wasser zu singen (\u201cMitten im Schimmer der spiegelnden Wellen\u201d)",
+        "composition_year": 1823,
+        "opus": "72",
+        "opus_number": -1
+      },
+      {
+        "id": 148,
+        "work_title": "Dass sie hier gewesen (\u201cDass der Ostwind D\u00fcfte hauchet\u201d)",
+        "composition_year": 1823,
+        "opus": "59",
+        "opus_number": 2
+      },
+      {
+        "id": 149,
+        "work_title": "Du bist die Ruh (\u201cDu bist die Ruh, der Friede mild\u201d)",
+        "composition_year": 1823,
+        "opus": "59",
+        "opus_number": 3
+      },
+      {
+        "id": 150,
+        "work_title": "Lachen und Weinen (\u201cLachen und Weinen zu jeglicher Stunde\u201d)",
+        "composition_year": 1823,
+        "opus": "59",
+        "opus_number": 4
+      },
+      {
+        "id": 151,
+        "work_title": "Moment Musical, Air russe",
+        "composition_year": 1823,
+        "opus": "94",
+        "opus_number": 3
+      },
+      {
+        "id": 152,
+        "work_title": "Moment Musical, Plaintes d'un Troubadour",
+        "composition_year": 1824,
+        "opus": "94",
+        "opus_number": 6
+      },
+      {
+        "id": 153,
+        "work_title": "German Dances and Ecossaises (16, 2)",
+        "composition_year": 1823,
+        "opus": "33",
+        "opus_number": -1
+      },
+      {
+        "id": 154,
+        "work_title": "Piano Sonata, Grande Sonate",
+        "composition_year": 1823,
+        "opus": "143",
+        "opus_number": -1
+      },
+      {
+        "id": 155,
+        "work_title": "Viola (\u201cSchneegl\u00f6cklein, o Schneegl\u00f6cklein\u201d)",
+        "composition_year": 1823,
+        "opus": "123",
+        "opus_number": -1
+      },
+      {
+        "id": 156,
+        "work_title": "Das Geheimnis (\u201cSie konnte mir kein W\u00f6rtchen sagen\u201d)",
+        "composition_year": 1823,
+        "opus": "173",
+        "opus_number": 2
+      },
+      {
+        "id": 157,
+        "work_title": "Die sch\u00f6ne M\u00fcllerin",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": -1
+      },
+      {
+        "id": 158,
+        "work_title": "Das Wandern (\u201cDas Wandern ist des M\u00fcllers Lust\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 1
+      },
+      {
+        "id": 159,
+        "work_title": "Wohin? (\u201cIch h\u00f6rt\u2019 ein B\u00e4chlein rauschen\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 2
+      },
+      {
+        "id": 160,
+        "work_title": "Halt! (\u201cEine M\u00fchle seh\u2019 ich blinken\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 3
+      },
+      {
+        "id": 161,
+        "work_title": "Danksagung an den Bach (\u201cWar es also gemeint\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 4
+      },
+      {
+        "id": 162,
+        "work_title": "Am Feierabend (\u201cH\u00e4tt\u2019 ich tausend Arme zu r\u00fchren\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 5
+      },
+      {
+        "id": 163,
+        "work_title": "Der Neugierige (\u201cIch frage keine Blume\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 6
+      },
+      {
+        "id": 164,
+        "work_title": "Ungeduld (\u201cIch schnitt\u2019 es gern in alle Rinden ein\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 7
+      },
+      {
+        "id": 165,
+        "work_title": "Morgengruss (\u201cGuten Morgen, sch\u00f6ne M\u00fcllerin\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 8
+      },
+      {
+        "id": 166,
+        "work_title": "Des M\u00fcllers Blumen (\u201cAm Bach viel kleine Blumen stehn\u2019 \u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 9
+      },
+      {
+        "id": 167,
+        "work_title": "Tr\u00e4nenregen (\u201cWir sassen so traulich beisammen\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 10
+      },
+      {
+        "id": 168,
+        "work_title": "Mein! (\u201cB\u00e4chlein, lass dein Rauschen sein\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 11
+      },
+      {
+        "id": 169,
+        "work_title": "Pause (\u201cMeine Laute hab\u2019 ich geh\u00e4ngt an die Wand\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 12
+      },
+      {
+        "id": 170,
+        "work_title": "Mit dem gr\u00fcnen Lautenbande (\u201cSchad\u2019 um das sch\u00f6ne gr\u00fcne Band\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 13
+      },
+      {
+        "id": 171,
+        "work_title": "Der J\u00e4ger (\u201cWas sucht denn der J\u00e4ger\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 14
+      },
+      {
+        "id": 172,
+        "work_title": "Eifersucht und Stolz (\u201cWohin so schnell\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 15
+      },
+      {
+        "id": 173,
+        "work_title": "Die liebe Farbe (\u201cIn Gr\u00fcn will ich mich kleiden\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 16
+      },
+      {
+        "id": 174,
+        "work_title": "Die b\u00f6se Farbe (\u201cIch m\u00f6chte zieh\u2019n in die Welt hinaus\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 17
+      },
+      {
+        "id": 175,
+        "work_title": "Trockne Blumen (\u201cIhr Bl\u00fcmlein alle\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 18
+      },
+      {
+        "id": 176,
+        "work_title": "Der M\u00fcller und der Bach (\u201cWo ein treues Herze\u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 19
+      },
+      {
+        "id": 177,
+        "work_title": "Des Baches Wiegenlied (\u201cGute Ruh\u2019, gute Ruh\u2019 \u201d)",
+        "composition_year": 1823,
+        "opus": "25",
+        "opus_number": 20
+      },
+      {
+        "id": 178,
+        "work_title": "Rosamunde, F\u00fcrstin von Zypern",
+        "composition_year": 1823,
+        "opus": "26",
+        "opus_number": -1
+      },
+      {
+        "id": 179,
+        "work_title": "Overture to the Opera \"Fierabras\"",
+        "composition_year": 1823,
+        "opus": "76",
+        "opus_number": -1
+      },
+      {
+        "id": 180,
+        "work_title": "Der Einsame (\u201cWann meine Grillen schwirren\u201d)",
+        "composition_year": 1825,
+        "opus": "41",
+        "opus_number": -1
+      },
+      {
+        "id": 181,
+        "work_title": "Variations, Trockne Blumen",
+        "composition_year": 1824,
+        "opus": "160",
+        "opus_number": -1
+      },
+      {
+        "id": 182,
+        "work_title": "Octet",
+        "composition_year": 1824,
+        "opus": "166",
+        "opus_number": -1
+      },
+      {
+        "id": 183,
+        "work_title": "String Quartet (No.13), Rosamunde in A minor",
+        "composition_year": 1824,
+        "opus": "29",
+        "opus_number": -1
+      },
+      {
+        "id": 184,
+        "work_title": "Gondelfahrer (\u201cEs tanzen Mond und Sterne\u201d)",
+        "composition_year": 1824,
+        "opus": "28",
+        "opus_number": -1
+      },
+      {
+        "id": 185,
+        "work_title": "Salve Regina (\u201cSalve Regina\u201d)",
+        "composition_year": 1824,
+        "opus": "149",
+        "opus_number": -1
+      },
+      {
+        "id": 186,
+        "work_title": "Sonata, Grand Duo",
+        "composition_year": 1824,
+        "opus": "140",
+        "opus_number": -1
+      },
+      {
+        "id": 187,
+        "work_title": "Gebet (\u201cDu Urquell aller G\u00fcte\u201d)",
+        "composition_year": 1824,
+        "opus": "139",
+        "opus_number": 1
+      },
+      {
+        "id": 188,
+        "work_title": "Divertissement \u00e0 l\u2019hongroise",
+        "composition_year": 1824,
+        "opus": "54",
+        "opus_number": -1
+      },
+      {
+        "id": 189,
+        "work_title": "Wehmut (\u201cDie Abendglocke t\u00f6net\u201d)",
+        "composition_year": 1826,
+        "opus": "64",
+        "opus_number": 1
+      },
+      {
+        "id": 190,
+        "work_title": "Ewige Liebe (\u201cErt\u00f6net, ihr Saiten, in n\u00e4chtlicher Ruh\u201d)",
+        "composition_year": 1826,
+        "opus": "64",
+        "opus_number": 2
+      },
+      {
+        "id": 191,
+        "work_title": "Flucht (\u201cIn der Freie will ich leben\u201d)",
+        "composition_year": 1825,
+        "opus": "64",
+        "opus_number": 3
+      },
+      {
+        "id": 192,
+        "work_title": "Nacht und Tr\u00e4ume (\u201cHeil\u2019ge Nacht, du sinkest nieder!\u201d)",
+        "composition_year": 1823,
+        "opus": "43",
+        "opus_number": 2
+      },
+      {
+        "id": 193,
+        "work_title": "Die junge Nonne (\u201cWie braust durch die Wipfel\u201d)",
+        "composition_year": 1825,
+        "opus": "43",
+        "opus_number": 1
+      },
+      {
+        "id": 194,
+        "work_title": "Lied der Anne Lyle (\u201cW\u00e4rst du bei mir im Lebenstal\u201d)",
+        "composition_year": 1825,
+        "opus": "85",
+        "opus_number": 1
+      },
+      {
+        "id": 195,
+        "work_title": "Gesang der Norna (\u201cMich f\u00fchrt mein Weg wohl meilenlang\u201d)",
+        "composition_year": 1825,
+        "opus": "85",
+        "opus_number": 2
+      },
+      {
+        "id": 196,
+        "work_title": "Der blinde Knabe (\u201cO sagt, ihr Lieben, mir einmal\u201d)",
+        "composition_year": 1825,
+        "opus": "101",
+        "opus_number": 2
+      },
+      {
+        "id": 197,
+        "work_title": "Im Walde (\u201cIch wandre \u00fcber Berg und Tal\u201d)",
+        "composition_year": 1827,
+        "opus": "93",
+        "opus_number": 1
+      },
+      {
+        "id": 198,
+        "work_title": "Bootgesang (\u201cTriumph, er naht\u201d)",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 3
+      },
+      {
+        "id": 199,
+        "work_title": "Coronach (\u201cEr ist uns geschieden\u201d), Totengesang der Frauen und M\u00e4dchen",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 4
+      },
+      {
+        "id": 200,
+        "work_title": "Ellens Gesang I (\u201cRaste, Krieger, Krieg ist aus\u201d)",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 1
+      },
+      {
+        "id": 201,
+        "work_title": "Ellens Gesang II (\u201cJ\u00e4ger, ruhe von der Jagd!\u201d)",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 2
+      },
+      {
+        "id": 202,
+        "work_title": "Ellens Gesang III (\u201cAve Maria! Jungfrau mild\u201d), Ave Maria or Hymne an die Jungfrau",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 6
+      },
+      {
+        "id": 203,
+        "work_title": "Lied des gefangenen J\u00e4gers (\u201cMein Ross so m\u00fcd\u201d)",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 7
+      },
+      {
+        "id": 204,
+        "work_title": "Piano Sonata",
+        "composition_year": 1825,
+        "opus": "42",
+        "opus_number": -1
+      },
+      {
+        "id": 205,
+        "work_title": "Normans Gesang (\u201cDie Nacht bricht bald herein\u201d)",
+        "composition_year": 1825,
+        "opus": "52",
+        "opus_number": 5
+      },
+      {
+        "id": 206,
+        "work_title": "Trinklied aus dem 16. Jahrhundert (\u201cEdit Nonna, edit Clerus\u201d)",
+        "composition_year": 1825,
+        "opus": "155",
+        "opus_number": -1
+      },
+      {
+        "id": 207,
+        "work_title": "Nachtmusik (\u201cWir stimmen dir mit Fl\u00f6tensang\u201d)",
+        "composition_year": 1825,
+        "opus": "156",
+        "opus_number": -1
+      },
+      {
+        "id": 208,
+        "work_title": "Piano Sonata, Gasteiner",
+        "composition_year": 1825,
+        "opus": "53",
+        "opus_number": -1
+      },
+      {
+        "id": 209,
+        "work_title": "Das Heimweh (\u201cAch, der Gebirgssohn\u201d)",
+        "composition_year": 1825,
+        "opus": "79",
+        "opus_number": 1
+      },
+      {
+        "id": 210,
+        "work_title": "Die Allmacht (\u201cGross ist Jehova, der Herr\u201d)",
+        "composition_year": 1825,
+        "opus": "79",
+        "opus_number": 2
+      },
+      {
+        "id": 211,
+        "work_title": "Auf der Bruck (\u201cFrisch trabe sonder Ruh\u2019 und Rast\u201d)",
+        "composition_year": 1827,
+        "opus": "93",
+        "opus_number": 2
+      },
+      {
+        "id": 212,
+        "work_title": "Abendlied f\u00fcr die Entfernte (\u201cHinaus mein Blick, hinaus ins Tal\u201d)",
+        "composition_year": 1825,
+        "opus": "88",
+        "opus_number": 1
+      },
+      {
+        "id": 213,
+        "work_title": "Lied der Delphine (\u201cAch, was soll ich beginnen vor Liebe?\u201d)",
+        "composition_year": 1825,
+        "opus": "124",
+        "opus_number": 1
+      },
+      {
+        "id": 214,
+        "work_title": "Lied des Florio (\u201cNun, da Schatten niedergleiten\u201d)",
+        "composition_year": 1825,
+        "opus": "124",
+        "opus_number": 2
+      },
+      {
+        "id": 215,
+        "work_title": "Grande Marche Fun\u00e8bre",
+        "composition_year": 1825,
+        "opus": "55",
+        "opus_number": -1
+      },
+      {
+        "id": 216,
+        "work_title": "Um Mitternacht (\u201cKeine Stimme h\u00f6r\u2019 ich schallen\u201d)",
+        "composition_year": 1826,
+        "opus": "88",
+        "opus_number": 3
+      },
+      {
+        "id": 217,
+        "work_title": "Widerspruch (\u201cWenn ich durch Busch und Zweig\u201d)",
+        "composition_year": 1828,
+        "opus": "105",
+        "opus_number": 1
+      },
+      {
+        "id": 218,
+        "work_title": "Die Unterscheidung (\u201cDie Mutter hat mich j\u00fcngst gescholten\u201d)",
+        "composition_year": 1828,
+        "opus": "95",
+        "opus_number": 1
+      },
+      {
+        "id": 219,
+        "work_title": "Bei dir allein (\u201cBei dir allein empfind ich, dass ich lebe\u201d)",
+        "composition_year": 1828,
+        "opus": "95",
+        "opus_number": 2
+      },
+      {
+        "id": 220,
+        "work_title": "Die M\u00e4nner sind m\u00e9chant (\u201cDu sagtest mir es, Mutter\u201d)",
+        "composition_year": 1828,
+        "opus": "95",
+        "opus_number": 3
+      },
+      {
+        "id": 221,
+        "work_title": "Irdisches Gl\u00fcck (\u201cSo mancher sieht mit finstrer Miene\u201d)",
+        "composition_year": 1828,
+        "opus": "95",
+        "opus_number": 4
+      },
+      {
+        "id": 222,
+        "work_title": "Der Wanderer an den Mond (\u201cIch auf der Erd\u2019, am Himmel du\u201d)",
+        "composition_year": 1826,
+        "opus": "80",
+        "opus_number": 1
+      },
+      {
+        "id": 223,
+        "work_title": "Das Z\u00fcgengl\u00f6cklein (\u201cKling die Nacht durch, klinge\u201d)",
+        "composition_year": 1826,
+        "opus": "80",
+        "opus_number": 2
+      },
+      {
+        "id": 224,
+        "work_title": "Mondenschein (\u201cDes Mondes Zauberblume lacht\u201d)",
+        "composition_year": 1826,
+        "opus": "102",
+        "opus_number": -1
+      },
+      {
+        "id": 225,
+        "work_title": "Mignon und der Harfner (\u201cNur wer die Sehnsucht kennt\u201d)",
+        "composition_year": 1826,
+        "opus": "62",
+        "opus_number": 1
+      },
+      {
+        "id": 226,
+        "work_title": "Lied der Mignon (\u201cHeiss mich nicht reden, heiss mich schweigen\u201d)",
+        "composition_year": 1826,
+        "opus": "62",
+        "opus_number": 2
+      },
+      {
+        "id": 227,
+        "work_title": "Lied der Mignon (\u201cSo lasst mich scheinen, bis ich werde\u201d)",
+        "composition_year": 1826,
+        "opus": "62",
+        "opus_number": 3
+      },
+      {
+        "id": 228,
+        "work_title": "Lied der Mignon (\u201cNur wer die Sehnsucht kennt\u201d)",
+        "composition_year": 1826,
+        "opus": "62",
+        "opus_number": 4
+      },
+      {
+        "id": 229,
+        "work_title": "Am Fenster (\u201cIhr lieben Mauern hold und traut\u201d)",
+        "composition_year": 1826,
+        "opus": "105",
+        "opus_number": 3
+      },
+      {
+        "id": 230,
+        "work_title": "Sehnsucht (\u201cDie Scheibe friert, der Wind ist rauh\u201d)",
+        "composition_year": 1826,
+        "opus": "105",
+        "opus_number": 4
+      },
+      {
+        "id": 231,
+        "work_title": "Im Freien (\u201cDraussen in der weiten Nacht\u201d)",
+        "composition_year": 1826,
+        "opus": "80",
+        "opus_number": 3
+      },
+      {
+        "id": 232,
+        "work_title": "Fischerweise (\u201cDen Fischer fechten Sorgen und Gram und Leid nicht an\u201d)",
+        "composition_year": 1826,
+        "opus": "96",
+        "opus_number": 4
+      },
+      {
+        "id": 233,
+        "work_title": "Im Fr\u00fchling (\u201cStill sitz\u2019 ich an des H\u00fcgels Hang\u201d)",
+        "composition_year": 1826,
+        "opus": "101",
+        "opus_number": 1
+      },
+      {
+        "id": 234,
+        "work_title": "Uber\u00dcber Wildemann (\u201cDie Winde sausen am Tannenhang\u201d)",
+        "composition_year": 1826,
+        "opus": "108",
+        "opus_number": 1
+      },
+      {
+        "id": 235,
+        "work_title": "Grande Marche H\u00e9roique",
+        "composition_year": 1826,
+        "opus": "66",
+        "opus_number": -1
+      },
+      {
+        "id": 236,
+        "work_title": "String Quartet (No.15) in G major",
+        "composition_year": 1826,
+        "opus": "161",
+        "opus_number": -1
+      },
+      {
+        "id": 237,
+        "work_title": "An Silvia (\u201cWas ist Silvia, saget an\u201d), Gesang",
+        "composition_year": 1826,
+        "opus": "106",
+        "opus_number": 4
+      },
+      {
+        "id": 238,
+        "work_title": "Nachthelle (\u201cDie Nacht ist heiter\u201d)",
+        "composition_year": 1826,
+        "opus": "134",
+        "opus_number": -1
+      },
+      {
+        "id": 239,
+        "work_title": "Piano Sonata, Fantasie",
+        "composition_year": 1826,
+        "opus": "78",
+        "opus_number": -1
+      },
+      {
+        "id": 240,
+        "work_title": "Rondo, Rondeau brillant",
+        "composition_year": 1826,
+        "opus": "70",
+        "opus_number": -1
+      },
+      {
+        "id": 241,
+        "work_title": "Piano Trio, Notturno",
+        "composition_year": 1828,
+        "opus": "148",
+        "opus_number": -1
+      },
+      {
+        "id": 242,
+        "work_title": "Piano Trio",
+        "composition_year": 1828,
+        "opus": "99",
+        "opus_number": -1
+      },
+      {
+        "id": 243,
+        "work_title": "Impromptu in C minor",
+        "composition_year": 1827,
+        "opus": "90",
+        "opus_number": 1
+      },
+      {
+        "id": 244,
+        "work_title": "Impromptu in E\u266d major",
+        "composition_year": 1827,
+        "opus": "90",
+        "opus_number": 2
+      },
+      {
+        "id": 245,
+        "work_title": "Impromptu in G\u266d major",
+        "composition_year": 1827,
+        "opus": "90",
+        "opus_number": 3
+      },
+      {
+        "id": 246,
+        "work_title": "Impromptu in A\u266d major",
+        "composition_year": 1827,
+        "opus": "90",
+        "opus_number": 4
+      },
+      {
+        "id": 247,
+        "work_title": "L'incanto degli occhi; Die Macht der Augen (\u201cDa voi, cari lumi\u201d; \u201cNur euch, sch\u00f6ne Sterne\u201d)",
+        "composition_year": 1827,
+        "opus": "83",
+        "opus_number": 1
+      },
+      {
+        "id": 248,
+        "work_title": "Il traditor deluso; Der get\u00e4uschte Verr\u00e4ter (\u201cAhim\u00e8, io tremo!\u201d; \u201cWeh mir, ich bebe!\u201d)",
+        "composition_year": 1827,
+        "opus": "83",
+        "opus_number": 2
+      },
+      {
+        "id": 249,
+        "work_title": "Il modo di prender moglie; Die Art ein Weib zu nehmen (\u201cOrs\u00f9! non ci pensiamo\u201d; \u201cWohlan! und ohne Zagen\u201d)",
+        "composition_year": 1827,
+        "opus": "83",
+        "opus_number": 3
+      },
+      {
+        "id": 250,
+        "work_title": "Zur guten Nacht (\u201cHorch auf! Es schl\u00e4gt die Stunde\u201d)",
+        "composition_year": 1827,
+        "opus": "81",
+        "opus_number": 3
+      },
+      {
+        "id": 251,
+        "work_title": "Alinde (\u201cDie Sonne sinkt in\u2019s tiefe Meer\u201d)",
+        "composition_year": 1827,
+        "opus": "81",
+        "opus_number": 1
+      },
+      {
+        "id": 252,
+        "work_title": "An die Laute (\u201cLeiser, leiser, kleine Laute\u201d)",
+        "composition_year": 1827,
+        "opus": "81",
+        "opus_number": 2
+      },
+      {
+        "id": 253,
+        "work_title": "Romanze des Richard L\u00f6wenherz (\u201cGrosser Taten tat der Ritter fern im heiligen Lande viel\u201d)",
+        "composition_year": 1826,
+        "opus": "86",
+        "opus_number": -1
+      },
+      {
+        "id": 254,
+        "work_title": "J\u00e4gers Liebeslied (\u201cIch schiess\u2019 den Hirsch im gr\u00fcnen Forst\u201d)",
+        "composition_year": 1827,
+        "opus": "96",
+        "opus_number": 2
+      },
+      {
+        "id": 255,
+        "work_title": "Winterreise",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": -1
+      },
+      {
+        "id": 256,
+        "work_title": "Gute Nacht (\u201cFremd bin ich eingezogen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 1
+      },
+      {
+        "id": 257,
+        "work_title": "Die Wetterfahne (\u201cDer Wind spielt mit der Wetterfahne\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 2
+      },
+      {
+        "id": 258,
+        "work_title": "Gefror'ne Thr\u00e4nen (\u201cGefror\u2019ne Tropfen fallen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 3
+      },
+      {
+        "id": 259,
+        "work_title": "Erstarrung (\u201cIch such\u2019 im Schnee vergebens\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 4
+      },
+      {
+        "id": 260,
+        "work_title": "Der Lindenbaum (\u201cAm Brunnen vor dem Tore\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 5
+      },
+      {
+        "id": 261,
+        "work_title": "Wasserflut (\u201cManche Tr\u00e4n\u2019 aus meinen Augen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 6
+      },
+      {
+        "id": 262,
+        "work_title": "Auf dem Flusse (\u201cDer du so lustig rauschtest\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 7
+      },
+      {
+        "id": 263,
+        "work_title": "R\u00fcckblick (\u201cEs brennt mir unter beiden Sohlen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 8
+      },
+      {
+        "id": 264,
+        "work_title": "Irrlicht (\u201cIn die tiefsten Felsengr\u00fcnde\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 9
+      },
+      {
+        "id": 265,
+        "work_title": "Rast (\u201cNun merk\u2019 ich erst, wie m\u00fcd ich bin\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 10
+      },
+      {
+        "id": 266,
+        "work_title": "Fr\u00fchlingstraum (\u201cIch tr\u00e4umte von bunten Blumen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 11
+      },
+      {
+        "id": 267,
+        "work_title": "Einsamkeit (\u201cWie eine tr\u00fcbe Wolke\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 12
+      },
+      {
+        "id": 268,
+        "work_title": "Die Post (\u201cVon der Strasse her ein Posthorn klingt\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 13
+      },
+      {
+        "id": 269,
+        "work_title": "Der greise Kopf (\u201cDer Reif hat einen weissen Schein\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 14
+      },
+      {
+        "id": 270,
+        "work_title": "Die Kr\u00e4he (\u201cEine Kr\u00e4he war mit mir aus der Stadt gezogen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 15
+      },
+      {
+        "id": 271,
+        "work_title": "Letzte Hoffnung (\u201cHie und da ist an den B\u00e4umen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 16
+      },
+      {
+        "id": 272,
+        "work_title": "Im Dorfe (\u201cEs bellen die Hunde\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 17
+      },
+      {
+        "id": 273,
+        "work_title": "Der st\u00fcrmische Morgen (\u201cWie hat der Sturm zerrissen\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 18
+      },
+      {
+        "id": 274,
+        "work_title": "T\u00e4uschung (\u201cEin Licht tanzt freundlich vor mir her\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 19
+      },
+      {
+        "id": 275,
+        "work_title": "Der Wegweiser (\u201cWas vermeid\u2019 ich denn die Wege\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 20
+      },
+      {
+        "id": 276,
+        "work_title": "Das Wirtshaus (\u201cAuf einen Totenacker hat mich mein Weg gebracht\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 21
+      },
+      {
+        "id": 277,
+        "work_title": "Mut (\u201cFliegt der Schnee mir ins Gesicht\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 22
+      },
+      {
+        "id": 278,
+        "work_title": "Die Nebensonnen (\u201cDrei Sonnen sah ich\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 23
+      },
+      {
+        "id": 279,
+        "work_title": "Der Leiermann (\u201cDr\u00fcben hinterm Dorfe steht ein Leiermann\u201d)",
+        "composition_year": 1827,
+        "opus": "89",
+        "opus_number": 24
+      },
+      {
+        "id": 280,
+        "work_title": "Schlachtlied (\u201cMit unserm Arm ist nichts getan\u201d)",
+        "composition_year": 1827,
+        "opus": "151",
+        "opus_number": -1
+      },
+      {
+        "id": 281,
+        "work_title": "Nachtgesang im Walde (\u201cSei uns stets gegr\u00fcsst, o Nacht!\u201d)",
+        "composition_year": 1827,
+        "opus": "139",
+        "opus_number": 2
+      },
+      {
+        "id": 282,
+        "work_title": "Das Lied im Gr\u00fcnen (\u201cIns Gr\u00fcne, ins Gr\u00fcne, da lockt uns der Fr\u00fchling\u201d)",
+        "composition_year": 1827,
+        "opus": "115",
+        "opus_number": 1
+      },
+      {
+        "id": 283,
+        "work_title": "St\u00e4ndchen (\u201cZ\u00f6gernd leise, in des Dunkels n\u00e4cht'ger H\u00fclle\u201d), Notturno",
+        "composition_year": 1827,
+        "opus": "135",
+        "opus_number": -1
+      },
+      {
+        "id": 284,
+        "work_title": "Heimliches Lieben (\u201cO du, wenn deine Lippen mich ber\u00fchren\u201d)",
+        "composition_year": 1827,
+        "opus": "106",
+        "opus_number": 1
+      },
+      {
+        "id": 285,
+        "work_title": "Ein altschottische Ballade (\u201cDein Schwert, wie ist\u2019s von Blut so rot\u201d), Edward",
+        "composition_year": 1827,
+        "opus": "165",
+        "opus_number": 5
+      },
+      {
+        "id": 286,
+        "work_title": "Das Weinen (\u201cGar tr\u00f6stlich kommt geronnen\u201d)",
+        "composition_year": 1828,
+        "opus": "106",
+        "opus_number": 2
+      },
+      {
+        "id": 287,
+        "work_title": "Vor meiner Wiege (\u201cDas also, das ist der enge Schrein\u201d)",
+        "composition_year": 1827,
+        "opus": "106",
+        "opus_number": 3
+      },
+      {
+        "id": 288,
+        "work_title": "Piano Trio",
+        "composition_year": 1827,
+        "opus": "100",
+        "opus_number": -1
+      },
+      {
+        "id": 289,
+        "work_title": "Der Hochzeitsbraten (\u201cAch liebes Herz, ach Theobald, lass dir nur diesmal raten\u201d)",
+        "composition_year": 1827,
+        "opus": "104",
+        "opus_number": -1
+      },
+      {
+        "id": 290,
+        "work_title": "Fantasy",
+        "composition_year": 1827,
+        "opus": "159",
+        "opus_number": -1
+      },
+      {
+        "id": 291,
+        "work_title": "Impromptu in F minor",
+        "composition_year": 1827,
+        "opus": "142",
+        "opus_number": 1
+      },
+      {
+        "id": 292,
+        "work_title": "Impromptu in A\u266d major",
+        "composition_year": 1827,
+        "opus": "142",
+        "opus_number": 2
+      },
+      {
+        "id": 293,
+        "work_title": "Impromptu, Rosamunde",
+        "composition_year": 1827,
+        "opus": "142",
+        "opus_number": 3
+      },
+      {
+        "id": 294,
+        "work_title": "Impromptu in F minor",
+        "composition_year": 1827,
+        "opus": "142",
+        "opus_number": 4
+      },
+      {
+        "id": 295,
+        "work_title": "Die Sterne (\u201cWie blitzen die Sterne so hell durch die Nacht\u201d)",
+        "composition_year": 1828,
+        "opus": "96",
+        "opus_number": 1
+      },
+      {
+        "id": 296,
+        "work_title": "Fantasy",
+        "composition_year": 1828,
+        "opus": "103",
+        "opus_number": -1
+      },
+      {
+        "id": 297,
+        "work_title": "Mirjams Siegesgesang (\u201cR\u00fchrt die Zimbel, schlagt die Saiten\u201d)",
+        "composition_year": 1828,
+        "opus": "136",
+        "opus_number": -1
+      },
+      {
+        "id": 298,
+        "work_title": "Auf dem Strom (\u201cNimm die letzten Abschiedsk\u00fcsse\u201d)",
+        "composition_year": 1828,
+        "opus": "119",
+        "opus_number": -1
+      },
+      {
+        "id": 299,
+        "work_title": "Allegro, Lebensst\u00fcrme",
+        "composition_year": 1828,
+        "opus": "144",
+        "opus_number": -1
+      },
+      {
+        "id": 300,
+        "work_title": "Hymnus an den heiligen Geist (\u201cKomm, heil\u2019ger Geist, erh\u00f6re unser Flehen\u201d)",
+        "composition_year": 1828,
+        "opus": "154",
+        "opus_number": -1
+      },
+      {
+        "id": 301,
+        "work_title": "Rondo, Grand Rondeau",
+        "composition_year": 1828,
+        "opus": "107",
+        "opus_number": -1
+      },
+      {
+        "id": 302,
+        "work_title": "Fugue",
+        "composition_year": 1828,
+        "opus": "152",
+        "opus_number": -1
+      },
+      {
+        "id": 303,
+        "work_title": "Glaube, Hoffnung und Liebe (\u201cGlaube, hoffe, liebe!\u201d)",
+        "composition_year": 1828,
+        "opus": "97",
+        "opus_number": -1
+      },
+      {
+        "id": 304,
+        "work_title": "String Quintet",
+        "composition_year": 1828,
+        "opus": "163",
+        "opus_number": -1
+      },
+      {
+        "id": 305,
+        "work_title": "Der Hirt auf dem Felsen (\u201cWenn auf dem h\u00f6chsten Fels ich steh\u201d)",
+        "composition_year": 1828,
+        "opus": "129",
+        "opus_number": -1
+      },
+      {
+        "id": 306,
+        "work_title": "Der Wintertag (\u201cIn sch\u00f6ner heller Winterzeit ward eine Maid geboren\u201d), Geburtstaglied",
+        "composition_year": 1820,
+        "opus": "169",
+        "opus_number": -1
+      },
+      {
+        "id": 307,
+        "work_title": "Gott im Ungewitter (\u201cDu Schrecklicher, wer kann vor dir und deinem Donner stehn?\u201d)",
+        "composition_year": 1815,
+        "opus": "112",
+        "opus_number": 1
+      },
+      {
+        "id": 308,
+        "work_title": "Gott der Weltsch\u00f6pfer (\u201cZu Gott, zu Gott flieg auf\u201d)",
+        "composition_year": 1815,
+        "opus": "112",
+        "opus_number": 2
+      },
+      {
+        "id": 309,
+        "work_title": "Das Echo (\u201cHerzliebe gute Mutter, o grolle nicht mit mir\u201d)",
+        "composition_year": 1828,
+        "opus": "130",
+        "opus_number": -1
+      }
+    ]
   }
 ]
