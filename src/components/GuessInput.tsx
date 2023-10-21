@@ -58,7 +58,7 @@ function GuessInput({ onSubmit }: Props) {
             label: composer.fullname,
             isFixed: false,
         };
-    });
+    }).sort((a, b) => a.label.localeCompare(b.label));
     const composerMap: { [key: string]: ChoiceOption[] } = {};
 
     for (const entry of worksByComposer) {
