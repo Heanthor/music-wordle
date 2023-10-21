@@ -146,6 +146,21 @@ def debussy_opus_col(header_col: str) -> bool:
     return header_col == "Lesure# (new)"
 
 
+def debussy_date_col(header_col: str) -> bool:
+    return header_col == "Year"
+
+
+def debussy_opus(opus_number_str: str):
+    opus_number_str = opus_number_str.replace("CD", "")
+    if "/" in opus_number_str:
+        opus, num = opus_number_str.split("/")
+    else:
+        opus = opus_number_str
+        num = -1
+
+    return opus.strip(), num
+
+
 def is_opus_col(composer: str, header_col: str) -> bool:
     # some composers have different catalogs which replace opus numbers, even in the header
     try:
@@ -153,6 +168,15 @@ def is_opus_col(composer: str, header_col: str) -> bool:
         return opus_col_func(header_col)
     except KeyError:
         return header_col == "Opus"
+
+
+def is_date_col(composer: str, header_col: str) -> bool:
+    # same goes for year
+    try:
+        date_col_func = config_by_composer[composer]["date_col_func"]
+        return date_col_func(header_col)
+    except KeyError:
+        return header_col == "Date"
 
 
 config_by_composer = {
@@ -165,7 +189,11 @@ config_by_composer = {
         "postprocess": tchaikovsky_postprocess,
     },
     "Franz Schubert": {"opus_func": schubert_opus},
-    "Claude Debussy": {"opus_col_func": debussy_opus_col},
+    "Claude Debussy": {
+        "opus_col_func": debussy_opus_col,
+        "date_col_func": debussy_date_col,
+        "opus_func": debussy_opus,
+    },
 }
 
 
@@ -188,7 +216,7 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             for i, header in enumerate(headers):
                 if header.text.strip() == "Title":
                     name_col = i
-                elif header.text.strip() == "Date":
+                elif is_date_col(composer, header.text.strip()):
                     date_col = i
                 elif header.text.strip() == "Key":
                     key_col = i

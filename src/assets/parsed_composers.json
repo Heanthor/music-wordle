@@ -21859,5 +21859,1035 @@
         "opus_number": -1
       }
     ]
+  },
+  {
+    "id": 7,
+    "firstname": "Claude",
+    "lastname": "Debussy",
+    "fullname": "Claude Debussy",
+    "works": [
+      {
+        "id": 0,
+        "work_title": "Madrid: Madrid, princesse des Espagnes",
+        "composition_year": 1879,
+        "opus": "1",
+        "opus_number": -1
+      },
+      {
+        "id": 1,
+        "work_title": "Piano Trio in G major",
+        "composition_year": 1879,
+        "opus": "5",
+        "opus_number": -1
+      },
+      {
+        "id": 2,
+        "work_title": "Nuits d'\u00e9toiles: Nuit d'\u00e9toiles, sous tes voiles",
+        "composition_year": 1880,
+        "opus": "2",
+        "opus_number": -1
+      },
+      {
+        "id": 3,
+        "work_title": "Caprice: Quand je baise, p\u00e2le de fi\u00e8vre",
+        "composition_year": 1880,
+        "opus": "6",
+        "opus_number": -1
+      },
+      {
+        "id": 4,
+        "work_title": "Beau soir: Lorsque au soleil couchant les rivi\u00e8res sont roses",
+        "composition_year": 1880,
+        "opus": "84",
+        "opus_number": -1
+      },
+      {
+        "id": 5,
+        "work_title": "Fleur des bl\u00e9s: Le long des bl\u00e9s que la brise fait onduler",
+        "composition_year": 1880,
+        "opus": "16",
+        "opus_number": -1
+      },
+      {
+        "id": 6,
+        "work_title": "R\u00eaverie: Le z\u00e9phir \u00e0 la douce haleine",
+        "composition_year": 1880,
+        "opus": "3",
+        "opus_number": -1
+      },
+      {
+        "id": 7,
+        "work_title": "Danse boh\u00e9mienne",
+        "composition_year": 1880,
+        "opus": "4",
+        "opus_number": -1
+      },
+      {
+        "id": 8,
+        "work_title": "Symphony in B minor",
+        "composition_year": 1880,
+        "opus": "8",
+        "opus_number": -1
+      },
+      {
+        "id": 9,
+        "work_title": "Souhait: Oh! quand la mort que rien ne saurait apaiser",
+        "composition_year": 1881,
+        "opus": "18",
+        "opus_number": -1
+      },
+      {
+        "id": 10,
+        "work_title": "Triolet \u00e0 Phillis (Z\u00e9phyr): Si j'\u00e9tais le z\u00e9phyr ail\u00e9",
+        "composition_year": 1881,
+        "opus": "19",
+        "opus_number": -1
+      },
+      {
+        "id": 11,
+        "work_title": "Les roses: Lorsque le ciel de saphir",
+        "composition_year": 1881,
+        "opus": "28",
+        "opus_number": -1
+      },
+      {
+        "id": 12,
+        "work_title": "S\u00e9guidille: Un jupon serr\u00e9 sur les hanches",
+        "composition_year": 1881,
+        "opus": "44",
+        "opus_number": -1
+      },
+      {
+        "id": 13,
+        "work_title": "Pierrot: Le bon Pierrot que la foule contemple",
+        "composition_year": 1881,
+        "opus": "30",
+        "opus_number": -1
+      },
+      {
+        "id": 14,
+        "work_title": "Aimons-nous et dormons",
+        "composition_year": 1881,
+        "opus": "7",
+        "opus_number": -1
+      },
+      {
+        "id": 15,
+        "work_title": "Rondel chinois: Sur le lac bord\u00e9 d'azal\u00e9e",
+        "composition_year": 1881,
+        "opus": "11",
+        "opus_number": -1
+      },
+      {
+        "id": 16,
+        "work_title": "Trag\u00e9die: Les petites fleurs n'ont pu vivre",
+        "composition_year": 1881,
+        "opus": "12",
+        "opus_number": -1
+      },
+      {
+        "id": 17,
+        "work_title": "Jane: Je p\u00e2lis et tombe en langueur",
+        "composition_year": 1881,
+        "opus": "13",
+        "opus_number": -1
+      },
+      {
+        "id": 18,
+        "work_title": "Daniel: Versez, que de l'ivresse. Aux accents d'all\u00e9gresse",
+        "composition_year": 1881,
+        "opus": "35",
+        "opus_number": -1
+      },
+      {
+        "id": 19,
+        "work_title": "H\u00e9l\u00e8ne: Franchis les mers icariennes",
+        "composition_year": 1881,
+        "opus": "14",
+        "opus_number": -1
+      },
+      {
+        "id": 20,
+        "work_title": "Fantoches: Scaramouche et Pulcinella",
+        "composition_year": 1882,
+        "opus": "26",
+        "opus_number": -1
+      },
+      {
+        "id": 21,
+        "work_title": "Le lilas: O floraison divine des lilas",
+        "composition_year": 1882,
+        "opus": "36",
+        "opus_number": -1
+      },
+      {
+        "id": 22,
+        "work_title": "F\u00eate galante: Voil\u00e0 Sylvandre et Lycas et Myrtil",
+        "composition_year": 1882,
+        "opus": "31",
+        "opus_number": -1
+      },
+      {
+        "id": 23,
+        "work_title": "Printemps_L_24_(Debussy,_Claude): Salut printemps, jeune saison",
+        "composition_year": 1882,
+        "opus": "37",
+        "opus_number": -1
+      },
+      {
+        "id": 24,
+        "work_title": "Fl\u00f4ts, palmes et sables: Loin des yeux du monde",
+        "composition_year": 1882,
+        "opus": "38",
+        "opus_number": -1
+      },
+      {
+        "id": 25,
+        "work_title": "Nocturne et Scherzo",
+        "composition_year": 1882,
+        "opus": "39",
+        "opus_number": -1
+      },
+      {
+        "id": 26,
+        "work_title": "Intermezzo",
+        "composition_year": 1882,
+        "opus": "40",
+        "opus_number": -1
+      },
+      {
+        "id": 27,
+        "work_title": "En sourdine: Calmes dans le demi-jour",
+        "composition_year": 1882,
+        "opus": "42",
+        "opus_number": -1
+      },
+      {
+        "id": 28,
+        "work_title": "Mandoline: Les donneurs de s\u00e9r\u00e9nades",
+        "composition_year": 1882,
+        "opus": "43",
+        "opus_number": -1
+      },
+      {
+        "id": 29,
+        "work_title": "Rondeau: Fut-il jamais douceur de c\u0153ur pareille",
+        "composition_year": 1882,
+        "opus": "17",
+        "opus_number": -1
+      },
+      {
+        "id": 30,
+        "work_title": "Pantomime: Pierrot qui n'a rien d'un Clitandre",
+        "composition_year": 1882,
+        "opus": "47",
+        "opus_number": -1
+      },
+      {
+        "id": 31,
+        "work_title": "Clair de lune: Votre \u00e2me est un paysage choisi",
+        "composition_year": 1882,
+        "opus": "45",
+        "opus_number": -1
+      },
+      {
+        "id": 32,
+        "work_title": "La fille aux cheveux de lin: Sur la luzerne en fleur",
+        "composition_year": 1882,
+        "opus": "15",
+        "opus_number": -1
+      },
+      {
+        "id": 33,
+        "work_title": "S\u00e9r\u00e9nade: Las, Colombine a ferm\u00e9 le volet",
+        "composition_year": 1882,
+        "opus": "29",
+        "opus_number": -1
+      },
+      {
+        "id": 34,
+        "work_title": "Choeur des brises: R\u00e9veillez-vous, arbres des bois",
+        "composition_year": 1882,
+        "opus": "32",
+        "opus_number": -1
+      },
+      {
+        "id": 35,
+        "work_title": "Divertissement",
+        "composition_year": 1882,
+        "opus": "62",
+        "opus_number": -1
+      },
+      {
+        "id": 36,
+        "work_title": "Hymnis il dort encore",
+        "composition_year": 1882,
+        "opus": "34",
+        "opus_number": -1
+      },
+      {
+        "id": 37,
+        "work_title": "Hymnis ode bachique",
+        "composition_year": 1882,
+        "opus": "41",
+        "opus_number": -1
+      },
+      {
+        "id": 38,
+        "work_title": "Le triomphe de Bacchus",
+        "composition_year": 1882,
+        "opus": "33",
+        "opus_number": -1
+      },
+      {
+        "id": 39,
+        "work_title": "Coquetterie posthume: Quand je mourrai, que l'on me mette",
+        "composition_year": 1883,
+        "opus": "50",
+        "opus_number": -1
+      },
+      {
+        "id": 40,
+        "work_title": "Invocation: \u00c9levez-vous, voix de mon \u00e2me",
+        "composition_year": 1883,
+        "opus": "51",
+        "opus_number": -1
+      },
+      {
+        "id": 41,
+        "work_title": "Le gladiateur: Mort aux Romains, tuez jusqu'au dernier",
+        "composition_year": 1883,
+        "opus": "52",
+        "opus_number": -1
+      },
+      {
+        "id": 42,
+        "work_title": "Chanson espagnole: Tra la la\u2026 nous venions de voir le taureau",
+        "composition_year": 1883,
+        "opus": "49",
+        "opus_number": -1
+      },
+      {
+        "id": 43,
+        "work_title": "Romance [musique pour \u00e9ventail]: Silence ineffable de l'heure",
+        "composition_year": 1883,
+        "opus": "53",
+        "opus_number": -1
+      },
+      {
+        "id": 44,
+        "work_title": "Musique: La lune se levait, pure, mais plus glac\u00e9e",
+        "composition_year": 1883,
+        "opus": "54",
+        "opus_number": -1
+      },
+      {
+        "id": 45,
+        "work_title": "''Paysage sentimental: Le ciel d'hiver si doux, si triste, si dormant",
+        "composition_year": 1883,
+        "opus": "55",
+        "opus_number": -1
+      },
+      {
+        "id": 46,
+        "work_title": "L'archet: Elle avait de beaux cheveux blonds",
+        "composition_year": 1883,
+        "opus": "22",
+        "opus_number": -1
+      },
+      {
+        "id": 47,
+        "work_title": "Chanson triste: On entend un chant sur l'eau dans la brume",
+        "composition_year": 1883,
+        "opus": "24",
+        "opus_number": -1
+      },
+      {
+        "id": 48,
+        "work_title": "Fleur des eaux",
+        "composition_year": 1883,
+        "opus": "23",
+        "opus_number": -1
+      },
+      {
+        "id": 49,
+        "work_title": "\u00c9glogue: Chanteurs m\u00e9lodieux, habitants des buissons",
+        "composition_year": 1883,
+        "opus": "27",
+        "opus_number": -1
+      },
+      {
+        "id": 50,
+        "work_title": "Suite for orchestra\n F\u00eate\n Ballet\n R\u00eave\n Bacchanale",
+        "composition_year": 1883,
+        "opus": "46",
+        "opus_number": -1
+      },
+      {
+        "id": 51,
+        "work_title": "Diane au bois",
+        "composition_year": 1883,
+        "opus": "48",
+        "opus_number": -1
+      },
+      {
+        "id": 52,
+        "work_title": "Romance: Voici que le printemps, ce fil l\u00e9ger d'avril",
+        "composition_year": 1884,
+        "opus": "56",
+        "opus_number": -1
+      },
+      {
+        "id": 53,
+        "work_title": "Apparition: La lune s'attristait Des s\u00e9raphins",
+        "composition_year": 1884,
+        "opus": "57",
+        "opus_number": -1
+      },
+      {
+        "id": 54,
+        "work_title": "La romance d'Ariel: Au long de ces montagnes douces",
+        "composition_year": 1884,
+        "opus": "58",
+        "opus_number": -1
+      },
+      {
+        "id": 55,
+        "work_title": "Regret: Devant le ciel d'\u00e9t\u00e9, ti\u00e8de et calme",
+        "composition_year": 1884,
+        "opus": "59",
+        "opus_number": -1
+      },
+      {
+        "id": 56,
+        "work_title": "Le printemps: L'aimable printemps ram\u00e8ne dans la plaine",
+        "composition_year": 1884,
+        "opus": "60",
+        "opus_number": -1
+      },
+      {
+        "id": 57,
+        "work_title": "L'enfant prodigue",
+        "composition_year": 1884,
+        "opus": "61",
+        "opus_number": -1
+      },
+      {
+        "id": 58,
+        "work_title": "Barcarolle: Viens! l'heure est propice",
+        "composition_year": 1885,
+        "opus": "67",
+        "opus_number": -1
+      },
+      {
+        "id": 59,
+        "work_title": "Zuleima",
+        "composition_year": 1885,
+        "opus": "64",
+        "opus_number": -1
+      },
+      {
+        "id": 60,
+        "work_title": "Ariettes oubli\u00e9es\n C'est l'extase: C'est l'extase langoureuse'\n Il pleure dans mon c\u0153ur: Il pleure dans mon c\u0153ur comme il pleut sur la ville\n L'ombre des arbres: L'ombre de arbres dans la rivi\u00e8re embrum\u00e9e\n Chevaux de bois: Tournez, tournez, bons chevaux de bois\n Green: Voici des fruits, des fleurs, des feuilles\n Spleen: Les roses \u00e9taient toutes rouges",
+        "composition_year": 1885,
+        "opus": "63",
+        "opus_number": -1
+      },
+      {
+        "id": 61,
+        "work_title": "Printemps",
+        "composition_year": 1887,
+        "opus": "68",
+        "opus_number": -1
+      },
+      {
+        "id": 62,
+        "work_title": "La demoiselle \u00e9lue: La demoiselle \u00e9lue s'appuyait sur la barri\u00e8re d'or du ciel",
+        "composition_year": 1887,
+        "opus": "69",
+        "opus_number": -1
+      },
+      {
+        "id": 63,
+        "work_title": "Axel",
+        "composition_year": 1888,
+        "opus": "73",
+        "opus_number": -1
+      },
+      {
+        "id": 64,
+        "work_title": "Po\u00e8mes de Baudelaire\nLe balcon: M\u00e8re des souvenirs, ma\u00eetresse des ma\u00eetresses\nHarmonie du soir: Voici venir les temps o\u00f9 vibrant sur sa tige\nLe jet d'eau: Tes beaux yeux sont las, pauvre amante\nRecueillement: Sois sage, \u00f4 ma douleur\nLa mort des amants: Nous aurons des lits pleins d'odeurs l\u00e9g\u00e8res",
+        "composition_year": 1887,
+        "opus": "70",
+        "opus_number": -1
+      },
+      {
+        "id": 65,
+        "work_title": "Petite suite\n En bateau\n Cort\u00e8ge\n Menuet\n Ballet",
+        "composition_year": 1886,
+        "opus": "71",
+        "opus_number": -1
+      },
+      {
+        "id": 66,
+        "work_title": "Two Arabesques",
+        "composition_year": 1888,
+        "opus": "74",
+        "opus_number": -1
+      },
+      {
+        "id": 67,
+        "work_title": "Mazurka",
+        "composition_year": 1890,
+        "opus": "75",
+        "opus_number": -1
+      },
+      {
+        "id": 68,
+        "work_title": "R\u00eaverie",
+        "composition_year": 1890,
+        "opus": "76",
+        "opus_number": -1
+      },
+      {
+        "id": 69,
+        "work_title": "Tarantelle styrienne",
+        "composition_year": 1890,
+        "opus": "77",
+        "opus_number": -1
+      },
+      {
+        "id": 70,
+        "work_title": "Ballade slave",
+        "composition_year": 1890,
+        "opus": "78",
+        "opus_number": -1
+      },
+      {
+        "id": 71,
+        "work_title": "Valse romantique",
+        "composition_year": 1890,
+        "opus": "79",
+        "opus_number": -1
+      },
+      {
+        "id": 72,
+        "work_title": "Rodrigue et Chim\u00e8ne",
+        "composition_year": 1890,
+        "opus": "80",
+        "opus_number": -1
+      },
+      {
+        "id": 73,
+        "work_title": "Fantaisie",
+        "composition_year": 1889,
+        "opus": "72",
+        "opus_number": -1
+      },
+      {
+        "id": 74,
+        "work_title": "La belle au bois dormant: Des trous \u00e0 son pourpoint vermeil",
+        "composition_year": 1890,
+        "opus": "81",
+        "opus_number": -1
+      },
+      {
+        "id": 75,
+        "work_title": "Suite bergamasque\nPr\u00e9lude\nMenuet\nClair de Lune\nPassepied",
+        "composition_year": 1890,
+        "opus": "82",
+        "opus_number": -1
+      },
+      {
+        "id": 76,
+        "work_title": "Les Ang\u00e9lus: Cloches chr\u00e9tiennes pour les matines",
+        "composition_year": 1891,
+        "opus": "88",
+        "opus_number": -1
+      },
+      {
+        "id": 77,
+        "work_title": "Marche \u00e9cossaise sur un th\u00e8me populaire",
+        "composition_year": 1891,
+        "opus": "83",
+        "opus_number": -1
+      },
+      {
+        "id": 78,
+        "work_title": "Dans le jardin: Je regardais dans le jardin",
+        "composition_year": 1891,
+        "opus": "107",
+        "opus_number": -1
+      },
+      {
+        "id": 79,
+        "work_title": "Romances\nRomance: L'\u00e2me \u00e9vapor\u00e9e est souffrante",
+        "composition_year": 1891,
+        "opus": "65",
+        "opus_number": -1
+      },
+      {
+        "id": 80,
+        "work_title": "Romances\nLes cloches: Les feuilles s'ouvraient sur le bord des branches",
+        "composition_year": 1891,
+        "opus": "66",
+        "opus_number": -1
+      },
+      {
+        "id": 81,
+        "work_title": "M\u00e9lodies\n La mer est plus belle que les cath\u00e9drales\n Le son du cor s'afflige vers les bois\n L'\u00e9chelonnement des haies moutonne \u00e0 l'infini",
+        "composition_year": 1891,
+        "opus": "85",
+        "opus_number": -1
+      },
+      {
+        "id": 82,
+        "work_title": "Nocturne",
+        "composition_year": 1892,
+        "opus": "89",
+        "opus_number": -1
+      },
+      {
+        "id": 83,
+        "work_title": "3 Sc\u00e8nes au cr\u00e9puscule",
+        "composition_year": 1892,
+        "opus": "92",
+        "opus_number": -1
+      },
+      {
+        "id": 84,
+        "work_title": "Proses lyriques\n De r\u00eave: La nuit a des douceurs de femme\n De gr\u00e8ve: Sur la mer les cr\u00e9puscules tombent\n De fleurs: Dans l'ennui si d\u00e9sol\u00e9ment vert\n De soir: Dimanche sur les villes",
+        "composition_year": 1892,
+        "opus": "90",
+        "opus_number": -1
+      },
+      {
+        "id": 85,
+        "work_title": "String Quartet in G minor",
+        "composition_year": 1893,
+        "opus": "91",
+        "opus_number": -1
+      },
+      {
+        "id": 86,
+        "work_title": "Pr\u00e9lude \u00e0 l'apr\u00e8s-midi d'un faune",
+        "composition_year": 1894,
+        "opus": "87",
+        "opus_number": -1
+      },
+      {
+        "id": 87,
+        "work_title": "Images oubli\u00e9es\n Lent (m\u00e9lancolique et doux)\n Souvenir du Louvre\n Quelques aspects\u2026",
+        "composition_year": 1894,
+        "opus": "94",
+        "opus_number": -1
+      },
+      {
+        "id": 88,
+        "work_title": "Pell\u00e9as et M\u00e9lisande",
+        "composition_year": 1893,
+        "opus": "93",
+        "opus_number": -1
+      },
+      {
+        "id": 89,
+        "work_title": "La Saulaie",
+        "composition_year": 1896,
+        "opus": "96",
+        "opus_number": -1
+      },
+      {
+        "id": 90,
+        "work_title": "Chansons de Bilitis\n La fl\u00fbte de pan: Pour le jour des Hyacinthies\n La chevelure: Il m'a dit \u00abCette nuit d'ai r\u00eav\u00e9\u00bb\n Le tombeau des Naiades: Le long du bois couvert de givre",
+        "composition_year": 1897,
+        "opus": "97",
+        "opus_number": -1
+      },
+      {
+        "id": 91,
+        "work_title": "Nocturnes\n Nuages\n F\u00eates\n Sir\u00e8nes",
+        "composition_year": 1897,
+        "opus": "98",
+        "opus_number": -1
+      },
+      {
+        "id": 92,
+        "work_title": "Chansons de Charles d'Orl\u00e9ans\n Dieu! qu'il la fait bon regarder!\n Quand j'ai ouy le tambourin sonner\n Yver, vous n'estes qu'un villain",
+        "composition_year": 1898,
+        "opus": "99",
+        "opus_number": -1
+      },
+      {
+        "id": 93,
+        "work_title": "Berceuse: Il \u00e9tait une fois une f\u00e9e qui avait un beau sceptre",
+        "composition_year": 1899,
+        "opus": "100",
+        "opus_number": -1
+      },
+      {
+        "id": 94,
+        "work_title": "Nuits blanches: Tout \u00e0 l'heure ses mains plus d\u00e9licates",
+        "composition_year": 1899,
+        "opus": "101",
+        "opus_number": -1
+      },
+      {
+        "id": 95,
+        "work_title": "Pour le piano\n Pr\u00e9lude\n Sarabande\n Toccata",
+        "composition_year": 1894,
+        "opus": "95",
+        "opus_number": -1
+      },
+      {
+        "id": 96,
+        "work_title": "Lindaraja",
+        "composition_year": 1901,
+        "opus": "103",
+        "opus_number": -1
+      },
+      {
+        "id": 97,
+        "work_title": "Rhapsody for Orchestra and Saxophone",
+        "composition_year": 1901,
+        "opus": "104",
+        "opus_number": -1
+      },
+      {
+        "id": 98,
+        "work_title": "D'un cahier d'esquisses",
+        "composition_year": 1903,
+        "opus": "112",
+        "opus_number": -1
+      },
+      {
+        "id": 99,
+        "work_title": "Estampes\n Pagodes\n La soir\u00e9e dans Grenade\n Jardins sous la pluie",
+        "composition_year": 1903,
+        "opus": "108",
+        "opus_number": -1
+      },
+      {
+        "id": 100,
+        "work_title": "Le Diable dans le beffroi",
+        "composition_year": 1902,
+        "opus": "106",
+        "opus_number": -1
+      },
+      {
+        "id": 101,
+        "work_title": "Chansons de France\n Rondel: Le temps a laissi\u00e9 son manteau\n La Grotte: Aupr\u00e8s de cette grotte sombre\n Rondel: Pour ce que Plaisance est morte",
+        "composition_year": 1904,
+        "opus": "115",
+        "opus_number": -1
+      },
+      {
+        "id": 102,
+        "work_title": "Danses\n Danse sacr\u00e9e\n Danse profane",
+        "composition_year": 1904,
+        "opus": "113",
+        "opus_number": -1
+      },
+      {
+        "id": 103,
+        "work_title": "F\u00eates galantes\n Les ing\u00e9nus:Les hauts talons luttaient avec les longues jupes\n Le faune: Un vieux faune de terre cuite\n Colloque sentimental: Dans le vieux parc solitaire et glac\u00e9",
+        "composition_year": 1904,
+        "opus": "114",
+        "opus_number": -1
+      },
+      {
+        "id": 104,
+        "work_title": "Masques",
+        "composition_year": 1904,
+        "opus": "134",
+        "opus_number": -1
+      },
+      {
+        "id": 105,
+        "work_title": "Morceau de Concours",
+        "composition_year": 1903,
+        "opus": "110",
+        "opus_number": -1
+      },
+      {
+        "id": 106,
+        "work_title": "L'Isle Joyeuse",
+        "composition_year": 1904,
+        "opus": "109",
+        "opus_number": -1
+      },
+      {
+        "id": 107,
+        "work_title": "Le roi Lear",
+        "composition_year": 1904,
+        "opus": "116",
+        "opus_number": -1
+      },
+      {
+        "id": 108,
+        "work_title": "Pi\u00e8ce pour piano",
+        "composition_year": 1904,
+        "opus": "117",
+        "opus_number": -1
+      },
+      {
+        "id": 109,
+        "work_title": "La Mer",
+        "composition_year": 1903,
+        "opus": "111",
+        "opus_number": -1
+      },
+      {
+        "id": 110,
+        "work_title": "Images, Set 1\n Reflets dans l'eau\n Hommage \u00e0 Rameau\n Mouvement",
+        "composition_year": 1905,
+        "opus": "105",
+        "opus_number": -1
+      },
+      {
+        "id": 111,
+        "work_title": "Images, Set 2\n Cloches \u00e0 travers les feuilles\n Et la lune descend sur le temple qui fut\n Poisson d'or",
+        "composition_year": 1907,
+        "opus": "120",
+        "opus_number": -1
+      },
+      {
+        "id": 112,
+        "work_title": "La ch\u00fbte de la maison Usher",
+        "composition_year": 1908,
+        "opus": "121",
+        "opus_number": -1
+      },
+      {
+        "id": 113,
+        "work_title": "Children's Corner",
+        "composition_year": 1906,
+        "opus": "119",
+        "opus_number": -1
+      },
+      {
+        "id": 114,
+        "work_title": "The Little Nigar (Le Petit N\u00e8gre)",
+        "composition_year": 1909,
+        "opus": "122",
+        "opus_number": -1
+      },
+      {
+        "id": 115,
+        "work_title": "Hommage \u00e0 Joseph Haydn",
+        "composition_year": 1909,
+        "opus": "123",
+        "opus_number": -1
+      },
+      {
+        "id": 116,
+        "work_title": "Rhapsody",
+        "composition_year": 1909,
+        "opus": "124",
+        "opus_number": -1
+      },
+      {
+        "id": 117,
+        "work_title": "Pr\u00e9ludes, Book 1",
+        "composition_year": 1909,
+        "opus": "125",
+        "opus_number": -1
+      },
+      {
+        "id": 118,
+        "work_title": "Ballades de Fran\u00e7ois Villon\n Ballade de Villon \u00e0 s'Amye: Faulse beaut\u00e9 qui tant me couste cher\n Ballade que Villon feit \u00e0 la requeste de sa m\u00e8re pour prier Nostre Dame: Dame du ciel, r\u00e9gente terrienne\n Ballade des femmes de Paris: Quoy qu'on tient belles langagi\u00e8res",
+        "composition_year": 1910,
+        "opus": "126",
+        "opus_number": -1
+      },
+      {
+        "id": 119,
+        "work_title": "Petite pi\u00e8ce",
+        "composition_year": 1910,
+        "opus": "127",
+        "opus_number": -1
+      },
+      {
+        "id": 120,
+        "work_title": "La plus que lente",
+        "composition_year": 1910,
+        "opus": "128",
+        "opus_number": -1
+      },
+      {
+        "id": 121,
+        "work_title": "Pr\u00e9ludes, Book 2",
+        "composition_year": 1912,
+        "opus": "131",
+        "opus_number": -1
+      },
+      {
+        "id": 122,
+        "work_title": "Le martyre de Saint S\u00e9bastien",
+        "composition_year": 1911,
+        "opus": "130",
+        "opus_number": -1
+      },
+      {
+        "id": 123,
+        "work_title": "Khamma",
+        "composition_year": 1911,
+        "opus": "132",
+        "opus_number": -1
+      },
+      {
+        "id": 124,
+        "work_title": "Jeux",
+        "composition_year": 1912,
+        "opus": "133",
+        "opus_number": -1
+      },
+      {
+        "id": 125,
+        "work_title": "Po\u00e8mes de St\u00e9phane Mallarm\u00e9\n Soupir: Mon \u00e2me vers ton front o\u00f9 r\u00eave, \u00f4 calme s\u0153ur\n Placet futile: Princesse! \u00c0 jalouser le destin d'une H\u00e9b\u00e9\n \u00c9vantail: \u00d4 r\u00eaveuse pour que je plonge",
+        "composition_year": 1913,
+        "opus": "135",
+        "opus_number": -1
+      },
+      {
+        "id": 126,
+        "work_title": "La bo\u00eete \u00e0 joujoux",
+        "composition_year": 1913,
+        "opus": "136",
+        "opus_number": -1
+      },
+      {
+        "id": 127,
+        "work_title": "Syrynx",
+        "composition_year": 1913,
+        "opus": "137",
+        "opus_number": -1
+      },
+      {
+        "id": 128,
+        "work_title": "Le palais du silence ou NO-JA-LI",
+        "composition_year": 1914,
+        "opus": "138",
+        "opus_number": -1
+      },
+      {
+        "id": 129,
+        "work_title": "Six \u00e9pigraphes antiques\n Pour invoquer Pan\n Pour un tombeau sans nom\n Pour que la nuit soit propice\n Pour la danseuse aux crotales\n Pour l'\u00e9gyptienne\n Pour remercier la pluie au matin",
+        "composition_year": 1914,
+        "opus": "139",
+        "opus_number": -1
+      },
+      {
+        "id": 130,
+        "work_title": "Berceuse hero\u00efque",
+        "composition_year": 1914,
+        "opus": "140",
+        "opus_number": -1
+      },
+      {
+        "id": 131,
+        "work_title": "Pi\u00e8ce pour le V\u00eatement du bless\u00e9",
+        "composition_year": 1915,
+        "opus": "141",
+        "opus_number": -1
+      },
+      {
+        "id": 132,
+        "work_title": "En blanc et noir",
+        "composition_year": 1915,
+        "opus": "142",
+        "opus_number": -1
+      },
+      {
+        "id": 133,
+        "work_title": "Cello Sonata",
+        "composition_year": 1915,
+        "opus": "144",
+        "opus_number": -1
+      },
+      {
+        "id": 134,
+        "work_title": "\u00c9tudes\n Pour les cinq doigts\n Pour les tierces\n Pour les quartes\n Pour les sixtes\n Pour les octaves\n Pour les huit doigts\n Pour les degr\u00e9s chromatiques\n Pour les agr\u00e9ments\n Pour les notes r\u00e9p\u00e9t\u00e9es\n Pour les sonorit\u00e9s oppos\u00e9es\n Pour les arp\u00e8ges compos\u00e9s\n Pour les accords",
+        "composition_year": 1915,
+        "opus": "143",
+        "opus_number": -1
+      },
+      {
+        "id": 135,
+        "work_title": "Sonata for harp, flute, and viola",
+        "composition_year": 1915,
+        "opus": "145",
+        "opus_number": -1
+      },
+      {
+        "id": 136,
+        "work_title": "\u00c9l\u00e9gie",
+        "composition_year": 1915,
+        "opus": "146",
+        "opus_number": -1
+      },
+      {
+        "id": 137,
+        "work_title": "No\u00ebl des enfants qui n'ont plus de maison: Nous n'avons plus de maison",
+        "composition_year": 1915,
+        "opus": "147",
+        "opus_number": -1
+      },
+      {
+        "id": 138,
+        "work_title": "Violin Sonata",
+        "composition_year": 1916,
+        "opus": "148",
+        "opus_number": -1
+      },
+      {
+        "id": 139,
+        "work_title": "Ode \u00e0 la France: Les troupeaux vont par les champs d\u00e9sert\u00e9s",
+        "composition_year": 1916,
+        "opus": "149",
+        "opus_number": -1
+      },
+      {
+        "id": 140,
+        "work_title": "Les Papillions",
+        "composition_year": 1881,
+        "opus": "21",
+        "opus_number": -1
+      },
+      {
+        "id": 141,
+        "work_title": "Les soirs illumin\u00e9s par l'ardeur du charbon",
+        "composition_year": 1917,
+        "opus": "150",
+        "opus_number": -1
+      },
+      {
+        "id": 142,
+        "work_title": "Les baiser: Plus de fois dans tes bras charmants",
+        "composition_year": 1881,
+        "opus": "9",
+        "opus_number": -1
+      },
+      {
+        "id": 143,
+        "work_title": "Andante cantabile for piano, four hands",
+        "composition_year": 1881,
+        "opus": "10",
+        "opus_number": -1
+      },
+      {
+        "id": 144,
+        "work_title": "Diane Ouverture for piano, four hands",
+        "composition_year": 1881,
+        "opus": "20",
+        "opus_number": -1
+      },
+      {
+        "id": 145,
+        "work_title": "Les Elfes",
+        "composition_year": 1881,
+        "opus": "25",
+        "opus_number": -1
+      }
+    ]
   }
 ]
