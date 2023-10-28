@@ -11,6 +11,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 import Header from "./components/Header";
 
 import { useLoaderData } from "react-router-dom";
+import Share from "./components/Share";
 
 type GameState = "guessing" | "won" | "lost";
 
@@ -122,6 +123,7 @@ function App() {
           role="alert"
         >
           {params.text}
+          {gameState === "won" && <Share guesses={guesses} dailyPuzzle={currentPuzzle(puzzleCategoryData)}/>}
         </div>
       </div>
     );
