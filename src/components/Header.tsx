@@ -22,7 +22,7 @@ function Header(props: Props) {
                     onMouseDown={(e) => e.preventDefault()}
                     onClick={() => {
                         setDropdownOpen(false);
-                        navigate(`/music-wordle/${category.toLowerCase()}`);
+                        navigate(`/sheet-musicle/${category.toLowerCase()}`);
                     }}
                 >{category}</button>
             </li>
@@ -73,7 +73,7 @@ function Header(props: Props) {
                 <div className="ml-2">
                     <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
                     >
-                        <span>Sheet Musicdle</span>
+                        <span>Sheet Musicle</span>
                         <img src={eighthNote} className="inline h-6 pb-[3px] w-6" />
                     </a>
                 </div>
