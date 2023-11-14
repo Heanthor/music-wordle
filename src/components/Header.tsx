@@ -22,7 +22,7 @@ function Header(props: Props) {
                     onMouseDown={(e) => e.preventDefault()}
                     onClick={() => {
                         setDropdownOpen(false);
-                        navigate(`/sheet-musicle/${category.toLowerCase()}`);
+                        navigate(`/${category.toLowerCase()}`);
                     }}
                 >{category}</button>
             </li>

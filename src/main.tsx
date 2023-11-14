@@ -11,12 +11,12 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/sheet-musicle/",
+    path: "/",
     element: <App />,
     loader: categoryLoader
   },
   {
-    path: "/sheet-musicle/:puzzleCategory",
+    path: "/:puzzleCategory",
     element: <App />,
     loader: categoryLoader
   },
