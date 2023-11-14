@@ -67,7 +67,7 @@ const pianoPuzzles: DailyPuzzle[] = [
   {
     puzzleDate: new Date("2023-10-18"),
     // brahms intermezzo 118 no. 2
-    puzzleAnswer: getComposerWorkByID(5, 334),
+    puzzleAnswer: getComposerWorkByID(5, 565),
     sheetSource: piano5,
   },
 ];

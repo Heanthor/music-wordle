@@ -377,7 +377,11 @@ def scrape_imslp_page(composer: str, page_text: str) -> list[ScrapedWork]:
             if re.search(".+\s*No\.\s*\d+", work_title):
                 key_text = tds[key_col].text.strip()
                 work_title += " in " + key_text
-        elif work_title == "Impromptu" or work_title == "Etude-tableau":
+        elif (
+            work_title == "Impromptu"
+            or work_title == "Etude-tableau"
+            or work_title == "Intermezzo"
+        ):
             key_text = tds[key_col].text.strip()
             work_title += " in " + key_text
 
