@@ -1,6 +1,6 @@
 import { PuzzleCategory, puzzleCategories } from "./dailyPuzzle";
 
-import {  Params } from "react-router-dom";
+import { Params } from "react-router-dom";
 
 
 export const categoryLoader = ({ params }: { params: Params<string> }) => {
