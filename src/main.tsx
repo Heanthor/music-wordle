@@ -7,17 +7,33 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import {
+  // useQuery,
+  // useMutation,
+  // useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import './index.css'
+
+const queryClient = new QueryClient();
+
+const rootApp = <QueryClientProvider client={queryClient}>
+  <App />
+  <ReactQueryDevtools initialIsOpen={false} />
+</QueryClientProvider>;
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: rootApp,
     loader: categoryLoader
   },
   {
     path: "/:puzzleCategory",
-    element: <App />,
+    element: rootApp,
     loader: categoryLoader
   },
 ]);

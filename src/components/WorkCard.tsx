@@ -1,7 +1,9 @@
 import { ReactNode } from "react";
-import { ComposerWork, getYearRangesByComposerId } from "../composerWork";
+import { ComposerWork } from "../composerWork";
 import { PuzzleCategory, currentPuzzle } from "../dailyPuzzle";
 import { useLoaderData } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { getComposerDateRange } from "../fetchers";
 
 type Props = {
     guess: ComposerWork;
@@ -12,11 +14,20 @@ function WorkCard(props: Props) {
 
     const { guess } = props;
     const { puzzleAnswer } = currentPuzzle(puzzleCategory);
-    const yearRange = getYearRangesByComposerId()[puzzleAnswer.composer];
+
+    // const yearRange = getYearRangesByComposerId()[puzzleAnswer.composer];
 
     const composerCorrect = (guess: ComposerWork): boolean =>
         guess.composer === puzzleAnswer.composer;
     const correct = puzzleAnswer.equals(guess);
+    const useDateRangeHook = (composerId: number) => useQuery({
+        queryKey: ["date-range", { composerId: composerId }],
+        queryFn: () => getComposerDateRange(composerId),
+    });
+
+    // api call to retrieve all supported composers
+    const guessedComposerDateRange = useDateRangeHook(guess.composerId);
+    const answerComposerDateRange = useDateRangeHook(puzzleAnswer.composerId);
 
     const renderHint = (): string | null => {
         if (!composerCorrect(guess) || (composerCorrect(guess) && correct)) {
@@ -24,7 +35,19 @@ function WorkCard(props: Props) {
             return null;
         }
 
-        const dateDiff = Math.abs(guess.compositionYear - puzzleAnswer.compositionYear);
+        if (guessedComposerDateRange.isPending || answerComposerDateRange.isPending) {
+            return "-";
+        }
+
+        if (guessedComposerDateRange.isError || answerComposerDateRange.isError) {
+            console.log("error fetching date range")
+            return "";
+        }
+
+        const yearRange = answerComposerDateRange.data?.max - answerComposerDateRange.data?.min || 0;
+        const dateDiff = Math.abs(
+            guess.compositionYear - puzzleAnswer.compositionYear
+        );
         let bigDiff = false;
         if (dateDiff / yearRange > 0.3) {
             bigDiff = true;
@@ -34,7 +57,7 @@ function WorkCard(props: Props) {
         } else if (guess.compositionYear > puzzleAnswer.compositionYear) {
             return bigDiff ? "Composed much later" : "Composed later";
         } else {
-            return "Composed same year!"
+            return "Composed same year!";
         }
     };
 
@@ -45,13 +68,16 @@ function WorkCard(props: Props) {
         <div className="flex justify-between">
             <span>{text}</span>
             <div className="inline">
-                <span className="text-xs md:text-sm font-light mr-1 text-neutral-300">{renderHint()}</span>
+                <span className="text-xs md:text-sm font-light mr-1 text-neutral-300">
+                    {renderHint()}
+                </span>
                 <span>{correct ? "✅" : "❌"}</span>
             </div>
         </div>
     );
 
-    const constructWorkText = (guess: ComposerWork): string => `${guess.work} (${guess.compositionYear})`;
+    const constructWorkText = (guess: ComposerWork): string =>
+        `${guess.work} (${guess.compositionYear})`;
 
     return (
         <div
