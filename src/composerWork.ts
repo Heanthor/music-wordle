@@ -34,21 +34,3 @@ export class ComposerWork {
     );
   }
 }
-
-export const getComposerWorkByID = (
-  composerID: number,
-  workID: number
-): ComposerWork => {
-  // TODO: brittle, just so happens the IDs the same order they are present in the document
-  const composer = worksByComposer[composerID];
-  const work = worksByComposer[composerID].works[workID];
-
-  return new ComposerWork(
-    composer.fullname,
-    work.work_title,
-    work.composition_year,
-    work.opus,
-    work.opus_number
-  );
-};
-

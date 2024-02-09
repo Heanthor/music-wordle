@@ -1,12 +1,27 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import React, { useState } from "react";
-import Select, { ActionMeta, OnChangeValue, StylesConfig, createFilter, components, ValueContainerProps } from "react-select";
-import worksByComposer from "../assets/parsed_composers.json";
-import { ComposerWork, getComposerWorkByID } from "./../composerWork";
-import { PuzzleCategory, currentPuzzle } from "./../dailyPuzzle";
+import React, { useState, useEffect } from "react";
+import Select, {
+    ActionMeta,
+    OnChangeValue,
+    StylesConfig,
+    createFilter,
+    components,
+    ValueContainerProps,
+} from "react-select";
+// import worksByComposer from "../assets/parsed_composers.json";
+import { ComposerWork } from "./../composerWork";
+import { PuzzleCategory } from "./../dailyPuzzle";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
 
 import { useLoaderData } from "react-router-dom";
+
+import { useQuery } from "@tanstack/react-query";
+import {
+    getComposers,
+    getWorksByComposerId,
+    ComposerResponse,
+    WorkResponse
+} from "../fetchers";
 
 type Props = {
     onSubmit: (guess: ComposerWork) => void;
@@ -30,8 +45,7 @@ const ValueContainer = ({
 }: ValueContainerProps<ChoiceOption>) => (
     <components.ValueContainer {...props}>
         {/* @ts-ignore */}
-        {React.Children.map(children, child => child && child.type !== components.Placeholder ? child : null
-        )}
+        {React.Children.map(children, child => child && child.type !== components.Placeholder ? child : null)}
         {/* @ts-ignore */}
         <components.Placeholder {...props} isFocused={props.isFocused}>
             {props.selectProps.placeholder}
@@ -40,52 +54,116 @@ const ValueContainer = ({
 );
 
 function GuessInput({ onSubmit }: Props) {
-    const renderWorkChoiceLine = (work: ComposerWork, composerID: number): string => {
+    const renderWorkChoiceLine = (
+        work: WorkResponse,
+        composerID: number
+    ): string => {
         let prefix = "Op. ";
         if (hasKey(catalogPrefixes, composerID)) {
             prefix = catalogPrefixes[composerID];
         }
 
-        const opusString = `(${prefix}${work.opus}${work.opusNumber && work.opusNumber >= 0 ? ` #${work.opusNumber}` : ""})`;
-        const workValue = `${opusString} ${work.work}`;
+        const opusString = `(${prefix}${work.opus}${work.opusNumber && work.opusNumber >= 0 ? ` #${work.opusNumber}` : ""
+            })`;
+        const workValue = `${opusString} ${work.workTitle}`;
 
         return workValue;
     };
 
-    const allComposerOptions = worksByComposer.map((composer) => {
-        return {
-            value: composer.id,
-            label: composer.fullname,
-            isFixed: false,
-        };
-    }).sort((a, b) => a.label.localeCompare(b.label));
-    const composerMap: { [key: string]: ChoiceOption[] } = {};
+    const composerOptions = useQuery({
+        queryKey: ["composers"],
+        queryFn: getComposers,
+        select: React.useCallback(
+            (data: ComposerResponse[]) =>
+                data
+                    .map((composer) => {
+                        return {
+                            value: composer.id,
+                            label: composer.fullName,
+                            isFixed: false,
+                        };
+                    })
+                    .sort((a, b) => a.label.localeCompare(b.label)),
+            []
+        ),
+    });
 
-    for (const entry of worksByComposer) {
-        composerMap[entry.id] = entry.works.map((work) => {
-            const cw = getComposerWorkByID(entry.id, work.id);
+    // const composerMap: { [key: string]: ChoiceOption[] } = {};
 
-            return {
-                value: work.id,
-                label: renderWorkChoiceLine(cw, entry.id),
-                isFixed: false,
-            };
-        });
-    }
+    // for (const entry of worksByComposer) {
+    //     composerMap[entry.id] = entry.works.map((work) => {
+    //         const cw = getComposerWorkByID(entry.id, work.id);
+
+    //         return {
+    //             value: work.id,
+    //             label: renderWorkChoiceLine(cw, entry.id),
+    //             isFixed: false,
+    //         };
+    //     });
+    // }
 
     const defaultPlaceholderText = "Enter composer...";
 
     const puzzleCategory = useLoaderData() as PuzzleCategory;
 
-    const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(allComposerOptions);
-    const [selectedOptions, setSelectedOptions] = useState<readonly ChoiceOption[]>([]);
-    const [placeholderText, setPlaceholderText] = useState(defaultPlaceholderText);
+    const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(
+        []
+    );
+    useEffect(() => {
+        if (
+            currentOptions.length === 0 &&
+            !composerOptions.isPending &&
+            !composerOptions.isError
+        ) {
+            setCurrentOptions(composerOptions.data);
+        }
+    }, [currentOptions, composerOptions]);
+
+    const [selectedOptions, setSelectedOptions] = useState<
+        readonly ChoiceOption[]
+    >([]);
+
+    const [selectedComposerId, setSelectedComposerId] = useState<number | null>();
+
+    const worksByComposerId = useQuery({
+        queryKey: ["works", selectedComposerId],
+        queryFn: () => getWorksByComposerId(selectedComposerId || 0),
+        enabled: selectedComposerId !== null,
+    });
+
+    useEffect(() => {
+        if (!worksByComposerId.isError && !worksByComposerId.isPending) {
+            const transformed = worksByComposerId.data
+                .map((work) => {
+                    return {
+                        value: work.id,
+                        label: renderWorkChoiceLine(work, selectedComposerId || 0),
+                        isFixed: false,
+                    };
+                })
+            setCurrentOptions(transformed);
+        }
+    }, [selectedComposerId, worksByComposerId]);
+
+    const [placeholderText, setPlaceholderText] = useState(
+        defaultPlaceholderText
+    );
 
     const resetToInitial = () => {
-        setCurrentOptions(allComposerOptions);
+        if (
+            currentOptions.length === 0 &&
+            !composerOptions.isPending &&
+            !composerOptions.isError
+        ) {
+            setCurrentOptions(composerOptions.data);
+        } else {
+            console.log("Could not set currentOptions to initial");
+            setCurrentOptions([]);
+        }
+
         setSelectedOptions([]);
         setPlaceholderText(defaultPlaceholderText);
-    }
+    };
 
     const orderOptions = (values: readonly ChoiceOption[]) => {
         return values
@@ -93,12 +171,16 @@ function GuessInput({ onSubmit }: Props) {
             .concat(values.filter((v) => !v.isFixed));
     };
 
-    const isComposerCorrect = (composer: string): boolean => composer === currentPuzzle(puzzleCategory).puzzleAnswer.composer;
+    const isComposerCorrect = (composer: string): boolean =>
+        composer === currentPuzzle(puzzleCategory).puzzleAnswer.composer;
 
-    const onSelectChange = (option: OnChangeValue<ChoiceOption, true>, actionMeta: ActionMeta<ChoiceOption>) => {
+    const onSelectChange = (
+        option: OnChangeValue<ChoiceOption, true>,
+        actionMeta: ActionMeta<ChoiceOption>
+    ) => {
         switch (actionMeta.action) {
-            case 'remove-value':
-            case 'pop-value':
+            case "remove-value":
+            case "pop-value":
                 if (actionMeta.removedValue.isFixed) {
                     return;
                 }
@@ -132,19 +214,21 @@ function GuessInput({ onSubmit }: Props) {
 
     const styles: StylesConfig<ChoiceOption, true> = {
         multiValue: (base, state) => {
-            return state.data.isFixed ? { ...base, backgroundColor: '#06b6d4', borderRadius: "4px" } : base;
+            return state.data.isFixed
+                ? { ...base, backgroundColor: "#06b6d4", borderRadius: "4px" }
+                : base;
         },
         multiValueLabel: (base, state) => {
             return state.data.isFixed
-                ? { ...base, fontWeight: 'bold', color: 'white', paddingRight: 6 }
+                ? { ...base, fontWeight: "bold", color: "white", paddingRight: 6 }
                 : base;
         },
         multiValueRemove: (base, state) => {
-            return state.data.isFixed ? { ...base, display: 'none' } : base;
+            return state.data.isFixed ? { ...base, display: "none" } : base;
         },
         input: (base) => {
             return { ...base, flexGrow: 0 };
-        }
+        },
     };
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -163,7 +247,9 @@ function GuessInput({ onSubmit }: Props) {
                 }
                 const composerID = selectedOptions[0].value;
                 const workID = selectedOptions[1].value;
-                const guess = getComposerWorkByID(composerID, workID);
+                setSelectedComposerId(composerID);
+                // const guess = getComposerWorkByID(composerID, workID);
+                const guess = worksByComposerId.data?.find((work) => work.id === workID);
                 onSubmit(guess);
                 if (guess.equals(currentPuzzle(puzzleCategory).puzzleAnswer)) {
                     // game is over, clear out the box
@@ -175,8 +261,9 @@ function GuessInput({ onSubmit }: Props) {
                     fixedComposer.isFixed = true;
                     setSelectedOptions([fixedComposer]);
 
-                    const workOptions = composerMap[composerID];
-                    setCurrentOptions(workOptions);
+                    // TODO if composerID is stored as state, the dependent query will refresh when it changes
+                    // but, how can that set currentOptions?
+                    setSelectedComposerId(composerID);
                 } else {
                     resetToInitial();
                 }

@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 import { ComposerWork } from "../composerWork";
-import { PuzzleCategory, currentPuzzle } from "../dailyPuzzle";
+import { PuzzleCategory } from "../dailyPuzzle";
 import { useLoaderData } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getComposerDateRange } from "../fetchers";
+import { getComposerDateRange, getLatestPuzzle } from "../fetchers";
 
 type Props = {
     guess: ComposerWork;
@@ -13,21 +13,21 @@ function WorkCard(props: Props) {
     const puzzleCategory = useLoaderData() as PuzzleCategory;
 
     const { guess } = props;
-    const { puzzleAnswer } = currentPuzzle(puzzleCategory);
+    const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
 
-    // const yearRange = getYearRangesByComposerId()[puzzleAnswer.composer];
-
+    const hasData = !puzzleAnswer.isError && !puzzleAnswer.isPending
     const composerCorrect = (guess: ComposerWork): boolean =>
-        guess.composer === puzzleAnswer.composer;
-    const correct = puzzleAnswer.equals(guess);
-    const useDateRangeHook = (composerId: number) => useQuery({
-        queryKey: ["date-range", { composerId: composerId }],
+        hasData && guess.composer === puzzleAnswer.data.puzzleAnswer.composer;
+    const correct = hasData && puzzleAnswer.data.puzzleAnswer.equals(guess);
+    const useDateRangeHook = (composerId: number, enabled: boolean) => useQuery({
+        queryKey: ["date-range", { composerId }],
         queryFn: () => getComposerDateRange(composerId),
+        enabled: enabled,
     });
 
     // api call to retrieve all supported composers
-    const guessedComposerDateRange = useDateRangeHook(guess.composerId);
-    const answerComposerDateRange = useDateRangeHook(puzzleAnswer.composerId);
+    const guessedComposerDateRange = useDateRangeHook(guess.composerId, true);
+    const answerComposerDateRange = useDateRangeHook(puzzleAnswer.data?.puzzleAnswer.composerId || 0, hasData);
 
     const renderHint = (): string | null => {
         if (!composerCorrect(guess) || (composerCorrect(guess) && correct)) {
@@ -39,6 +39,10 @@ function WorkCard(props: Props) {
             return "-";
         }
 
+        if (!hasData) {
+            return "-";
+        }
+
         if (guessedComposerDateRange.isError || answerComposerDateRange.isError) {
             console.log("error fetching date range")
             return "";
@@ -46,15 +50,15 @@ function WorkCard(props: Props) {
 
         const yearRange = answerComposerDateRange.data?.max - answerComposerDateRange.data?.min || 0;
         const dateDiff = Math.abs(
-            guess.compositionYear - puzzleAnswer.compositionYear
+            guess.compositionYear - puzzleAnswer.data.puzzleAnswer.compositionYear
         );
         let bigDiff = false;
         if (dateDiff / yearRange > 0.3) {
             bigDiff = true;
         }
-        if (guess.compositionYear < puzzleAnswer.compositionYear) {
+        if (guess.compositionYear < puzzleAnswer.data.puzzleAnswer.compositionYear) {
             return bigDiff ? "Composed much earlier" : "Composed earlier";
-        } else if (guess.compositionYear > puzzleAnswer.compositionYear) {
+        } else if (guess.compositionYear > puzzleAnswer.data.puzzleAnswer.compositionYear) {
             return bigDiff ? "Composed much later" : "Composed later";
         } else {
             return "Composed same year!";

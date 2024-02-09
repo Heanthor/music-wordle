@@ -1,6 +1,6 @@
 import { useState, ReactNode } from "react";
 import { ComposerWork } from "./composerWork";
-import { PuzzleCategory, currentPuzzle } from "./dailyPuzzle";
+import { PuzzleCategory } from "./dailyPuzzle";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -13,6 +13,9 @@ import Header from "./components/Header";
 import { useLoaderData } from "react-router-dom";
 import Share from "./components/Share";
 
+import { useQuery } from "@tanstack/react-query";
+import { getLatestPuzzle } from "./fetchers";
+
 type GameState = "guessing" | "won" | "lost";
 
 
@@ -20,16 +23,21 @@ function App() {
   const MAX_GUESSES = 6;
 
   const puzzleCategoryData = useLoaderData() as PuzzleCategory;
+  const currentPuzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategoryData], queryFn: () => getLatestPuzzle(puzzleCategoryData) });
+
   const [gameState, setGameState] = useState<GameState>("guessing");
   const [guesses, setGuesses] = useState<ComposerWork[]>([]);
   const [error, setError] = useState("");
 
   const checkGameState = (newGuesses: ComposerWork[]) => {
+    if (currentPuzzleAnswer.isError || currentPuzzleAnswer.isPending) {
+      return;
+    }
+
     // lil state machine
     const mostRecentGuess = newGuesses.slice(-1)[0];
-    const puzzleAnswer = currentPuzzle(puzzleCategoryData).puzzleAnswer;
 
-    if (mostRecentGuess.equals(puzzleAnswer)) {
+    if (mostRecentGuess.equals(currentPuzzleAnswer.data.puzzleAnswer)) {
       setGameState("won");
     } else if (newGuesses.length === MAX_GUESSES) {
       setGameState("lost");
@@ -123,7 +131,7 @@ function App() {
           role="alert"
         >
           {params.text}
-          {gameState === "won" && <Share guesses={guesses} dailyPuzzle={currentPuzzle(puzzleCategoryData)}/>}
+          {gameState === "won" && currentPuzzleAnswer.data && <Share guesses={guesses} dailyPuzzle={currentPuzzleAnswer.data} />}
         </div>
       </div>
     );
@@ -150,7 +158,7 @@ function App() {
           <Zoom>
             <img
               className="mx-auto outline rounded-md"
-              src={currentPuzzle(puzzleCategoryData)?.sheetSource}
+              src={currentPuzzleAnswer.data?.sheetSource}
             />
           </Zoom>
         </div>

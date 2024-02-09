@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import { ComposerWork } from "../composerWork";
-import { PuzzleCategory, currentPuzzle } from "../dailyPuzzle";
+import { PuzzleCategory } from "../dailyPuzzle";
+import { useQuery } from "@tanstack/react-query";
+import { getLatestPuzzle } from "../fetchers";
 
 import { useLoaderData } from "react-router-dom";
 
@@ -12,10 +14,10 @@ function ComposerCard(props: Props) {
     const { guess } = props;
     const puzzleCategory = useLoaderData() as PuzzleCategory;
 
-    const { puzzleAnswer } = currentPuzzle(puzzleCategory);
+    const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
 
     const composerCorrect = (guess: ComposerWork): boolean =>
-        guess.composer === puzzleAnswer.composer;
+        !puzzleAnswer.isError && !puzzleAnswer.isPending && guess.composer === puzzleAnswer.data.puzzleAnswer.composer;
 
     const renderCardTitle = (
         text: string,
