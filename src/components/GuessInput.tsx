@@ -19,6 +19,7 @@ import { useQuery } from "@tanstack/react-query";
 import {
     getComposers,
     getWorksByComposerId,
+    getLatestPuzzle,
     ComposerResponse,
     WorkResponse
 } from "../fetchers";
@@ -70,7 +71,7 @@ function GuessInput({ onSubmit }: Props) {
         return workValue;
     };
 
-    const composerOptions = useQuery({
+    const { status: composerOptionsStatus, data: composerOptionsData, error: composerOptionsError } = useQuery({
         queryKey: ["composers"],
         queryFn: getComposers,
         select: React.useCallback(
@@ -88,42 +89,28 @@ function GuessInput({ onSubmit }: Props) {
         ),
     });
 
-    // const composerMap: { [key: string]: ChoiceOption[] } = {};
-
-    // for (const entry of worksByComposer) {
-    //     composerMap[entry.id] = entry.works.map((work) => {
-    //         const cw = getComposerWorkByID(entry.id, work.id);
-
-    //         return {
-    //             value: work.id,
-    //             label: renderWorkChoiceLine(cw, entry.id),
-    //             isFixed: false,
-    //         };
-    //     });
-    // }
-
     const defaultPlaceholderText = "Enter composer...";
 
     const puzzleCategory = useLoaderData() as PuzzleCategory;
+    const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
 
     const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(
         []
     );
     useEffect(() => {
-        if (
-            currentOptions.length === 0 &&
-            !composerOptions.isPending &&
-            !composerOptions.isError
-        ) {
-            setCurrentOptions(composerOptions.data);
+        console.log(composerOptionsStatus);
+        console.log(composerOptionsError);
+        if (composerOptionsStatus === 'success') {
+            console.log("setting currentOptions");
+            setCurrentOptions(composerOptionsData);
         }
-    }, [currentOptions, composerOptions]);
+    }, [composerOptionsStatus, composerOptionsData, composerOptionsError]);
 
     const [selectedOptions, setSelectedOptions] = useState<
         readonly ChoiceOption[]
     >([]);
 
-    const [selectedComposerId, setSelectedComposerId] = useState<number | null>();
+    const [selectedComposerId, setSelectedComposerId] = useState<number | null>(null);
 
     const worksByComposerId = useQuery({
         queryKey: ["works", selectedComposerId],
@@ -171,8 +158,8 @@ function GuessInput({ onSubmit }: Props) {
             .concat(values.filter((v) => !v.isFixed));
     };
 
-    const isComposerCorrect = (composer: string): boolean =>
-        composer === currentPuzzle(puzzleCategory).puzzleAnswer.composer;
+    const isComposerCorrect = (guess: ComposerWork): boolean =>
+        !puzzleAnswer.isError && !puzzleAnswer.isPending && guess.composer === puzzleAnswer.data.puzzleAnswer.composer;
 
     const onSelectChange = (
         option: OnChangeValue<ChoiceOption, true>,

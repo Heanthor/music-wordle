@@ -41,7 +41,25 @@ export type LatestPuzzleResponse = {
 export const getComposers = async () => {
   const response = await axios.get(baseURL + "composers/");
 
-  const responseData: Array<ComposerResponse> = response.data;
+  const responseData: Array<ComposerResponse> = response.data.map(
+    (e: {
+      id: number;
+      full_name: string;
+      first_name: string;
+      last_name: string;
+      born_year: number | null;
+      died_year: number | null;
+    }) => {
+      return {
+        id: e.id,
+        fullName: e.full_name,
+        firstName: e.first_name,
+        lastName: e.last_name,
+        bornYear: e.born_year,
+        diedYear: e.died_year,
+      };
+    }
+  );
   return responseData;
 };
 
