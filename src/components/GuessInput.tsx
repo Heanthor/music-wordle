@@ -8,7 +8,6 @@ import Select, {
     components,
     ValueContainerProps,
 } from "react-select";
-// import worksByComposer from "../assets/parsed_composers.json";
 import { ComposerWork } from "./../composerWork";
 import { PuzzleCategory } from "./../dailyPuzzle";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
@@ -75,19 +74,6 @@ function GuessInput({ onSubmit }: Props) {
     const { status: composerOptionsStatus, data: composerOptionsData } = useQuery({
         queryKey: ["composers"],
         queryFn: getComposers,
-        // select: React.useCallback(
-        //     (data: ComposerResponse[]) =>
-        //         data
-        //             .map((composer) => {
-        //                 return {
-        //                     value: composer.id,
-        //                     label: composer.fullName,
-        //                     isFixed: false,
-        //                 };
-        //             })
-        //             .sort((a, b) => a.label.localeCompare(b.label)),
-        //     []
-        // ),
     });
 
     const getComposerOptions = (data: ComposerResponse[]): ChoiceOption[] => {

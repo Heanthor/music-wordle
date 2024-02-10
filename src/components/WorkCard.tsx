@@ -26,8 +26,8 @@ function WorkCard(props: Props) {
     });
 
     // api call to retrieve all supported composers
-    const guessedComposerDateRange = useDateRangeHook(guess.composerId, true);
-    const answerComposerDateRange = useDateRangeHook(puzzleAnswer.data?.puzzleAnswer.composerId || 0, hasData);
+    const guessedComposerDateRange = useDateRangeHook(guess.composerId, composerCorrect(guess));
+    const answerComposerDateRange = useDateRangeHook(puzzleAnswer.data?.puzzleAnswer.composerId || 0, hasData && composerCorrect(guess));
 
     const renderHint = (): string | null => {
         if (!composerCorrect(guess) || (composerCorrect(guess) && correct)) {
