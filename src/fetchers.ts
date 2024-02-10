@@ -34,7 +34,7 @@ export type DateRangeResponse = {
 export type LatestPuzzleResponse = {
   id: number;
   date: string;
-  sheet_image_url: string;
+  sheetImageUrl: string;
   answer: WorkResponse & { composer: ComposerResponse };
 };
 
@@ -66,7 +66,15 @@ export const getComposers = async () => {
 export const getWorksByComposerId = async (composerId: number) => {
   const response = await axios.get(baseURL + "works/" + composerId);
 
-  const responseData: Array<WorkResponse> = response.data;
+  const responseData: Array<WorkResponse> = response.data.map((e: { id: number; work_title: string; composition_year: number; opus: string; opus_number: number; }) => {
+    return {
+      id: e.id,
+      workTitle: e.work_title,
+      compositionYear: e.composition_year,
+      opus: e.opus,
+      opusNumber: e.opus_number,
+    };
+  });
   return responseData;
 };
 
@@ -82,7 +90,26 @@ export const getComposerDateRange = async (composerId: number) => {
 export const getLatestPuzzle = async (category: string) => {
   const response = await axios.get(baseURL + "puzzles/" + category + "/latest");
 
-  const responseData: LatestPuzzleResponse = response.data;
+  const responseData: LatestPuzzleResponse = {
+    id: response.data.id,
+    date: response.data.date,
+    sheetImageUrl: response.data.sheet_image_url,
+    answer: {
+      id: response.data.answer.id,
+      workTitle: response.data.answer.work_title,
+      compositionYear: response.data.answer.composition_year,
+      opus: response.data.answer.opus,
+      opusNumber: response.data.answer.opus_number,
+      composer: {
+        id: response.data.answer.composer.id,
+        fullName: response.data.answer.composer.full_name,
+        firstName: response.data.answer.composer.first_name,
+        lastName: response.data.answer.composer.last_name,
+        bornYear: response.data.answer.composer.born_year,
+        diedYear: response.data.answer.composer.died_year,
+      },
+    },
+  };
   return asDailyPuzzle(responseData);
 };
 
@@ -97,6 +124,17 @@ const asDailyPuzzle = (response: LatestPuzzleResponse) => {
       response.answer.opus,
       response.answer.opusNumber
     ),
-    response.sheet_image_url
+    response.sheetImageUrl
   );
 };
+
+export const asComposerWork = (response: WorkResponse, composer: ComposerResponse) => {
+    return new ComposerWork(
+        composer.fullName,
+        composer.id,
+        response.workTitle,
+        response.compositionYear,
+        response.opus,
+        response.opusNumber
+    );
+}

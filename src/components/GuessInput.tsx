@@ -21,7 +21,8 @@ import {
     getWorksByComposerId,
     getLatestPuzzle,
     ComposerResponse,
-    WorkResponse
+    WorkResponse,
+    asComposerWork
 } from "../fetchers";
 
 type Props = {
@@ -71,23 +72,35 @@ function GuessInput({ onSubmit }: Props) {
         return workValue;
     };
 
-    const { status: composerOptionsStatus, data: composerOptionsData, error: composerOptionsError } = useQuery({
+    const { status: composerOptionsStatus, data: composerOptionsData } = useQuery({
         queryKey: ["composers"],
         queryFn: getComposers,
-        select: React.useCallback(
-            (data: ComposerResponse[]) =>
-                data
-                    .map((composer) => {
-                        return {
-                            value: composer.id,
-                            label: composer.fullName,
-                            isFixed: false,
-                        };
-                    })
-                    .sort((a, b) => a.label.localeCompare(b.label)),
-            []
-        ),
+        // select: React.useCallback(
+        //     (data: ComposerResponse[]) =>
+        //         data
+        //             .map((composer) => {
+        //                 return {
+        //                     value: composer.id,
+        //                     label: composer.fullName,
+        //                     isFixed: false,
+        //                 };
+        //             })
+        //             .sort((a, b) => a.label.localeCompare(b.label)),
+        //     []
+        // ),
     });
+
+    const getComposerOptions = (data: ComposerResponse[]): ChoiceOption[] => {
+        return data
+            .map((composer) => {
+                return {
+                    value: composer.id,
+                    label: composer.fullName,
+                    isFixed: false,
+                };
+            })
+            .sort((a, b) => a.label.localeCompare(b.label));
+    };
 
     const defaultPlaceholderText = "Enter composer...";
 
@@ -98,13 +111,10 @@ function GuessInput({ onSubmit }: Props) {
         []
     );
     useEffect(() => {
-        console.log(composerOptionsStatus);
-        console.log(composerOptionsError);
         if (composerOptionsStatus === 'success') {
-            console.log("setting currentOptions");
-            setCurrentOptions(composerOptionsData);
+            setCurrentOptions(getComposerOptions(composerOptionsData));
         }
-    }, [composerOptionsStatus, composerOptionsData, composerOptionsError]);
+    }, [composerOptionsStatus, composerOptionsData]);
 
     const [selectedOptions, setSelectedOptions] = useState<
         readonly ChoiceOption[]
@@ -112,37 +122,33 @@ function GuessInput({ onSubmit }: Props) {
 
     const [selectedComposerId, setSelectedComposerId] = useState<number | null>(null);
 
-    const worksByComposerId = useQuery({
+    const { data: composerWorksData, status: composerWorksStatus } = useQuery({
         queryKey: ["works", selectedComposerId],
         queryFn: () => getWorksByComposerId(selectedComposerId || 0),
         enabled: selectedComposerId !== null,
     });
 
     useEffect(() => {
-        if (!worksByComposerId.isError && !worksByComposerId.isPending) {
-            const transformed = worksByComposerId.data
-                .map((work) => {
-                    return {
-                        value: work.id,
-                        label: renderWorkChoiceLine(work, selectedComposerId || 0),
-                        isFixed: false,
-                    };
-                })
-            setCurrentOptions(transformed);
+        if (composerWorksStatus === "success") {
+            const worksAsOptions = composerWorksData.map((work) => {
+                return {
+                    value: work.id,
+                    label: renderWorkChoiceLine(work, selectedComposerId || 0),
+                    isFixed: false,
+                };
+            });
+            setCurrentOptions(worksAsOptions);
         }
-    }, [selectedComposerId, worksByComposerId]);
+    }, [composerWorksData, composerWorksStatus, selectedComposerId]);
 
     const [placeholderText, setPlaceholderText] = useState(
         defaultPlaceholderText
     );
 
     const resetToInitial = () => {
-        if (
-            currentOptions.length === 0 &&
-            !composerOptions.isPending &&
-            !composerOptions.isError
-        ) {
-            setCurrentOptions(composerOptions.data);
+        if (composerOptionsStatus === 'success') {
+            setCurrentOptions(getComposerOptions(composerOptionsData));
+            setSelectedComposerId(null);
         } else {
             console.log("Could not set currentOptions to initial");
             setCurrentOptions([]);
@@ -158,8 +164,8 @@ function GuessInput({ onSubmit }: Props) {
             .concat(values.filter((v) => !v.isFixed));
     };
 
-    const isComposerCorrect = (guess: ComposerWork): boolean =>
-        !puzzleAnswer.isError && !puzzleAnswer.isPending && guess.composer === puzzleAnswer.data.puzzleAnswer.composer;
+    const isComposerCorrect = (composerID: number): boolean =>
+        !puzzleAnswer.isError && !puzzleAnswer.isPending && composerID === puzzleAnswer.data.puzzleAnswer.composerId;
 
     const onSelectChange = (
         option: OnChangeValue<ChoiceOption, true>,
@@ -186,16 +192,15 @@ function GuessInput({ onSubmit }: Props) {
             newOption.pop();
         }
 
+        const composer = newOption[0].value;
         if (newOption.length === 1) {
             // only a composer is selected
             setPlaceholderText("Select a work...");
+            setSelectedComposerId(composer);
         } else if (newOption.length === 2) {
             setPlaceholderText("");
         }
 
-        const composer = newOption[0].value;
-        const workOptions = composerMap[composer];
-        setCurrentOptions(workOptions);
         setSelectedOptions(orderOptions(newOption));
     };
 
@@ -234,15 +239,27 @@ function GuessInput({ onSubmit }: Props) {
                 }
                 const composerID = selectedOptions[0].value;
                 const workID = selectedOptions[1].value;
-                setSelectedComposerId(composerID);
-                // const guess = getComposerWorkByID(composerID, workID);
-                const guess = worksByComposerId.data?.find((work) => work.id === workID);
-                onSubmit(guess);
-                if (guess.equals(currentPuzzle(puzzleCategory).puzzleAnswer)) {
+
+                const guess = composerWorksData?.find((work) => work.id === workID);
+                if (!guess) {
+                    // this should never happen
+                    console.error("Could not find work with ID", workID);
+                    return;
+                }
+
+                const guessComposer = composerOptionsData?.find((composer) => composer.id === composerID);
+                if (!guessComposer) {
+                    // this should never happen
+                    console.error("Could not find composer with ID", composerID);
+                    return;
+                }
+                const cw = asComposerWork(guess, guessComposer);
+                onSubmit(cw);
+                if (puzzleAnswer.status === "success" && puzzleAnswer.data.puzzleAnswer.equals(cw)) {
                     // game is over, clear out the box
                     resetToInitial();
                     setPlaceholderText("");
-                } else if (isComposerCorrect(guess.composer)) {
+                } else if (isComposerCorrect(selectedComposerId || 0)) {
                     // set options back to works, and preserve the selected composer
                     const fixedComposer = selectedOptions[0];
                     fixedComposer.isFixed = true;
