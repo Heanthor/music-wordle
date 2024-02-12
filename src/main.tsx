@@ -8,9 +8,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import {
-  // useQuery,
-  // useMutation,
-  // useQueryClient,
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';

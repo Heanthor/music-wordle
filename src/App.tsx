@@ -15,6 +15,7 @@ import Share from "./components/Share";
 
 import { useQuery } from "@tanstack/react-query";
 import { getLatestPuzzle } from "./fetchers";
+import PuzzlePicker from "./components/PuzzlePicker";
 
 type GameState = "guessing" | "won" | "lost";
 
@@ -150,6 +151,7 @@ function App() {
           <p className="text-neutral-50 text-sm pl-2 pt-1">
             I am adding more composers...
           </p>
+          <PuzzlePicker />
         </div>
         <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
           Guess the composer and title of the following work:
