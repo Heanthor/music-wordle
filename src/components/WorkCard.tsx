@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { ComposerWork } from "../composerWork";
-import { PuzzleCategory } from "../dailyPuzzle";
+import { CategoryPuzzleIDLoaderData } from "../loaders";
 import { useLoaderData } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getComposerDateRange, getLatestPuzzle } from "../fetchers";
@@ -10,7 +10,8 @@ type Props = {
 };
 
 function WorkCard(props: Props) {
-    const puzzleCategory = useLoaderData() as PuzzleCategory;
+    const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
+    const puzzleCategory = routeData.puzzleCategory;
 
     const { guess } = props;
     const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });

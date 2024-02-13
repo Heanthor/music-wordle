@@ -9,7 +9,7 @@ import Select, {
     ValueContainerProps,
 } from "react-select";
 import { ComposerWork } from "./../composerWork";
-import { PuzzleCategory } from "./../dailyPuzzle";
+import { CategoryPuzzleIDLoaderData } from "../loaders";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
 
 import { useLoaderData } from "react-router-dom";
@@ -90,7 +90,9 @@ function GuessInput({ onSubmit }: Props) {
 
     const defaultPlaceholderText = "Enter composer...";
 
-    const puzzleCategory = useLoaderData() as PuzzleCategory;
+    const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
+    const puzzleCategory = routeData.puzzleCategory;
+
     const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
 
     const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(

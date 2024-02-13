@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import { categoryLoader } from "./loaders";
+import { categoryPuzzleIDLoader } from "./loaders";
 
 import {
   createBrowserRouter,
@@ -26,12 +26,17 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: rootApp,
-    loader: categoryLoader
+    loader: categoryPuzzleIDLoader
   },
   {
-    path: "/:puzzleCategory",
+    path: "/:puzzleCategory/",
     element: rootApp,
-    loader: categoryLoader
+    loader: categoryPuzzleIDLoader
+  },
+  {
+    path: "/:puzzleCategory/:puzzleID",
+    element: rootApp,
+    loader: categoryPuzzleIDLoader
   },
 ]);
 

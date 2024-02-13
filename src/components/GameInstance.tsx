@@ -7,6 +7,7 @@ import "react-medium-image-zoom/dist/styles.css";
 import PlaceholderRow from "./PlaceholderRow";
 import GuessInput from "./GuessInput";
 import GuessRow from "./GuessRow";
+import PuzzlePicker from "./PuzzlePicker";
 import ConfettiExplosion from "react-confetti-explosion";
 
 import Share from "./Share";
@@ -164,7 +165,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     return (
         <div className="container mx-auto text-center w-3/4">
             {gameState === "won" && renderConfetti()}
-            {/* <PuzzlePicker /> */}
+            <PuzzlePicker />
             <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
                 Guess the composer and title of the following work:
             </h1>

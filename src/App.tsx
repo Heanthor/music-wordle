@@ -1,12 +1,13 @@
 import GameInstance from "./components/GameInstance";
 import Header from "./components/Header";
-import { PuzzleCategory } from "./dailyPuzzle";
+import { CategoryPuzzleIDLoaderData } from "./loaders";
 
 import { useLoaderData } from "react-router-dom";
 
 function App() {
-  const puzzleCategory = useLoaderData() as PuzzleCategory;
-
+  const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
+  const puzzleCategory = routeData.puzzleCategory;
+  console.log(routeData);
   return (
     <div className="min-h-screen bg-blue-900">
       <Header puzzleCategory={puzzleCategory} />
