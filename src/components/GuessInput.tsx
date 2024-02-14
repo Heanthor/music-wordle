@@ -9,20 +9,19 @@ import Select, {
     ValueContainerProps,
 } from "react-select";
 import { ComposerWork } from "./../composerWork";
-import { CategoryPuzzleIDLoaderData } from "../loaders";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
 
-import { useLoaderData } from "react-router-dom";
 
 import { useQuery } from "@tanstack/react-query";
 import {
     getComposers,
     getWorksByComposerId,
-    getLatestPuzzle,
     ComposerResponse,
     WorkResponse,
     asComposerWork
 } from "../fetchers";
+
+import { usePuzzle } from "../hooks/queries";
 
 type Props = {
     onSubmit: (guess: ComposerWork) => void;
@@ -90,10 +89,7 @@ function GuessInput({ onSubmit }: Props) {
 
     const defaultPlaceholderText = "Enter composer...";
 
-    const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
-    const puzzleCategory = routeData.puzzleCategory;
-
-    const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
+    const puzzleAnswer = usePuzzle();
 
     const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(
         []

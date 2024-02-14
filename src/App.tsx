@@ -7,7 +7,7 @@ import { useLoaderData } from "react-router-dom";
 function App() {
   const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
   const puzzleCategory = routeData.puzzleCategory;
-  console.log(routeData);
+
   return (
     <div className="min-h-screen bg-blue-900">
       <Header puzzleCategory={puzzleCategory} />

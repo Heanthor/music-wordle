@@ -73,7 +73,9 @@ function Header(props: Props) {
                 <div className="ml-2">
                     <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
                     >
-                        <span>Sheet Musicle</span>
+                        <button onClick={() => {
+                            navigate("/" + puzzleCategory);
+                        }}>Sheet Musicle</button>
                         <img src={eighthNote} className="inline h-6 pb-[3px] w-6" />
                     </a>
                 </div>

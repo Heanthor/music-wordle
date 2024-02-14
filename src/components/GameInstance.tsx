@@ -12,8 +12,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 
 import Share from "./Share";
 
-import { useQuery } from "@tanstack/react-query";
-import { getLatestPuzzle } from "../fetchers";
+import { usePuzzle } from "../hooks/queries";
 
 type GameState = "guessing" | "won" | "lost";
 
@@ -26,23 +25,26 @@ type SavedGameState = {
 function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     const MAX_GUESSES = 6;
 
-    const currentPuzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
+    const { data: puzzleData, status: puzzleStatus } = usePuzzle();
 
     const [gameState, setGameState] = useState<GameState>("guessing");
     const [guesses, setGuesses] = useState<ComposerWork[]>([]);
     const [error, setError] = useState("");
 
-    const cacheKey = `game-state_${puzzleCategory}-${new Date().toISOString().substring(0, 10)}`;
+    const getCacheKey = useCallback(() => {
+        const ds = new Date().toLocaleString();
+        return `game-state_${puzzleCategory}-${ds.substring(0, ds.indexOf(","))}`;
+    }, [puzzleCategory]);
 
     const loadGameState = useCallback(() => {
-        const loadedState = JSON.parse(localStorage.getItem(cacheKey) || '{}') as SavedGameState;
+        const loadedState = JSON.parse(localStorage.getItem(getCacheKey()) || '{}') as SavedGameState;
         if (!loadedState.guesses || !loadedState.gameState) {
             return;
         }
 
         setGuesses(loadedState.guesses);
         setGameState(loadedState.gameState);
-    }, [cacheKey]);
+    }, [getCacheKey]);
 
     useEffect(() => {
         loadGameState();
@@ -50,19 +52,19 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
 
     useEffect(() => {
         if (guesses.length !== 0) {
-            localStorage.setItem(cacheKey, JSON.stringify({ guesses, gameState }));
+            localStorage.setItem(getCacheKey(), JSON.stringify({ guesses, gameState }));
         }
-    }, [guesses, gameState, cacheKey]);
+    }, [guesses, gameState, getCacheKey]);
 
     const checkGameState = (newGuesses: ComposerWork[]) => {
-        if (currentPuzzleAnswer.isError || currentPuzzleAnswer.isPending) {
+        if (puzzleStatus !== "success") {
             return;
         }
 
         // lil state machine
         const mostRecentGuess = newGuesses.slice(-1)[0];
 
-        if (mostRecentGuess.equals(currentPuzzleAnswer.data.puzzleAnswer)) {
+        if (mostRecentGuess.equals(puzzleData.puzzleAnswer)) {
             setGameState("won");
         } else if (newGuesses.length === MAX_GUESSES) {
             setGameState("lost");
@@ -156,7 +158,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
                     role="alert"
                 >
                     {params.text}
-                    {gameState === "won" && currentPuzzleAnswer.data && <Share guesses={guesses} dailyPuzzle={currentPuzzleAnswer.data} />}
+                    {gameState === "won" && puzzleData && <Share guesses={guesses} dailyPuzzle={puzzleData} />}
                 </div>
             </div>
         );
@@ -165,15 +167,15 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     return (
         <div className="container mx-auto text-center w-3/4">
             {gameState === "won" && renderConfetti()}
-            <PuzzlePicker />
+            <PuzzlePicker currentPuzzleNumber={puzzleData?.puzzleNumber} isLatest={puzzleData?.isLatestPuzzle || false} />
             <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
                 Guess the composer and title of the following work:
             </h1>
             <div className="pb-4">
                 <Zoom>
                     <img
-                        className="mx-auto outline rounded-md"
-                        src={currentPuzzleAnswer.data?.sheetSource}
+                        className="mx-auto outline rounded-md min-w-full"
+                        src={puzzleData?.sheetSource}
                     />
                 </Zoom>
             </div>

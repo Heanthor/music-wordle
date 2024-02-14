@@ -1,20 +1,16 @@
 import { ReactNode } from "react";
 import { ComposerWork } from "../composerWork";
-import { CategoryPuzzleIDLoaderData } from "../loaders";
-import { useLoaderData } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getComposerDateRange, getLatestPuzzle } from "../fetchers";
+import { getComposerDateRange } from "../fetchers";
+import { usePuzzle } from "../hooks/queries";
 
 type Props = {
     guess: ComposerWork;
 };
 
 function WorkCard(props: Props) {
-    const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
-    const puzzleCategory = routeData.puzzleCategory;
-
     const { guess } = props;
-    const puzzleAnswer = useQuery({ queryKey: ["latest-puzzle", puzzleCategory], queryFn: () => getLatestPuzzle(puzzleCategory) });
+    const puzzleAnswer = usePuzzle();
 
     const hasData = !puzzleAnswer.isError && !puzzleAnswer.isPending
     const composerCorrect = (guess: ComposerWork): boolean =>
