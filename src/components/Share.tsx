@@ -1,27 +1,28 @@
 import { useState } from "react";
 import { ComposerWork } from "../composerWork";
-import { DailyPuzzle} from "../dailyPuzzle";
+import { DailyPuzzle } from "../dailyPuzzle";
 
 type Props = {
     guesses: ComposerWork[];
     dailyPuzzle: DailyPuzzle;
 };
 
-function Share(props: Props) {    
+function Share(props: Props) {
     const { guesses, dailyPuzzle } = props;
     const [isTextCopied, setIsTextCopied] = useState(false);
 
     // Copy the puzzle date and the user's guesses to the clipboard to share on social media
     const copyShareToClipboard = (): void => {
         const puzzleAnswer = dailyPuzzle.puzzleAnswer;
-        let stringifiedGuesses = `Music Wordle ${dailyPuzzle.puzzleDate.toLocaleDateString()}\n`;
+        let stringifiedGuesses = `Sheet Musicle ${dailyPuzzle.puzzleDate.toLocaleDateString()}: Puzzle #${dailyPuzzle.getPuzzleShortTitle()}\n`;
         guesses.forEach((guess: ComposerWork) => {
-            stringifiedGuesses += (guess.composer === puzzleAnswer.composer ? "🟩" : "🟥");
-            stringifiedGuesses += (guess.work === puzzleAnswer.work ? "🟩\n" : "🟥\n");
+            stringifiedGuesses +=
+                guess.composer === puzzleAnswer.composer ? "🟩" : "🟥";
+            stringifiedGuesses += guess.work === puzzleAnswer.work ? "🟩\n" : "🟥\n";
         });
         navigator.clipboard.writeText(stringifiedGuesses);
         setIsTextCopied(true);
-    }
+    };
 
     return (
         <div className="mt-1">
@@ -31,7 +32,9 @@ function Share(props: Props) {
             >
                 <span>Share</span>
             </button>
-            { isTextCopied && <div className="mt-1">Copied results to clipboard ✅</div> }
+            {isTextCopied && (
+                <div className="mt-1">Copied results to clipboard ✅</div>
+            )}
         </div>
     );
 }

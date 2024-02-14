@@ -1,6 +1,6 @@
 import axios from "axios";
 import { ComposerWork } from "./composerWork";
-import { DailyPuzzle } from "./dailyPuzzle";
+import { DailyPuzzle, parseCategoryFromAbbreviation } from "./dailyPuzzle";
 
 const baseURLs = {
   dev: "http://127.0.0.1:8000/api/",
@@ -37,6 +37,7 @@ export type LatestPuzzleResponse = {
   sheetImageUrl: string;
   sequenceNumber: number;
   isLatest: boolean;
+  type: string;
   answer: WorkResponse & { composer: ComposerResponse };
 };
 
@@ -122,6 +123,7 @@ const parsePuzzleResponse = (response: any): DailyPuzzle => {
     sheetImageUrl: response.data.sheet_image_url,
     sequenceNumber: response.data.sequence_number,
     isLatest: response.data.is_latest,
+    type: response.data.type,
     answer: {
       id: response.data.answer.id,
       workTitle: response.data.answer.work_title,
@@ -155,7 +157,8 @@ const asDailyPuzzle = (response: LatestPuzzleResponse) => {
       response.answer.opus,
       response.answer.opusNumber
     ),
-    response.sheetImageUrl
+    response.sheetImageUrl,
+    parseCategoryFromAbbreviation(response.type)
   );
 };
 

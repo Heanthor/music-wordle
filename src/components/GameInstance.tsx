@@ -167,7 +167,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     return (
         <div className="container mx-auto text-center w-3/4">
             {gameState === "won" && renderConfetti()}
-            <PuzzlePicker currentPuzzleNumber={puzzleData?.puzzleNumber} isLatest={puzzleData?.isLatestPuzzle || false} />
+            <PuzzlePicker currentPuzzle={puzzleData} />
             <h1 className="text-xl md:text-2xl text-neutral-50 py-4 pt-1">
                 Guess the composer and title of the following work:
             </h1>
@@ -181,7 +181,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             </div>
             <div className="bg-gray-300 p-2 rounded-sm shadow-md mb-4">
                 {renderGameEndMessage()}
-                <GuessInput onSubmit={makeGuess} />
+                <GuessInput onSubmit={makeGuess} disabled={gameState === "won"} />
                 {error && renderError()}
             </div>
             <div className="bg-gray-300 p-2 rounded-sm shadow-md">

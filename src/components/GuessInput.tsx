@@ -25,6 +25,7 @@ import { usePuzzle } from "../hooks/queries";
 
 type Props = {
     onSubmit: (guess: ComposerWork) => void;
+    disabled: boolean;
 };
 
 type ChoiceOption = {
@@ -53,7 +54,7 @@ const ValueContainer = ({
     </components.ValueContainer>
 );
 
-function GuessInput({ onSubmit }: Props) {
+function GuessInput({ onSubmit, disabled }: Props) {
     const renderWorkChoiceLine = (
         work: WorkResponse,
         composerID: number
@@ -268,6 +269,7 @@ function GuessInput({ onSubmit }: Props) {
                 styles={styles}
                 filterOption={createFilter({ stringify: customStringify })}
                 components={{ ValueContainer }}
+                isDisabled={disabled}
             />
             <button
                 className="px-2 py-1 font-semibold text-sm bg-cyan-500 border-solid border-2 border-sky-700 text-neutral-50 rounded-lg md:rounded-lg shadow-sm w-full md:w-auto md:py-2 hover:bg-sky-600 align-middle"

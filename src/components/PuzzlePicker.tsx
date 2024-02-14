@@ -1,20 +1,20 @@
 import { useNavigate, useLoaderData } from "react-router-dom";
 import { CategoryPuzzleIDLoaderData } from "../loaders";
-import { getCategoryAbbreviation } from "../dailyPuzzle";
+import { DailyPuzzle } from "../dailyPuzzle";
 
 type Props = {
-    currentPuzzleNumber: number | undefined;
-    isLatest: boolean;
+    currentPuzzle: DailyPuzzle | undefined;
 };
 
-function PuzzlePicker({ currentPuzzleNumber, isLatest }: Props) {
+function PuzzlePicker({ currentPuzzle }: Props) {
     const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
     const navigate = useNavigate();
 
     const category = routeData.puzzleCategory;
 
-    const backDisabled = currentPuzzleNumber === 1;
-    const forwardDisabled = isLatest;
+    const backDisabled = currentPuzzle?.puzzleNumber === 1;
+    const forwardDisabled = currentPuzzle?.isLatestPuzzle;
+    const currentPuzzleNumber = currentPuzzle?.puzzleNumber;
 
     const disabledStyles = "bg-gray-500 text-gray-300 cursor-not-allowed";
     return (
@@ -29,7 +29,7 @@ function PuzzlePicker({ currentPuzzleNumber, isLatest }: Props) {
                 &lt;
             </button>
             <span className="mx-2 border-2 bg-indigo-500 p-2 rounded-md shadow-md text-left border-indigo-400">
-                {currentPuzzleNumber ? `Puzzle ${getCategoryAbbreviation(category) + currentPuzzleNumber}` : `Loading...`}
+                {currentPuzzle ? `Puzzle ${currentPuzzle.getPuzzleShortTitle()}` : `Loading...`}
             </span>
             <button className={`inline border-2 bg-blue-700 p-2 rounded-md shadow-md text-left border-blue-500 ${forwardDisabled ? disabledStyles : ""}}`}
                 onClick={() => {
