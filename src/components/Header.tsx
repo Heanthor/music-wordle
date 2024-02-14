@@ -71,7 +71,7 @@ function Header(props: Props) {
             data-te-navbar-ref>
             <div className="flex w-full flex-wrap items-center justify-between px-3">
                 <div className="ml-2">
-                    <a className="text-xl text-neutral-800 dark:text-neutral-200" href="#"
+                    <a className="font-serif text-xl text-neutral-800 dark:text-neutral-200" href="#"
                     >
                         <button onClick={() => {
                             navigate("/" + puzzleCategory);

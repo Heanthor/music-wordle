@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import GameInstance from "./components/GameInstance";
 import Header from "./components/Header";
 import { CategoryPuzzleIDLoaderData } from "./loaders";
@@ -9,7 +10,7 @@ function App() {
   const puzzleCategory = routeData.puzzleCategory;
 
   return (
-    <div className="min-h-screen bg-blue-900">
+    <div className="min-h-screen bg-blue-900 font-sans">
       <Header puzzleCategory={puzzleCategory} />
       <div className="container mx-auto text-center w-3/4">
         <div className="bg-blue-700 p-2 rounded-md shadow-md my-4 text-left border-blue-500 border-solid border-2">
@@ -23,6 +24,7 @@ function App() {
         </div>
       </div>
       <GameInstance puzzleCategory={puzzleCategory} key={puzzleCategory} />
+      <Footer />
     </div>
   )
 }
