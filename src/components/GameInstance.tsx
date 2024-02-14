@@ -168,7 +168,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
         <div className="container mx-auto text-center w-3/4">
             {gameState === "won" && renderConfetti()}
             <PuzzlePicker currentPuzzleNumber={puzzleData?.puzzleNumber} isLatest={puzzleData?.isLatestPuzzle || false} />
-            <h1 className="text-xl md:text-2xl text-neutral-50 py-4">
+            <h1 className="text-xl md:text-2xl text-neutral-50 py-4 pt-1">
                 Guess the composer and title of the following work:
             </h1>
             <div className="pb-4">

@@ -18,8 +18,8 @@ function PuzzlePicker({ currentPuzzleNumber, isLatest }: Props) {
 
     const disabledStyles = "bg-gray-500 text-gray-300 cursor-not-allowed";
     return (
-        <div className="text-neutral-50">
-            <button className={`inline border-2 bg-blue-700 p-2 rounded-md shadow-md my-4 text-left border-blue-500 ${backDisabled ? disabledStyles : ""}}`}
+        <div className="text-neutral-50 my-2">
+            <button className={`inline border-2 bg-blue-700 p-2 rounded-md shadow-mdtext-left border-blue-500 ${backDisabled ? disabledStyles : ""}}`}
                 onClick={() => {
                     if (!currentPuzzleNumber) return;
                     navigate(`/${category.toLowerCase()}/${currentPuzzleNumber - 1}`);
@@ -28,10 +28,10 @@ function PuzzlePicker({ currentPuzzleNumber, isLatest }: Props) {
             >
                 &lt;
             </button>
-            <span className="mx-2 border-2 bg-indigo-500 p-2 rounded-md shadow-md my-4 text-left border-indigo-400">
+            <span className="mx-2 border-2 bg-indigo-500 p-2 rounded-md shadow-md text-left border-indigo-400">
                 {currentPuzzleNumber ? `Puzzle ${getCategoryAbbreviation(category) + currentPuzzleNumber}` : `Loading...`}
             </span>
-            <button className={`inline border-2 bg-blue-700 p-2 rounded-md shadow-md my-4 text-left border-blue-500 ${forwardDisabled ? disabledStyles : ""}}`}
+            <button className={`inline border-2 bg-blue-700 p-2 rounded-md shadow-md text-left border-blue-500 ${forwardDisabled ? disabledStyles : ""}}`}
                 onClick={() => {
                     if (!currentPuzzleNumber) return;
                     navigate(`/${category.toLowerCase()}/${currentPuzzleNumber + 1}`);
