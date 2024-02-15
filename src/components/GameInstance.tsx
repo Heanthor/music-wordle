@@ -21,7 +21,6 @@ type SavedGameState = {
     gameState: GameState;
 };
 
-
 function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     const MAX_GUESSES = 6;
 
@@ -33,28 +32,53 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
 
     const getCacheKey = useCallback(() => {
         const ds = new Date().toLocaleString();
-        return `game-state_${puzzleCategory}-${ds.substring(0, ds.indexOf(","))}`;
-    }, [puzzleCategory]);
+        return `game-state_${puzzleCategory}-${puzzleData?.puzzleNumber
+            }-${ds.substring(0, ds.indexOf(","))}`;
+    }, [puzzleCategory, puzzleData]);
 
     const loadGameState = useCallback(() => {
-        const loadedState = JSON.parse(localStorage.getItem(getCacheKey()) || '{}') as SavedGameState;
-        if (!loadedState.guesses || !loadedState.gameState) {
+        const loadedState = JSON.parse(
+            localStorage.getItem(getCacheKey()) || "{}"
+        ) as SavedGameState;
+        if (
+            !loadedState.guesses ||
+            !loadedState.gameState ||
+            guesses.length !== 0
+        ) {
             return;
         }
 
-        setGuesses(loadedState.guesses);
+        // annoyingly cast regular objects into ComposerWork objects
+        const guessObjs = loadedState.guesses.map(
+            (g: ComposerWork) =>
+                new ComposerWork(
+                    g.composer,
+                    g.composerId,
+                    g.work,
+                    g.compositionYear,
+                    g.opus,
+                    g.opusNumber
+                )
+        );
+
+        setGuesses(guessObjs);
         setGameState(loadedState.gameState);
-    }, [getCacheKey]);
+    }, [getCacheKey, guesses.length]);
 
     useEffect(() => {
-        loadGameState();
-    }, [loadGameState]);
-
-    useEffect(() => {
-        if (guesses.length !== 0) {
-            localStorage.setItem(getCacheKey(), JSON.stringify({ guesses, gameState }));
+        if (puzzleStatus === "success") {
+            loadGameState();
         }
-    }, [guesses, gameState, getCacheKey]);
+    }, [loadGameState, puzzleStatus]);
+
+    useEffect(() => {
+        if (guesses.length !== 0 && puzzleStatus === "success") {
+            localStorage.setItem(
+                getCacheKey(),
+                JSON.stringify({ guesses, gameState })
+            );
+        }
+    }, [guesses, gameState, puzzleStatus, getCacheKey]);
 
     const checkGameState = (newGuesses: ComposerWork[]) => {
         if (puzzleStatus !== "success") {
@@ -76,6 +100,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             return;
         }
 
+        console.log(guesses);
         if (guesses.find((g) => g.equals(composerWork))) {
             setErrorWithTimeout("duplicateGuess");
             return;
@@ -158,7 +183,9 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
                     role="alert"
                 >
                     {params.text}
-                    {gameState === "won" && puzzleData && <Share guesses={guesses} dailyPuzzle={puzzleData} />}
+                    {gameState === "won" && puzzleData && (
+                        <Share guesses={guesses} dailyPuzzle={puzzleData} />
+                    )}
                 </div>
             </div>
         );

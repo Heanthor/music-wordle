@@ -8,6 +8,7 @@ import { useLoaderData } from "react-router-dom";
 function App() {
   const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
   const puzzleCategory = routeData.puzzleCategory;
+  const puzzleID = routeData.puzzleID
 
   return (
     <div className="min-h-screen bg-blue-900 font-sans">
@@ -23,7 +24,7 @@ function App() {
           </p>
         </div>
       </div>
-      <GameInstance puzzleCategory={puzzleCategory} key={puzzleCategory} />
+      <GameInstance puzzleCategory={puzzleCategory} key={`${puzzleCategory}${puzzleID}`} />
       <Footer />
     </div>
   )
