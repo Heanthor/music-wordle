@@ -99,7 +99,8 @@ export const getComposerDateRange = async (composerId: number) => {
 };
 
 export const getLatestPuzzle = async (category: string) => {
-  const response = await axios.get(baseURL + "puzzles/" + category + "/latest");
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const response = await axios.get(baseURL + "puzzles/" + category + "/latest", { params: { timezone } });
 
   return parsePuzzleResponse(response);
 };

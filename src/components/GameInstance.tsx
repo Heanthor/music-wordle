@@ -188,7 +188,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
                     {params.extraText && (
                         <div className="font-bold">{params.extraText}</div>
                     )}
-                    {gameState === "won" && puzzleData && (
+                    {puzzleData && (
                         <Share guesses={guesses} dailyPuzzle={puzzleData} />
                     )}
                 </div>

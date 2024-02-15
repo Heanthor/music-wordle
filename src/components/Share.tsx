@@ -22,6 +22,10 @@ function Share(props: Props) {
         });
         navigator.clipboard.writeText(stringifiedGuesses);
         setIsTextCopied(true);
+
+        setTimeout(() => {
+            setIsTextCopied(false);
+        }, 3000);
     };
 
     return (
