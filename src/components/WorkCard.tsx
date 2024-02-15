@@ -33,15 +33,15 @@ function WorkCard(props: Props) {
         }
 
         if (guessedComposerDateRange.isPending || answerComposerDateRange.isPending) {
-            return "-";
+            return "Loading...";
         }
 
         if (!hasData) {
-            return "-";
+            return "Loading...";
         }
 
         if (guessedComposerDateRange.isError || answerComposerDateRange.isError) {
-            console.log("error fetching date range")
+            console.log("error fetching date range: ", guessedComposerDateRange.error, answerComposerDateRange.error);
             return "";
         }
 
@@ -53,6 +53,7 @@ function WorkCard(props: Props) {
         if (dateDiff / yearRange > 0.3) {
             bigDiff = true;
         }
+
         if (guess.compositionYear < puzzleAnswer.data.puzzleAnswer.compositionYear) {
             return bigDiff ? "Composed much earlier" : "Composed earlier";
         } else if (guess.compositionYear > puzzleAnswer.data.puzzleAnswer.compositionYear) {

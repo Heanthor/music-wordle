@@ -11,14 +11,13 @@ import Select, {
 import { ComposerWork } from "./../composerWork";
 import catalogPrefixes from "../assets/catalog_prefixes.json";
 
-
 import { useQuery } from "@tanstack/react-query";
 import {
     getComposers,
     getWorksByComposerId,
     ComposerResponse,
     WorkResponse,
-    asComposerWork
+    asComposerWork,
 } from "../fetchers";
 
 import { usePuzzle } from "../hooks/queries";
@@ -71,10 +70,12 @@ function GuessInput({ onSubmit, disabled }: Props) {
         return workValue;
     };
 
-    const { status: composerOptionsStatus, data: composerOptionsData } = useQuery({
-        queryKey: ["composers"],
-        queryFn: getComposers,
-    });
+    const { status: composerOptionsStatus, data: composerOptionsData } = useQuery(
+        {
+            queryKey: ["composers"],
+            queryFn: getComposers,
+        }
+    );
 
     const getComposerOptions = (data: ComposerResponse[]): ChoiceOption[] => {
         return data
@@ -90,13 +91,13 @@ function GuessInput({ onSubmit, disabled }: Props) {
 
     const defaultPlaceholderText = "Enter composer...";
 
-    const puzzleAnswer = usePuzzle();
+    const { data: puzzleData, status: puzzleStatus } = usePuzzle();
 
     const [currentOptions, setCurrentOptions] = useState<readonly ChoiceOption[]>(
         []
     );
     useEffect(() => {
-        if (composerOptionsStatus === 'success') {
+        if (composerOptionsStatus === "success") {
             setCurrentOptions(getComposerOptions(composerOptionsData));
         }
     }, [composerOptionsStatus, composerOptionsData]);
@@ -105,7 +106,9 @@ function GuessInput({ onSubmit, disabled }: Props) {
         readonly ChoiceOption[]
     >([]);
 
-    const [selectedComposerId, setSelectedComposerId] = useState<number | null>(null);
+    const [selectedComposerId, setSelectedComposerId] = useState<number | null>(
+        null
+    );
 
     const { data: composerWorksData, status: composerWorksStatus } = useQuery({
         queryKey: ["works", selectedComposerId],
@@ -131,7 +134,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
     );
 
     const resetToInitial = () => {
-        if (composerOptionsStatus === 'success') {
+        if (composerOptionsStatus === "success") {
             setCurrentOptions(getComposerOptions(composerOptionsData));
             setSelectedComposerId(null);
         } else {
@@ -150,7 +153,8 @@ function GuessInput({ onSubmit, disabled }: Props) {
     };
 
     const isComposerCorrect = (composerID: number): boolean =>
-        !puzzleAnswer.isError && !puzzleAnswer.isPending && composerID === puzzleAnswer.data.puzzleAnswer.composerId;
+        puzzleStatus === "success" &&
+        composerID === puzzleData.puzzleAnswer.composerId;
 
     const onSelectChange = (
         option: OnChangeValue<ChoiceOption, true>,
@@ -232,7 +236,9 @@ function GuessInput({ onSubmit, disabled }: Props) {
                     return;
                 }
 
-                const guessComposer = composerOptionsData?.find((composer) => composer.id === composerID);
+                const guessComposer = composerOptionsData?.find(
+                    (composer) => composer.id === composerID
+                );
                 if (!guessComposer) {
                     // this should never happen
                     console.error("Could not find composer with ID", composerID);
@@ -240,7 +246,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
                 }
                 const cw = asComposerWork(guess, guessComposer);
                 onSubmit(cw);
-                if (puzzleAnswer.status === "success" && puzzleAnswer.data.puzzleAnswer.equals(cw)) {
+                if (puzzleStatus === "success" && puzzleData.puzzleAnswer.equals(cw)) {
                     // game is over, clear out the box
                     resetToInitial();
                     setPlaceholderText("");
@@ -249,10 +255,6 @@ function GuessInput({ onSubmit, disabled }: Props) {
                     const fixedComposer = selectedOptions[0];
                     fixedComposer.isFixed = true;
                     setSelectedOptions([fixedComposer]);
-
-                    // TODO if composerID is stored as state, the dependent query will refresh when it changes
-                    // but, how can that set currentOptions?
-                    setSelectedComposerId(composerID);
                 } else {
                     resetToInitial();
                 }

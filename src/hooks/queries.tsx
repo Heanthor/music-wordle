@@ -24,5 +24,6 @@ export const usePuzzle = () => {
     return useQuery({
         queryKey: queryKey,
         queryFn,
+        staleTime: 1000 * 60 * 60, // 1 hour
     });
 };

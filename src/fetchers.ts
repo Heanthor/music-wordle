@@ -151,7 +151,7 @@ const asDailyPuzzle = (response: LatestPuzzleResponse) => {
     response.isLatest,
     new ComposerWork(
       response.answer.composer.fullName,
-      response.id,
+      response.answer.composer.id,
       response.answer.workTitle,
       response.answer.compositionYear,
       response.answer.opus,

@@ -100,7 +100,6 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             return;
         }
 
-        console.log(guesses);
         if (guesses.find((g) => g.equals(composerWork))) {
             setErrorWithTimeout("duplicateGuess");
             return;
