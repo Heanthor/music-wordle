@@ -20,6 +20,7 @@ function WorkCard(props: Props) {
         queryKey: ["date-range", { composerId }],
         queryFn: () => getComposerDateRange(composerId),
         enabled: enabled,
+        staleTime: 1000 * 60 * 60, // 1 hour
     });
 
     // api call to retrieve all supported composers

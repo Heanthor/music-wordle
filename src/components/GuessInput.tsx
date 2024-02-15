@@ -74,6 +74,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
         {
             queryKey: ["composers"],
             queryFn: getComposers,
+            staleTime: 1000 * 60 * 60, // 1 hour
         }
     );
 

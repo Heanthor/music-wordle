@@ -161,14 +161,17 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             return null;
         }
 
+        const correctAnswer = puzzleData?.puzzleAnswer.composer + " - " + puzzleData?.puzzleAnswer.work;
         const messageState = {
             won: {
                 text: "Congrats, you won!",
+                extraText: null,
                 background: "bg-green-200",
                 textColor: "bg-green-700",
             },
             lost: {
                 text: "Sorry, try again next time!",
+                extraText: "Answer: " + correctAnswer,
                 background: "bg-red-200",
                 textColor: "bg-red-700",
             },
@@ -182,6 +185,9 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
                     role="alert"
                 >
                     {params.text}
+                    {params.extraText && (
+                        <div className="font-bold">{params.extraText}</div>
+                    )}
                     {gameState === "won" && puzzleData && (
                         <Share guesses={guesses} dailyPuzzle={puzzleData} />
                     )}
@@ -207,7 +213,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             </div>
             <div className="bg-gray-300 p-2 rounded-sm shadow-md mb-4">
                 {renderGameEndMessage()}
-                <GuessInput onSubmit={makeGuess} disabled={gameState === "won"} />
+                <GuessInput onSubmit={makeGuess} disabled={gameState === "won" || gameState === "lost"} />
                 {error && renderError()}
             </div>
             <div className="bg-gray-300 p-2 rounded-sm shadow-md">
