@@ -13,6 +13,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 import Share from "./Share";
 
 import { usePuzzle } from "../hooks/queries";
+import SpinnerWrapper from "./SpinnerWrapper";
 
 type GameState = "guessing" | "won" | "lost";
 
@@ -29,6 +30,8 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     const [gameState, setGameState] = useState<GameState>("guessing");
     const [guesses, setGuesses] = useState<ComposerWork[]>([]);
     const [error, setError] = useState("");
+
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     const getCacheKey = useCallback(() => {
         const ds = new Date().toLocaleString();
@@ -205,9 +208,15 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             </h1>
             <div className="pb-4">
                 <Zoom>
+                    {imageLoaded ? null : (
+                        <div className="bg-gray-300 h-80 outline rounded-md min-w-full flex justify-center items-center">
+                            <SpinnerWrapper />
+                        </div>
+                    )}
                     <img
-                        className="mx-auto outline rounded-md min-w-full"
+                        className={"mx-auto outline rounded-md min-w-full" + (imageLoaded ? "" : " hidden")}
                         src={puzzleData?.sheetSource}
+                        onLoad={() => setImageLoaded(true)}
                     />
                 </Zoom>
             </div>
