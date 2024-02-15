@@ -11,7 +11,7 @@ function App() {
   const puzzleID = routeData.puzzleID
 
   return (
-    <div className="min-h-screen bg-blue-900 font-sans">
+    <div className="min-h-screen bg-blue-900 font-sans relative">
       <Header puzzleCategory={puzzleCategory} />
       <div className="container mx-auto text-center w-3/4">
         <div className="bg-blue-700 p-2 rounded-md shadow-md my-4 text-left border-blue-500 border-solid border-2">
@@ -25,6 +25,9 @@ function App() {
         </div>
       </div>
       <GameInstance puzzleCategory={puzzleCategory} key={`${puzzleCategory}${puzzleID}`} />
+
+      {/* Spacer for footer */}
+      <div className="h-16"></div>
       <Footer />
     </div>
   )
