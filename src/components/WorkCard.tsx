@@ -56,11 +56,11 @@ function WorkCard(props: Props) {
         }
 
         if (guess.compositionYear < puzzleAnswer.data.puzzleAnswer.compositionYear) {
-            return bigDiff ? "Composed much earlier" : "Composed earlier";
+            return bigDiff ? "Far too early" : "Too early";
         } else if (guess.compositionYear > puzzleAnswer.data.puzzleAnswer.compositionYear) {
-            return bigDiff ? "Composed much later" : "Composed later";
+            return bigDiff ? "Far too late" : "Too late";
         } else {
-            return "Composed same year!";
+            return "Correct year!";
         }
     };
 
