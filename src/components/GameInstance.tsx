@@ -14,6 +14,7 @@ import Share from "./Share";
 
 import { usePuzzle } from "../hooks/queries";
 import SpinnerWrapper from "./SpinnerWrapper";
+import InstructionsCard from "./InstructionsCard";
 
 type GameState = "guessing" | "won" | "lost";
 
@@ -204,7 +205,7 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             {gameState === "won" && renderConfetti()}
             <PuzzlePicker currentPuzzle={puzzleData} />
             <h1 className="text-xl md:text-2xl text-neutral-50 py-4 pt-1">
-                Guess the composer and title of the following work:
+                Guess the composer and title of the following excerpt:
             </h1>
             <div className="pb-4">
                 <Zoom>
@@ -225,8 +226,11 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
                 <GuessInput onSubmit={makeGuess} disabled={gameState === "won" || gameState === "lost"} />
                 {error && renderError()}
             </div>
-            <div className="bg-gray-300 p-2 rounded-sm shadow-md">
+            <div className="bg-gray-300 p-2 rounded-sm shadow-md mb-4">
                 {renderGuesses()}
+            </div>
+            <div className="bg-gray-300 p-2 rounded-sm shadow-md">
+                <InstructionsCard />
             </div>
         </div>
     );
