@@ -36,7 +36,7 @@ function InstructionsCard() {
 
     return (
         <div>
-            <h2 className="text-l md:text-xl">Work Selection Rules</h2>
+            <h2 className="text-l md:text-xl font-bold">Work Selection Rules</h2>
             <div className="text-left px-2 md:px-5 pb-1 md:pb-2">
                 {puzzleCategory !== 'Orchestral' && (<span className="font-bold">
                     The correct work can be found in the following repertoire:
