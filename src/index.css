@@ -41,3 +41,7 @@ html, body { width:100%;  overflow-x:hidden; }
     }
   }
   
+  [data-rmiz-btn-unzoom] {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
