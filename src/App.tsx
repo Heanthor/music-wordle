@@ -39,7 +39,7 @@ function AppInner() {
 function App() {
   // provide unique id on initial render/pageload
   const uuid = uuidv4();
-  console.log("generate new uuid ", uuid);
+
   return (
     <UuidContext.Provider value={uuid}>
       <AppInner />
