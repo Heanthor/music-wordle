@@ -15,6 +15,7 @@ export type ComposerResponse = {
   fullName: string;
   firstName: string;
   lastName: string;
+  catalogPrefix?: string;
   bornYear: number;
   diedYear: number;
 };
@@ -51,6 +52,7 @@ export const getComposers = async () => {
       full_name: string;
       first_name: string;
       last_name: string;
+      catalog_prefix: string | null;
       born_year: number | null;
       died_year: number | null;
     }) => {
@@ -59,6 +61,7 @@ export const getComposers = async () => {
         fullName: e.full_name,
         firstName: e.first_name,
         lastName: e.last_name,
+        catalogPrefix: e.catalog_prefix,
         bornYear: e.born_year,
         diedYear: e.died_year,
       };

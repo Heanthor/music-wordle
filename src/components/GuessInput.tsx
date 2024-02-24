@@ -9,7 +9,6 @@ import Select, {
     ValueContainerProps,
 } from "react-select";
 import { ComposerWork } from "./../composerWork";
-import catalogPrefixes from "../assets/catalog_prefixes.json";
 
 import { useQuery } from "@tanstack/react-query";
 import {
@@ -33,9 +32,6 @@ type ChoiceOption = {
     isFixed: boolean;
 };
 
-function hasKey<O extends object>(obj: O, key: PropertyKey): key is keyof O {
-    return key in obj;
-}
 
 // persist Placeholder text in input box
 // this is very hacky and ignores type errors, but it seems to work?
@@ -56,11 +52,12 @@ const ValueContainer = ({
 function GuessInput({ onSubmit, disabled }: Props) {
     const renderWorkChoiceLine = (
         work: WorkResponse,
-        composerID: number
+        catalogPrefix: string | undefined
     ): string => {
         let prefix = "Op. ";
-        if (hasKey(catalogPrefixes, composerID)) {
-            prefix = catalogPrefixes[composerID];
+
+        if (catalogPrefix) {
+            prefix = catalogPrefix;
         }
 
         const opusString = `(${prefix}${work.opus}${work.opusNumber && work.opusNumber >= 0 ? ` #${work.opusNumber}` : ""
@@ -120,15 +117,27 @@ function GuessInput({ onSubmit, disabled }: Props) {
     useEffect(() => {
         if (composerWorksStatus === "success") {
             const worksAsOptions = composerWorksData.map((work) => {
+                const composerObj = composerOptionsData?.find(
+                    (composer) => composer.id === selectedComposerId
+                );
+
                 return {
                     value: work.id,
-                    label: renderWorkChoiceLine(work, selectedComposerId || 0),
+                    label: renderWorkChoiceLine(work, composerObj?.catalogPrefix),
                     isFixed: false,
                 };
             });
             setCurrentOptions(worksAsOptions);
+        } else if (selectedComposerId != null && composerWorksStatus === "pending") {
+            setCurrentOptions([
+                {
+                    value: -1,
+                    label: "Loading...",
+                    isFixed: true,
+                }
+            ]);
         }
-    }, [composerWorksData, composerWorksStatus, selectedComposerId]);
+    }, [composerWorksData, composerWorksStatus, selectedComposerId, composerOptionsData]);
 
     const [placeholderText, setPlaceholderText] = useState(
         defaultPlaceholderText
