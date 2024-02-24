@@ -13,6 +13,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 import Share from "./Share";
 
 import { usePuzzle } from "../hooks/queries";
+import { sendGuessUsageEventParams, sendPuzzleFailedUsageEventParams, sendPuzzleSolvedUsageEventParams, sendPuzzleViewedUsageEventParams, useSendUsageEvent } from "../hooks/usage";
 import SpinnerWrapper from "./SpinnerWrapper";
 import InstructionsCard from "./InstructionsCard";
 
@@ -33,6 +34,8 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
     const [error, setError] = useState("");
 
     const [imageLoaded, setImageLoaded] = useState(false);
+
+    const { mutateAsync } = useSendUsageEvent();
 
     const getCacheKey = useCallback(() => {
         const ds = new Date().toLocaleString();
@@ -94,12 +97,22 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
 
         if (mostRecentGuess.equals(puzzleData.puzzleAnswer)) {
             setGameState("won");
+            mutateAsync(sendPuzzleSolvedUsageEventParams(puzzleData.puzzleId));
         } else if (newGuesses.length === MAX_GUESSES) {
             setGameState("lost");
+            mutateAsync(sendPuzzleFailedUsageEventParams(puzzleData.puzzleId));
         }
     };
 
-    const makeGuess = (composerWork: ComposerWork) => {
+    useEffect(() => {
+        if (puzzleStatus !== "success") {
+            return;
+        }
+        mutateAsync(sendPuzzleViewedUsageEventParams(puzzleData.puzzleId));
+    }, [puzzleStatus, puzzleData, mutateAsync]);
+
+    const makeGuess = (composerWork: ComposerWork, workId: number) => {
+        // user has clicked "Guess!"
         if (gameState !== "guessing") {
             return;
         }
@@ -108,6 +121,16 @@ function GameInstance({ puzzleCategory }: { puzzleCategory: PuzzleCategory }) {
             setErrorWithTimeout("duplicateGuess");
             return;
         }
+
+        if (puzzleStatus !== "success") {
+            // should never happen if we're making a guess
+            console.log("attempted to make guess before puzzle was loaded");
+            return;
+        }
+
+        // send usage event
+        // no need to await the promise
+        mutateAsync(sendGuessUsageEventParams(puzzleData.puzzleId, workId));
 
         const newGuesses = [...guesses, composerWork];
         setGuesses(newGuesses);

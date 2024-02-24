@@ -23,7 +23,7 @@ import {
 import { usePuzzle } from "../hooks/queries";
 
 type Props = {
-    onSubmit: (guess: ComposerWork) => void;
+    onSubmit: (guess: ComposerWork, workId: number) => void;
     disabled: boolean;
 };
 
@@ -246,7 +246,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
                     return;
                 }
                 const cw = asComposerWork(guess, guessComposer);
-                onSubmit(cw);
+                onSubmit(cw, guess.id);
                 if (puzzleStatus === "success" && puzzleData.puzzleAnswer.equals(cw)) {
                     // game is over, clear out the box
                     resetToInitial();

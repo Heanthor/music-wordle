@@ -1,6 +1,7 @@
 import axios from "axios";
 import { ComposerWork } from "./composerWork";
 import { DailyPuzzle, parseCategoryFromAbbreviation } from "./dailyPuzzle";
+import { UsageEvent } from "./hooks/usage";
 
 const baseURLs = {
   dev: "http://127.0.0.1:8000/api/",
@@ -159,7 +160,8 @@ const asDailyPuzzle = (response: LatestPuzzleResponse) => {
       response.answer.opusNumber
     ),
     response.sheetImageUrl,
-    parseCategoryFromAbbreviation(response.type)
+    parseCategoryFromAbbreviation(response.type),
+    response.id
   );
 };
 
@@ -175,4 +177,15 @@ export const asComposerWork = (
     response.opus,
     response.opusNumber
   );
+};
+
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const sendUsageEvent = (event: UsageEvent, uuid: string, puzzleId: number, body: any) => {
+    return axios.post(baseURL + "usage_events", {
+        event_type: event,
+        puzzle: puzzleId,
+        event_body: body,
+        session_id: uuid,
+    });
 };

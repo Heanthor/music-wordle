@@ -5,7 +5,10 @@ import { CategoryPuzzleIDLoaderData } from "./loaders";
 
 import { useLoaderData } from "react-router-dom";
 
-function App() {
+import { v4 as uuidv4 } from 'uuid';
+import { UuidContext } from "./contexts";
+
+function AppInner() {
   const routeData = useLoaderData() as CategoryPuzzleIDLoaderData;
   const puzzleCategory = routeData.puzzleCategory;
   const puzzleID = routeData.puzzleID
@@ -30,6 +33,17 @@ function App() {
       <div className="h-16"></div>
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  // provide unique id on initial render/pageload
+  const uuid = uuidv4();
+  console.log("generate new uuid ", uuid);
+  return (
+    <UuidContext.Provider value={uuid}>
+      <AppInner />
+    </UuidContext.Provider>
   )
 }
 

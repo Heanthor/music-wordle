@@ -35,6 +35,7 @@ export class DailyPuzzle {
   puzzleAnswer: ComposerWork;
   sheetSource: string;
   puzzleCategory: PuzzleCategory;
+  puzzleId: number;
 
   constructor(
     puzzleDate: Date,
@@ -43,6 +44,7 @@ export class DailyPuzzle {
     puzzleAnswer: ComposerWork,
     sheetSource: string,
     puzzleCategory: PuzzleCategory,
+    puzzleId: number,
   ) {
     this.puzzleDate = puzzleDate;
     this.puzzleNumber = puzzleNumber;
@@ -50,6 +52,7 @@ export class DailyPuzzle {
     this.puzzleAnswer = puzzleAnswer;
     this.sheetSource = sheetSource;
     this.puzzleCategory = puzzleCategory;
+    this.puzzleId = puzzleId;
   }
 
   getPuzzleShortTitle(): string {
