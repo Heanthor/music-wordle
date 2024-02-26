@@ -116,11 +116,10 @@ function GuessInput({ onSubmit, disabled }: Props) {
 
     useEffect(() => {
         if (composerWorksStatus === "success") {
+            const composerObj = composerOptionsData?.find(
+                (composer) => composer.id === selectedComposerId
+            );
             const worksAsOptions = composerWorksData.map((work) => {
-                const composerObj = composerOptionsData?.find(
-                    (composer) => composer.id === selectedComposerId
-                );
-
                 return {
                     value: work.id,
                     label: renderWorkChoiceLine(work, composerObj?.catalogPrefix),
