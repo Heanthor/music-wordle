@@ -77,14 +77,14 @@ function GuessInput({ onSubmit, disabled }: Props) {
 
     const getComposerOptions = (data: ComposerResponse[]): ChoiceOption[] => {
         return data
+            .sort((a, b) => a.bornYear - b.bornYear)
             .map((composer) => {
                 return {
                     value: composer.id,
                     label: composer.fullName,
                     isFixed: false,
                 };
-            })
-            .sort((a, b) => a.label.localeCompare(b.label));
+            });
     };
 
     const defaultPlaceholderText = "Enter composer...";
