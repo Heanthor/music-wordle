@@ -20,6 +20,8 @@ function Share(props: Props) {
                 guess.composer === puzzleAnswer.composer ? "🟩" : "🟥";
             stringifiedGuesses += guess.work === puzzleAnswer.work ? "🟩\n" : "🟥\n";
         });
+        stringifiedGuesses += "https://sheet-musicle.com\n"
+
         navigator.clipboard.writeText(stringifiedGuesses);
         setIsTextCopied(true);
 
