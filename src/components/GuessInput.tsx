@@ -88,6 +88,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
     };
 
     const defaultPlaceholderText = "Enter composer...";
+    const placeholderComposerSelectedText = "Select a work...";
 
     const { data: puzzleData, status: puzzleStatus } = usePuzzle();
 
@@ -193,7 +194,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
         const composer = newOption[0].value;
         if (newOption.length === 1) {
             // only a composer is selected
-            setPlaceholderText("Select a work...");
+            setPlaceholderText(placeholderComposerSelectedText);
             setSelectedComposerId(composer);
         } else if (newOption.length === 2) {
             setPlaceholderText("");
@@ -263,6 +264,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
                     // set options back to works, and preserve the selected composer
                     const fixedComposer = selectedOptions[0];
                     fixedComposer.isFixed = true;
+                    setPlaceholderText(placeholderComposerSelectedText);
                     setSelectedOptions([fixedComposer]);
                 } else {
                     resetToInitial();

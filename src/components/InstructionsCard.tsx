@@ -10,7 +10,8 @@ function InstructionsCard() {
         Violin: [
             "Solo violin",
             "Solo violin and piano or orchestra (sonatas, concertos, etc.)",
-            "Chamber music featuring violin (all violin parts, but the part will be prominent and recognizable)",
+            "Chamber music featuring violin (any violin part, but the excerpt will be prominent and recognizable)",
+            "Orchestral concertmaster solos"
         ],
         Piano: [
             "Solo piano",
@@ -20,7 +21,7 @@ function InstructionsCard() {
         Cello: [
             "Solo cello",
             "Solo cello and piano or orchestra (sonatas, concertos, etc.)",
-            "Chamber music featuring cello (all cello parts, but the part will be prominent and recognizable)",
+            "Chamber music featuring cello (any cello part, but the excerpt will be prominent and recognizable)",
             "Orchestral principal solos",
         ],
         Orchestral: [
@@ -39,7 +40,7 @@ function InstructionsCard() {
             <h2 className="text-l md:text-xl font-bold">Work Selection Rules</h2>
             <div className="text-left px-2 md:px-5 pb-1 md:pb-2">
                 {puzzleCategory !== 'Orchestral' && (<span className="font-bold">
-                    The correct work can be found in the following repertoire:
+                    The correct work will be found in the following repertoire:
                 </span>)}
                 <ul className="list-disc pl-2 md:pl-5">{renderHints()}</ul>
             </div>
