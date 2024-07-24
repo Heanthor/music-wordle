@@ -1,6 +1,6 @@
 import { useNavigate, useLoaderData } from "react-router-dom";
 import { CategoryPuzzleIDLoaderData } from "../loaders";
-import { DailyPuzzle } from "../dailyPuzzle";
+import { DailyPuzzle, difficultyStrFromNumber } from "../dailyPuzzle";
 
 type Props = {
     currentPuzzle: DailyPuzzle | undefined;
@@ -16,6 +16,15 @@ function PuzzlePicker({ currentPuzzle }: Props) {
     const forwardDisabled = currentPuzzle?.isLatestPuzzle;
     const currentPuzzleNumber = currentPuzzle?.puzzleNumber;
 
+    const renderDifficultyIcon = () => {
+        if (!currentPuzzle) return null;
+        return (
+            <span className="text-neutral-50 cursor-default" title={difficultyStrFromNumber(currentPuzzle.difficulty)}>
+                {currentPuzzle.getDifficultyIcon()}
+            </span>
+        );
+    };
+
     const disabledStyles = "bg-gray-500 text-gray-300 cursor-not-allowed";
     return (
         <div className="text-neutral-50 my-2">
@@ -29,7 +38,9 @@ function PuzzlePicker({ currentPuzzle }: Props) {
                 &lt;
             </button>
             <span className="mx-2 border-2 bg-indigo-500 p-2 rounded-md shadow-md text-left border-indigo-400">
+                {renderDifficultyIcon()}&nbsp;
                 {currentPuzzle ? `Puzzle ${currentPuzzle.getPuzzleShortTitle()}` : `Loading...`}
+
             </span>
             <button className={`inline border-2 bg-blue-700 p-2 rounded-md shadow-md text-left border-blue-500 ${forwardDisabled ? disabledStyles : ""}}`}
                 onClick={() => {

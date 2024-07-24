@@ -41,6 +41,7 @@ export type LatestPuzzleResponse = {
   isLatest: boolean;
   type: string;
   answer: WorkResponse & { composer: ComposerResponse };
+  difficulty: number;
 };
 
 export const getComposers = async () => {
@@ -129,6 +130,7 @@ const parsePuzzleResponse = (response: any): DailyPuzzle => {
     sequenceNumber: response.data.sequence_number,
     isLatest: response.data.is_latest,
     type: response.data.type,
+    difficulty: response.data.difficulty,
     answer: {
       id: response.data.answer.id,
       workTitle: response.data.answer.work_title,
@@ -164,7 +166,8 @@ const asDailyPuzzle = (response: LatestPuzzleResponse) => {
     ),
     response.sheetImageUrl,
     parseCategoryFromAbbreviation(response.type),
-    response.id
+    response.id,
+    response.difficulty,
   );
 };
 
