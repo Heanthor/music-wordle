@@ -7,6 +7,8 @@ type Props = {
     puzzleCategory: PuzzleCategory,
 };
 
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScsCh_YmKXZ3t11-Tt_XAJiXlhraxv5EhiOeK7Uok_ucl7glg/viewform?usp=sf_link";
+
 function Header(props: Props) {
     const { puzzleCategory } = props;
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -33,7 +35,7 @@ function Header(props: Props) {
     const renderDropdown = () => {
         const displayClass = dropdownOpen ? "block" : "hidden";
         return (
-            <div className="relative ml-2 mr-0 md:mr-4">
+            <div className="inline-block relative ml-2 mr-0 md:mr-4">
                 <button
                     className="flex items-center px-6 pb-2 pt-2.5 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 cursor-pointer"
                     id="dropdownMenuButton2"
@@ -65,6 +67,19 @@ function Header(props: Props) {
         )
     };
 
+    const renderPuzzleSuggestionLink = () => {
+        return (
+            <a
+                href={FORM_URL}
+                className="inline-block ml-2 md:px-6 pb-2 pt-2.5 text-xs md:text-sm text-neutral-500 underline decoration-dotted decoration-2 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-400 lg:px-2"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Suggest a Puzzle!
+            </a>
+        );
+    };
+
     return (
         <nav
             className="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600"
@@ -79,7 +94,10 @@ function Header(props: Props) {
                         <img src={eighthNote} className="inline h-6 pb-[3px] w-6" />
                     </a>
                 </div>
-                {renderDropdown()}
+                <div>
+                    {renderPuzzleSuggestionLink()}
+                    {renderDropdown()}
+                </div>
             </div>
         </nav>
     );
