@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { PuzzleCategory, puzzleCategories } from "../dailyPuzzle";
 import eighthNote from "../assets/8thNote.svg";
+import eighthNoteLightMode from "../assets/8thNote_black.svg";
 import { useNavigate } from "react-router-dom";
 
 type Props = {
@@ -91,7 +92,8 @@ function Header(props: Props) {
                         <button onClick={() => {
                             navigate("/" + puzzleCategory);
                         }}>Sheet Musicle</button>
-                        <img src={eighthNote} className="inline h-6 pb-[3px] w-6" />
+                        <img src={eighthNote} className="hidden dark:inline h-6 pb-[3px] w-6" />
+                        <img src={eighthNoteLightMode} className="dark:hidden inline h-6 pb-[3px] w-6" />
                     </a>
                 </div>
                 <div>
