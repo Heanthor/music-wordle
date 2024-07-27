@@ -88,7 +88,7 @@ function GuessInput({ onSubmit, disabled }: Props) {
     };
 
     const defaultPlaceholderText = "Enter composer...";
-    const placeholderComposerSelectedText = "Select a work...";
+    const placeholderComposerSelectedText = "Start typing a work...";
 
     const { data: puzzleData, status: puzzleStatus } = usePuzzle();
 
